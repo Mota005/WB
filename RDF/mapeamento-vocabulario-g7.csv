@@ -1,0 +1,47 @@
+﻿Série;Coluna da fonte;Propriedade RDF proposta;Rótulo;Tipo;Unidade
+Receitas;RECEITAS_TOTAIS;g7:receitasTotais;Receitas totais municipais;xsd:decimal;EUR
+Receitas;TRANSFERENCIAS_ORCAMENTO_ESTADO;g7:transferenciasOE;Transferências do Orçamento do Estado;xsd:decimal;EUR
+Receitas;FINANCIAMENTO_UNIAO_EUROPEIA;g7:financiamentoUE;Financiamento da União Europeia;xsd:decimal;EUR
+Receitas;IMPOSTOS_MUNICIPAIS;g7:impostosMunicipais;Impostos municipais;xsd:decimal;EUR
+Receitas;IMI;g7:imi;Imposto Municipal sobre Imóveis;xsd:decimal;EUR
+Receitas;IMT;g7:imt;Imposto Municipal sobre Transmissões Onerosas de Imóveis;xsd:decimal;EUR
+Receitas;IUC;g7:iuc;Imposto Único de Circulação;xsd:decimal;EUR
+Receitas;DERRAMA_IRC;g7:derramaIRC;Derrama municipal de IRC;xsd:decimal;EUR
+Receitas;TAXAS_MULTAS_OUTROS_IMPOSTOS;g7:taxasMultasOutros;Taxas, multas e outros impostos;xsd:decimal;EUR
+Receitas;VENDA_BENS_SERVICOS;g7:vendaBensServicos;Venda de bens e serviços;xsd:decimal;EUR
+Receitas;OUTRAS_RECEITAS;g7:outrasReceitas;Outras receitas;xsd:decimal;EUR
+Despesas;DESPESA_TOTAL;g7:despesaTotal;Despesa total municipal;xsd:decimal;EUR
+Despesas;DESPESA_CORRENTE;g7:despesaCorrente;Despesa corrente;xsd:decimal;EUR
+Despesas;DESPESA_COM_PESSOAL;g7:despesaPessoal;Despesa com pessoal;xsd:decimal;EUR
+Despesas;DESPESA_AQUISICAO_BENS;g7:despesaAquisicaoBens;Despesa com aquisição de bens;xsd:decimal;EUR
+Despesas;JUROS_ENCARGOS;g7:jurosEncargos;Juros e encargos;xsd:decimal;EUR
+Despesas;TRANSFERENCIAS_CORRENTES;g7:transferenciasCorrentes;Transferências correntes;xsd:decimal;EUR
+Despesas;INVESTIMENTOS_OUTROS_INVESTIMENTOS_BENS_DE_CAPITAL;g7:investimentoTotal;Investimentos e outros bens de capital;xsd:decimal;EUR
+Despesas;TERRENOS_HABITACOES;g7:investTerrenosHabitacoes;Investimento em terrenos e habitações;xsd:decimal;EUR
+Despesas;EDIFICIOS;g7:investEdificios;Investimento em edifícios;xsd:decimal;EUR
+Despesas;INFRAESTRUTURAS_BASICAS;g7:investInfraestruturas;Investimento em infraestruturas básicas;xsd:decimal;EUR
+Despesas;ACESSIBILIDADES;g7:investAcessibilidades;Investimento em acessibilidades;xsd:decimal;EUR
+Despesas;OUTROS_INVESTIMENTOS_BENS_DE_CAPITAL;g7:investOutros;Outros investimentos em bens de capital;xsd:decimal;EUR
+Despesas;TRANSFERENCIAS_OUTRAS_DESPESAS_CAPITAL;g7:transferenciasCapital;Transferências e outras despesas de capital;xsd:decimal;EUR
+Qualidade da Gestão;TOTAL_DIVIDA;g7:dividaTotal;Dívida total municipal;xsd:decimal;EUR
+Qualidade da Gestão;TOTAL_RECEITA_EFETIVA;g7:receitaEfetiva;Receita efetiva;xsd:decimal;EUR
+Qualidade da Gestão;SALDO_ORCAMENTAL;g7:saldoOrcamental;Saldo orçamental;xsd:decimal;EUR
+Qualidade da Gestão;GRAU_ENDIVIDAMENTO;g7:grauEndividamento;Grau de endividamento;xsd:decimal;PERCENT
+Qualidade da Gestão;PMP;g7:prazoMedioPagamento;Prazo médio de pagamento;xsd:decimal;DAY
+Qualidade da Gestão;PAGAMENTOS_EM_ATRASO;g7:pagamentosEmAtraso;Pagamentos em atraso;xsd:decimal;EUR
+Qualidade da Gestão;GRAU_EXECUCAO_RECEITA_ORCAMENTADA;g7:execucaoReceita;Grau de execução da receita orçamentada;xsd:decimal;PERCENT
+Qualidade da Gestão;GRAU_EXECUCAO_DESPESA_ORCAMENTADA;g7:execucaoDespesa;Grau de execução da despesa orçamentada;xsd:decimal;PERCENT
+Qualidade da Gestão;GRAU_INDEPENDENCIA_FINANCEIRA;g7:independenciaFinanceira;Grau de independência financeira;xsd:decimal;PERCENT
+Recursos Humanos;totalrh;g7:trabalhadores;Total de trabalhadores municipais;xsd:integer;NUM
+Recursos Humanos;totaldirigentes;g7:dirigentes;Dirigentes municipais;xsd:integer;NUM
+Recursos Humanos;totaltecnicossuperiores;g7:tecnicosSuperiores;Técnicos superiores;xsd:integer;NUM
+Recursos Humanos;totalfuncionariosnaosuperiores;g7:outrosTrabalhadores;Funcionários não superiores;xsd:integer;NUM
+Recursos Humanos;totalcomissaodeservico;g7:comissaoServico;Trabalhadores em comissão de serviço;xsd:integer;NUM
+Recursos Humanos;totalcomvinculopermanente;g7:vinculoPermanente;Trabalhadores com vínculo permanente;xsd:integer;NUM
+Recursos Humanos;totalsemvinculopermanente;g7:semVinculoPermanente;Trabalhadores sem vínculo permanente;xsd:integer;NUM
+Recursos Humanos;representanteseleitos;g7:representantesEleitos;Representantes eleitos;xsd:integer;NUM
+Recursos Humanos;cargosmandatospoliticos;g7:cargosPoliticos;Cargos e mandatos políticos;xsd:integer;NUM
+Enriquecimento INE;POPULACAO_RESIDENTE;g7:populacaoResidente;População residente;xsd:integer;NUM
+Enriquecimento INE;DENSIDADE_POP_HAB_KM2;g7:densidadePopulacional;Densidade populacional;xsd:decimal;HAB/KM2
+Qualidade da Gestão;TOTAL_RECEITA;g7:receitasTotais;Receitas totais municipais;xsd:decimal;EUR
+Qualidade da Gestão;TOTAL_DESPESA;g7:despesaTotal;Despesa total municipal;xsd:decimal;EUR

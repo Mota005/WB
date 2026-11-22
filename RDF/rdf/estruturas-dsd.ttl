@@ -1,0 +1,212 @@
+@prefix g7: <https://w3id.org/ws-megsi-g7/vocab#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix sdmx-dimension: <http://purl.org/linked-data/sdmx/2009/dimension#> .
+
+<https://w3id.org/ws-megsi-g7/dsd/despesas-municipais> a qb:DataStructureDefinition ;
+    qb:component <https://w3id.org/ws-megsi-g7/componente/despesas-municipais/dim-ano>,
+        <https://w3id.org/ws-megsi-g7/componente/despesas-municipais/dim-periodo>,
+        <https://w3id.org/ws-megsi-g7/componente/despesas-municipais/dim-refArea>,
+        <https://w3id.org/ws-megsi-g7/componente/despesas-municipais/medida-despesaAquisicaoBens>,
+        <https://w3id.org/ws-megsi-g7/componente/despesas-municipais/medida-despesaCorrente>,
+        <https://w3id.org/ws-megsi-g7/componente/despesas-municipais/medida-despesaPessoal>,
+        <https://w3id.org/ws-megsi-g7/componente/despesas-municipais/medida-despesaTotal>,
+        <https://w3id.org/ws-megsi-g7/componente/despesas-municipais/medida-investAcessibilidades>,
+        <https://w3id.org/ws-megsi-g7/componente/despesas-municipais/medida-investEdificios>,
+        <https://w3id.org/ws-megsi-g7/componente/despesas-municipais/medida-investInfraestruturas>,
+        <https://w3id.org/ws-megsi-g7/componente/despesas-municipais/medida-investOutros>,
+        <https://w3id.org/ws-megsi-g7/componente/despesas-municipais/medida-investTerrenosHabitacoes>,
+        <https://w3id.org/ws-megsi-g7/componente/despesas-municipais/medida-investimentoTotal>,
+        <https://w3id.org/ws-megsi-g7/componente/despesas-municipais/medida-jurosEncargos>,
+        <https://w3id.org/ws-megsi-g7/componente/despesas-municipais/medida-transferenciasCapital>,
+        <https://w3id.org/ws-megsi-g7/componente/despesas-municipais/medida-transferenciasCorrentes> .
+
+<https://w3id.org/ws-megsi-g7/dsd/qualidade-gestao> a qb:DataStructureDefinition ;
+    qb:component <https://w3id.org/ws-megsi-g7/componente/qualidade-gestao/dim-ano>,
+        <https://w3id.org/ws-megsi-g7/componente/qualidade-gestao/dim-periodo>,
+        <https://w3id.org/ws-megsi-g7/componente/qualidade-gestao/dim-refArea>,
+        <https://w3id.org/ws-megsi-g7/componente/qualidade-gestao/medida-despesaTotal>,
+        <https://w3id.org/ws-megsi-g7/componente/qualidade-gestao/medida-dividaTotal>,
+        <https://w3id.org/ws-megsi-g7/componente/qualidade-gestao/medida-execucaoDespesa>,
+        <https://w3id.org/ws-megsi-g7/componente/qualidade-gestao/medida-execucaoReceita>,
+        <https://w3id.org/ws-megsi-g7/componente/qualidade-gestao/medida-grauEndividamento>,
+        <https://w3id.org/ws-megsi-g7/componente/qualidade-gestao/medida-independenciaFinanceira>,
+        <https://w3id.org/ws-megsi-g7/componente/qualidade-gestao/medida-pagamentosEmAtraso>,
+        <https://w3id.org/ws-megsi-g7/componente/qualidade-gestao/medida-prazoMedioPagamento>,
+        <https://w3id.org/ws-megsi-g7/componente/qualidade-gestao/medida-receitaEfetiva>,
+        <https://w3id.org/ws-megsi-g7/componente/qualidade-gestao/medida-receitasTotais>,
+        <https://w3id.org/ws-megsi-g7/componente/qualidade-gestao/medida-saldoOrcamental> .
+
+<https://w3id.org/ws-megsi-g7/dsd/receitas-municipais> a qb:DataStructureDefinition ;
+    qb:component <https://w3id.org/ws-megsi-g7/componente/receitas-municipais/dim-ano>,
+        <https://w3id.org/ws-megsi-g7/componente/receitas-municipais/dim-periodo>,
+        <https://w3id.org/ws-megsi-g7/componente/receitas-municipais/dim-refArea>,
+        <https://w3id.org/ws-megsi-g7/componente/receitas-municipais/medida-derramaIRC>,
+        <https://w3id.org/ws-megsi-g7/componente/receitas-municipais/medida-financiamentoUE>,
+        <https://w3id.org/ws-megsi-g7/componente/receitas-municipais/medida-imi>,
+        <https://w3id.org/ws-megsi-g7/componente/receitas-municipais/medida-impostosMunicipais>,
+        <https://w3id.org/ws-megsi-g7/componente/receitas-municipais/medida-imt>,
+        <https://w3id.org/ws-megsi-g7/componente/receitas-municipais/medida-iuc>,
+        <https://w3id.org/ws-megsi-g7/componente/receitas-municipais/medida-outrasReceitas>,
+        <https://w3id.org/ws-megsi-g7/componente/receitas-municipais/medida-receitasTotais>,
+        <https://w3id.org/ws-megsi-g7/componente/receitas-municipais/medida-taxasMultasOutros>,
+        <https://w3id.org/ws-megsi-g7/componente/receitas-municipais/medida-transferenciasOE>,
+        <https://w3id.org/ws-megsi-g7/componente/receitas-municipais/medida-vendaBensServicos> .
+
+<https://w3id.org/ws-megsi-g7/dsd/recursos-humanos> a qb:DataStructureDefinition ;
+    qb:component <https://w3id.org/ws-megsi-g7/componente/recursos-humanos/dim-ano>,
+        <https://w3id.org/ws-megsi-g7/componente/recursos-humanos/dim-periodo>,
+        <https://w3id.org/ws-megsi-g7/componente/recursos-humanos/dim-refArea>,
+        <https://w3id.org/ws-megsi-g7/componente/recursos-humanos/medida-comissaoServico>,
+        <https://w3id.org/ws-megsi-g7/componente/recursos-humanos/medida-dirigentes>,
+        <https://w3id.org/ws-megsi-g7/componente/recursos-humanos/medida-outrosTrabalhadores>,
+        <https://w3id.org/ws-megsi-g7/componente/recursos-humanos/medida-semVinculoPermanente>,
+        <https://w3id.org/ws-megsi-g7/componente/recursos-humanos/medida-tecnicosSuperiores>,
+        <https://w3id.org/ws-megsi-g7/componente/recursos-humanos/medida-trabalhadores>,
+        <https://w3id.org/ws-megsi-g7/componente/recursos-humanos/medida-vinculoPermanente> .
+
+<https://w3id.org/ws-megsi-g7/dsd/recursos-humanos-2017> a qb:DataStructureDefinition ;
+    qb:component <https://w3id.org/ws-megsi-g7/componente/recursos-humanos-2017/dim-ano>,
+        <https://w3id.org/ws-megsi-g7/componente/recursos-humanos-2017/dim-periodo>,
+        <https://w3id.org/ws-megsi-g7/componente/recursos-humanos-2017/dim-refArea>,
+        <https://w3id.org/ws-megsi-g7/componente/recursos-humanos-2017/medida-cargosPoliticos>,
+        <https://w3id.org/ws-megsi-g7/componente/recursos-humanos-2017/medida-comissaoServico>,
+        <https://w3id.org/ws-megsi-g7/componente/recursos-humanos-2017/medida-dirigentes>,
+        <https://w3id.org/ws-megsi-g7/componente/recursos-humanos-2017/medida-outrosTrabalhadores>,
+        <https://w3id.org/ws-megsi-g7/componente/recursos-humanos-2017/medida-representantesEleitos>,
+        <https://w3id.org/ws-megsi-g7/componente/recursos-humanos-2017/medida-semVinculoPermanente>,
+        <https://w3id.org/ws-megsi-g7/componente/recursos-humanos-2017/medida-tecnicosSuperiores>,
+        <https://w3id.org/ws-megsi-g7/componente/recursos-humanos-2017/medida-trabalhadores>,
+        <https://w3id.org/ws-megsi-g7/componente/recursos-humanos-2017/medida-vinculoPermanente> .
+
+<https://w3id.org/ws-megsi-g7/componente/despesas-municipais/dim-ano> qb:dimension g7:ano .
+
+<https://w3id.org/ws-megsi-g7/componente/despesas-municipais/dim-periodo> qb:dimension g7:periodo .
+
+<https://w3id.org/ws-megsi-g7/componente/despesas-municipais/dim-refArea> qb:dimension sdmx-dimension:refArea .
+
+<https://w3id.org/ws-megsi-g7/componente/despesas-municipais/medida-despesaAquisicaoBens> qb:measure g7:despesaAquisicaoBens .
+
+<https://w3id.org/ws-megsi-g7/componente/despesas-municipais/medida-despesaCorrente> qb:measure g7:despesaCorrente .
+
+<https://w3id.org/ws-megsi-g7/componente/despesas-municipais/medida-despesaPessoal> qb:measure g7:despesaPessoal .
+
+<https://w3id.org/ws-megsi-g7/componente/despesas-municipais/medida-despesaTotal> qb:measure g7:despesaTotal .
+
+<https://w3id.org/ws-megsi-g7/componente/despesas-municipais/medida-investAcessibilidades> qb:measure g7:investAcessibilidades .
+
+<https://w3id.org/ws-megsi-g7/componente/despesas-municipais/medida-investEdificios> qb:measure g7:investEdificios .
+
+<https://w3id.org/ws-megsi-g7/componente/despesas-municipais/medida-investInfraestruturas> qb:measure g7:investInfraestruturas .
+
+<https://w3id.org/ws-megsi-g7/componente/despesas-municipais/medida-investOutros> qb:measure g7:investOutros .
+
+<https://w3id.org/ws-megsi-g7/componente/despesas-municipais/medida-investTerrenosHabitacoes> qb:measure g7:investTerrenosHabitacoes .
+
+<https://w3id.org/ws-megsi-g7/componente/despesas-municipais/medida-investimentoTotal> qb:measure g7:investimentoTotal .
+
+<https://w3id.org/ws-megsi-g7/componente/despesas-municipais/medida-jurosEncargos> qb:measure g7:jurosEncargos .
+
+<https://w3id.org/ws-megsi-g7/componente/despesas-municipais/medida-transferenciasCapital> qb:measure g7:transferenciasCapital .
+
+<https://w3id.org/ws-megsi-g7/componente/despesas-municipais/medida-transferenciasCorrentes> qb:measure g7:transferenciasCorrentes .
+
+<https://w3id.org/ws-megsi-g7/componente/qualidade-gestao/dim-ano> qb:dimension g7:ano .
+
+<https://w3id.org/ws-megsi-g7/componente/qualidade-gestao/dim-periodo> qb:dimension g7:periodo .
+
+<https://w3id.org/ws-megsi-g7/componente/qualidade-gestao/dim-refArea> qb:dimension sdmx-dimension:refArea .
+
+<https://w3id.org/ws-megsi-g7/componente/qualidade-gestao/medida-despesaTotal> qb:measure g7:despesaTotal .
+
+<https://w3id.org/ws-megsi-g7/componente/qualidade-gestao/medida-dividaTotal> qb:measure g7:dividaTotal .
+
+<https://w3id.org/ws-megsi-g7/componente/qualidade-gestao/medida-execucaoDespesa> qb:measure g7:execucaoDespesa .
+
+<https://w3id.org/ws-megsi-g7/componente/qualidade-gestao/medida-execucaoReceita> qb:measure g7:execucaoReceita .
+
+<https://w3id.org/ws-megsi-g7/componente/qualidade-gestao/medida-grauEndividamento> qb:measure g7:grauEndividamento .
+
+<https://w3id.org/ws-megsi-g7/componente/qualidade-gestao/medida-independenciaFinanceira> qb:measure g7:independenciaFinanceira .
+
+<https://w3id.org/ws-megsi-g7/componente/qualidade-gestao/medida-pagamentosEmAtraso> qb:measure g7:pagamentosEmAtraso .
+
+<https://w3id.org/ws-megsi-g7/componente/qualidade-gestao/medida-prazoMedioPagamento> qb:measure g7:prazoMedioPagamento .
+
+<https://w3id.org/ws-megsi-g7/componente/qualidade-gestao/medida-receitaEfetiva> qb:measure g7:receitaEfetiva .
+
+<https://w3id.org/ws-megsi-g7/componente/qualidade-gestao/medida-receitasTotais> qb:measure g7:receitasTotais .
+
+<https://w3id.org/ws-megsi-g7/componente/qualidade-gestao/medida-saldoOrcamental> qb:measure g7:saldoOrcamental .
+
+<https://w3id.org/ws-megsi-g7/componente/receitas-municipais/dim-ano> qb:dimension g7:ano .
+
+<https://w3id.org/ws-megsi-g7/componente/receitas-municipais/dim-periodo> qb:dimension g7:periodo .
+
+<https://w3id.org/ws-megsi-g7/componente/receitas-municipais/dim-refArea> qb:dimension sdmx-dimension:refArea .
+
+<https://w3id.org/ws-megsi-g7/componente/receitas-municipais/medida-derramaIRC> qb:measure g7:derramaIRC .
+
+<https://w3id.org/ws-megsi-g7/componente/receitas-municipais/medida-financiamentoUE> qb:measure g7:financiamentoUE .
+
+<https://w3id.org/ws-megsi-g7/componente/receitas-municipais/medida-imi> qb:measure g7:imi .
+
+<https://w3id.org/ws-megsi-g7/componente/receitas-municipais/medida-impostosMunicipais> qb:measure g7:impostosMunicipais .
+
+<https://w3id.org/ws-megsi-g7/componente/receitas-municipais/medida-imt> qb:measure g7:imt .
+
+<https://w3id.org/ws-megsi-g7/componente/receitas-municipais/medida-iuc> qb:measure g7:iuc .
+
+<https://w3id.org/ws-megsi-g7/componente/receitas-municipais/medida-outrasReceitas> qb:measure g7:outrasReceitas .
+
+<https://w3id.org/ws-megsi-g7/componente/receitas-municipais/medida-receitasTotais> qb:measure g7:receitasTotais .
+
+<https://w3id.org/ws-megsi-g7/componente/receitas-municipais/medida-taxasMultasOutros> qb:measure g7:taxasMultasOutros .
+
+<https://w3id.org/ws-megsi-g7/componente/receitas-municipais/medida-transferenciasOE> qb:measure g7:transferenciasOE .
+
+<https://w3id.org/ws-megsi-g7/componente/receitas-municipais/medida-vendaBensServicos> qb:measure g7:vendaBensServicos .
+
+<https://w3id.org/ws-megsi-g7/componente/recursos-humanos-2017/dim-ano> qb:dimension g7:ano .
+
+<https://w3id.org/ws-megsi-g7/componente/recursos-humanos-2017/dim-periodo> qb:dimension g7:periodo .
+
+<https://w3id.org/ws-megsi-g7/componente/recursos-humanos-2017/dim-refArea> qb:dimension sdmx-dimension:refArea .
+
+<https://w3id.org/ws-megsi-g7/componente/recursos-humanos-2017/medida-cargosPoliticos> qb:measure g7:cargosPoliticos .
+
+<https://w3id.org/ws-megsi-g7/componente/recursos-humanos-2017/medida-comissaoServico> qb:measure g7:comissaoServico .
+
+<https://w3id.org/ws-megsi-g7/componente/recursos-humanos-2017/medida-dirigentes> qb:measure g7:dirigentes .
+
+<https://w3id.org/ws-megsi-g7/componente/recursos-humanos-2017/medida-outrosTrabalhadores> qb:measure g7:outrosTrabalhadores .
+
+<https://w3id.org/ws-megsi-g7/componente/recursos-humanos-2017/medida-representantesEleitos> qb:measure g7:representantesEleitos .
+
+<https://w3id.org/ws-megsi-g7/componente/recursos-humanos-2017/medida-semVinculoPermanente> qb:measure g7:semVinculoPermanente .
+
+<https://w3id.org/ws-megsi-g7/componente/recursos-humanos-2017/medida-tecnicosSuperiores> qb:measure g7:tecnicosSuperiores .
+
+<https://w3id.org/ws-megsi-g7/componente/recursos-humanos-2017/medida-trabalhadores> qb:measure g7:trabalhadores .
+
+<https://w3id.org/ws-megsi-g7/componente/recursos-humanos-2017/medida-vinculoPermanente> qb:measure g7:vinculoPermanente .
+
+<https://w3id.org/ws-megsi-g7/componente/recursos-humanos/dim-ano> qb:dimension g7:ano .
+
+<https://w3id.org/ws-megsi-g7/componente/recursos-humanos/dim-periodo> qb:dimension g7:periodo .
+
+<https://w3id.org/ws-megsi-g7/componente/recursos-humanos/dim-refArea> qb:dimension sdmx-dimension:refArea .
+
+<https://w3id.org/ws-megsi-g7/componente/recursos-humanos/medida-comissaoServico> qb:measure g7:comissaoServico .
+
+<https://w3id.org/ws-megsi-g7/componente/recursos-humanos/medida-dirigentes> qb:measure g7:dirigentes .
+
+<https://w3id.org/ws-megsi-g7/componente/recursos-humanos/medida-outrosTrabalhadores> qb:measure g7:outrosTrabalhadores .
+
+<https://w3id.org/ws-megsi-g7/componente/recursos-humanos/medida-semVinculoPermanente> qb:measure g7:semVinculoPermanente .
+
+<https://w3id.org/ws-megsi-g7/componente/recursos-humanos/medida-tecnicosSuperiores> qb:measure g7:tecnicosSuperiores .
+
+<https://w3id.org/ws-megsi-g7/componente/recursos-humanos/medida-trabalhadores> qb:measure g7:trabalhadores .
+
+<https://w3id.org/ws-megsi-g7/componente/recursos-humanos/medida-vinculoPermanente> qb:measure g7:vinculoPermanente .
+

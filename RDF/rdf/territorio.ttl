@@ -1,0 +1,1547 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix terr: <https://w3id.org/ws-megsi-g7/territorio/> .
+
+terr:0101 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0101" ;
+    skos:prefLabel "Águeda"@pt .
+
+terr:0102 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0102" ;
+    skos:prefLabel "Albergaria-A-Velha"@pt .
+
+terr:0103 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0103" ;
+    skos:prefLabel "Anadia"@pt .
+
+terr:0104 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0104" ;
+    skos:prefLabel "Arouca"@pt .
+
+terr:0105 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0105" ;
+    skos:prefLabel "Aveiro"@pt .
+
+terr:0106 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0106" ;
+    skos:prefLabel "Castelo De Paiva"@pt .
+
+terr:0107 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0107" ;
+    skos:prefLabel "Espinho"@pt .
+
+terr:0108 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0108" ;
+    skos:prefLabel "Estarreja"@pt .
+
+terr:0109 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0109" ;
+    skos:prefLabel "Santa Maria Da Feira"@pt .
+
+terr:0110 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0110" ;
+    skos:prefLabel "Ílhavo"@pt .
+
+terr:0111 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0111" ;
+    skos:prefLabel "Mealhada"@pt .
+
+terr:0112 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0112" ;
+    skos:prefLabel "Murtosa"@pt .
+
+terr:0113 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0113" ;
+    skos:prefLabel "Oliveira De Azeméis"@pt .
+
+terr:0114 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0114" ;
+    skos:prefLabel "Oliveira Do Bairro"@pt .
+
+terr:0115 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0115" ;
+    skos:prefLabel "Ovar"@pt .
+
+terr:0116 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0116" ;
+    skos:prefLabel "São João Da Madeira"@pt .
+
+terr:0117 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0117" ;
+    skos:prefLabel "Sever Do Vouga"@pt .
+
+terr:0118 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0118" ;
+    skos:prefLabel "Vagos"@pt .
+
+terr:0119 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0119" ;
+    skos:prefLabel "Vale De Cambra"@pt .
+
+terr:0201 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0201" ;
+    skos:prefLabel "Aljustrel"@pt .
+
+terr:0202 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0202" ;
+    skos:prefLabel "Almodôvar"@pt .
+
+terr:0203 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0203" ;
+    skos:prefLabel "Alvito"@pt .
+
+terr:0204 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0204" ;
+    skos:prefLabel "Barrancos"@pt .
+
+terr:0205 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0205" ;
+    skos:prefLabel "Beja"@pt .
+
+terr:0206 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0206" ;
+    skos:prefLabel "Castro Verde"@pt .
+
+terr:0207 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0207" ;
+    skos:prefLabel "Cuba"@pt .
+
+terr:0208 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0208" ;
+    skos:prefLabel "Ferreira Do Alentejo"@pt .
+
+terr:0209 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0209" ;
+    skos:prefLabel "Mértola"@pt .
+
+terr:0210 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0210" ;
+    skos:prefLabel "Moura"@pt .
+
+terr:0211 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0211" ;
+    skos:prefLabel "Odemira"@pt .
+
+terr:0212 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0212" ;
+    skos:prefLabel "Ourique"@pt .
+
+terr:0213 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0213" ;
+    skos:prefLabel "Serpa"@pt .
+
+terr:0214 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0214" ;
+    skos:prefLabel "Vidigueira"@pt .
+
+terr:0301 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0301" ;
+    skos:prefLabel "Amares"@pt .
+
+terr:0302 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0302" ;
+    skos:prefLabel "Barcelos"@pt .
+
+terr:0303 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0303" ;
+    skos:prefLabel "Braga"@pt .
+
+terr:0304 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0304" ;
+    skos:prefLabel "Cabeceiras De Basto"@pt .
+
+terr:0305 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0305" ;
+    skos:prefLabel "Celorico De Basto"@pt .
+
+terr:0306 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0306" ;
+    skos:prefLabel "Esposende"@pt .
+
+terr:0307 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0307" ;
+    skos:prefLabel "Fafe"@pt .
+
+terr:0308 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0308" ;
+    skos:prefLabel "Guimarães"@pt .
+
+terr:0309 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0309" ;
+    skos:prefLabel "Póvoa De Lanhoso"@pt .
+
+terr:0310 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0310" ;
+    skos:prefLabel "Terras De Bouro"@pt .
+
+terr:0311 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0311" ;
+    skos:prefLabel "Vieira Do Minho"@pt .
+
+terr:0312 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0312" ;
+    skos:prefLabel "Vila Nova De Famalicão"@pt .
+
+terr:0313 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0313" ;
+    skos:prefLabel "Vila Verde"@pt .
+
+terr:0314 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0314" ;
+    skos:prefLabel "Vizela"@pt .
+
+terr:0401 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0401" ;
+    skos:prefLabel "Alfândega Da Fé"@pt .
+
+terr:0402 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0402" ;
+    skos:prefLabel "Bragança"@pt .
+
+terr:0403 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0403" ;
+    skos:prefLabel "Carrazeda De Ansiães"@pt .
+
+terr:0404 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0404" ;
+    skos:prefLabel "Freixo De Espada À Cinta"@pt .
+
+terr:0405 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0405" ;
+    skos:prefLabel "Macedo De Cavaleiros"@pt .
+
+terr:0406 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0406" ;
+    skos:prefLabel "Miranda Do Douro"@pt .
+
+terr:0407 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0407" ;
+    skos:prefLabel "Mirandela"@pt .
+
+terr:0408 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0408" ;
+    skos:prefLabel "Mogadouro"@pt .
+
+terr:0409 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0409" ;
+    skos:prefLabel "Torre De Moncorvo"@pt .
+
+terr:0410 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0410" ;
+    skos:prefLabel "Vila Flor"@pt .
+
+terr:0411 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0411" ;
+    skos:prefLabel "Vimioso"@pt .
+
+terr:0412 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0412" ;
+    skos:prefLabel "Vinhais"@pt .
+
+terr:0501 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0501" ;
+    skos:prefLabel "Belmonte"@pt .
+
+terr:0502 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0502" ;
+    skos:prefLabel "Castelo Branco"@pt .
+
+terr:0503 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0503" ;
+    skos:prefLabel "Covilhã"@pt .
+
+terr:0504 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0504" ;
+    skos:prefLabel "Fundão"@pt .
+
+terr:0505 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0505" ;
+    skos:prefLabel "Idanha-A-Nova"@pt .
+
+terr:0506 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0506" ;
+    skos:prefLabel "Oleiros"@pt .
+
+terr:0507 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0507" ;
+    skos:prefLabel "Penamacor"@pt .
+
+terr:0508 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0508" ;
+    skos:prefLabel "Proença-A-Nova"@pt .
+
+terr:0509 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0509" ;
+    skos:prefLabel "Sertã"@pt .
+
+terr:0510 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0510" ;
+    skos:prefLabel "Vila De Rei"@pt .
+
+terr:0511 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0511" ;
+    skos:prefLabel "Vila Velha De Ródão"@pt .
+
+terr:0601 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0601" ;
+    skos:prefLabel "Arganil"@pt .
+
+terr:0602 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0602" ;
+    skos:prefLabel "Cantanhede"@pt .
+
+terr:0603 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0603" ;
+    skos:prefLabel "Coimbra"@pt .
+
+terr:0604 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0604" ;
+    skos:prefLabel "Condeixa-A-Nova"@pt .
+
+terr:0605 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0605" ;
+    skos:prefLabel "Figueira Da Foz"@pt .
+
+terr:0606 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0606" ;
+    skos:prefLabel "Góis"@pt .
+
+terr:0607 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0607" ;
+    skos:prefLabel "Lousã"@pt .
+
+terr:0608 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0608" ;
+    skos:prefLabel "Mira"@pt .
+
+terr:0609 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0609" ;
+    skos:prefLabel "Miranda Do Corvo"@pt .
+
+terr:0610 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0610" ;
+    skos:prefLabel "Montemor-O-Velho"@pt .
+
+terr:0611 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0611" ;
+    skos:prefLabel "Oliveira Do Hospital"@pt .
+
+terr:0612 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0612" ;
+    skos:prefLabel "Pampilhosa Da Serra"@pt .
+
+terr:0613 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0613" ;
+    skos:prefLabel "Penacova"@pt .
+
+terr:0614 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0614" ;
+    skos:prefLabel "Penela"@pt .
+
+terr:0615 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0615" ;
+    skos:prefLabel "Soure"@pt .
+
+terr:0616 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0616" ;
+    skos:prefLabel "Tábua"@pt .
+
+terr:0617 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0617" ;
+    skos:prefLabel "Vila Nova De Poiares"@pt .
+
+terr:0701 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0701" ;
+    skos:prefLabel "Alandroal"@pt .
+
+terr:0702 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0702" ;
+    skos:prefLabel "Arraiolos"@pt .
+
+terr:0703 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0703" ;
+    skos:prefLabel "Borba"@pt .
+
+terr:0704 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0704" ;
+    skos:prefLabel "Estremoz"@pt .
+
+terr:0705 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0705" ;
+    skos:prefLabel "Évora"@pt .
+
+terr:0706 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0706" ;
+    skos:prefLabel "Montemor-O-Novo"@pt .
+
+terr:0707 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0707" ;
+    skos:prefLabel "Mora"@pt .
+
+terr:0708 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0708" ;
+    skos:prefLabel "Mourão"@pt .
+
+terr:0709 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0709" ;
+    skos:prefLabel "Portel"@pt .
+
+terr:0710 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0710" ;
+    skos:prefLabel "Redondo"@pt .
+
+terr:0711 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0711" ;
+    skos:prefLabel "Reguengos De Monsaraz"@pt .
+
+terr:0712 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0712" ;
+    skos:prefLabel "Vendas Novas"@pt .
+
+terr:0713 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0713" ;
+    skos:prefLabel "Viana Do Alentejo"@pt .
+
+terr:0714 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0714" ;
+    skos:prefLabel "Vila Viçosa"@pt .
+
+terr:0801 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0801" ;
+    skos:prefLabel "Albufeira"@pt .
+
+terr:0802 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0802" ;
+    skos:prefLabel "Alcoutim"@pt .
+
+terr:0803 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0803" ;
+    skos:prefLabel "Aljezur"@pt .
+
+terr:0804 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0804" ;
+    skos:prefLabel "Castro Marim"@pt .
+
+terr:0805 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0805" ;
+    skos:prefLabel "Faro"@pt .
+
+terr:0806 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0806" ;
+    skos:prefLabel "Lagoa (Algarve)"@pt .
+
+terr:0807 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0807" ;
+    skos:prefLabel "Lagos"@pt .
+
+terr:0808 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0808" ;
+    skos:prefLabel "Loulé"@pt .
+
+terr:0809 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0809" ;
+    skos:prefLabel "Monchique"@pt .
+
+terr:0810 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0810" ;
+    skos:prefLabel "Olhão"@pt .
+
+terr:0811 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0811" ;
+    skos:prefLabel "Portimão"@pt .
+
+terr:0812 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0812" ;
+    skos:prefLabel "São Brás De Alportel"@pt .
+
+terr:0813 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0813" ;
+    skos:prefLabel "Silves"@pt .
+
+terr:0814 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0814" ;
+    skos:prefLabel "Tavira"@pt .
+
+terr:0815 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0815" ;
+    skos:prefLabel "Vila Do Bispo"@pt .
+
+terr:0816 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0816" ;
+    skos:prefLabel "Vila Real De Santo António"@pt .
+
+terr:0901 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0901" ;
+    skos:prefLabel "Aguiar Da Beira"@pt .
+
+terr:0902 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0902" ;
+    skos:prefLabel "Almeida"@pt .
+
+terr:0903 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0903" ;
+    skos:prefLabel "Celorico Da Beira"@pt .
+
+terr:0904 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0904" ;
+    skos:prefLabel "Figueira De Castelo Rodrigo"@pt .
+
+terr:0905 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0905" ;
+    skos:prefLabel "Fornos De Algodres"@pt .
+
+terr:0906 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0906" ;
+    skos:prefLabel "Gouveia"@pt .
+
+terr:0907 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0907" ;
+    skos:prefLabel "Guarda"@pt .
+
+terr:0908 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0908" ;
+    skos:prefLabel "Manteigas"@pt .
+
+terr:0909 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0909" ;
+    skos:prefLabel "Mêda"@pt .
+
+terr:0910 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0910" ;
+    skos:prefLabel "Pinhel"@pt .
+
+terr:0911 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0911" ;
+    skos:prefLabel "Sabugal"@pt .
+
+terr:0912 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0912" ;
+    skos:prefLabel "Seia"@pt .
+
+terr:0913 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0913" ;
+    skos:prefLabel "Trancoso"@pt .
+
+terr:0914 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "0914" ;
+    skos:prefLabel "Vila Nova De Foz Côa"@pt .
+
+terr:1001 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1001" ;
+    skos:prefLabel "Alcobaça"@pt .
+
+terr:1002 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1002" ;
+    skos:prefLabel "Alvaiázere"@pt .
+
+terr:1003 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1003" ;
+    skos:prefLabel "Ansião"@pt .
+
+terr:1004 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1004" ;
+    skos:prefLabel "Batalha"@pt .
+
+terr:1005 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1005" ;
+    skos:prefLabel "Bombarral"@pt .
+
+terr:1006 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1006" ;
+    skos:prefLabel "Caldas Da Rainha"@pt .
+
+terr:1007 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1007" ;
+    skos:prefLabel "Castanheira De Pêra"@pt .
+
+terr:1008 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1008" ;
+    skos:prefLabel "Figueiró Dos Vinhos"@pt .
+
+terr:1009 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1009" ;
+    skos:prefLabel "Leiria"@pt .
+
+terr:1010 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1010" ;
+    skos:prefLabel "Marinha Grande"@pt .
+
+terr:1011 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1011" ;
+    skos:prefLabel "Nazaré"@pt .
+
+terr:1012 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1012" ;
+    skos:prefLabel "Óbidos"@pt .
+
+terr:1013 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1013" ;
+    skos:prefLabel "Pedrógão Grande"@pt .
+
+terr:1014 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1014" ;
+    skos:prefLabel "Peniche"@pt .
+
+terr:1015 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1015" ;
+    skos:prefLabel "Pombal"@pt .
+
+terr:1016 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1016" ;
+    skos:prefLabel "Porto De Mós"@pt .
+
+terr:1101 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1101" ;
+    skos:prefLabel "Alenquer"@pt .
+
+terr:1102 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1102" ;
+    skos:prefLabel "Arruda Dos Vinhos"@pt .
+
+terr:1103 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1103" ;
+    skos:prefLabel "Azambuja"@pt .
+
+terr:1104 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1104" ;
+    skos:prefLabel "Cadaval"@pt .
+
+terr:1105 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1105" ;
+    skos:prefLabel "Cascais"@pt .
+
+terr:1106 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1106" ;
+    skos:prefLabel "Lisboa"@pt .
+
+terr:1107 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1107" ;
+    skos:prefLabel "Loures"@pt .
+
+terr:1108 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1108" ;
+    skos:prefLabel "Lourinhã"@pt .
+
+terr:1109 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1109" ;
+    skos:prefLabel "Mafra"@pt .
+
+terr:1110 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1110" ;
+    skos:prefLabel "Oeiras"@pt .
+
+terr:1111 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1111" ;
+    skos:prefLabel "Sintra"@pt .
+
+terr:1112 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1112" ;
+    skos:prefLabel "Sobral De Monte Agraço"@pt .
+
+terr:1113 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1113" ;
+    skos:prefLabel "Torres Vedras"@pt .
+
+terr:1114 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1114" ;
+    skos:prefLabel "Vila Franca De Xira"@pt .
+
+terr:1115 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1115" ;
+    skos:prefLabel "Amadora"@pt .
+
+terr:1116 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1116" ;
+    skos:prefLabel "Odivelas"@pt .
+
+terr:1201 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1201" ;
+    skos:prefLabel "Alter Do Chão"@pt .
+
+terr:1202 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1202" ;
+    skos:prefLabel "Arronches"@pt .
+
+terr:1203 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1203" ;
+    skos:prefLabel "Avis"@pt .
+
+terr:1204 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1204" ;
+    skos:prefLabel "Campo Maior"@pt .
+
+terr:1205 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1205" ;
+    skos:prefLabel "Castelo De Vide"@pt .
+
+terr:1206 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1206" ;
+    skos:prefLabel "Crato"@pt .
+
+terr:1207 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1207" ;
+    skos:prefLabel "Elvas"@pt .
+
+terr:1208 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1208" ;
+    skos:prefLabel "Fronteira"@pt .
+
+terr:1209 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1209" ;
+    skos:prefLabel "Gavião"@pt .
+
+terr:1210 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1210" ;
+    skos:prefLabel "Marvão"@pt .
+
+terr:1211 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1211" ;
+    skos:prefLabel "Monforte"@pt .
+
+terr:1212 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1212" ;
+    skos:prefLabel "Nisa"@pt .
+
+terr:1213 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1213" ;
+    skos:prefLabel "Ponte De Sor"@pt .
+
+terr:1214 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1214" ;
+    skos:prefLabel "Portalegre"@pt .
+
+terr:1215 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1215" ;
+    skos:prefLabel "Sousel"@pt .
+
+terr:1301 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1301" ;
+    skos:prefLabel "Amarante"@pt .
+
+terr:1302 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1302" ;
+    skos:prefLabel "Baião"@pt .
+
+terr:1303 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1303" ;
+    skos:prefLabel "Felgueiras"@pt .
+
+terr:1304 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1304" ;
+    skos:prefLabel "Gondomar"@pt .
+
+terr:1305 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1305" ;
+    skos:prefLabel "Lousada"@pt .
+
+terr:1306 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1306" ;
+    skos:prefLabel "Maia"@pt .
+
+terr:1307 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1307" ;
+    skos:prefLabel "Marco De Canaveses"@pt .
+
+terr:1308 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1308" ;
+    skos:prefLabel "Matosinhos"@pt .
+
+terr:1309 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1309" ;
+    skos:prefLabel "Paços De Ferreira"@pt .
+
+terr:1310 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1310" ;
+    skos:prefLabel "Paredes"@pt .
+
+terr:1311 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1311" ;
+    skos:prefLabel "Penafiel"@pt .
+
+terr:1312 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1312" ;
+    skos:prefLabel "Porto"@pt .
+
+terr:1313 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1313" ;
+    skos:prefLabel "Póvoa De Varzim"@pt .
+
+terr:1314 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1314" ;
+    skos:prefLabel "Santo Tirso"@pt .
+
+terr:1315 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1315" ;
+    skos:prefLabel "Valongo"@pt .
+
+terr:1316 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1316" ;
+    skos:prefLabel "Vila Do Conde"@pt .
+
+terr:1317 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1317" ;
+    skos:prefLabel "Vila Nova De Gaia"@pt .
+
+terr:1318 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1318" ;
+    skos:prefLabel "Trofa"@pt .
+
+terr:1401 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1401" ;
+    skos:prefLabel "Abrantes"@pt .
+
+terr:1402 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1402" ;
+    skos:prefLabel "Alcanena"@pt .
+
+terr:1403 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1403" ;
+    skos:prefLabel "Almeirim"@pt .
+
+terr:1404 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1404" ;
+    skos:prefLabel "Alpiarça"@pt .
+
+terr:1405 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1405" ;
+    skos:prefLabel "Benavente"@pt .
+
+terr:1406 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1406" ;
+    skos:prefLabel "Cartaxo"@pt .
+
+terr:1407 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1407" ;
+    skos:prefLabel "Chamusca"@pt .
+
+terr:1408 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1408" ;
+    skos:prefLabel "Constância"@pt .
+
+terr:1409 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1409" ;
+    skos:prefLabel "Coruche"@pt .
+
+terr:1410 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1410" ;
+    skos:prefLabel "Entroncamento"@pt .
+
+terr:1411 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1411" ;
+    skos:prefLabel "Ferreira Do Zêzere"@pt .
+
+terr:1412 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1412" ;
+    skos:prefLabel "Golegã"@pt .
+
+terr:1413 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1413" ;
+    skos:prefLabel "Mação"@pt .
+
+terr:1414 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1414" ;
+    skos:prefLabel "Rio Maior"@pt .
+
+terr:1415 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1415" ;
+    skos:prefLabel "Salvaterra De Magos"@pt .
+
+terr:1416 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1416" ;
+    skos:prefLabel "Santarém"@pt .
+
+terr:1417 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1417" ;
+    skos:prefLabel "Sardoal"@pt .
+
+terr:1418 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1418" ;
+    skos:prefLabel "Tomar"@pt .
+
+terr:1419 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1419" ;
+    skos:prefLabel "Torres Novas"@pt .
+
+terr:1420 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1420" ;
+    skos:prefLabel "Vila Nova Da Barquinha"@pt .
+
+terr:1421 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1421" ;
+    skos:prefLabel "Ourém"@pt .
+
+terr:1501 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1501" ;
+    skos:prefLabel "Alcácer Do Sal"@pt .
+
+terr:1502 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1502" ;
+    skos:prefLabel "Alcochete"@pt .
+
+terr:1503 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1503" ;
+    skos:prefLabel "Almada"@pt .
+
+terr:1504 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1504" ;
+    skos:prefLabel "Barreiro"@pt .
+
+terr:1505 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1505" ;
+    skos:prefLabel "Grândola"@pt .
+
+terr:1506 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1506" ;
+    skos:prefLabel "Moita"@pt .
+
+terr:1507 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1507" ;
+    skos:prefLabel "Montijo"@pt .
+
+terr:1508 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1508" ;
+    skos:prefLabel "Palmela"@pt .
+
+terr:1509 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1509" ;
+    skos:prefLabel "Santiago Do Cacém"@pt .
+
+terr:1510 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1510" ;
+    skos:prefLabel "Seixal"@pt .
+
+terr:1511 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1511" ;
+    skos:prefLabel "Sesimbra"@pt .
+
+terr:1512 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1512" ;
+    skos:prefLabel "Setúbal"@pt .
+
+terr:1513 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1513" ;
+    skos:prefLabel "Sines"@pt .
+
+terr:1601 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1601" ;
+    skos:prefLabel "Arcos De Valdevez"@pt .
+
+terr:1602 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1602" ;
+    skos:prefLabel "Caminha"@pt .
+
+terr:1603 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1603" ;
+    skos:prefLabel "Melgaço"@pt .
+
+terr:1604 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1604" ;
+    skos:prefLabel "Monção"@pt .
+
+terr:1605 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1605" ;
+    skos:prefLabel "Paredes De Coura"@pt .
+
+terr:1606 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1606" ;
+    skos:prefLabel "Ponte Da Barca"@pt .
+
+terr:1607 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1607" ;
+    skos:prefLabel "Ponte De Lima"@pt .
+
+terr:1608 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1608" ;
+    skos:prefLabel "Valença"@pt .
+
+terr:1609 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1609" ;
+    skos:prefLabel "Viana Do Castelo"@pt .
+
+terr:1610 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1610" ;
+    skos:prefLabel "Vila Nova De Cerveira"@pt .
+
+terr:1701 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1701" ;
+    skos:prefLabel "Alijó"@pt .
+
+terr:1702 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1702" ;
+    skos:prefLabel "Boticas"@pt .
+
+terr:1703 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1703" ;
+    skos:prefLabel "Chaves"@pt .
+
+terr:1704 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1704" ;
+    skos:prefLabel "Mesão Frio"@pt .
+
+terr:1705 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1705" ;
+    skos:prefLabel "Mondim De Basto"@pt .
+
+terr:1706 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1706" ;
+    skos:prefLabel "Montalegre"@pt .
+
+terr:1707 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1707" ;
+    skos:prefLabel "Murça"@pt .
+
+terr:1708 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1708" ;
+    skos:prefLabel "Peso Da Régua"@pt .
+
+terr:1709 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1709" ;
+    skos:prefLabel "Ribeira De Pena"@pt .
+
+terr:1710 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1710" ;
+    skos:prefLabel "Sabrosa"@pt .
+
+terr:1711 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1711" ;
+    skos:prefLabel "Santa Marta De Penaguião"@pt .
+
+terr:1712 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1712" ;
+    skos:prefLabel "Valpaços"@pt .
+
+terr:1713 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1713" ;
+    skos:prefLabel "Vila Pouca De Aguiar"@pt .
+
+terr:1714 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1714" ;
+    skos:prefLabel "Vila Real"@pt .
+
+terr:1801 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1801" ;
+    skos:prefLabel "Armamar"@pt .
+
+terr:1802 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1802" ;
+    skos:prefLabel "Carregal Do Sal"@pt .
+
+terr:1803 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1803" ;
+    skos:prefLabel "Castro Daire"@pt .
+
+terr:1804 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1804" ;
+    skos:prefLabel "Cinfães"@pt .
+
+terr:1805 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1805" ;
+    skos:prefLabel "Lamego"@pt .
+
+terr:1806 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1806" ;
+    skos:prefLabel "Mangualde"@pt .
+
+terr:1807 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1807" ;
+    skos:prefLabel "Moimenta Da Beira"@pt .
+
+terr:1808 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1808" ;
+    skos:prefLabel "Mortágua"@pt .
+
+terr:1809 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1809" ;
+    skos:prefLabel "Nelas"@pt .
+
+terr:1810 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1810" ;
+    skos:prefLabel "Oliveira De Frades"@pt .
+
+terr:1811 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1811" ;
+    skos:prefLabel "Penalva Do Castelo"@pt .
+
+terr:1812 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1812" ;
+    skos:prefLabel "Penedono"@pt .
+
+terr:1813 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1813" ;
+    skos:prefLabel "Resende"@pt .
+
+terr:1814 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1814" ;
+    skos:prefLabel "Santa Comba Dão"@pt .
+
+terr:1815 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1815" ;
+    skos:prefLabel "São João Da Pesqueira"@pt .
+
+terr:1816 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1816" ;
+    skos:prefLabel "São Pedro Do Sul"@pt .
+
+terr:1817 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1817" ;
+    skos:prefLabel "Sátão"@pt .
+
+terr:1818 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1818" ;
+    skos:prefLabel "Sernancelhe"@pt .
+
+terr:1819 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1819" ;
+    skos:prefLabel "Tabuaço"@pt .
+
+terr:1820 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1820" ;
+    skos:prefLabel "Tarouca"@pt .
+
+terr:1821 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1821" ;
+    skos:prefLabel "Tondela"@pt .
+
+terr:1822 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1822" ;
+    skos:prefLabel "Vila Nova De Paiva"@pt .
+
+terr:1823 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1823" ;
+    skos:prefLabel "Viseu"@pt .
+
+terr:1824 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "1824" ;
+    skos:prefLabel "Vouzela"@pt .
+
+terr:3101 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "3101" ;
+    skos:prefLabel "Calheta (Madeira)"@pt .
+
+terr:3102 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "3102" ;
+    skos:prefLabel "Câmara De Lobos"@pt .
+
+terr:3103 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "3103" ;
+    skos:prefLabel "Funchal"@pt .
+
+terr:3104 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "3104" ;
+    skos:prefLabel "Machico"@pt .
+
+terr:3105 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "3105" ;
+    skos:prefLabel "Ponta Do Sol"@pt .
+
+terr:3106 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "3106" ;
+    skos:prefLabel "Porto Moniz"@pt .
+
+terr:3107 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "3107" ;
+    skos:prefLabel "Ribeira Brava"@pt .
+
+terr:3108 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "3108" ;
+    skos:prefLabel "Santa Cruz"@pt .
+
+terr:3109 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "3109" ;
+    skos:prefLabel "Santana"@pt .
+
+terr:3110 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "3110" ;
+    skos:prefLabel "São Vicente"@pt .
+
+terr:3201 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "3201" ;
+    skos:prefLabel "Porto Santo"@pt .
+
+terr:4101 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "4101" ;
+    skos:prefLabel "Vila Do Porto"@pt .
+
+terr:4201 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "4201" ;
+    skos:prefLabel "Lagoa (São Miguel)"@pt .
+
+terr:4202 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "4202" ;
+    skos:prefLabel "Nordeste"@pt .
+
+terr:4203 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "4203" ;
+    skos:prefLabel "Ponta Delgada"@pt .
+
+terr:4204 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "4204" ;
+    skos:prefLabel "Povoação"@pt .
+
+terr:4205 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "4205" ;
+    skos:prefLabel "Ribeira Grande"@pt .
+
+terr:4206 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "4206" ;
+    skos:prefLabel "Vila Franca Do Campo"@pt .
+
+terr:4301 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "4301" ;
+    skos:prefLabel "Angra Do Heroísmo"@pt .
+
+terr:4302 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "4302" ;
+    skos:prefLabel "Praia Da Vitória"@pt .
+
+terr:4401 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "4401" ;
+    skos:prefLabel "Santa Cruz Da Graciosa"@pt .
+
+terr:4501 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "4501" ;
+    skos:prefLabel "Calheta (São Jorge)"@pt .
+
+terr:4502 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "4502" ;
+    skos:prefLabel "Velas"@pt .
+
+terr:4601 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "4601" ;
+    skos:prefLabel "Lajes Do Pico"@pt .
+
+terr:4602 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "4602" ;
+    skos:prefLabel "Madalena"@pt .
+
+terr:4603 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "4603" ;
+    skos:prefLabel "São Roque Do Pico"@pt .
+
+terr:4701 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "4701" ;
+    skos:prefLabel "Horta"@pt .
+
+terr:4801 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "4801" ;
+    skos:prefLabel "Lajes Das Flores"@pt .
+
+terr:4802 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "4802" ;
+    skos:prefLabel "Santa Cruz Das Flores"@pt .
+
+terr:4901 a skos:Concept ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
+    skos:notation "4901" ;
+    skos:prefLabel "Corvo"@pt .
+
+<https://w3id.org/ws-megsi-g7/esquema/municipios> a skos:ConceptScheme ;
+    dct:title "Municípios portugueses (códigos INE)"@pt .
+

@@ -1,0 +1,219 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix ws: <https://w3id.org/ws-megsi-g7/> .
+@prefix wsds: <https://w3id.org/ws-megsi-g7/dataset/> .
+
+ws:catalogo a dcat:Catalog ;
+    dct:description "Metadados dos 12 conjuntos RDF derivados dos ficheiros CSV/XLSX da DGAL. A ligação às páginas de origem no dados.gov.pt deve ser acrescentada quando os respetivos URIs forem verificados."@pt ;
+    dct:publisher <https://w3id.org/ws-megsi-g7/agente/grupo7> ;
+    dct:title "Catálogo RDF de indicadores municipais da DGAL (2017–2019)"@pt ;
+    dcat:dataset wsds:rdf-despesas-municipais-2017,
+        wsds:rdf-despesas-municipais-2018,
+        wsds:rdf-despesas-municipais-2019,
+        wsds:rdf-qualidade-gestao-2017,
+        wsds:rdf-qualidade-gestao-2018,
+        wsds:rdf-qualidade-gestao-2019,
+        wsds:rdf-receitas-municipais-2017,
+        wsds:rdf-receitas-municipais-2018,
+        wsds:rdf-receitas-municipais-2019,
+        wsds:rdf-recursos-humanos-2017,
+        wsds:rdf-recursos-humanos-2018,
+        wsds:rdf-recursos-humanos-2019 .
+
+wsds:rdf-despesas-municipais-2017 a qb:DataSet,
+        dcat:Dataset ;
+    dct:description "Conversão do ficheiro DGAL DespesasMunicipais-2017.csv; 1228 observações não vazias. Códigos de município e período preservados. Fonte disponível no Portal Nacional de Dados Abertos."@pt ;
+    dct:identifier "rdf-despesas-municipais-2017" ;
+    dct:publisher <https://w3id.org/ws-megsi-g7/agente/grupo7> ;
+    dct:title "Despesas 2017 — dados convertidos para RDF"@pt ;
+    qb:structure <https://w3id.org/ws-megsi-g7/dsd/despesas-municipais> ;
+    dcat:distribution <https://w3id.org/ws-megsi-g7/distribuicao/rdf-despesas-municipais-2017-turtle> ;
+    dcat:inSeries wsds:serie-despesas-municipais .
+
+wsds:rdf-despesas-municipais-2018 a qb:DataSet,
+        dcat:Dataset ;
+    dct:description "Conversão do ficheiro DGAL DespesasMunicipais-2018.csv; 1540 observações não vazias. Códigos de município e período preservados. Fonte disponível no Portal Nacional de Dados Abertos."@pt ;
+    dct:identifier "rdf-despesas-municipais-2018" ;
+    dct:publisher <https://w3id.org/ws-megsi-g7/agente/grupo7> ;
+    dct:title "Despesas 2018 — dados convertidos para RDF"@pt ;
+    qb:structure <https://w3id.org/ws-megsi-g7/dsd/despesas-municipais> ;
+    dcat:distribution <https://w3id.org/ws-megsi-g7/distribuicao/rdf-despesas-municipais-2018-turtle> ;
+    dcat:inSeries wsds:serie-despesas-municipais .
+
+wsds:rdf-despesas-municipais-2019 a qb:DataSet,
+        dcat:Dataset ;
+    dct:description "Conversão do ficheiro DGAL DespesasMunicipais-2019.csv; 1540 observações não vazias. Códigos de município e período preservados. Fonte disponível no Portal Nacional de Dados Abertos."@pt ;
+    dct:identifier "rdf-despesas-municipais-2019" ;
+    dct:publisher <https://w3id.org/ws-megsi-g7/agente/grupo7> ;
+    dct:title "Despesas 2019 — dados convertidos para RDF"@pt ;
+    qb:structure <https://w3id.org/ws-megsi-g7/dsd/despesas-municipais> ;
+    dcat:distribution <https://w3id.org/ws-megsi-g7/distribuicao/rdf-despesas-municipais-2019-turtle> ;
+    dcat:inSeries wsds:serie-despesas-municipais .
+
+wsds:rdf-qualidade-gestao-2017 a qb:DataSet,
+        dcat:Dataset ;
+    dct:description "Conversão do ficheiro DGAL QualidadeGestaoPublica-2017.xlsx; 1540 observações não vazias. Códigos de município e período preservados. Fonte disponível no Portal Nacional de Dados Abertos."@pt ;
+    dct:identifier "rdf-qualidade-gestao-2017" ;
+    dct:publisher <https://w3id.org/ws-megsi-g7/agente/grupo7> ;
+    dct:title "Qualidade da Gestão 2017 — dados convertidos para RDF"@pt ;
+    qb:structure <https://w3id.org/ws-megsi-g7/dsd/qualidade-gestao> ;
+    dcat:distribution <https://w3id.org/ws-megsi-g7/distribuicao/rdf-qualidade-gestao-2017-turtle> ;
+    dcat:inSeries wsds:serie-qualidade-gestao .
+
+wsds:rdf-qualidade-gestao-2018 a qb:DataSet,
+        dcat:Dataset ;
+    dct:description "Conversão do ficheiro DGAL QualidadeGestaoPublica-2018.xlsx; 1540 observações não vazias. Códigos de município e período preservados. Fonte disponível no Portal Nacional de Dados Abertos."@pt ;
+    dct:identifier "rdf-qualidade-gestao-2018" ;
+    dct:publisher <https://w3id.org/ws-megsi-g7/agente/grupo7> ;
+    dct:title "Qualidade da Gestão 2018 — dados convertidos para RDF"@pt ;
+    qb:structure <https://w3id.org/ws-megsi-g7/dsd/qualidade-gestao> ;
+    dcat:distribution <https://w3id.org/ws-megsi-g7/distribuicao/rdf-qualidade-gestao-2018-turtle> ;
+    dcat:inSeries wsds:serie-qualidade-gestao .
+
+wsds:rdf-qualidade-gestao-2019 a qb:DataSet,
+        dcat:Dataset ;
+    dct:description "Conversão do ficheiro DGAL QualidadeGestaoPublica-2019.xlsx; 1540 observações não vazias. Códigos de município e período preservados. Fonte disponível no Portal Nacional de Dados Abertos."@pt ;
+    dct:identifier "rdf-qualidade-gestao-2019" ;
+    dct:publisher <https://w3id.org/ws-megsi-g7/agente/grupo7> ;
+    dct:title "Qualidade da Gestão 2019 — dados convertidos para RDF"@pt ;
+    qb:structure <https://w3id.org/ws-megsi-g7/dsd/qualidade-gestao> ;
+    dcat:distribution <https://w3id.org/ws-megsi-g7/distribuicao/rdf-qualidade-gestao-2019-turtle> ;
+    dcat:inSeries wsds:serie-qualidade-gestao .
+
+wsds:rdf-receitas-municipais-2017 a qb:DataSet,
+        dcat:Dataset ;
+    dct:description "Conversão do ficheiro DGAL ReceitasMunicipais-2017.csv; 1219 observações não vazias. Códigos de município e período preservados. Fonte disponível no Portal Nacional de Dados Abertos."@pt ;
+    dct:identifier "rdf-receitas-municipais-2017" ;
+    dct:publisher <https://w3id.org/ws-megsi-g7/agente/grupo7> ;
+    dct:title "Receitas 2017 — dados convertidos para RDF"@pt ;
+    qb:structure <https://w3id.org/ws-megsi-g7/dsd/receitas-municipais> ;
+    dcat:distribution <https://w3id.org/ws-megsi-g7/distribuicao/rdf-receitas-municipais-2017-turtle> ;
+    dcat:inSeries wsds:serie-receitas-municipais .
+
+wsds:rdf-receitas-municipais-2018 a qb:DataSet,
+        dcat:Dataset ;
+    dct:description "Conversão do ficheiro DGAL ReceitasMunicipais-2018.csv; 1540 observações não vazias. Códigos de município e período preservados. Fonte disponível no Portal Nacional de Dados Abertos."@pt ;
+    dct:identifier "rdf-receitas-municipais-2018" ;
+    dct:publisher <https://w3id.org/ws-megsi-g7/agente/grupo7> ;
+    dct:title "Receitas 2018 — dados convertidos para RDF"@pt ;
+    qb:structure <https://w3id.org/ws-megsi-g7/dsd/receitas-municipais> ;
+    dcat:distribution <https://w3id.org/ws-megsi-g7/distribuicao/rdf-receitas-municipais-2018-turtle> ;
+    dcat:inSeries wsds:serie-receitas-municipais .
+
+wsds:rdf-receitas-municipais-2019 a qb:DataSet,
+        dcat:Dataset ;
+    dct:description "Conversão do ficheiro DGAL ReceitasMunicipais-2019.csv; 1540 observações não vazias. Códigos de município e período preservados. Fonte disponível no Portal Nacional de Dados Abertos."@pt ;
+    dct:identifier "rdf-receitas-municipais-2019" ;
+    dct:publisher <https://w3id.org/ws-megsi-g7/agente/grupo7> ;
+    dct:title "Receitas 2019 — dados convertidos para RDF"@pt ;
+    qb:structure <https://w3id.org/ws-megsi-g7/dsd/receitas-municipais> ;
+    dcat:distribution <https://w3id.org/ws-megsi-g7/distribuicao/rdf-receitas-municipais-2019-turtle> ;
+    dcat:inSeries wsds:serie-receitas-municipais .
+
+wsds:rdf-recursos-humanos-2017 a qb:DataSet,
+        dcat:Dataset ;
+    dct:description "Conversão do ficheiro DGAL RecursosHumanos-2017.xlsx; 308 observações não vazias. Códigos de município e período preservados. Fonte disponível no Portal Nacional de Dados Abertos."@pt ;
+    dct:identifier "rdf-recursos-humanos-2017" ;
+    dct:publisher <https://w3id.org/ws-megsi-g7/agente/grupo7> ;
+    dct:title "Recursos Humanos 2017 — dados convertidos para RDF"@pt ;
+    qb:structure <https://w3id.org/ws-megsi-g7/dsd/recursos-humanos-2017> ;
+    dcat:distribution <https://w3id.org/ws-megsi-g7/distribuicao/rdf-recursos-humanos-2017-turtle> ;
+    dcat:inSeries wsds:serie-recursos-humanos .
+
+wsds:rdf-recursos-humanos-2018 a qb:DataSet,
+        dcat:Dataset ;
+    dct:description "Conversão do ficheiro DGAL RecursosHumanos-2018.xlsx; 1540 observações não vazias. Códigos de município e período preservados. Fonte disponível no Portal Nacional de Dados Abertos."@pt ;
+    dct:identifier "rdf-recursos-humanos-2018" ;
+    dct:publisher <https://w3id.org/ws-megsi-g7/agente/grupo7> ;
+    dct:title "Recursos Humanos 2018 — dados convertidos para RDF"@pt ;
+    qb:structure <https://w3id.org/ws-megsi-g7/dsd/recursos-humanos> ;
+    dcat:distribution <https://w3id.org/ws-megsi-g7/distribuicao/rdf-recursos-humanos-2018-turtle> ;
+    dcat:inSeries wsds:serie-recursos-humanos .
+
+wsds:rdf-recursos-humanos-2019 a qb:DataSet,
+        dcat:Dataset ;
+    dct:description "Conversão do ficheiro DGAL RecursosHumanos-2019.xlsx; 1540 observações não vazias. Códigos de município e período preservados. Fonte disponível no Portal Nacional de Dados Abertos."@pt ;
+    dct:identifier "rdf-recursos-humanos-2019" ;
+    dct:publisher <https://w3id.org/ws-megsi-g7/agente/grupo7> ;
+    dct:title "Recursos Humanos 2019 — dados convertidos para RDF"@pt ;
+    qb:structure <https://w3id.org/ws-megsi-g7/dsd/recursos-humanos> ;
+    dcat:distribution <https://w3id.org/ws-megsi-g7/distribuicao/rdf-recursos-humanos-2019-turtle> ;
+    dcat:inSeries wsds:serie-recursos-humanos .
+
+<https://w3id.org/ws-megsi-g7/distribuicao/rdf-despesas-municipais-2017-turtle> a dcat:Distribution ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dct:title "Observações RDF Despesas 2017 (Turtle)"@pt ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+<https://w3id.org/ws-megsi-g7/distribuicao/rdf-despesas-municipais-2018-turtle> a dcat:Distribution ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dct:title "Observações RDF Despesas 2018 (Turtle)"@pt ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+<https://w3id.org/ws-megsi-g7/distribuicao/rdf-despesas-municipais-2019-turtle> a dcat:Distribution ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dct:title "Observações RDF Despesas 2019 (Turtle)"@pt ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+<https://w3id.org/ws-megsi-g7/distribuicao/rdf-qualidade-gestao-2017-turtle> a dcat:Distribution ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dct:title "Observações RDF Qualidade da Gestão 2017 (Turtle)"@pt ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+<https://w3id.org/ws-megsi-g7/distribuicao/rdf-qualidade-gestao-2018-turtle> a dcat:Distribution ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dct:title "Observações RDF Qualidade da Gestão 2018 (Turtle)"@pt ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+<https://w3id.org/ws-megsi-g7/distribuicao/rdf-qualidade-gestao-2019-turtle> a dcat:Distribution ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dct:title "Observações RDF Qualidade da Gestão 2019 (Turtle)"@pt ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+<https://w3id.org/ws-megsi-g7/distribuicao/rdf-receitas-municipais-2017-turtle> a dcat:Distribution ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dct:title "Observações RDF Receitas 2017 (Turtle)"@pt ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+<https://w3id.org/ws-megsi-g7/distribuicao/rdf-receitas-municipais-2018-turtle> a dcat:Distribution ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dct:title "Observações RDF Receitas 2018 (Turtle)"@pt ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+<https://w3id.org/ws-megsi-g7/distribuicao/rdf-receitas-municipais-2019-turtle> a dcat:Distribution ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dct:title "Observações RDF Receitas 2019 (Turtle)"@pt ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+<https://w3id.org/ws-megsi-g7/distribuicao/rdf-recursos-humanos-2017-turtle> a dcat:Distribution ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dct:title "Observações RDF Recursos Humanos 2017 (Turtle)"@pt ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+<https://w3id.org/ws-megsi-g7/distribuicao/rdf-recursos-humanos-2018-turtle> a dcat:Distribution ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dct:title "Observações RDF Recursos Humanos 2018 (Turtle)"@pt ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+<https://w3id.org/ws-megsi-g7/distribuicao/rdf-recursos-humanos-2019-turtle> a dcat:Distribution ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dct:title "Observações RDF Recursos Humanos 2019 (Turtle)"@pt ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wsds:serie-despesas-municipais a dcat:DatasetSeries ;
+    dct:title "Despesas"@pt .
+
+wsds:serie-qualidade-gestao a dcat:DatasetSeries ;
+    dct:title "Qualidade da Gestão"@pt .
+
+wsds:serie-receitas-municipais a dcat:DatasetSeries ;
+    dct:title "Receitas"@pt .
+
+wsds:serie-recursos-humanos a dcat:DatasetSeries ;
+    dct:title "Recursos Humanos"@pt .
+
+<https://w3id.org/ws-megsi-g7/agente/grupo7> a foaf:Organization ;
+    foaf:name "Grupo 7 — Web Semântica, MEGSI"@pt .
+

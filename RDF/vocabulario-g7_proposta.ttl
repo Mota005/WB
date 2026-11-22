@@ -1,0 +1,474 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix eu-cur: <http://publications.europa.eu/resource/authority/currency/> .
+@prefix g7: <https://w3id.org/ws-megsi-g7/vocab#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sdmx-attribute: <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure: <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix unit: <http://qudt.org/vocab/unit/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/ws-megsi-g7/vocab> a owl:Ontology ;
+    dct:description "Proposta de vocabulário RDF para medidas específicas de quatro séries anuais da DGAL (2017-2019) e medidas de enriquecimento do INE. Identificadores URI ainda por registar/publicar."@pt ;
+    dct:title "Vocabulário de indicadores municipais do Grupo 7"@pt ;
+    owl:versionInfo "0.1.0 — proposta a validar pela docente" .
+
+g7:ano a qb:DimensionProperty,
+        rdf:Property ;
+    rdfs:label "Reference year"@en,
+        "Ano de referência"@pt ;
+    rdfs:comment "Ano civil dos dados, de 2017 a 2019; dimensão proposta, sujeita a reavaliação face a sdmx-dimension:refPeriod."@pt ;
+    rdfs:range xsd:gYear .
+
+g7:cargosPoliticos a qb:MeasureProperty,
+        rdf:Property ;
+    rdfs:label "Political positions and mandates"@en,
+        "Cargos e mandatos políticos"@pt ;
+    dct:identifier "cargosmandatospoliticos" ;
+    sdmx-attribute:unitMeasure unit:NUM ;
+    rdfs:comment "Indicador correspondente à coluna cargosmandatospoliticos dos ficheiros Recursos Humanos. A definição contabilística exata deve ser confirmada na documentação da fonte."@pt ;
+    rdfs:range xsd:integer ;
+    rdfs:subPropertyOf sdmx-measure:obsValue .
+
+g7:comissaoServico a qb:MeasureProperty,
+        rdf:Property ;
+    rdfs:label "Employees on service commission"@en,
+        "Trabalhadores em comissão de serviço"@pt ;
+    dct:identifier "totalcomissaodeservico" ;
+    sdmx-attribute:unitMeasure unit:NUM ;
+    rdfs:comment "Indicador correspondente à coluna totalcomissaodeservico dos ficheiros Recursos Humanos. A definição contabilística exata deve ser confirmada na documentação da fonte."@pt ;
+    rdfs:range xsd:integer ;
+    rdfs:subPropertyOf sdmx-measure:obsValue .
+
+g7:densidadePopulacional a qb:MeasureProperty,
+        rdf:Property ;
+    rdfs:label "Population density"@en,
+        "Densidade populacional"@pt ;
+    dct:description "Unidade: habitantes por quilómetro quadrado (hab./km²). URI da unidade por confirmar."@pt ;
+    dct:identifier "DENSIDADE_POP_HAB_KM2" ;
+    rdfs:comment "Indicador correspondente à coluna DENSIDADE_POP_HAB_KM2 dos ficheiros Enriquecimento INE. A definição contabilística exata deve ser confirmada na documentação da fonte."@pt ;
+    rdfs:range xsd:decimal ;
+    rdfs:subPropertyOf sdmx-measure:obsValue .
+
+g7:derramaIRC a qb:MeasureProperty,
+        rdf:Property ;
+    rdfs:label "Municipal corporate tax surcharge"@en,
+        "Derrama municipal de IRC"@pt ;
+    dct:identifier "DERRAMA_IRC" ;
+    sdmx-attribute:unitMeasure eu-cur:EUR ;
+    rdfs:comment "Indicador correspondente à coluna DERRAMA_IRC dos ficheiros Receitas. A definição contabilística exata deve ser confirmada na documentação da fonte."@pt ;
+    rdfs:range xsd:decimal ;
+    rdfs:subPropertyOf sdmx-measure:obsValue .
+
+g7:despesaAquisicaoBens a qb:MeasureProperty,
+        rdf:Property ;
+    rdfs:label "Expenditure on acquisition of goods"@en,
+        "Despesa com aquisição de bens"@pt ;
+    dct:identifier "DESPESA_AQUISICAO_BENS" ;
+    sdmx-attribute:unitMeasure eu-cur:EUR ;
+    rdfs:comment "Indicador correspondente à coluna DESPESA_AQUISICAO_BENS dos ficheiros Despesas. A definição contabilística exata deve ser confirmada na documentação da fonte."@pt ;
+    rdfs:range xsd:decimal ;
+    rdfs:subPropertyOf sdmx-measure:obsValue .
+
+g7:despesaCorrente a qb:MeasureProperty,
+        rdf:Property ;
+    rdfs:label "Current expenditure"@en,
+        "Despesa corrente"@pt ;
+    dct:identifier "DESPESA_CORRENTE" ;
+    sdmx-attribute:unitMeasure eu-cur:EUR ;
+    rdfs:comment "Indicador correspondente à coluna DESPESA_CORRENTE dos ficheiros Despesas. A definição contabilística exata deve ser confirmada na documentação da fonte."@pt ;
+    rdfs:range xsd:decimal ;
+    rdfs:subPropertyOf sdmx-measure:obsValue .
+
+g7:despesaPessoal a qb:MeasureProperty,
+        rdf:Property ;
+    rdfs:label "Personnel expenditure"@en,
+        "Despesa com pessoal"@pt ;
+    dct:identifier "DESPESA_COM_PESSOAL" ;
+    sdmx-attribute:unitMeasure eu-cur:EUR ;
+    rdfs:comment "Indicador correspondente à coluna DESPESA_COM_PESSOAL dos ficheiros Despesas. A definição contabilística exata deve ser confirmada na documentação da fonte."@pt ;
+    rdfs:range xsd:decimal ;
+    rdfs:subPropertyOf sdmx-measure:obsValue .
+
+g7:despesaTotal a qb:MeasureProperty,
+        rdf:Property ;
+    rdfs:label "Total municipal expenditure"@en,
+        "Despesa total municipal"@pt ;
+    dct:identifier "DESPESA_TOTAL",
+        "TOTAL_DESPESA" ;
+    sdmx-attribute:unitMeasure eu-cur:EUR ;
+    rdfs:comment "Indicador correspondente à coluna DESPESA_TOTAL dos ficheiros Despesas. A definição contabilística exata deve ser confirmada na documentação da fonte."@pt ;
+    rdfs:range xsd:decimal ;
+    rdfs:subPropertyOf sdmx-measure:obsValue .
+
+g7:dirigentes a qb:MeasureProperty,
+        rdf:Property ;
+    rdfs:label "Municipal managers"@en,
+        "Dirigentes municipais"@pt ;
+    dct:identifier "totaldirigentes" ;
+    sdmx-attribute:unitMeasure unit:NUM ;
+    rdfs:comment "Indicador correspondente à coluna totaldirigentes dos ficheiros Recursos Humanos. A definição contabilística exata deve ser confirmada na documentação da fonte."@pt ;
+    rdfs:range xsd:integer ;
+    rdfs:subPropertyOf sdmx-measure:obsValue .
+
+g7:dividaTotal a qb:MeasureProperty,
+        rdf:Property ;
+    rdfs:label "Total municipal debt"@en,
+        "Dívida total municipal"@pt ;
+    dct:identifier "TOTAL_DIVIDA" ;
+    sdmx-attribute:unitMeasure eu-cur:EUR ;
+    rdfs:comment "Indicador correspondente à coluna TOTAL_DIVIDA dos ficheiros Qualidade da Gestão. A definição contabilística exata deve ser confirmada na documentação da fonte."@pt ;
+    rdfs:range xsd:decimal ;
+    rdfs:subPropertyOf sdmx-measure:obsValue .
+
+g7:execucaoDespesa a qb:MeasureProperty,
+        rdf:Property ;
+    rdfs:label "Budgeted expenditure execution rate"@en,
+        "Grau de execução da despesa orçamentada"@pt ;
+    dct:identifier "GRAU_EXECUCAO_DESPESA_ORCAMENTADA" ;
+    sdmx-attribute:unitMeasure unit:PERCENT ;
+    rdfs:comment "Indicador correspondente à coluna GRAU_EXECUCAO_DESPESA_ORCAMENTADA dos ficheiros Qualidade da Gestão. A definição contabilística exata deve ser confirmada na documentação da fonte."@pt ;
+    rdfs:range xsd:decimal ;
+    rdfs:subPropertyOf sdmx-measure:obsValue .
+
+g7:execucaoReceita a qb:MeasureProperty,
+        rdf:Property ;
+    rdfs:label "Budgeted revenue execution rate"@en,
+        "Grau de execução da receita orçamentada"@pt ;
+    dct:identifier "GRAU_EXECUCAO_RECEITA_ORCAMENTADA" ;
+    sdmx-attribute:unitMeasure unit:PERCENT ;
+    rdfs:comment "Indicador correspondente à coluna GRAU_EXECUCAO_RECEITA_ORCAMENTADA dos ficheiros Qualidade da Gestão. A definição contabilística exata deve ser confirmada na documentação da fonte."@pt ;
+    rdfs:range xsd:decimal ;
+    rdfs:subPropertyOf sdmx-measure:obsValue .
+
+g7:financiamentoUE a qb:MeasureProperty,
+        rdf:Property ;
+    rdfs:label "European Union funding"@en,
+        "Financiamento da União Europeia"@pt ;
+    dct:identifier "FINANCIAMENTO_UNIAO_EUROPEIA" ;
+    sdmx-attribute:unitMeasure eu-cur:EUR ;
+    rdfs:comment "Indicador correspondente à coluna FINANCIAMENTO_UNIAO_EUROPEIA dos ficheiros Receitas. A definição contabilística exata deve ser confirmada na documentação da fonte."@pt ;
+    rdfs:range xsd:decimal ;
+    rdfs:subPropertyOf sdmx-measure:obsValue .
+
+g7:grauEndividamento a qb:MeasureProperty,
+        rdf:Property ;
+    rdfs:label "Debt ratio"@en,
+        "Grau de endividamento"@pt ;
+    dct:identifier "GRAU_ENDIVIDAMENTO" ;
+    sdmx-attribute:unitMeasure unit:PERCENT ;
+    rdfs:comment "Indicador correspondente à coluna GRAU_ENDIVIDAMENTO dos ficheiros Qualidade da Gestão. A definição contabilística exata deve ser confirmada na documentação da fonte."@pt ;
+    rdfs:range xsd:decimal ;
+    rdfs:subPropertyOf sdmx-measure:obsValue .
+
+g7:imi a qb:MeasureProperty,
+        rdf:Property ;
+    rdfs:label "Municipal property tax"@en,
+        "Imposto Municipal sobre Imóveis"@pt ;
+    dct:identifier "IMI" ;
+    sdmx-attribute:unitMeasure eu-cur:EUR ;
+    rdfs:comment "Indicador correspondente à coluna IMI dos ficheiros Receitas. A definição contabilística exata deve ser confirmada na documentação da fonte."@pt ;
+    rdfs:range xsd:decimal ;
+    rdfs:subPropertyOf sdmx-measure:obsValue .
+
+g7:impostosMunicipais a qb:MeasureProperty,
+        rdf:Property ;
+    rdfs:label "Municipal taxes"@en,
+        "Impostos municipais"@pt ;
+    dct:identifier "IMPOSTOS_MUNICIPAIS" ;
+    sdmx-attribute:unitMeasure eu-cur:EUR ;
+    rdfs:comment "Indicador correspondente à coluna IMPOSTOS_MUNICIPAIS dos ficheiros Receitas. A definição contabilística exata deve ser confirmada na documentação da fonte."@pt ;
+    rdfs:range xsd:decimal ;
+    rdfs:subPropertyOf sdmx-measure:obsValue .
+
+g7:imt a qb:MeasureProperty,
+        rdf:Property ;
+    rdfs:label "Property transfer tax"@en,
+        "Imposto Municipal sobre Transmissões Onerosas de Imóveis"@pt ;
+    dct:identifier "IMT" ;
+    sdmx-attribute:unitMeasure eu-cur:EUR ;
+    rdfs:comment "Indicador correspondente à coluna IMT dos ficheiros Receitas. A definição contabilística exata deve ser confirmada na documentação da fonte."@pt ;
+    rdfs:range xsd:decimal ;
+    rdfs:subPropertyOf sdmx-measure:obsValue .
+
+g7:independenciaFinanceira a qb:MeasureProperty,
+        rdf:Property ;
+    rdfs:label "Financial independence ratio"@en,
+        "Grau de independência financeira"@pt ;
+    dct:identifier "GRAU_INDEPENDENCIA_FINANCEIRA" ;
+    sdmx-attribute:unitMeasure unit:PERCENT ;
+    rdfs:comment "Indicador correspondente à coluna GRAU_INDEPENDENCIA_FINANCEIRA dos ficheiros Qualidade da Gestão. A definição contabilística exata deve ser confirmada na documentação da fonte."@pt ;
+    rdfs:range xsd:decimal ;
+    rdfs:subPropertyOf sdmx-measure:obsValue .
+
+g7:investAcessibilidades a qb:MeasureProperty,
+        rdf:Property ;
+    rdfs:label "Investment in accessibility"@en,
+        "Investimento em acessibilidades"@pt ;
+    dct:identifier "ACESSIBILIDADES" ;
+    sdmx-attribute:unitMeasure eu-cur:EUR ;
+    rdfs:comment "Indicador correspondente à coluna ACESSIBILIDADES dos ficheiros Despesas. A definição contabilística exata deve ser confirmada na documentação da fonte."@pt ;
+    rdfs:range xsd:decimal ;
+    rdfs:subPropertyOf sdmx-measure:obsValue .
+
+g7:investEdificios a qb:MeasureProperty,
+        rdf:Property ;
+    rdfs:label "Investment in buildings"@en,
+        "Investimento em edifícios"@pt ;
+    dct:identifier "EDIFICIOS" ;
+    sdmx-attribute:unitMeasure eu-cur:EUR ;
+    rdfs:comment "Indicador correspondente à coluna EDIFICIOS dos ficheiros Despesas. A definição contabilística exata deve ser confirmada na documentação da fonte."@pt ;
+    rdfs:range xsd:decimal ;
+    rdfs:subPropertyOf sdmx-measure:obsValue .
+
+g7:investInfraestruturas a qb:MeasureProperty,
+        rdf:Property ;
+    rdfs:label "Investment in basic infrastructure"@en,
+        "Investimento em infraestruturas básicas"@pt ;
+    dct:identifier "INFRAESTRUTURAS_BASICAS" ;
+    sdmx-attribute:unitMeasure eu-cur:EUR ;
+    rdfs:comment "Indicador correspondente à coluna INFRAESTRUTURAS_BASICAS dos ficheiros Despesas. A definição contabilística exata deve ser confirmada na documentação da fonte."@pt ;
+    rdfs:range xsd:decimal ;
+    rdfs:subPropertyOf sdmx-measure:obsValue .
+
+g7:investOutros a qb:MeasureProperty,
+        rdf:Property ;
+    rdfs:label "Other investments in capital goods"@en,
+        "Outros investimentos em bens de capital"@pt ;
+    dct:identifier "OUTROS_INVESTIMENTOS_BENS_DE_CAPITAL" ;
+    sdmx-attribute:unitMeasure eu-cur:EUR ;
+    rdfs:comment "Indicador correspondente à coluna OUTROS_INVESTIMENTOS_BENS_DE_CAPITAL dos ficheiros Despesas. A definição contabilística exata deve ser confirmada na documentação da fonte."@pt ;
+    rdfs:range xsd:decimal ;
+    rdfs:subPropertyOf sdmx-measure:obsValue .
+
+g7:investTerrenosHabitacoes a qb:MeasureProperty,
+        rdf:Property ;
+    rdfs:label "Investment in land and housing"@en,
+        "Investimento em terrenos e habitações"@pt ;
+    dct:identifier "TERRENOS_HABITACOES" ;
+    sdmx-attribute:unitMeasure eu-cur:EUR ;
+    rdfs:comment "Indicador correspondente à coluna TERRENOS_HABITACOES dos ficheiros Despesas. A definição contabilística exata deve ser confirmada na documentação da fonte."@pt ;
+    rdfs:range xsd:decimal ;
+    rdfs:subPropertyOf sdmx-measure:obsValue .
+
+g7:investimentoTotal a qb:MeasureProperty,
+        rdf:Property ;
+    rdfs:label "Investment and other capital goods"@en,
+        "Investimentos e outros bens de capital"@pt ;
+    dct:identifier "INVESTIMENTOS_OUTROS_INVESTIMENTOS_BENS_DE_CAPITAL" ;
+    sdmx-attribute:unitMeasure eu-cur:EUR ;
+    rdfs:comment "Indicador correspondente à coluna INVESTIMENTOS_OUTROS_INVESTIMENTOS_BENS_DE_CAPITAL dos ficheiros Despesas. A definição contabilística exata deve ser confirmada na documentação da fonte."@pt ;
+    rdfs:range xsd:decimal ;
+    rdfs:subPropertyOf sdmx-measure:obsValue .
+
+g7:iuc a qb:MeasureProperty,
+        rdf:Property ;
+    rdfs:label "Vehicle circulation tax"@en,
+        "Imposto Único de Circulação"@pt ;
+    dct:identifier "IUC" ;
+    sdmx-attribute:unitMeasure eu-cur:EUR ;
+    rdfs:comment "Indicador correspondente à coluna IUC dos ficheiros Receitas. A definição contabilística exata deve ser confirmada na documentação da fonte."@pt ;
+    rdfs:range xsd:decimal ;
+    rdfs:subPropertyOf sdmx-measure:obsValue .
+
+g7:jurosEncargos a qb:MeasureProperty,
+        rdf:Property ;
+    rdfs:label "Interest and charges"@en,
+        "Juros e encargos"@pt ;
+    dct:identifier "JUROS_ENCARGOS" ;
+    sdmx-attribute:unitMeasure eu-cur:EUR ;
+    rdfs:comment "Indicador correspondente à coluna JUROS_ENCARGOS dos ficheiros Despesas. A definição contabilística exata deve ser confirmada na documentação da fonte."@pt ;
+    rdfs:range xsd:decimal ;
+    rdfs:subPropertyOf sdmx-measure:obsValue .
+
+g7:outrasReceitas a qb:MeasureProperty,
+        rdf:Property ;
+    rdfs:label "Other revenue"@en,
+        "Outras receitas"@pt ;
+    dct:identifier "OUTRAS_RECEITAS" ;
+    sdmx-attribute:unitMeasure eu-cur:EUR ;
+    rdfs:comment "Indicador correspondente à coluna OUTRAS_RECEITAS dos ficheiros Receitas. A definição contabilística exata deve ser confirmada na documentação da fonte."@pt ;
+    rdfs:range xsd:decimal ;
+    rdfs:subPropertyOf sdmx-measure:obsValue .
+
+g7:outrosTrabalhadores a qb:MeasureProperty,
+        rdf:Property ;
+    rdfs:label "Other municipal employees"@en,
+        "Funcionários não superiores"@pt ;
+    dct:identifier "totalfuncionariosnaosuperiores" ;
+    sdmx-attribute:unitMeasure unit:NUM ;
+    rdfs:comment "Indicador correspondente à coluna totalfuncionariosnaosuperiores dos ficheiros Recursos Humanos. A definição contabilística exata deve ser confirmada na documentação da fonte."@pt ;
+    rdfs:range xsd:integer ;
+    rdfs:subPropertyOf sdmx-measure:obsValue .
+
+g7:pagamentosEmAtraso a qb:MeasureProperty,
+        rdf:Property ;
+    rdfs:label "Overdue payments"@en,
+        "Pagamentos em atraso"@pt ;
+    dct:identifier "PAGAMENTOS_EM_ATRASO" ;
+    sdmx-attribute:unitMeasure eu-cur:EUR ;
+    rdfs:comment "Indicador correspondente à coluna PAGAMENTOS_EM_ATRASO dos ficheiros Qualidade da Gestão. A definição contabilística exata deve ser confirmada na documentação da fonte."@pt ;
+    rdfs:range xsd:decimal ;
+    rdfs:subPropertyOf sdmx-measure:obsValue .
+
+g7:periodo a qb:DimensionProperty,
+        rdf:Property ;
+    rdfs:label "Reference period"@en,
+        "Período de referência"@pt ;
+    rdfs:comment "Período de observação conforme a DGAL: T1, T2, T3, T4 e A; valores trimestrais acumulados sujeitos a confirmação documental."@pt ;
+    rdfs:range skos:Concept .
+
+g7:populacaoResidente a qb:MeasureProperty,
+        rdf:Property ;
+    rdfs:label "Resident population"@en,
+        "População residente"@pt ;
+    dct:identifier "POPULACAO_RESIDENTE" ;
+    sdmx-attribute:unitMeasure unit:NUM ;
+    rdfs:comment "Indicador correspondente à coluna POPULACAO_RESIDENTE dos ficheiros Enriquecimento INE. A definição contabilística exata deve ser confirmada na documentação da fonte."@pt ;
+    rdfs:range xsd:integer ;
+    rdfs:subPropertyOf sdmx-measure:obsValue .
+
+g7:prazoMedioPagamento a qb:MeasureProperty,
+        rdf:Property ;
+    rdfs:label "Average payment period"@en,
+        "Prazo médio de pagamento"@pt ;
+    dct:identifier "PMP" ;
+    sdmx-attribute:unitMeasure unit:DAY ;
+    rdfs:comment "Indicador correspondente à coluna PMP dos ficheiros Qualidade da Gestão. A definição contabilística exata deve ser confirmada na documentação da fonte."@pt ;
+    rdfs:range xsd:decimal ;
+    rdfs:subPropertyOf sdmx-measure:obsValue .
+
+g7:receitaEfetiva a qb:MeasureProperty,
+        rdf:Property ;
+    rdfs:label "Effective revenue"@en,
+        "Receita efetiva"@pt ;
+    dct:identifier "TOTAL_RECEITA_EFETIVA" ;
+    sdmx-attribute:unitMeasure eu-cur:EUR ;
+    rdfs:comment "Indicador correspondente à coluna TOTAL_RECEITA_EFETIVA dos ficheiros Qualidade da Gestão. A definição contabilística exata deve ser confirmada na documentação da fonte."@pt ;
+    rdfs:range xsd:decimal ;
+    rdfs:subPropertyOf sdmx-measure:obsValue .
+
+g7:receitasTotais a qb:MeasureProperty,
+        rdf:Property ;
+    rdfs:label "Total municipal revenue"@en,
+        "Receitas totais municipais"@pt ;
+    dct:identifier "RECEITAS_TOTAIS",
+        "TOTAL_RECEITA" ;
+    sdmx-attribute:unitMeasure eu-cur:EUR ;
+    rdfs:comment "Indicador correspondente à coluna RECEITAS_TOTAIS dos ficheiros Receitas. A definição contabilística exata deve ser confirmada na documentação da fonte."@pt ;
+    rdfs:range xsd:decimal ;
+    rdfs:subPropertyOf sdmx-measure:obsValue .
+
+g7:representantesEleitos a qb:MeasureProperty,
+        rdf:Property ;
+    rdfs:label "Elected representatives"@en,
+        "Representantes eleitos"@pt ;
+    dct:identifier "representanteseleitos" ;
+    sdmx-attribute:unitMeasure unit:NUM ;
+    rdfs:comment "Indicador correspondente à coluna representanteseleitos dos ficheiros Recursos Humanos. A definição contabilística exata deve ser confirmada na documentação da fonte."@pt ;
+    rdfs:range xsd:integer ;
+    rdfs:subPropertyOf sdmx-measure:obsValue .
+
+g7:saldoOrcamental a qb:MeasureProperty,
+        rdf:Property ;
+    rdfs:label "Budget balance"@en,
+        "Saldo orçamental"@pt ;
+    dct:identifier "SALDO_ORCAMENTAL" ;
+    sdmx-attribute:unitMeasure eu-cur:EUR ;
+    rdfs:comment "Indicador correspondente à coluna SALDO_ORCAMENTAL dos ficheiros Qualidade da Gestão. A definição contabilística exata deve ser confirmada na documentação da fonte."@pt ;
+    rdfs:range xsd:decimal ;
+    rdfs:subPropertyOf sdmx-measure:obsValue .
+
+g7:semVinculoPermanente a qb:MeasureProperty,
+        rdf:Property ;
+    rdfs:label "Employees without permanent employment link"@en,
+        "Trabalhadores sem vínculo permanente"@pt ;
+    dct:identifier "totalsemvinculopermanente" ;
+    sdmx-attribute:unitMeasure unit:NUM ;
+    rdfs:comment "Indicador correspondente à coluna totalsemvinculopermanente dos ficheiros Recursos Humanos. A definição contabilística exata deve ser confirmada na documentação da fonte."@pt ;
+    rdfs:range xsd:integer ;
+    rdfs:subPropertyOf sdmx-measure:obsValue .
+
+g7:taxasMultasOutros a qb:MeasureProperty,
+        rdf:Property ;
+    rdfs:label "Fees, fines and other taxes"@en,
+        "Taxas, multas e outros impostos"@pt ;
+    dct:identifier "TAXAS_MULTAS_OUTROS_IMPOSTOS" ;
+    sdmx-attribute:unitMeasure eu-cur:EUR ;
+    rdfs:comment "Indicador correspondente à coluna TAXAS_MULTAS_OUTROS_IMPOSTOS dos ficheiros Receitas. A definição contabilística exata deve ser confirmada na documentação da fonte."@pt ;
+    rdfs:range xsd:decimal ;
+    rdfs:subPropertyOf sdmx-measure:obsValue .
+
+g7:tecnicosSuperiores a qb:MeasureProperty,
+        rdf:Property ;
+    rdfs:label "Senior technical staff"@en,
+        "Técnicos superiores"@pt ;
+    dct:identifier "totaltecnicossuperiores" ;
+    sdmx-attribute:unitMeasure unit:NUM ;
+    rdfs:comment "Indicador correspondente à coluna totaltecnicossuperiores dos ficheiros Recursos Humanos. A definição contabilística exata deve ser confirmada na documentação da fonte."@pt ;
+    rdfs:range xsd:integer ;
+    rdfs:subPropertyOf sdmx-measure:obsValue .
+
+g7:trabalhadores a qb:MeasureProperty,
+        rdf:Property ;
+    rdfs:label "Total municipal employees"@en,
+        "Total de trabalhadores municipais"@pt ;
+    dct:identifier "totalrh" ;
+    sdmx-attribute:unitMeasure unit:NUM ;
+    rdfs:comment "Indicador correspondente à coluna totalrh dos ficheiros Recursos Humanos. A definição contabilística exata deve ser confirmada na documentação da fonte."@pt ;
+    rdfs:range xsd:integer ;
+    rdfs:subPropertyOf sdmx-measure:obsValue .
+
+g7:transferenciasCapital a qb:MeasureProperty,
+        rdf:Property ;
+    rdfs:label "Capital transfers and other capital expenditure"@en,
+        "Transferências e outras despesas de capital"@pt ;
+    dct:identifier "TRANSFERENCIAS_OUTRAS_DESPESAS_CAPITAL" ;
+    sdmx-attribute:unitMeasure eu-cur:EUR ;
+    rdfs:comment "Indicador correspondente à coluna TRANSFERENCIAS_OUTRAS_DESPESAS_CAPITAL dos ficheiros Despesas. A definição contabilística exata deve ser confirmada na documentação da fonte."@pt ;
+    rdfs:range xsd:decimal ;
+    rdfs:subPropertyOf sdmx-measure:obsValue .
+
+g7:transferenciasCorrentes a qb:MeasureProperty,
+        rdf:Property ;
+    rdfs:label "Current transfers"@en,
+        "Transferências correntes"@pt ;
+    dct:identifier "TRANSFERENCIAS_CORRENTES" ;
+    sdmx-attribute:unitMeasure eu-cur:EUR ;
+    rdfs:comment "Indicador correspondente à coluna TRANSFERENCIAS_CORRENTES dos ficheiros Despesas. A definição contabilística exata deve ser confirmada na documentação da fonte."@pt ;
+    rdfs:range xsd:decimal ;
+    rdfs:subPropertyOf sdmx-measure:obsValue .
+
+g7:transferenciasOE a qb:MeasureProperty,
+        rdf:Property ;
+    rdfs:label "Transfers from the State Budget"@en,
+        "Transferências do Orçamento do Estado"@pt ;
+    dct:identifier "TRANSFERENCIAS_ORCAMENTO_ESTADO" ;
+    sdmx-attribute:unitMeasure eu-cur:EUR ;
+    rdfs:comment "Indicador correspondente à coluna TRANSFERENCIAS_ORCAMENTO_ESTADO dos ficheiros Receitas. A definição contabilística exata deve ser confirmada na documentação da fonte."@pt ;
+    rdfs:range xsd:decimal ;
+    rdfs:subPropertyOf sdmx-measure:obsValue .
+
+g7:vendaBensServicos a qb:MeasureProperty,
+        rdf:Property ;
+    rdfs:label "Sales of goods and services"@en,
+        "Venda de bens e serviços"@pt ;
+    dct:identifier "VENDA_BENS_SERVICOS" ;
+    sdmx-attribute:unitMeasure eu-cur:EUR ;
+    rdfs:comment "Indicador correspondente à coluna VENDA_BENS_SERVICOS dos ficheiros Receitas. A definição contabilística exata deve ser confirmada na documentação da fonte."@pt ;
+    rdfs:range xsd:decimal ;
+    rdfs:subPropertyOf sdmx-measure:obsValue .
+
+g7:vinculoPermanente a qb:MeasureProperty,
+        rdf:Property ;
+    rdfs:label "Employees with permanent employment link"@en,
+        "Trabalhadores com vínculo permanente"@pt ;
+    dct:identifier "totalcomvinculopermanente" ;
+    sdmx-attribute:unitMeasure unit:NUM ;
+    rdfs:comment "Indicador correspondente à coluna totalcomvinculopermanente dos ficheiros Recursos Humanos. A definição contabilística exata deve ser confirmada na documentação da fonte."@pt ;
+    rdfs:range xsd:integer ;
+    rdfs:subPropertyOf sdmx-measure:obsValue .
+

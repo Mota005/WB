@@ -2,15 +2,32 @@
 # -*- coding: utf-8 -*-
 """Conversor reproduzível DGAL (2017-2019) -> RDF/Turtle.
 
-Grupo 7 | UC Web Semântica | tarefa 6.2: DSD separada para RH 2017.
+Grupo 7 | UC Web Semântica | tarefa 6.2: observações e catálogo DCAT-AP.
 
 Entradas: 12 CSV/XLSX da DGAL na pasta dados/ e
           mapeamento-vocabulario-g7.csv na raiz do projeto.
 Saídas:   catálogo RDF (derivados), SKOS territorial e períodos,
           DSDs, 12 ficheiros com observações e manifesto de conversão.
 
-Não inventa URLs das páginas originais nem dados em falta. A publicação
-resolúvel do namespace w3id.org continua pendente de registo.
+Metadados DCAT-AP do perfil do Grupo 7: catálogo, quatro séries, 12 datasets,
+12 distribuições, temas, cobertura temporal/espacial, proveniência e licença.
+As URLs de origem são fornecidas em fontes_dgal.csv. Os URLs de acesso ao RDF
+apontam para os ficheiros públicos no GitHub, sem caminhos locais file://.
+Os nomes de domínio em w3id.org são propostos e ainda não estão registados.
+
+Publicação GitHub: por omissão os 12 ficheiros RDF são descritos como
+          https://raw.githubusercontent.com/Mota005/WB/<RAMO>/RDF/rdf/<ficheiro>.ttl
+          O ramo é detetado no Git local, se possível; na ausência de informação,
+          usa-se «main» e a escolha é assinalada no terminal.
+Opcional: --github-ramo RAMO  (se o ramo público for diferente)
+Opcional: --url-distribuicoes URL  (para publicar noutra plataforma)
+Opcional: --fontes fontes_dgal.csv (utilizado automaticamente se estiver
+          ao lado do script). Tem campos serie;ano;url_dataset_original;
+          url_download_original e apenas URLs oficialmente confirmadas.
+
+IMPORTANTE: executar «git push» depois de atualizar os ficheiros no repositório.
+As URLs do GitHub são construídas a partir do endereço e do ramo configurados;
+a execução local não confirma, por si só, que os ficheiros estão online.
 
 Requisitos: Python >=3.10; pip install rdflib
 Execução:   python converter_dgal.py
@@ -22,11 +39,13 @@ from __future__ import annotations
 import argparse
 import csv
 import shutil
+import subprocess
 import re
 import sys
 import unicodedata
 import xml.etree.ElementTree as ET
 import zipfile
+from urllib.parse import quote, urlparse
 from collections import defaultdict
 from decimal import Decimal, InvalidOperation
 from pathlib import Path
@@ -35,12 +54,50 @@ from rdflib import Graph, Literal, Namespace, URIRef
 from rdflib.namespace import DCTERMS as DCT, FOAF, RDF, RDFS, SKOS, XSD
 
 DEFAULT_BASE = "https://w3id.org/ws-megsi-g7/"  # PROPOSTA (a registar)
+GITHUB_REPO_PADRAO = "Mota005/WB"  # repositório público indicado pelo utilizador
+GITHUB_SUBPASTA = "RDF/rdf"
 QB = Namespace("http://purl.org/linked-data/cube#")
 DCAT = Namespace("http://www.w3.org/ns/dcat#")
 SDMX_DIM = Namespace("http://purl.org/linked-data/sdmx/2009/dimension#")
 SDMX_ATT = Namespace("http://purl.org/linked-data/sdmx/2009/attribute#")
 EU_FILE = Namespace("http://publications.europa.eu/resource/authority/file-type/")
 EU_LICENSE = Namespace("http://publications.europa.eu/resource/authority/licence/")
+EU_THEME = Namespace("http://publications.europa.eu/resource/authority/data-theme/")
+EU_COUNTRY = Namespace("http://publications.europa.eu/resource/authority/country/")
+EU_LANG = Namespace("http://publications.europa.eu/resource/authority/language/")
+EU_FREQUENCY = Namespace("http://publications.europa.eu/resource/authority/frequency/")
+EU_ACCESS = Namespace("http://publications.europa.eu/resource/authority/access-right/")
+EU_DISTR_STATUS = Namespace("http://publications.europa.eu/resource/authority/distribution-status/")
+PROV = Namespace("http://www.w3.org/ns/prov#")
+ADMS = Namespace("http://www.w3.org/ns/adms#")
+VCARD = Namespace("http://www.w3.org/2006/vcard/ns#")
+LICENCA_CC_BY = EU_LICENSE.CC_BY_4_0
+
+# Descrições e palavras-chave criadas para o perfil do Grupo 7.
+TEMAS = (EU_THEME.ECON, EU_THEME.GOVE)
+METADADOS_SERIES = {
+    "Receitas": {
+        "descricao": "Receitas municipais de 308 municípios portugueses, incluindo impostos, transferências, financiamento e outras receitas; os trimestres apresentam valores acumulados.",
+        "descricao_en": "Municipal revenues for Portugal's 308 municipalities, including taxes, transfers, funding and other revenue; quarterly values are cumulative.",
+        "keywords": ("receitas municipais", "impostos municipais", "transferências", "finanças locais"),
+    },
+    "Despesas": {
+        "descricao": "Despesas municipais de 308 municípios portugueses, incluindo despesas correntes, investimento, pessoal e transferências; os trimestres apresentam valores acumulados.",
+        "descricao_en": "Municipal expenditure for Portugal's 308 municipalities, including current expenses, investment, staff and transfers; quarterly values are cumulative.",
+        "keywords": ("despesas municipais", "investimento", "despesas com pessoal", "finanças locais"),
+    },
+    "Recursos Humanos": {
+        "descricao": "Indicadores de recursos humanos dos 308 municípios portugueses, incluindo trabalhadores, dirigentes, categorias e tipos de vínculo; 2017 contém apenas o período anual.",
+        "descricao_en": "Human resources indicators for Portugal's 308 municipalities, including staff, management categories and employment contracts; 2017 includes annual observations only.",
+        "keywords": ("recursos humanos", "trabalhadores municipais", "vínculos laborais", "dirigentes"),
+    },
+    "Qualidade da Gestão": {
+        "descricao": "Indicadores de gestão pública e sustentabilidade financeira dos 308 municípios portugueses, incluindo dívida, execução orçamental e prazos de pagamento.",
+        "descricao_en": "Public management and financial sustainability indicators for Portugal's 308 municipalities, including debt, budget execution and payment times.",
+        "keywords": ("gestão pública", "endividamento", "execução orçamental", "sustentabilidade financeira"),
+    },
+}
+
 
 # Ficheiros originais identificados no projeto. 2017: latin-1;
 # 2018-2019: CP850 (testado nos nomes municipais com acentos).
@@ -198,6 +255,10 @@ def grafo(base: str):
         "dct": str(DCT),
         "skos": str(SKOS),
         "xsd": str(XSD),
+        "prov": str(PROV),
+        "adms": str(ADMS),
+        "vcard": str(VCARD),
+        "foaf": str(FOAF),
     }
     for p, iri in prefixos.items():
         g.bind(p, Namespace(iri))
@@ -208,6 +269,207 @@ def guardar(g: Graph, caminho: Path):
     g.serialize(destination=str(caminho), format="turtle", encoding="utf-8")
 
 
+
+
+def url_http_formato_valido(valor: str, origem: str) -> URIRef | None:
+    """Valida apenas o formato HTTP(S); não testa acesso pela Internet."""
+    valor = str(valor or "").strip()
+    if not valor:
+        return None
+    u = urlparse(valor)
+    if u.scheme not in ("http", "https") or not u.netloc:
+        raise ValueError(f"{origem}: URL inválida, usar http(s): {valor!r}")
+    return URIRef(valor)
+
+
+def obter_ramo_github(pasta: Path, ramo_explicito: str | None) -> tuple[str, str]:
+    """Descobre o ramo de referência do GitHub sem exigir acesso à Internet.
+
+    Usa preferencialmente a referência local origin/HEAD; senão, o ramo atual.
+    Não considera esta deteção uma prova de que o ramo já foi publicado.
+    """
+    if ramo_explicito:
+        return ramo_explicito.strip(), "indicado em --github-ramo"
+
+    comandos = [
+        (["symbolic-ref", "--quiet", "--short", "refs/remotes/origin/HEAD"], "referência origin/HEAD"),
+        (["branch", "--show-current"], "ramo local atual"),
+    ]
+    for argumentos, origem in comandos:
+        try:
+            resultado = subprocess.run(
+                ["git", "-C", str(pasta), *argumentos],
+                capture_output=True, text=True, timeout=5, check=False,
+            )
+        except (OSError, subprocess.TimeoutExpired):
+            continue
+        ramo = resultado.stdout.strip()
+        if resultado.returncode == 0 and ramo:
+            return ramo.removeprefix("origin/"), origem
+
+    return "main", "valor por omissão (a confirmar no GitHub)"
+
+
+def url_raw_github(repositorio: str, ramo: str) -> str:
+    """Constrói a pasta pública para os .ttl, sem divulgar caminhos locais."""
+    if not re.fullmatch(r"[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+", repositorio):
+        raise ValueError("--github-repo tem de ter o formato UTILIZADOR/REPOSITORIO")
+    if not ramo or ramo.startswith("-") or any(c in ramo for c in " \t\r\n\\?#"):
+        raise ValueError(f"--github-ramo inválido: {ramo!r}")
+    return (
+        f"https://raw.githubusercontent.com/{repositorio}/"
+        f"{quote(ramo, safe='/-._')}/{GITHUB_SUBPASTA}/"
+    )
+
+
+def ler_fontes_csv(caminho: Path | None) -> dict:
+    """URLs reais das páginas DGAL, preenchidas manualmente a partir do portal."""
+    if caminho is None:
+        return {}
+    if not caminho.is_file():
+        raise FileNotFoundError(f"CSV de fontes não encontrado: {caminho}")
+    fontes = {}
+    with caminho.open("r", encoding="utf-8-sig", newline="") as f:
+        leitor = csv.DictReader(f, delimiter=";")
+        necessarias = {"serie", "ano", "url_dataset_original", "url_download_original"}
+        if not necessarias.issubset(leitor.fieldnames or []):
+            raise ValueError(f"O CSV --fontes precisa destas colunas: {sorted(necessarias)}")
+        for linha in leitor:
+            serie = (linha.get("serie") or "").strip()
+            ano = int(linha.get("ano") or 0)
+            if serie not in SERIES or ano not in (2017, 2018, 2019):
+                raise ValueError(f"Série/ano inválidos no CSV de fontes: {serie!r} {ano}")
+            chave = (serie, ano)
+            if chave in fontes:
+                raise ValueError(f"Fonte repetida em --fontes: {chave}")
+            fontes[chave] = {
+                "dataset": url_http_formato_valido(linha["url_dataset_original"], f"{chave} dataset"),
+                "download": url_http_formato_valido(linha["url_download_original"], f"{chave} download"),
+            }
+    return fontes
+
+
+def enriquecer_catalogo(
+    catalogo: Graph, base: str, pasta_dados: Path, pasta_saida: Path,
+    manifesto: list[dict], url_publica: str | None, fontes: dict,
+) -> None:
+    """Metadados do perfil do Grupo 7, sem alterar nenhuma observação RDF."""
+    ws = Namespace(base)
+    grupo = ws["agente/grupo7"]
+    dgal = ws["agente/dgal"]
+    cat = ws.catalogo
+    catalogo.add((dgal, RDF.type, FOAF.Organization))
+    catalogo.add((dgal, FOAF.name, Literal("Direção-Geral das Autarquias Locais", lang="pt")))
+    catalogo.add((cat, DCT.language, EU_LANG.POR))
+    catalogo.add((cat, DCAT.themeTaxonomy, URIRef("http://publications.europa.eu/resource/authority/data-theme")))
+    catalogo.add((cat, DCT.license, LICENCA_CC_BY))
+    # Substituir o texto de rascunho que afirmava nao haver qualquer fonte.
+    catalogo.remove((cat, DCT.description, None))
+    catalogo.add((cat, DCT.description, Literal(
+        "Catálogo de 12 conjuntos de dados RDF derivados de CSV/XLSX da DGAL "
+        "(2017-2019), com quatro series tematicas, metadados de distribuicao, "
+        "licencas e proveniencia. URLs oficiais incluidas apenas quando confirmadas.", lang="pt")))
+
+    # Cada série é um recurso distinto com frequência anual e duas categorias EU.
+    for serie, slug in SERIES.items():
+        serie_uri = ws[f"dataset/serie-{slug}"]
+        meta = METADADOS_SERIES[serie]
+        catalogo.add((serie_uri, DCT.description, Literal(meta["descricao"], lang="pt")))
+        catalogo.add((serie_uri, DCT.description, Literal(meta["descricao_en"], lang="en")))
+        catalogo.add((serie_uri, DCT.publisher, grupo))
+        catalogo.add((serie_uri, DCT.accrualPeriodicity, EU_FREQUENCY.ANNUAL))
+        catalogo.add((serie_uri, DCT.spatial, EU_COUNTRY.PRT))
+        for tema in TEMAS:
+            catalogo.add((serie_uri, DCAT.theme, tema))
+
+    intervalos = {}
+    for item in manifesto:
+        serie = item["serie"]
+        ano = int(item["ano"])
+        slug = SERIES[serie]
+        nome = item["ficheiro_origem"]
+        meta = METADADOS_SERIES[serie]
+        ds = ws[f"dataset/rdf-{slug}-{ano}"]
+        dist = ws[f"distribuicao/rdf-{slug}-{ano}-turtle"]
+        dsd_slug = "recursos-humanos-2017" if serie == "Recursos Humanos" and ano == 2017 else slug
+
+        # Um período temporal explícito por ano: 1 Jan a 31 Dez.
+        if ano not in intervalos:
+            interv = ws[f"intervalo/{ano}"]
+            catalogo.add((interv, RDF.type, DCT.PeriodOfTime))
+            catalogo.add((interv, DCAT.startDate, Literal(f"{ano}-01-01", datatype=XSD.date)))
+            catalogo.add((interv, DCAT.endDate, Literal(f"{ano}-12-31", datatype=XSD.date)))
+            intervalos[ano] = interv
+        catalogo.add((ds, DCT.temporal, intervalos[ano]))
+        catalogo.add((ds, DCT.spatial, EU_COUNTRY.PRT))
+        catalogo.add((ds, DCT.language, EU_LANG.POR))
+        catalogo.add((ds, DCT.accessRights, EU_ACCESS.PUBLIC))
+        catalogo.add((ds, DCT.license, LICENCA_CC_BY))
+        catalogo.add((ds, DCT.rightsHolder, dgal))
+        catalogo.add((ds, DCT.conformsTo, ws[f"dsd/{dsd_slug}"]))
+        catalogo.add((ds, DCT.accrualPeriodicity, EU_FREQUENCY.NEVER))
+        catalogo.add((ds, DCAT.temporalResolution,
+                      Literal("P1Y" if serie == "Recursos Humanos" and ano == 2017 else "P3M", datatype=XSD.duration)))
+        catalogo.add((ds, DCT.description,
+                      Literal(meta["descricao_en"] + f" Reference year: {ano}.", lang="en")))
+        for tema in TEMAS:
+            catalogo.add((ds, DCAT.theme, tema))
+        for palavra in meta["keywords"]:
+            catalogo.add((ds, DCAT.keyword, Literal(palavra, lang="pt")))
+        nota = (f"Convertido a partir de {nome}; {item['linhas_sem_medidas']} linhas sem medidas não originaram "
+                "observações; valores omissos não foram substituídos por zero; valores numéricos tipados em RDF. "
+                "Os dados trimestrais são acumulados. Os dois indicadores adicionais de Recursos Humanos "
+                "de 2017 foram separados em estrutura estatística própria." if serie == "Recursos Humanos" else
+                f"Convertido a partir de {nome}; {item['linhas_sem_medidas']} linhas sem medidas não originaram "
+                "observações; valores omissos não foram substituídos por zero; valores numéricos tipados em RDF. "
+                "Os dados trimestrais são acumulados.")
+        catalogo.add((ds, ADMS.versionNotes, Literal(nota, lang="pt")))
+
+        # Proveniência: identificar a cópia local sem divulgar caminhos do computador.
+        # Quando houver URL oficial, essa passa a ser a origem e a landing page.
+        fonte = fontes.get((serie, ano), {})
+        fonte_local = ws[f"fonte/dgal/{slug}/{ano}"]
+        catalogo.add((fonte_local, RDF.type, FOAF.Document))
+        catalogo.add((fonte_local, DCT.identifier, Literal(nome)))
+        catalogo.add((fonte_local, DCT.title,
+                      Literal(f"Ficheiro DGAL original: {nome}", lang="pt")))
+        catalogo.add((fonte_local, DCT.format,
+                      EU_FILE.CSV if nome.lower().endswith(".csv") else EU_FILE.XLSX))
+        origem = fonte.get("dataset") or fonte.get("download") or fonte_local
+        catalogo.add((ds, DCT.source, origem))
+        catalogo.add((ds, PROV.wasDerivedFrom, origem))
+        if origem != fonte_local:
+            catalogo.add((fonte_local, DCT.source, origem))
+        if fonte.get("dataset"):
+            catalogo.add((ds, DCAT.landingPage, fonte["dataset"]))
+
+        # Distribuições: NÃO publicar caminhos file:// privados no catálogo.
+        # Os URLs públicos apontam para os Turtle no GitHub (ou para o endereço
+        # definido em --url-distribuicoes). Nunca são gerados caminhos file://.
+        # Nota: os ficheiros têm de existir realmente nesse endereço após o push.
+        ficheiro_rdf = pasta_saida / item["ficheiro_rdf"]
+        if not ficheiro_rdf.is_file():
+            raise FileNotFoundError(f"Não foi gerado o Turtle da distribuição: {ficheiro_rdf}")
+        if url_publica:
+            url = URIRef(url_publica.rstrip("/") + "/" + quote(ficheiro_rdf.name))
+            catalogo.add((dist, DCAT.accessURL, url))
+            catalogo.add((dist, DCAT.downloadURL, url))
+        catalogo.add((dist, DCT.license, LICENCA_CC_BY))
+        catalogo.add((dist, ADMS.status, EU_DISTR_STATUS.COMPLETED))
+        catalogo.add((dist, DCAT.byteSize, Literal(ficheiro_rdf.stat().st_size, datatype=XSD.nonNegativeInteger)))
+        catalogo.add((dist, DCT.description,
+                      Literal(f"Distribuição RDF/Turtle da série {serie}, ano {ano}, com {item['observacoes_rdf']} observações.", lang="pt")))
+
+
+def relatorio_catalogo(catalogo: Graph, base: str) -> str:
+    ws = Namespace(base)
+    ds = sum(1 for _ in catalogo.subjects(RDF.type, DCAT.Dataset))
+    dist = sum(1 for _ in catalogo.subjects(RDF.type, DCAT.Distribution))
+    serie = sum(1 for _ in catalogo.subjects(RDF.type, DCAT.DatasetSeries))
+    urls = sum(1 for _ in catalogo.triples((None, DCAT.accessURL, None)))
+    return f"Catálogo DCAT-AP: {serie} séries; {ds} datasets; {dist} distribuições; {urls} accessURLs"
+
+
 def main():
     parser = argparse.ArgumentParser(description="CSV/XLSX DGAL 2017–2019 para RDF/Turtle")
     pasta = Path(__file__).resolve().parent
@@ -215,11 +477,40 @@ def main():
     parser.add_argument("--saida", type=Path, default=pasta / "rdf")
     parser.add_argument("--mapeamento", type=Path, default=pasta / "mapeamento-vocabulario-g7.csv")
     parser.add_argument("--base", default=DEFAULT_BASE)
+    parser.add_argument("--url-distribuicoes", default=None,
+                        help="URL pública alternativa onde os 12 .ttl estão publicados (sobrepõe o GitHub)")
+    parser.add_argument("--github-repo", default=GITHUB_REPO_PADRAO,
+                        help=f"Repositório GitHub público UTILIZADOR/REPO (padrão: {GITHUB_REPO_PADRAO})")
+    parser.add_argument("--github-ramo", default=None,
+                        help="Ramo publicado (quando omitido tenta detetar origin/HEAD ou o ramo local)")
+    parser.add_argument("--fontes", type=Path, default=None,
+                        help="CSV opcional com URLs originais; se omitido, usa fontes_dgal.csv junto ao script")
+    parser.add_argument("--exigir-publicacao", action="store_true",
+                        help="Interrompe se faltar URL publica dos 12 Turtle ou das 12 fontes DGAL")
     args = parser.parse_args()
     base = args.base.rstrip("/") + "/"
     dados = args.dados.resolve()
     saida = args.saida.resolve()
     saida.mkdir(parents=True, exist_ok=True)
+    if args.url_distribuicoes:
+        url_publica = str(url_http_formato_valido(args.url_distribuicoes, "--url-distribuicoes"))
+        origem_url = "endereço fornecido em --url-distribuicoes"
+    else:
+        ramo, origem_url = obter_ramo_github(pasta.parent, args.github_ramo)
+        url_publica = url_raw_github(args.github_repo, ramo)
+    print(f"Distribuições RDF (URL base): {url_publica}")
+    print(f"Referência GitHub: {origem_url}" if not args.url_distribuicoes else f"Origem: {origem_url}")
+    ficheiro_fontes = args.fontes.resolve() if args.fontes else (pasta / "fontes_dgal.csv")
+    fontes = ler_fontes_csv(ficheiro_fontes if ficheiro_fontes.exists() else None)
+    if args.fontes and not args.fontes.resolve().is_file():
+        raise FileNotFoundError(f"Nao foi encontrado o CSV de fontes: {args.fontes}")
+    origens_confirmadas = sum(1 for f in fontes.values() if f.get("dataset"))
+    if args.exigir_publicacao and (not url_publica or origens_confirmadas != len(INPUTS)):
+        raise ValueError(
+            "Para a publicacao final faltam URLs publicas dos Turtle "
+            "ou paginas oficiais em fontes_dgal.csv "
+            f"({origens_confirmadas}/{len(INPUTS)} fontes identificadas)."
+        )
     mapa = ler_mapeamento(args.mapeamento.resolve())
     faltam = [fn for _, _, fn, _ in INPUTS if not (dados / fn).is_file()]
     if faltam:
@@ -411,6 +702,7 @@ def main():
                 dsd_g.add((dsd, QB.component, comp))
                 dsd_g.add((comp, QB.measure, prop))
     guardar(dsd_g, saida / "estruturas-dsd.ttl")
+    enriquecer_catalogo(catalogo, base, dados, saida, manifest, url_publica, fontes)
     guardar(catalogo, saida / "catalogo-derivados.ttl")
     # O vocabulário da secção 4.2 é um artefacto separado, mas deve ser
     # carregado no mesmo repositório RDF que as observações.
@@ -434,7 +726,14 @@ def main():
     print(f"\nTOTAL: {sum(m['observacoes_rdf'] for m in manifest)} observações "
           f"em {len(manifest)} datasets; {len(municipio_nome)} municípios identificados")
     print(f"Saída: {saida}")
-    print("Nota: adicionar vocabulário-g7, URIs reais das fontes e validação SHACL nas fases seguintes.")
+    print(relatorio_catalogo(catalogo, base))
+    print("IMPORTANTE: confirmar que os 12 URLs abrem ficheiros .ttl e fazer git push se alteraste os dados.")
+    print("Exemplo: " + url_publica.rstrip("/") + "/obs-receitas-municipais-2019.ttl")
+    confirmadas = sum(1 for f in fontes.values() if f.get("dataset") or f.get("download"))
+    if confirmadas < 12:
+        print(f"AVISO: {12 - confirmadas} fontes DGAL ainda sem URLs oficiais confirmadas. ")
+        print("Preencher as restantes URLs oficiais em fontes_dgal.csv e voltar a executar.")
+    print("Pendente: verificar URLs de publicacao, registar w3id.org e executar validacao formal SHACL na tarefa 6.3.")
 
 
 if __name__ == "__main__":

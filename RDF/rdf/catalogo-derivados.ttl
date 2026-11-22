@@ -1,12 +1,17 @@
+@prefix adms: <http://www.w3.org/ns/adms#> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix qb: <http://purl.org/linked-data/cube#> .
 @prefix ws: <https://w3id.org/ws-megsi-g7/> .
 @prefix wsds: <https://w3id.org/ws-megsi-g7/dataset/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 ws:catalogo a dcat:Catalog ;
-    dct:description "Metadados dos 12 conjuntos RDF derivados dos ficheiros CSV/XLSX da DGAL. A ligação às páginas de origem no dados.gov.pt deve ser acrescentada quando os respetivos URIs forem verificados."@pt ;
+    dct:description "Catálogo de 12 conjuntos de dados RDF derivados de CSV/XLSX da DGAL (2017-2019), com quatro series tematicas, metadados de distribuicao, licencas e proveniencia. URLs oficiais incluidas apenas quando confirmadas."@pt ;
+    dct:language <http://publications.europa.eu/resource/authority/language/POR> ;
+    dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
     dct:publisher <https://w3id.org/ws-megsi-g7/agente/grupo7> ;
     dct:title "Catálogo RDF de indicadores municipais da DGAL (2017–2019)"@pt ;
     dcat:dataset wsds:rdf-despesas-municipais-2017,
@@ -20,199 +25,627 @@ ws:catalogo a dcat:Catalog ;
         wsds:rdf-receitas-municipais-2019,
         wsds:rdf-recursos-humanos-2017,
         wsds:rdf-recursos-humanos-2018,
-        wsds:rdf-recursos-humanos-2019 .
+        wsds:rdf-recursos-humanos-2019 ;
+    dcat:themeTaxonomy <http://publications.europa.eu/resource/authority/data-theme> .
+
+<https://w3id.org/ws-megsi-g7/fonte/dgal/despesas-municipais/2017> a foaf:Document ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+    dct:identifier "DespesasMunicipais-2017.csv" ;
+    dct:source <https://dados.gov.pt/pt/datasets/despesas-municipais-2017> ;
+    dct:title "Ficheiro DGAL original: DespesasMunicipais-2017.csv"@pt .
+
+<https://w3id.org/ws-megsi-g7/fonte/dgal/despesas-municipais/2018> a foaf:Document ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+    dct:identifier "DespesasMunicipais-2018.csv" ;
+    dct:source <https://dados.gov.pt/pt/datasets/despesas-municipais-2018-1> ;
+    dct:title "Ficheiro DGAL original: DespesasMunicipais-2018.csv"@pt .
+
+<https://w3id.org/ws-megsi-g7/fonte/dgal/despesas-municipais/2019> a foaf:Document ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+    dct:identifier "DespesasMunicipais-2019.csv" ;
+    dct:source <https://dados.gov.pt/pt/datasets/despesas-municipais-2019> ;
+    dct:title "Ficheiro DGAL original: DespesasMunicipais-2019.csv"@pt .
+
+<https://w3id.org/ws-megsi-g7/fonte/dgal/qualidade-gestao/2017> a foaf:Document ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/XLSX> ;
+    dct:identifier "QualidadeGestaoPublica-2017.xlsx" ;
+    dct:source <https://dados.gov.pt/pt/datasets/qualidade-gestao-publica-2017-1> ;
+    dct:title "Ficheiro DGAL original: QualidadeGestaoPublica-2017.xlsx"@pt .
+
+<https://w3id.org/ws-megsi-g7/fonte/dgal/qualidade-gestao/2018> a foaf:Document ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/XLSX> ;
+    dct:identifier "QualidadeGestaoPublica-2018.xlsx" ;
+    dct:source <https://dados.gov.pt/pt/datasets/qualidade-gestao-publica-2018-1> ;
+    dct:title "Ficheiro DGAL original: QualidadeGestaoPublica-2018.xlsx"@pt .
+
+<https://w3id.org/ws-megsi-g7/fonte/dgal/qualidade-gestao/2019> a foaf:Document ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/XLSX> ;
+    dct:identifier "QualidadeGestaoPublica-2019.xlsx" ;
+    dct:source <https://dados.gov.pt/pt/datasets/qualidade-gestao-publica-2019> ;
+    dct:title "Ficheiro DGAL original: QualidadeGestaoPublica-2019.xlsx"@pt .
+
+<https://w3id.org/ws-megsi-g7/fonte/dgal/receitas-municipais/2017> a foaf:Document ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+    dct:identifier "ReceitasMunicipais-2017.csv" ;
+    dct:source <https://dados.gov.pt/pt/datasets/receitas-municipais-2017> ;
+    dct:title "Ficheiro DGAL original: ReceitasMunicipais-2017.csv"@pt .
+
+<https://w3id.org/ws-megsi-g7/fonte/dgal/receitas-municipais/2018> a foaf:Document ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+    dct:identifier "ReceitasMunicipais-2018.csv" ;
+    dct:source <https://dados.gov.pt/pt/datasets/receitas-municipais-2018-1> ;
+    dct:title "Ficheiro DGAL original: ReceitasMunicipais-2018.csv"@pt .
+
+<https://w3id.org/ws-megsi-g7/fonte/dgal/receitas-municipais/2019> a foaf:Document ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+    dct:identifier "ReceitasMunicipais-2019.csv" ;
+    dct:source <https://dados.gov.pt/pt/datasets/receitas-municipais-2019> ;
+    dct:title "Ficheiro DGAL original: ReceitasMunicipais-2019.csv"@pt .
+
+<https://w3id.org/ws-megsi-g7/fonte/dgal/recursos-humanos/2017> a foaf:Document ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/XLSX> ;
+    dct:identifier "RecursosHumanos-2017.xlsx" ;
+    dct:source <https://dados.gov.pt/pt/datasets/recursos-humanos-2017> ;
+    dct:title "Ficheiro DGAL original: RecursosHumanos-2017.xlsx"@pt .
+
+<https://w3id.org/ws-megsi-g7/fonte/dgal/recursos-humanos/2018> a foaf:Document ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/XLSX> ;
+    dct:identifier "RecursosHumanos-2018.xlsx" ;
+    dct:source <https://dados.gov.pt/pt/datasets/recursos-humanos-2018-1> ;
+    dct:title "Ficheiro DGAL original: RecursosHumanos-2018.xlsx"@pt .
+
+<https://w3id.org/ws-megsi-g7/fonte/dgal/recursos-humanos/2019> a foaf:Document ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/XLSX> ;
+    dct:identifier "RecursosHumanos-2019.xlsx" ;
+    dct:source <https://dados.gov.pt/pt/datasets/recursos-humanos-2019> ;
+    dct:title "Ficheiro DGAL original: RecursosHumanos-2019.xlsx"@pt .
 
 wsds:rdf-despesas-municipais-2017 a qb:DataSet,
         dcat:Dataset ;
-    dct:description "Conversão do ficheiro DGAL DespesasMunicipais-2017.csv; 1228 observações não vazias. Códigos de município e período preservados. Fonte disponível no Portal Nacional de Dados Abertos."@pt ;
+    dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
+    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/NEVER> ;
+    dct:conformsTo <https://w3id.org/ws-megsi-g7/dsd/despesas-municipais> ;
+    dct:description "Municipal expenditure for Portugal's 308 municipalities, including current expenses, investment, staff and transfers; quarterly values are cumulative. Reference year: 2017."@en,
+        "Conversão do ficheiro DGAL DespesasMunicipais-2017.csv; 1228 observações não vazias. Códigos de município e período preservados. Fonte disponível no Portal Nacional de Dados Abertos."@pt ;
     dct:identifier "rdf-despesas-municipais-2017" ;
+    dct:language <http://publications.europa.eu/resource/authority/language/POR> ;
+    dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
     dct:publisher <https://w3id.org/ws-megsi-g7/agente/grupo7> ;
+    dct:rightsHolder <https://w3id.org/ws-megsi-g7/agente/dgal> ;
+    dct:source <https://dados.gov.pt/pt/datasets/despesas-municipais-2017> ;
+    dct:spatial <http://publications.europa.eu/resource/authority/country/PRT> ;
+    dct:temporal <https://w3id.org/ws-megsi-g7/intervalo/2017> ;
     dct:title "Despesas 2017 — dados convertidos para RDF"@pt ;
     qb:structure <https://w3id.org/ws-megsi-g7/dsd/despesas-municipais> ;
+    adms:versionNotes "Convertido a partir de DespesasMunicipais-2017.csv; 4 linhas sem medidas não originaram observações; valores omissos não foram substituídos por zero; valores numéricos tipados em RDF. Os dados trimestrais são acumulados."@pt ;
     dcat:distribution <https://w3id.org/ws-megsi-g7/distribuicao/rdf-despesas-municipais-2017-turtle> ;
-    dcat:inSeries wsds:serie-despesas-municipais .
+    dcat:inSeries wsds:serie-despesas-municipais ;
+    dcat:keyword "despesas com pessoal"@pt,
+        "despesas municipais"@pt,
+        "finanças locais"@pt,
+        "investimento"@pt ;
+    dcat:landingPage <https://dados.gov.pt/pt/datasets/despesas-municipais-2017> ;
+    dcat:temporalResolution "P3M"^^xsd:duration ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/ECON>,
+        <http://publications.europa.eu/resource/authority/data-theme/GOVE> ;
+    prov:wasDerivedFrom <https://dados.gov.pt/pt/datasets/despesas-municipais-2017> .
 
 wsds:rdf-despesas-municipais-2018 a qb:DataSet,
         dcat:Dataset ;
-    dct:description "Conversão do ficheiro DGAL DespesasMunicipais-2018.csv; 1540 observações não vazias. Códigos de município e período preservados. Fonte disponível no Portal Nacional de Dados Abertos."@pt ;
+    dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
+    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/NEVER> ;
+    dct:conformsTo <https://w3id.org/ws-megsi-g7/dsd/despesas-municipais> ;
+    dct:description "Municipal expenditure for Portugal's 308 municipalities, including current expenses, investment, staff and transfers; quarterly values are cumulative. Reference year: 2018."@en,
+        "Conversão do ficheiro DGAL DespesasMunicipais-2018.csv; 1540 observações não vazias. Códigos de município e período preservados. Fonte disponível no Portal Nacional de Dados Abertos."@pt ;
     dct:identifier "rdf-despesas-municipais-2018" ;
+    dct:language <http://publications.europa.eu/resource/authority/language/POR> ;
+    dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
     dct:publisher <https://w3id.org/ws-megsi-g7/agente/grupo7> ;
+    dct:rightsHolder <https://w3id.org/ws-megsi-g7/agente/dgal> ;
+    dct:source <https://dados.gov.pt/pt/datasets/despesas-municipais-2018-1> ;
+    dct:spatial <http://publications.europa.eu/resource/authority/country/PRT> ;
+    dct:temporal <https://w3id.org/ws-megsi-g7/intervalo/2018> ;
     dct:title "Despesas 2018 — dados convertidos para RDF"@pt ;
     qb:structure <https://w3id.org/ws-megsi-g7/dsd/despesas-municipais> ;
+    adms:versionNotes "Convertido a partir de DespesasMunicipais-2018.csv; 0 linhas sem medidas não originaram observações; valores omissos não foram substituídos por zero; valores numéricos tipados em RDF. Os dados trimestrais são acumulados."@pt ;
     dcat:distribution <https://w3id.org/ws-megsi-g7/distribuicao/rdf-despesas-municipais-2018-turtle> ;
-    dcat:inSeries wsds:serie-despesas-municipais .
+    dcat:inSeries wsds:serie-despesas-municipais ;
+    dcat:keyword "despesas com pessoal"@pt,
+        "despesas municipais"@pt,
+        "finanças locais"@pt,
+        "investimento"@pt ;
+    dcat:landingPage <https://dados.gov.pt/pt/datasets/despesas-municipais-2018-1> ;
+    dcat:temporalResolution "P3M"^^xsd:duration ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/ECON>,
+        <http://publications.europa.eu/resource/authority/data-theme/GOVE> ;
+    prov:wasDerivedFrom <https://dados.gov.pt/pt/datasets/despesas-municipais-2018-1> .
 
 wsds:rdf-despesas-municipais-2019 a qb:DataSet,
         dcat:Dataset ;
-    dct:description "Conversão do ficheiro DGAL DespesasMunicipais-2019.csv; 1540 observações não vazias. Códigos de município e período preservados. Fonte disponível no Portal Nacional de Dados Abertos."@pt ;
+    dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
+    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/NEVER> ;
+    dct:conformsTo <https://w3id.org/ws-megsi-g7/dsd/despesas-municipais> ;
+    dct:description "Municipal expenditure for Portugal's 308 municipalities, including current expenses, investment, staff and transfers; quarterly values are cumulative. Reference year: 2019."@en,
+        "Conversão do ficheiro DGAL DespesasMunicipais-2019.csv; 1540 observações não vazias. Códigos de município e período preservados. Fonte disponível no Portal Nacional de Dados Abertos."@pt ;
     dct:identifier "rdf-despesas-municipais-2019" ;
+    dct:language <http://publications.europa.eu/resource/authority/language/POR> ;
+    dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
     dct:publisher <https://w3id.org/ws-megsi-g7/agente/grupo7> ;
+    dct:rightsHolder <https://w3id.org/ws-megsi-g7/agente/dgal> ;
+    dct:source <https://dados.gov.pt/pt/datasets/despesas-municipais-2019> ;
+    dct:spatial <http://publications.europa.eu/resource/authority/country/PRT> ;
+    dct:temporal <https://w3id.org/ws-megsi-g7/intervalo/2019> ;
     dct:title "Despesas 2019 — dados convertidos para RDF"@pt ;
     qb:structure <https://w3id.org/ws-megsi-g7/dsd/despesas-municipais> ;
+    adms:versionNotes "Convertido a partir de DespesasMunicipais-2019.csv; 0 linhas sem medidas não originaram observações; valores omissos não foram substituídos por zero; valores numéricos tipados em RDF. Os dados trimestrais são acumulados."@pt ;
     dcat:distribution <https://w3id.org/ws-megsi-g7/distribuicao/rdf-despesas-municipais-2019-turtle> ;
-    dcat:inSeries wsds:serie-despesas-municipais .
+    dcat:inSeries wsds:serie-despesas-municipais ;
+    dcat:keyword "despesas com pessoal"@pt,
+        "despesas municipais"@pt,
+        "finanças locais"@pt,
+        "investimento"@pt ;
+    dcat:landingPage <https://dados.gov.pt/pt/datasets/despesas-municipais-2019> ;
+    dcat:temporalResolution "P3M"^^xsd:duration ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/ECON>,
+        <http://publications.europa.eu/resource/authority/data-theme/GOVE> ;
+    prov:wasDerivedFrom <https://dados.gov.pt/pt/datasets/despesas-municipais-2019> .
 
 wsds:rdf-qualidade-gestao-2017 a qb:DataSet,
         dcat:Dataset ;
-    dct:description "Conversão do ficheiro DGAL QualidadeGestaoPublica-2017.xlsx; 1540 observações não vazias. Códigos de município e período preservados. Fonte disponível no Portal Nacional de Dados Abertos."@pt ;
+    dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
+    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/NEVER> ;
+    dct:conformsTo <https://w3id.org/ws-megsi-g7/dsd/qualidade-gestao> ;
+    dct:description "Public management and financial sustainability indicators for Portugal's 308 municipalities, including debt, budget execution and payment times. Reference year: 2017."@en,
+        "Conversão do ficheiro DGAL QualidadeGestaoPublica-2017.xlsx; 1540 observações não vazias. Códigos de município e período preservados. Fonte disponível no Portal Nacional de Dados Abertos."@pt ;
     dct:identifier "rdf-qualidade-gestao-2017" ;
+    dct:language <http://publications.europa.eu/resource/authority/language/POR> ;
+    dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
     dct:publisher <https://w3id.org/ws-megsi-g7/agente/grupo7> ;
+    dct:rightsHolder <https://w3id.org/ws-megsi-g7/agente/dgal> ;
+    dct:source <https://dados.gov.pt/pt/datasets/qualidade-gestao-publica-2017-1> ;
+    dct:spatial <http://publications.europa.eu/resource/authority/country/PRT> ;
+    dct:temporal <https://w3id.org/ws-megsi-g7/intervalo/2017> ;
     dct:title "Qualidade da Gestão 2017 — dados convertidos para RDF"@pt ;
     qb:structure <https://w3id.org/ws-megsi-g7/dsd/qualidade-gestao> ;
+    adms:versionNotes "Convertido a partir de QualidadeGestaoPublica-2017.xlsx; 0 linhas sem medidas não originaram observações; valores omissos não foram substituídos por zero; valores numéricos tipados em RDF. Os dados trimestrais são acumulados."@pt ;
     dcat:distribution <https://w3id.org/ws-megsi-g7/distribuicao/rdf-qualidade-gestao-2017-turtle> ;
-    dcat:inSeries wsds:serie-qualidade-gestao .
+    dcat:inSeries wsds:serie-qualidade-gestao ;
+    dcat:keyword "endividamento"@pt,
+        "execução orçamental"@pt,
+        "gestão pública"@pt,
+        "sustentabilidade financeira"@pt ;
+    dcat:landingPage <https://dados.gov.pt/pt/datasets/qualidade-gestao-publica-2017-1> ;
+    dcat:temporalResolution "P3M"^^xsd:duration ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/ECON>,
+        <http://publications.europa.eu/resource/authority/data-theme/GOVE> ;
+    prov:wasDerivedFrom <https://dados.gov.pt/pt/datasets/qualidade-gestao-publica-2017-1> .
 
 wsds:rdf-qualidade-gestao-2018 a qb:DataSet,
         dcat:Dataset ;
-    dct:description "Conversão do ficheiro DGAL QualidadeGestaoPublica-2018.xlsx; 1540 observações não vazias. Códigos de município e período preservados. Fonte disponível no Portal Nacional de Dados Abertos."@pt ;
+    dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
+    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/NEVER> ;
+    dct:conformsTo <https://w3id.org/ws-megsi-g7/dsd/qualidade-gestao> ;
+    dct:description "Public management and financial sustainability indicators for Portugal's 308 municipalities, including debt, budget execution and payment times. Reference year: 2018."@en,
+        "Conversão do ficheiro DGAL QualidadeGestaoPublica-2018.xlsx; 1540 observações não vazias. Códigos de município e período preservados. Fonte disponível no Portal Nacional de Dados Abertos."@pt ;
     dct:identifier "rdf-qualidade-gestao-2018" ;
+    dct:language <http://publications.europa.eu/resource/authority/language/POR> ;
+    dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
     dct:publisher <https://w3id.org/ws-megsi-g7/agente/grupo7> ;
+    dct:rightsHolder <https://w3id.org/ws-megsi-g7/agente/dgal> ;
+    dct:source <https://dados.gov.pt/pt/datasets/qualidade-gestao-publica-2018-1> ;
+    dct:spatial <http://publications.europa.eu/resource/authority/country/PRT> ;
+    dct:temporal <https://w3id.org/ws-megsi-g7/intervalo/2018> ;
     dct:title "Qualidade da Gestão 2018 — dados convertidos para RDF"@pt ;
     qb:structure <https://w3id.org/ws-megsi-g7/dsd/qualidade-gestao> ;
+    adms:versionNotes "Convertido a partir de QualidadeGestaoPublica-2018.xlsx; 0 linhas sem medidas não originaram observações; valores omissos não foram substituídos por zero; valores numéricos tipados em RDF. Os dados trimestrais são acumulados."@pt ;
     dcat:distribution <https://w3id.org/ws-megsi-g7/distribuicao/rdf-qualidade-gestao-2018-turtle> ;
-    dcat:inSeries wsds:serie-qualidade-gestao .
+    dcat:inSeries wsds:serie-qualidade-gestao ;
+    dcat:keyword "endividamento"@pt,
+        "execução orçamental"@pt,
+        "gestão pública"@pt,
+        "sustentabilidade financeira"@pt ;
+    dcat:landingPage <https://dados.gov.pt/pt/datasets/qualidade-gestao-publica-2018-1> ;
+    dcat:temporalResolution "P3M"^^xsd:duration ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/ECON>,
+        <http://publications.europa.eu/resource/authority/data-theme/GOVE> ;
+    prov:wasDerivedFrom <https://dados.gov.pt/pt/datasets/qualidade-gestao-publica-2018-1> .
 
 wsds:rdf-qualidade-gestao-2019 a qb:DataSet,
         dcat:Dataset ;
-    dct:description "Conversão do ficheiro DGAL QualidadeGestaoPublica-2019.xlsx; 1540 observações não vazias. Códigos de município e período preservados. Fonte disponível no Portal Nacional de Dados Abertos."@pt ;
+    dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
+    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/NEVER> ;
+    dct:conformsTo <https://w3id.org/ws-megsi-g7/dsd/qualidade-gestao> ;
+    dct:description "Public management and financial sustainability indicators for Portugal's 308 municipalities, including debt, budget execution and payment times. Reference year: 2019."@en,
+        "Conversão do ficheiro DGAL QualidadeGestaoPublica-2019.xlsx; 1540 observações não vazias. Códigos de município e período preservados. Fonte disponível no Portal Nacional de Dados Abertos."@pt ;
     dct:identifier "rdf-qualidade-gestao-2019" ;
+    dct:language <http://publications.europa.eu/resource/authority/language/POR> ;
+    dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
     dct:publisher <https://w3id.org/ws-megsi-g7/agente/grupo7> ;
+    dct:rightsHolder <https://w3id.org/ws-megsi-g7/agente/dgal> ;
+    dct:source <https://dados.gov.pt/pt/datasets/qualidade-gestao-publica-2019> ;
+    dct:spatial <http://publications.europa.eu/resource/authority/country/PRT> ;
+    dct:temporal <https://w3id.org/ws-megsi-g7/intervalo/2019> ;
     dct:title "Qualidade da Gestão 2019 — dados convertidos para RDF"@pt ;
     qb:structure <https://w3id.org/ws-megsi-g7/dsd/qualidade-gestao> ;
+    adms:versionNotes "Convertido a partir de QualidadeGestaoPublica-2019.xlsx; 0 linhas sem medidas não originaram observações; valores omissos não foram substituídos por zero; valores numéricos tipados em RDF. Os dados trimestrais são acumulados."@pt ;
     dcat:distribution <https://w3id.org/ws-megsi-g7/distribuicao/rdf-qualidade-gestao-2019-turtle> ;
-    dcat:inSeries wsds:serie-qualidade-gestao .
+    dcat:inSeries wsds:serie-qualidade-gestao ;
+    dcat:keyword "endividamento"@pt,
+        "execução orçamental"@pt,
+        "gestão pública"@pt,
+        "sustentabilidade financeira"@pt ;
+    dcat:landingPage <https://dados.gov.pt/pt/datasets/qualidade-gestao-publica-2019> ;
+    dcat:temporalResolution "P3M"^^xsd:duration ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/ECON>,
+        <http://publications.europa.eu/resource/authority/data-theme/GOVE> ;
+    prov:wasDerivedFrom <https://dados.gov.pt/pt/datasets/qualidade-gestao-publica-2019> .
 
 wsds:rdf-receitas-municipais-2017 a qb:DataSet,
         dcat:Dataset ;
-    dct:description "Conversão do ficheiro DGAL ReceitasMunicipais-2017.csv; 1219 observações não vazias. Códigos de município e período preservados. Fonte disponível no Portal Nacional de Dados Abertos."@pt ;
+    dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
+    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/NEVER> ;
+    dct:conformsTo <https://w3id.org/ws-megsi-g7/dsd/receitas-municipais> ;
+    dct:description "Municipal revenues for Portugal's 308 municipalities, including taxes, transfers, funding and other revenue; quarterly values are cumulative. Reference year: 2017."@en,
+        "Conversão do ficheiro DGAL ReceitasMunicipais-2017.csv; 1219 observações não vazias. Códigos de município e período preservados. Fonte disponível no Portal Nacional de Dados Abertos."@pt ;
     dct:identifier "rdf-receitas-municipais-2017" ;
+    dct:language <http://publications.europa.eu/resource/authority/language/POR> ;
+    dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
     dct:publisher <https://w3id.org/ws-megsi-g7/agente/grupo7> ;
+    dct:rightsHolder <https://w3id.org/ws-megsi-g7/agente/dgal> ;
+    dct:source <https://dados.gov.pt/pt/datasets/receitas-municipais-2017> ;
+    dct:spatial <http://publications.europa.eu/resource/authority/country/PRT> ;
+    dct:temporal <https://w3id.org/ws-megsi-g7/intervalo/2017> ;
     dct:title "Receitas 2017 — dados convertidos para RDF"@pt ;
     qb:structure <https://w3id.org/ws-megsi-g7/dsd/receitas-municipais> ;
+    adms:versionNotes "Convertido a partir de ReceitasMunicipais-2017.csv; 321 linhas sem medidas não originaram observações; valores omissos não foram substituídos por zero; valores numéricos tipados em RDF. Os dados trimestrais são acumulados."@pt ;
     dcat:distribution <https://w3id.org/ws-megsi-g7/distribuicao/rdf-receitas-municipais-2017-turtle> ;
-    dcat:inSeries wsds:serie-receitas-municipais .
+    dcat:inSeries wsds:serie-receitas-municipais ;
+    dcat:keyword "finanças locais"@pt,
+        "impostos municipais"@pt,
+        "receitas municipais"@pt,
+        "transferências"@pt ;
+    dcat:landingPage <https://dados.gov.pt/pt/datasets/receitas-municipais-2017> ;
+    dcat:temporalResolution "P3M"^^xsd:duration ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/ECON>,
+        <http://publications.europa.eu/resource/authority/data-theme/GOVE> ;
+    prov:wasDerivedFrom <https://dados.gov.pt/pt/datasets/receitas-municipais-2017> .
 
 wsds:rdf-receitas-municipais-2018 a qb:DataSet,
         dcat:Dataset ;
-    dct:description "Conversão do ficheiro DGAL ReceitasMunicipais-2018.csv; 1540 observações não vazias. Códigos de município e período preservados. Fonte disponível no Portal Nacional de Dados Abertos."@pt ;
+    dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
+    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/NEVER> ;
+    dct:conformsTo <https://w3id.org/ws-megsi-g7/dsd/receitas-municipais> ;
+    dct:description "Municipal revenues for Portugal's 308 municipalities, including taxes, transfers, funding and other revenue; quarterly values are cumulative. Reference year: 2018."@en,
+        "Conversão do ficheiro DGAL ReceitasMunicipais-2018.csv; 1540 observações não vazias. Códigos de município e período preservados. Fonte disponível no Portal Nacional de Dados Abertos."@pt ;
     dct:identifier "rdf-receitas-municipais-2018" ;
+    dct:language <http://publications.europa.eu/resource/authority/language/POR> ;
+    dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
     dct:publisher <https://w3id.org/ws-megsi-g7/agente/grupo7> ;
+    dct:rightsHolder <https://w3id.org/ws-megsi-g7/agente/dgal> ;
+    dct:source <https://dados.gov.pt/pt/datasets/receitas-municipais-2018-1> ;
+    dct:spatial <http://publications.europa.eu/resource/authority/country/PRT> ;
+    dct:temporal <https://w3id.org/ws-megsi-g7/intervalo/2018> ;
     dct:title "Receitas 2018 — dados convertidos para RDF"@pt ;
     qb:structure <https://w3id.org/ws-megsi-g7/dsd/receitas-municipais> ;
+    adms:versionNotes "Convertido a partir de ReceitasMunicipais-2018.csv; 0 linhas sem medidas não originaram observações; valores omissos não foram substituídos por zero; valores numéricos tipados em RDF. Os dados trimestrais são acumulados."@pt ;
     dcat:distribution <https://w3id.org/ws-megsi-g7/distribuicao/rdf-receitas-municipais-2018-turtle> ;
-    dcat:inSeries wsds:serie-receitas-municipais .
+    dcat:inSeries wsds:serie-receitas-municipais ;
+    dcat:keyword "finanças locais"@pt,
+        "impostos municipais"@pt,
+        "receitas municipais"@pt,
+        "transferências"@pt ;
+    dcat:landingPage <https://dados.gov.pt/pt/datasets/receitas-municipais-2018-1> ;
+    dcat:temporalResolution "P3M"^^xsd:duration ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/ECON>,
+        <http://publications.europa.eu/resource/authority/data-theme/GOVE> ;
+    prov:wasDerivedFrom <https://dados.gov.pt/pt/datasets/receitas-municipais-2018-1> .
 
 wsds:rdf-receitas-municipais-2019 a qb:DataSet,
         dcat:Dataset ;
-    dct:description "Conversão do ficheiro DGAL ReceitasMunicipais-2019.csv; 1540 observações não vazias. Códigos de município e período preservados. Fonte disponível no Portal Nacional de Dados Abertos."@pt ;
+    dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
+    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/NEVER> ;
+    dct:conformsTo <https://w3id.org/ws-megsi-g7/dsd/receitas-municipais> ;
+    dct:description "Municipal revenues for Portugal's 308 municipalities, including taxes, transfers, funding and other revenue; quarterly values are cumulative. Reference year: 2019."@en,
+        "Conversão do ficheiro DGAL ReceitasMunicipais-2019.csv; 1540 observações não vazias. Códigos de município e período preservados. Fonte disponível no Portal Nacional de Dados Abertos."@pt ;
     dct:identifier "rdf-receitas-municipais-2019" ;
+    dct:language <http://publications.europa.eu/resource/authority/language/POR> ;
+    dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
     dct:publisher <https://w3id.org/ws-megsi-g7/agente/grupo7> ;
+    dct:rightsHolder <https://w3id.org/ws-megsi-g7/agente/dgal> ;
+    dct:source <https://dados.gov.pt/pt/datasets/receitas-municipais-2019> ;
+    dct:spatial <http://publications.europa.eu/resource/authority/country/PRT> ;
+    dct:temporal <https://w3id.org/ws-megsi-g7/intervalo/2019> ;
     dct:title "Receitas 2019 — dados convertidos para RDF"@pt ;
     qb:structure <https://w3id.org/ws-megsi-g7/dsd/receitas-municipais> ;
+    adms:versionNotes "Convertido a partir de ReceitasMunicipais-2019.csv; 0 linhas sem medidas não originaram observações; valores omissos não foram substituídos por zero; valores numéricos tipados em RDF. Os dados trimestrais são acumulados."@pt ;
     dcat:distribution <https://w3id.org/ws-megsi-g7/distribuicao/rdf-receitas-municipais-2019-turtle> ;
-    dcat:inSeries wsds:serie-receitas-municipais .
+    dcat:inSeries wsds:serie-receitas-municipais ;
+    dcat:keyword "finanças locais"@pt,
+        "impostos municipais"@pt,
+        "receitas municipais"@pt,
+        "transferências"@pt ;
+    dcat:landingPage <https://dados.gov.pt/pt/datasets/receitas-municipais-2019> ;
+    dcat:temporalResolution "P3M"^^xsd:duration ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/ECON>,
+        <http://publications.europa.eu/resource/authority/data-theme/GOVE> ;
+    prov:wasDerivedFrom <https://dados.gov.pt/pt/datasets/receitas-municipais-2019> .
 
 wsds:rdf-recursos-humanos-2017 a qb:DataSet,
         dcat:Dataset ;
-    dct:description "Conversão do ficheiro DGAL RecursosHumanos-2017.xlsx; 308 observações não vazias. Códigos de município e período preservados. Fonte disponível no Portal Nacional de Dados Abertos."@pt ;
+    dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
+    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/NEVER> ;
+    dct:conformsTo <https://w3id.org/ws-megsi-g7/dsd/recursos-humanos-2017> ;
+    dct:description "Human resources indicators for Portugal's 308 municipalities, including staff, management categories and employment contracts; 2017 includes annual observations only. Reference year: 2017."@en,
+        "Conversão do ficheiro DGAL RecursosHumanos-2017.xlsx; 308 observações não vazias. Códigos de município e período preservados. Fonte disponível no Portal Nacional de Dados Abertos."@pt ;
     dct:identifier "rdf-recursos-humanos-2017" ;
+    dct:language <http://publications.europa.eu/resource/authority/language/POR> ;
+    dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
     dct:publisher <https://w3id.org/ws-megsi-g7/agente/grupo7> ;
+    dct:rightsHolder <https://w3id.org/ws-megsi-g7/agente/dgal> ;
+    dct:source <https://dados.gov.pt/pt/datasets/recursos-humanos-2017> ;
+    dct:spatial <http://publications.europa.eu/resource/authority/country/PRT> ;
+    dct:temporal <https://w3id.org/ws-megsi-g7/intervalo/2017> ;
     dct:title "Recursos Humanos 2017 — dados convertidos para RDF"@pt ;
     qb:structure <https://w3id.org/ws-megsi-g7/dsd/recursos-humanos-2017> ;
+    adms:versionNotes "Convertido a partir de RecursosHumanos-2017.xlsx; 0 linhas sem medidas não originaram observações; valores omissos não foram substituídos por zero; valores numéricos tipados em RDF. Os dados trimestrais são acumulados. Os dois indicadores adicionais de Recursos Humanos de 2017 foram separados em estrutura estatística própria."@pt ;
     dcat:distribution <https://w3id.org/ws-megsi-g7/distribuicao/rdf-recursos-humanos-2017-turtle> ;
-    dcat:inSeries wsds:serie-recursos-humanos .
+    dcat:inSeries wsds:serie-recursos-humanos ;
+    dcat:keyword "dirigentes"@pt,
+        "recursos humanos"@pt,
+        "trabalhadores municipais"@pt,
+        "vínculos laborais"@pt ;
+    dcat:landingPage <https://dados.gov.pt/pt/datasets/recursos-humanos-2017> ;
+    dcat:temporalResolution "P1Y"^^xsd:duration ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/ECON>,
+        <http://publications.europa.eu/resource/authority/data-theme/GOVE> ;
+    prov:wasDerivedFrom <https://dados.gov.pt/pt/datasets/recursos-humanos-2017> .
 
 wsds:rdf-recursos-humanos-2018 a qb:DataSet,
         dcat:Dataset ;
-    dct:description "Conversão do ficheiro DGAL RecursosHumanos-2018.xlsx; 1540 observações não vazias. Códigos de município e período preservados. Fonte disponível no Portal Nacional de Dados Abertos."@pt ;
+    dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
+    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/NEVER> ;
+    dct:conformsTo <https://w3id.org/ws-megsi-g7/dsd/recursos-humanos> ;
+    dct:description "Human resources indicators for Portugal's 308 municipalities, including staff, management categories and employment contracts; 2017 includes annual observations only. Reference year: 2018."@en,
+        "Conversão do ficheiro DGAL RecursosHumanos-2018.xlsx; 1540 observações não vazias. Códigos de município e período preservados. Fonte disponível no Portal Nacional de Dados Abertos."@pt ;
     dct:identifier "rdf-recursos-humanos-2018" ;
+    dct:language <http://publications.europa.eu/resource/authority/language/POR> ;
+    dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
     dct:publisher <https://w3id.org/ws-megsi-g7/agente/grupo7> ;
+    dct:rightsHolder <https://w3id.org/ws-megsi-g7/agente/dgal> ;
+    dct:source <https://dados.gov.pt/pt/datasets/recursos-humanos-2018-1> ;
+    dct:spatial <http://publications.europa.eu/resource/authority/country/PRT> ;
+    dct:temporal <https://w3id.org/ws-megsi-g7/intervalo/2018> ;
     dct:title "Recursos Humanos 2018 — dados convertidos para RDF"@pt ;
     qb:structure <https://w3id.org/ws-megsi-g7/dsd/recursos-humanos> ;
+    adms:versionNotes "Convertido a partir de RecursosHumanos-2018.xlsx; 0 linhas sem medidas não originaram observações; valores omissos não foram substituídos por zero; valores numéricos tipados em RDF. Os dados trimestrais são acumulados. Os dois indicadores adicionais de Recursos Humanos de 2017 foram separados em estrutura estatística própria."@pt ;
     dcat:distribution <https://w3id.org/ws-megsi-g7/distribuicao/rdf-recursos-humanos-2018-turtle> ;
-    dcat:inSeries wsds:serie-recursos-humanos .
+    dcat:inSeries wsds:serie-recursos-humanos ;
+    dcat:keyword "dirigentes"@pt,
+        "recursos humanos"@pt,
+        "trabalhadores municipais"@pt,
+        "vínculos laborais"@pt ;
+    dcat:landingPage <https://dados.gov.pt/pt/datasets/recursos-humanos-2018-1> ;
+    dcat:temporalResolution "P3M"^^xsd:duration ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/ECON>,
+        <http://publications.europa.eu/resource/authority/data-theme/GOVE> ;
+    prov:wasDerivedFrom <https://dados.gov.pt/pt/datasets/recursos-humanos-2018-1> .
 
 wsds:rdf-recursos-humanos-2019 a qb:DataSet,
         dcat:Dataset ;
-    dct:description "Conversão do ficheiro DGAL RecursosHumanos-2019.xlsx; 1540 observações não vazias. Códigos de município e período preservados. Fonte disponível no Portal Nacional de Dados Abertos."@pt ;
+    dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
+    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/NEVER> ;
+    dct:conformsTo <https://w3id.org/ws-megsi-g7/dsd/recursos-humanos> ;
+    dct:description "Human resources indicators for Portugal's 308 municipalities, including staff, management categories and employment contracts; 2017 includes annual observations only. Reference year: 2019."@en,
+        "Conversão do ficheiro DGAL RecursosHumanos-2019.xlsx; 1540 observações não vazias. Códigos de município e período preservados. Fonte disponível no Portal Nacional de Dados Abertos."@pt ;
     dct:identifier "rdf-recursos-humanos-2019" ;
+    dct:language <http://publications.europa.eu/resource/authority/language/POR> ;
+    dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
     dct:publisher <https://w3id.org/ws-megsi-g7/agente/grupo7> ;
+    dct:rightsHolder <https://w3id.org/ws-megsi-g7/agente/dgal> ;
+    dct:source <https://dados.gov.pt/pt/datasets/recursos-humanos-2019> ;
+    dct:spatial <http://publications.europa.eu/resource/authority/country/PRT> ;
+    dct:temporal <https://w3id.org/ws-megsi-g7/intervalo/2019> ;
     dct:title "Recursos Humanos 2019 — dados convertidos para RDF"@pt ;
     qb:structure <https://w3id.org/ws-megsi-g7/dsd/recursos-humanos> ;
+    adms:versionNotes "Convertido a partir de RecursosHumanos-2019.xlsx; 0 linhas sem medidas não originaram observações; valores omissos não foram substituídos por zero; valores numéricos tipados em RDF. Os dados trimestrais são acumulados. Os dois indicadores adicionais de Recursos Humanos de 2017 foram separados em estrutura estatística própria."@pt ;
     dcat:distribution <https://w3id.org/ws-megsi-g7/distribuicao/rdf-recursos-humanos-2019-turtle> ;
-    dcat:inSeries wsds:serie-recursos-humanos .
+    dcat:inSeries wsds:serie-recursos-humanos ;
+    dcat:keyword "dirigentes"@pt,
+        "recursos humanos"@pt,
+        "trabalhadores municipais"@pt,
+        "vínculos laborais"@pt ;
+    dcat:landingPage <https://dados.gov.pt/pt/datasets/recursos-humanos-2019> ;
+    dcat:temporalResolution "P3M"^^xsd:duration ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/ECON>,
+        <http://publications.europa.eu/resource/authority/data-theme/GOVE> ;
+    prov:wasDerivedFrom <https://dados.gov.pt/pt/datasets/recursos-humanos-2019> .
 
 <https://w3id.org/ws-megsi-g7/distribuicao/rdf-despesas-municipais-2017-turtle> a dcat:Distribution ;
+    dct:description "Distribuição RDF/Turtle da série Despesas, ano 2017, com 1228 observações."@pt ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
     dct:title "Observações RDF Despesas 2017 (Turtle)"@pt ;
+    adms:status <http://publications.europa.eu/resource/authority/distribution-status/COMPLETED> ;
+    dcat:accessURL <https://raw.githubusercontent.com/Mota005/WB/main/RDF/rdf/obs-despesas-municipais-2017.ttl> ;
+    dcat:byteSize "890716"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://raw.githubusercontent.com/Mota005/WB/main/RDF/rdf/obs-despesas-municipais-2017.ttl> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
 <https://w3id.org/ws-megsi-g7/distribuicao/rdf-despesas-municipais-2018-turtle> a dcat:Distribution ;
+    dct:description "Distribuição RDF/Turtle da série Despesas, ano 2018, com 1540 observações."@pt ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
     dct:title "Observações RDF Despesas 2018 (Turtle)"@pt ;
+    adms:status <http://publications.europa.eu/resource/authority/distribution-status/COMPLETED> ;
+    dcat:accessURL <https://raw.githubusercontent.com/Mota005/WB/main/RDF/rdf/obs-despesas-municipais-2018.ttl> ;
+    dcat:byteSize "1119954"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://raw.githubusercontent.com/Mota005/WB/main/RDF/rdf/obs-despesas-municipais-2018.ttl> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
 <https://w3id.org/ws-megsi-g7/distribuicao/rdf-despesas-municipais-2019-turtle> a dcat:Distribution ;
+    dct:description "Distribuição RDF/Turtle da série Despesas, ano 2019, com 1540 observações."@pt ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
     dct:title "Observações RDF Despesas 2019 (Turtle)"@pt ;
+    adms:status <http://publications.europa.eu/resource/authority/distribution-status/COMPLETED> ;
+    dcat:accessURL <https://raw.githubusercontent.com/Mota005/WB/main/RDF/rdf/obs-despesas-municipais-2019.ttl> ;
+    dcat:byteSize "1120773"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://raw.githubusercontent.com/Mota005/WB/main/RDF/rdf/obs-despesas-municipais-2019.ttl> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
 <https://w3id.org/ws-megsi-g7/distribuicao/rdf-qualidade-gestao-2017-turtle> a dcat:Distribution ;
+    dct:description "Distribuição RDF/Turtle da série Qualidade da Gestão, ano 2017, com 1540 observações."@pt ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
     dct:title "Observações RDF Qualidade da Gestão 2017 (Turtle)"@pt ;
+    adms:status <http://publications.europa.eu/resource/authority/distribution-status/COMPLETED> ;
+    dcat:accessURL <https://raw.githubusercontent.com/Mota005/WB/main/RDF/rdf/obs-qualidade-gestao-2017.ttl> ;
+    dcat:byteSize "974637"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://raw.githubusercontent.com/Mota005/WB/main/RDF/rdf/obs-qualidade-gestao-2017.ttl> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
 <https://w3id.org/ws-megsi-g7/distribuicao/rdf-qualidade-gestao-2018-turtle> a dcat:Distribution ;
+    dct:description "Distribuição RDF/Turtle da série Qualidade da Gestão, ano 2018, com 1540 observações."@pt ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
     dct:title "Observações RDF Qualidade da Gestão 2018 (Turtle)"@pt ;
+    adms:status <http://publications.europa.eu/resource/authority/distribution-status/COMPLETED> ;
+    dcat:accessURL <https://raw.githubusercontent.com/Mota005/WB/main/RDF/rdf/obs-qualidade-gestao-2018.ttl> ;
+    dcat:byteSize "974404"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://raw.githubusercontent.com/Mota005/WB/main/RDF/rdf/obs-qualidade-gestao-2018.ttl> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
 <https://w3id.org/ws-megsi-g7/distribuicao/rdf-qualidade-gestao-2019-turtle> a dcat:Distribution ;
+    dct:description "Distribuição RDF/Turtle da série Qualidade da Gestão, ano 2019, com 1540 observações."@pt ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
     dct:title "Observações RDF Qualidade da Gestão 2019 (Turtle)"@pt ;
+    adms:status <http://publications.europa.eu/resource/authority/distribution-status/COMPLETED> ;
+    dcat:accessURL <https://raw.githubusercontent.com/Mota005/WB/main/RDF/rdf/obs-qualidade-gestao-2019.ttl> ;
+    dcat:byteSize "974290"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://raw.githubusercontent.com/Mota005/WB/main/RDF/rdf/obs-qualidade-gestao-2019.ttl> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
 <https://w3id.org/ws-megsi-g7/distribuicao/rdf-receitas-municipais-2017-turtle> a dcat:Distribution ;
+    dct:description "Distribuição RDF/Turtle da série Receitas, ano 2017, com 1219 observações."@pt ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
     dct:title "Observações RDF Receitas 2017 (Turtle)"@pt ;
+    adms:status <http://publications.europa.eu/resource/authority/distribution-status/COMPLETED> ;
+    dcat:accessURL <https://raw.githubusercontent.com/Mota005/WB/main/RDF/rdf/obs-receitas-municipais-2017.ttl> ;
+    dcat:byteSize "714789"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://raw.githubusercontent.com/Mota005/WB/main/RDF/rdf/obs-receitas-municipais-2017.ttl> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
 <https://w3id.org/ws-megsi-g7/distribuicao/rdf-receitas-municipais-2018-turtle> a dcat:Distribution ;
+    dct:description "Distribuição RDF/Turtle da série Receitas, ano 2018, com 1540 observações."@pt ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
     dct:title "Observações RDF Receitas 2018 (Turtle)"@pt ;
+    adms:status <http://publications.europa.eu/resource/authority/distribution-status/COMPLETED> ;
+    dcat:accessURL <https://raw.githubusercontent.com/Mota005/WB/main/RDF/rdf/obs-receitas-municipais-2018.ttl> ;
+    dcat:byteSize "907814"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://raw.githubusercontent.com/Mota005/WB/main/RDF/rdf/obs-receitas-municipais-2018.ttl> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
 <https://w3id.org/ws-megsi-g7/distribuicao/rdf-receitas-municipais-2019-turtle> a dcat:Distribution ;
+    dct:description "Distribuição RDF/Turtle da série Receitas, ano 2019, com 1540 observações."@pt ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
     dct:title "Observações RDF Receitas 2019 (Turtle)"@pt ;
+    adms:status <http://publications.europa.eu/resource/authority/distribution-status/COMPLETED> ;
+    dcat:accessURL <https://raw.githubusercontent.com/Mota005/WB/main/RDF/rdf/obs-receitas-municipais-2019.ttl> ;
+    dcat:byteSize "908646"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://raw.githubusercontent.com/Mota005/WB/main/RDF/rdf/obs-receitas-municipais-2019.ttl> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
 <https://w3id.org/ws-megsi-g7/distribuicao/rdf-recursos-humanos-2017-turtle> a dcat:Distribution ;
+    dct:description "Distribuição RDF/Turtle da série Recursos Humanos, ano 2017, com 308 observações."@pt ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
     dct:title "Observações RDF Recursos Humanos 2017 (Turtle)"@pt ;
+    adms:status <http://publications.europa.eu/resource/authority/distribution-status/COMPLETED> ;
+    dcat:accessURL <https://raw.githubusercontent.com/Mota005/WB/main/RDF/rdf/obs-recursos-humanos-2017.ttl> ;
+    dcat:byteSize "151872"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://raw.githubusercontent.com/Mota005/WB/main/RDF/rdf/obs-recursos-humanos-2017.ttl> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
 <https://w3id.org/ws-megsi-g7/distribuicao/rdf-recursos-humanos-2018-turtle> a dcat:Distribution ;
+    dct:description "Distribuição RDF/Turtle da série Recursos Humanos, ano 2018, com 1540 observações."@pt ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
     dct:title "Observações RDF Recursos Humanos 2018 (Turtle)"@pt ;
+    adms:status <http://publications.europa.eu/resource/authority/distribution-status/COMPLETED> ;
+    dcat:accessURL <https://raw.githubusercontent.com/Mota005/WB/main/RDF/rdf/obs-recursos-humanos-2018.ttl> ;
+    dcat:byteSize "670345"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://raw.githubusercontent.com/Mota005/WB/main/RDF/rdf/obs-recursos-humanos-2018.ttl> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
 <https://w3id.org/ws-megsi-g7/distribuicao/rdf-recursos-humanos-2019-turtle> a dcat:Distribution ;
+    dct:description "Distribuição RDF/Turtle da série Recursos Humanos, ano 2019, com 1540 observações."@pt ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
     dct:title "Observações RDF Recursos Humanos 2019 (Turtle)"@pt ;
+    adms:status <http://publications.europa.eu/resource/authority/distribution-status/COMPLETED> ;
+    dcat:accessURL <https://raw.githubusercontent.com/Mota005/WB/main/RDF/rdf/obs-recursos-humanos-2019.ttl> ;
+    dcat:byteSize "670626"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://raw.githubusercontent.com/Mota005/WB/main/RDF/rdf/obs-recursos-humanos-2019.ttl> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
 wsds:serie-despesas-municipais a dcat:DatasetSeries ;
-    dct:title "Despesas"@pt .
+    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/ANNUAL> ;
+    dct:description "Municipal expenditure for Portugal's 308 municipalities, including current expenses, investment, staff and transfers; quarterly values are cumulative."@en,
+        "Despesas municipais de 308 municípios portugueses, incluindo despesas correntes, investimento, pessoal e transferências; os trimestres apresentam valores acumulados."@pt ;
+    dct:publisher <https://w3id.org/ws-megsi-g7/agente/grupo7> ;
+    dct:spatial <http://publications.europa.eu/resource/authority/country/PRT> ;
+    dct:title "Despesas"@pt ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/ECON>,
+        <http://publications.europa.eu/resource/authority/data-theme/GOVE> .
 
 wsds:serie-qualidade-gestao a dcat:DatasetSeries ;
-    dct:title "Qualidade da Gestão"@pt .
+    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/ANNUAL> ;
+    dct:description "Public management and financial sustainability indicators for Portugal's 308 municipalities, including debt, budget execution and payment times."@en,
+        "Indicadores de gestão pública e sustentabilidade financeira dos 308 municípios portugueses, incluindo dívida, execução orçamental e prazos de pagamento."@pt ;
+    dct:publisher <https://w3id.org/ws-megsi-g7/agente/grupo7> ;
+    dct:spatial <http://publications.europa.eu/resource/authority/country/PRT> ;
+    dct:title "Qualidade da Gestão"@pt ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/ECON>,
+        <http://publications.europa.eu/resource/authority/data-theme/GOVE> .
 
 wsds:serie-receitas-municipais a dcat:DatasetSeries ;
-    dct:title "Receitas"@pt .
+    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/ANNUAL> ;
+    dct:description "Municipal revenues for Portugal's 308 municipalities, including taxes, transfers, funding and other revenue; quarterly values are cumulative."@en,
+        "Receitas municipais de 308 municípios portugueses, incluindo impostos, transferências, financiamento e outras receitas; os trimestres apresentam valores acumulados."@pt ;
+    dct:publisher <https://w3id.org/ws-megsi-g7/agente/grupo7> ;
+    dct:spatial <http://publications.europa.eu/resource/authority/country/PRT> ;
+    dct:title "Receitas"@pt ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/ECON>,
+        <http://publications.europa.eu/resource/authority/data-theme/GOVE> .
 
 wsds:serie-recursos-humanos a dcat:DatasetSeries ;
-    dct:title "Recursos Humanos"@pt .
+    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/ANNUAL> ;
+    dct:description "Human resources indicators for Portugal's 308 municipalities, including staff, management categories and employment contracts; 2017 includes annual observations only."@en,
+        "Indicadores de recursos humanos dos 308 municípios portugueses, incluindo trabalhadores, dirigentes, categorias e tipos de vínculo; 2017 contém apenas o período anual."@pt ;
+    dct:publisher <https://w3id.org/ws-megsi-g7/agente/grupo7> ;
+    dct:spatial <http://publications.europa.eu/resource/authority/country/PRT> ;
+    dct:title "Recursos Humanos"@pt ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/ECON>,
+        <http://publications.europa.eu/resource/authority/data-theme/GOVE> .
+
+<https://w3id.org/ws-megsi-g7/intervalo/2017> a dct:PeriodOfTime ;
+    dcat:endDate "2017-12-31"^^xsd:date ;
+    dcat:startDate "2017-01-01"^^xsd:date .
+
+<https://w3id.org/ws-megsi-g7/intervalo/2018> a dct:PeriodOfTime ;
+    dcat:endDate "2018-12-31"^^xsd:date ;
+    dcat:startDate "2018-01-01"^^xsd:date .
+
+<https://w3id.org/ws-megsi-g7/intervalo/2019> a dct:PeriodOfTime ;
+    dcat:endDate "2019-12-31"^^xsd:date ;
+    dcat:startDate "2019-01-01"^^xsd:date .
+
+<https://w3id.org/ws-megsi-g7/agente/dgal> a foaf:Organization ;
+    foaf:name "Direção-Geral das Autarquias Locais"@pt .
 
 <https://w3id.org/ws-megsi-g7/agente/grupo7> a foaf:Organization ;
     foaf:name "Grupo 7 — Web Semântica, MEGSI"@pt .

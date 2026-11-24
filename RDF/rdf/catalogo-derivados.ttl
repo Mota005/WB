@@ -9,7 +9,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 ws:catalogo a dcat:Catalog ;
-    dct:description "Catálogo de 12 conjuntos de dados RDF derivados de CSV/XLSX da DGAL (2017-2019), com quatro series tematicas, metadados de distribuicao, licencas e proveniencia. URLs oficiais incluidas apenas quando confirmadas."@pt ;
+    dct:description "Catálogo de 12 conjuntos de dados em RDF/Turtle, derivados dos ficheiros CSV e XLSX da Direção-Geral das Autarquias Locais (DGAL), referentes a 2017, 2018 e 2019. Organiza os conjuntos de dados em quatro séries temáticas e descreve as respetivas distribuições, licenças, cobertura temporal e espacial e proveniência."@pt ;
     dct:language <http://publications.europa.eu/resource/authority/language/POR> ;
     dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
     dct:publisher <https://w3id.org/ws-megsi-g7/agente/grupo7> ;

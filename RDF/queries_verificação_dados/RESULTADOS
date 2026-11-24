@@ -1,0 +1,24 @@
+## Dados carregados
+Os ficheiros RDF estão na pasta `RDF/rdf`.
+
+Foram importados:
+- 12 ficheiros de observações RDF
+- catalogo-derivados.ttl
+- estruturas-dsd.ttl
+- territorio.ttl
+- periodos.ttl
+- vocabulario-g7_proposta.ttl
+
+## Verificações SPARQL
+As consultas estão disponíveis na pasta `RDF/queries`.
+
+Resultados obtidos:
+- 16 615 observações
+- 12 datasets
+- 308 municípios
+- 5 estruturas estatísticas
+- 12 distribuições com URLs públicas
+
+## Consulta de exemplo
+Receitas totais de Braga em 2019:
+109 961 437,22 €

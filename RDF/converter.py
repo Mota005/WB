@@ -363,12 +363,14 @@ def enriquecer_catalogo(
     catalogo.add((cat, DCT.language, EU_LANG.POR))
     catalogo.add((cat, DCAT.themeTaxonomy, URIRef("http://publications.europa.eu/resource/authority/data-theme")))
     catalogo.add((cat, DCT.license, LICENCA_CC_BY))
-    # Substituir o texto de rascunho que afirmava nao haver qualquer fonte.
+    # Descrição definitiva do catálogo, sem notas internas de rascunho.
     catalogo.remove((cat, DCT.description, None))
     catalogo.add((cat, DCT.description, Literal(
-        "Catálogo de 12 conjuntos de dados RDF derivados de CSV/XLSX da DGAL "
-        "(2017-2019), com quatro series tematicas, metadados de distribuicao, "
-        "licencas e proveniencia. URLs oficiais incluidas apenas quando confirmadas.", lang="pt")))
+        "Catálogo de 12 conjuntos de dados em RDF/Turtle, derivados dos ficheiros "
+        "CSV e XLSX da Direção-Geral das Autarquias Locais (DGAL), referentes a "
+        "2017, 2018 e 2019. Organiza os conjuntos de dados em quatro séries "
+        "temáticas e descreve as respetivas distribuições, licenças, cobertura "
+        "temporal e espacial e proveniência.", lang="pt")))
 
     # Cada série é um recurso distinto com frequência anual e duas categorias EU.
     for serie, slug in SERIES.items():

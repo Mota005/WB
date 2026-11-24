@@ -1,0 +1,12 @@
+
+PREFIX qb: <http://purl.org/linked-data/cube#>
+
+SELECT
+    (COUNT(DISTINCT ?dataset) AS ?totalDatasets)
+    (COUNT(DISTINCT ?estrutura) AS ?totalEstruturas)
+WHERE {
+    ?dataset a qb:DataSet ;
+             qb:structure ?estrutura .
+
+    ?estrutura a qb:DataStructureDefinition .
+}

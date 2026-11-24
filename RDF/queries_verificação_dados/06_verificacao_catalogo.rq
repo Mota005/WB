@@ -1,0 +1,17 @@
+
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+
+SELECT
+    (COUNT(DISTINCT ?dataset) AS ?totalDatasets)
+    (COUNT(DISTINCT ?distribuicao) AS ?totalDistribuicoes)
+    (COUNT(DISTINCT ?url) AS ?totalURLs)
+WHERE {
+    ?catalogo a dcat:Catalog ;
+              dcat:dataset ?dataset .
+
+    ?dataset dcat:distribution ?distribuicao .
+
+    ?distribuicao a dcat:Distribution ;
+                 dcat:accessURL ?url ;
+                 dcat:downloadURL ?downloadURL .
+}

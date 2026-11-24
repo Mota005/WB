@@ -1,0 +1,14 @@
+
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX dct: <http://purl.org/dc/terms/>
+
+SELECT ?dataset ?titulo (COUNT(DISTINCT ?obs) AS ?observacoes)
+WHERE {
+    ?obs a qb:Observation ;
+         qb:dataSet ?dataset .
+
+    ?dataset dct:title ?titulo .
+    FILTER(LANG(?titulo) = "pt")
+}
+GROUP BY ?dataset ?titulo
+ORDER BY ?titulo

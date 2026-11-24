@@ -1,0 +1,8 @@
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX sdmx-dimension: <http://purl.org/linked-data/sdmx/2009/dimension#>
+
+SELECT (COUNT(DISTINCT ?municipio) AS ?totalMunicipios)
+WHERE {
+    ?obs a qb:Observation ;
+         sdmx-dimension:refArea ?municipio .
+}

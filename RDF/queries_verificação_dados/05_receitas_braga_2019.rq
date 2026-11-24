@@ -1,0 +1,16 @@
+
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX g7: <https://w3id.org/ws-megsi-g7/vocab#>
+PREFIX terr: <https://w3id.org/ws-megsi-g7/territorio/>
+PREFIX per: <https://w3id.org/ws-megsi-g7/periodo/>
+PREFIX wsds: <https://w3id.org/ws-megsi-g7/dataset/>
+PREFIX sdmx-dimension: <http://purl.org/linked-data/sdmx/2009/dimension#>
+
+SELECT ?receitaTotal
+WHERE {
+    ?obs a qb:Observation ;
+         qb:dataSet wsds:rdf-receitas-municipais-2019 ;
+         sdmx-dimension:refArea terr:0303 ;
+         g7:periodo per:2019 ;
+         g7:receitasTotais ?receitaTotal .
+}

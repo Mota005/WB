@@ -3,1544 +3,2283 @@
 @prefix terr: <https://w3id.org/ws-megsi-g7/territorio/> .
 
 terr:0101 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/01> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q249906> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0101" ;
     skos:prefLabel "Águeda"@pt .
 
 terr:0102 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/01> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q1870321> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0102" ;
-    skos:prefLabel "Albergaria-A-Velha"@pt .
+    skos:prefLabel "Albergaria-a-Velha"@pt .
 
 terr:0103 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/01> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q395919> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0103" ;
     skos:prefLabel "Anadia"@pt .
 
 terr:0104 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/01> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q565302> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0104" ;
     skos:prefLabel "Arouca"@pt .
 
 terr:0105 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/01> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q485581> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0105" ;
     skos:prefLabel "Aveiro"@pt .
 
 terr:0106 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/01> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q397379> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0106" ;
-    skos:prefLabel "Castelo De Paiva"@pt .
+    skos:prefLabel "Castelo de Paiva"@pt .
 
 terr:0107 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/01> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q13225053> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0107" ;
     skos:prefLabel "Espinho"@pt .
 
 terr:0108 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/01> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q381337> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0108" ;
     skos:prefLabel "Estarreja"@pt .
 
 terr:0109 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/01> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q564813> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0109" ;
-    skos:prefLabel "Santa Maria Da Feira"@pt .
+    skos:prefLabel "Santa Maria da Feira"@pt .
 
 terr:0110 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/01> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q291745> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0110" ;
     skos:prefLabel "Ílhavo"@pt .
 
 terr:0111 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/01> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q381340> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0111" ;
     skos:prefLabel "Mealhada"@pt .
 
 terr:0112 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/01> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q2142313> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0112" ;
     skos:prefLabel "Murtosa"@pt .
 
 terr:0113 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/01> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q405252> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0113" ;
-    skos:prefLabel "Oliveira De Azeméis"@pt .
+    skos:prefLabel "Oliveira de Azeméis"@pt .
 
 terr:0114 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/01> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q405241> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0114" ;
-    skos:prefLabel "Oliveira Do Bairro"@pt .
+    skos:prefLabel "Oliveira do Bairro"@pt .
 
 terr:0115 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/01> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q404261> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0115" ;
     skos:prefLabel "Ovar"@pt .
 
 terr:0116 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/01> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q565287> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0116" ;
-    skos:prefLabel "São João Da Madeira"@pt .
+    skos:prefLabel "São João da Madeira"@pt .
 
 terr:0117 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/01> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q337431> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0117" ;
-    skos:prefLabel "Sever Do Vouga"@pt .
+    skos:prefLabel "Sever do Vouga"@pt .
 
 terr:0118 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/01> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q404220> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0118" ;
     skos:prefLabel "Vagos"@pt .
 
 terr:0119 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/01> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q395953> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0119" ;
-    skos:prefLabel "Vale De Cambra"@pt .
+    skos:prefLabel "Vale de Cambra"@pt .
 
 terr:0201 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/02> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q939511> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0201" ;
     skos:prefLabel "Aljustrel"@pt .
 
 terr:0202 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/02> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q936943> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0202" ;
     skos:prefLabel "Almodôvar"@pt .
 
 terr:0203 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/02> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q449526> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0203" ;
     skos:prefLabel "Alvito"@pt .
 
 terr:0204 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/02> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q368867> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0204" ;
     skos:prefLabel "Barrancos"@pt .
 
 terr:0205 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/02> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q213251> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0205" ;
     skos:prefLabel "Beja"@pt .
 
 terr:0206 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/02> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q551696> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0206" ;
     skos:prefLabel "Castro Verde"@pt .
 
 terr:0207 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/02> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q552580> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0207" ;
     skos:prefLabel "Cuba"@pt .
 
 terr:0208 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/02> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q552015> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0208" ;
-    skos:prefLabel "Ferreira Do Alentejo"@pt .
+    skos:prefLabel "Ferreira do Alentejo"@pt .
 
 terr:0209 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/02> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q551056> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0209" ;
     skos:prefLabel "Mértola"@pt .
 
 terr:0210 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/02> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q551662> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0210" ;
     skos:prefLabel "Moura"@pt .
 
 terr:0211 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/02> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q551669> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0211" ;
     skos:prefLabel "Odemira"@pt .
 
 terr:0212 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/02> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q519052> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0212" ;
     skos:prefLabel "Ourique"@pt .
 
 terr:0213 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/02> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q550963> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0213" ;
     skos:prefLabel "Serpa"@pt .
 
 terr:0214 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/02> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q551672> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0214" ;
     skos:prefLabel "Vidigueira"@pt .
 
 terr:0301 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/03> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q455012> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0301" ;
     skos:prefLabel "Amares"@pt .
 
 terr:0302 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/03> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q213242> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0302" ;
     skos:prefLabel "Barcelos"@pt .
 
 terr:0303 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/03> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q83247> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0303" ;
     skos:prefLabel "Braga"@pt .
 
 terr:0304 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/03> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q551048> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0304" ;
-    skos:prefLabel "Cabeceiras De Basto"@pt .
+    skos:prefLabel "Cabeceiras de Basto"@pt .
 
 terr:0305 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/03> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q551653> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0305" ;
-    skos:prefLabel "Celorico De Basto"@pt .
+    skos:prefLabel "Celorico de Basto"@pt .
 
 terr:0306 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/03> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q552011> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0306" ;
     skos:prefLabel "Esposende"@pt .
 
 terr:0307 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/03> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q551080> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0307" ;
     skos:prefLabel "Fafe"@pt .
 
 terr:0308 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/03> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q170903> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0308" ;
     skos:prefLabel "Guimarães"@pt .
 
 terr:0309 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/03> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q551689> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0309" ;
-    skos:prefLabel "Póvoa De Lanhoso"@pt .
+    skos:prefLabel "Póvoa de Lanhoso"@pt .
 
 terr:0310 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/03> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q551639> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0310" ;
-    skos:prefLabel "Terras De Bouro"@pt .
+    skos:prefLabel "Terras de Bouro"@pt .
 
 terr:0311 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/03> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q551109> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0311" ;
-    skos:prefLabel "Vieira Do Minho"@pt .
+    skos:prefLabel "Vieira do Minho"@pt .
 
 terr:0312 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/03> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q551658> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0312" ;
-    skos:prefLabel "Vila Nova De Famalicão"@pt .
+    skos:prefLabel "Vila Nova de Famalicão"@pt .
 
 terr:0313 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/03> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q551676> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0313" ;
     skos:prefLabel "Vila Verde"@pt .
 
 terr:0314 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/03> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q551955> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0314" ;
     skos:prefLabel "Vizela"@pt .
 
 terr:0401 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/04> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q551059> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0401" ;
-    skos:prefLabel "Alfândega Da Fé"@pt .
+    skos:prefLabel "Alfândega da Fé"@pt .
 
 terr:0402 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/04> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q768261> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0402" ;
     skos:prefLabel "Bragança"@pt .
 
 terr:0403 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/04> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q551666> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0403" ;
-    skos:prefLabel "Carrazeda De Ansiães"@pt .
+    skos:prefLabel "Carrazeda de Ansiães"@pt .
 
 terr:0404 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/04> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q551684> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0404" ;
-    skos:prefLabel "Freixo De Espada À Cinta"@pt .
+    skos:prefLabel "Freixo de Espada à Cinta"@pt .
 
 terr:0405 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/04> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q551693> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0405" ;
-    skos:prefLabel "Macedo De Cavaleiros"@pt .
+    skos:prefLabel "Macedo de Cavaleiros"@pt .
 
 terr:0406 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/04> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q373475> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0406" ;
-    skos:prefLabel "Miranda Do Douro"@pt .
+    skos:prefLabel "Miranda do Douro"@pt .
 
 terr:0407 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/04> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q551502> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0407" ;
     skos:prefLabel "Mirandela"@pt .
 
 terr:0408 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/04> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q551680> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0408" ;
     skos:prefLabel "Mogadouro"@pt .
 
 terr:0409 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/04> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q551507> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0409" ;
-    skos:prefLabel "Torre De Moncorvo"@pt .
+    skos:prefLabel "Torre de Moncorvo"@pt .
 
 terr:0410 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/04> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q552556> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0410" ;
     skos:prefLabel "Vila Flor"@pt .
 
 terr:0411 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/04> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q551649> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0411" ;
     skos:prefLabel "Vimioso"@pt .
 
 terr:0412 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/04> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q551103> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0412" ;
     skos:prefLabel "Vinhais"@pt .
 
 terr:0501 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/05> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q816115> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0501" ;
     skos:prefLabel "Belmonte"@pt .
 
 terr:0502 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/05> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q373720> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0502" ;
     skos:prefLabel "Castelo Branco"@pt .
 
 terr:0503 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/05> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q849026> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0503" ;
     skos:prefLabel "Covilhã"@pt .
 
 terr:0504 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/05> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q1024927> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0504" ;
     skos:prefLabel "Fundão"@pt .
 
 terr:0505 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/05> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q999446> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0505" ;
-    skos:prefLabel "Idanha-A-Nova"@pt .
+    skos:prefLabel "Idanha-a-Nova"@pt .
 
 terr:0506 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/05> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q1012719> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0506" ;
     skos:prefLabel "Oleiros"@pt .
 
 terr:0507 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/05> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q995183> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0507" ;
     skos:prefLabel "Penamacor"@pt .
 
 terr:0508 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/05> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q1003172> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0508" ;
-    skos:prefLabel "Proença-A-Nova"@pt .
+    skos:prefLabel "Proença-a-Nova"@pt .
 
 terr:0509 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/05> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q193402> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0509" ;
     skos:prefLabel "Sertã"@pt .
 
 terr:0510 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/05> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q1003126> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0510" ;
-    skos:prefLabel "Vila De Rei"@pt .
+    skos:prefLabel "Vila de Rei"@pt .
 
 terr:0511 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/05> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q995188> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0511" ;
-    skos:prefLabel "Vila Velha De Ródão"@pt .
+    skos:prefLabel "Vila Velha de Ródão"@pt .
 
 terr:0601 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/06> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q426953> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0601" ;
     skos:prefLabel "Arganil"@pt .
 
 terr:0602 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/06> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q426945> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0602" ;
     skos:prefLabel "Cantanhede"@pt .
 
 terr:0603 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/06> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q45412> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0603" ;
     skos:prefLabel "Coimbra"@pt .
 
 terr:0604 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/06> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q138830> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0604" ;
-    skos:prefLabel "Condeixa-A-Nova"@pt .
+    skos:prefLabel "Condeixa-a-Nova"@pt .
 
 terr:0605 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/06> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q428459> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0605" ;
-    skos:prefLabel "Figueira Da Foz"@pt .
+    skos:prefLabel "Figueira da Foz"@pt .
 
 terr:0606 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/06> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q425410> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0606" ;
     skos:prefLabel "Góis"@pt .
 
 terr:0607 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/06> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q1006413> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0607" ;
     skos:prefLabel "Lousã"@pt .
 
 terr:0608 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/06> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q1006418> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0608" ;
     skos:prefLabel "Mira"@pt .
 
 terr:0609 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/06> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q370187> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0609" ;
-    skos:prefLabel "Miranda Do Corvo"@pt .
+    skos:prefLabel "Miranda do Corvo"@pt .
 
 terr:0610 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/06> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q45815> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0610" ;
-    skos:prefLabel "Montemor-O-Velho"@pt .
+    skos:prefLabel "Montemor-o-Velho"@pt .
 
 terr:0611 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/06> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q990381> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0611" ;
-    skos:prefLabel "Oliveira Do Hospital"@pt .
+    skos:prefLabel "Oliveira do Hospital"@pt .
 
 terr:0612 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/06> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q1000099> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0612" ;
-    skos:prefLabel "Pampilhosa Da Serra"@pt .
+    skos:prefLabel "Pampilhosa da Serra"@pt .
 
 terr:0613 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/06> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q1005038> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0613" ;
     skos:prefLabel "Penacova"@pt .
 
 terr:0614 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/06> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q576924> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0614" ;
     skos:prefLabel "Penela"@pt .
 
 terr:0615 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/06> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q543993> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0615" ;
     skos:prefLabel "Soure"@pt .
 
 terr:0616 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/06> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q988846> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0616" ;
     skos:prefLabel "Tábua"@pt .
 
 terr:0617 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/06> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q425817> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0617" ;
-    skos:prefLabel "Vila Nova De Poiares"@pt .
+    skos:prefLabel "Vila Nova de Poiares"@pt .
 
 terr:0701 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/07> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q726910> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0701" ;
     skos:prefLabel "Alandroal"@pt .
 
 terr:0702 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/07> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q699141> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0702" ;
     skos:prefLabel "Arraiolos"@pt .
 
 terr:0703 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/07> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q893339> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0703" ;
     skos:prefLabel "Borba"@pt .
 
 terr:0704 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/07> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q625157> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0704" ;
     skos:prefLabel "Estremoz"@pt .
 
 terr:0705 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/07> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q179948> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0705" ;
     skos:prefLabel "Évora"@pt .
 
 terr:0706 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/07> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q538407> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0706" ;
-    skos:prefLabel "Montemor-O-Novo"@pt .
+    skos:prefLabel "Montemor-o-Novo"@pt .
 
 terr:0707 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/07> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q174800> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0707" ;
     skos:prefLabel "Mora"@pt .
 
 terr:0708 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/07> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q1005121> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0708" ;
     skos:prefLabel "Mourão"@pt .
 
 terr:0709 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/07> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q591694> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0709" ;
     skos:prefLabel "Portel"@pt .
 
 terr:0710 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/07> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q997608> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0710" ;
     skos:prefLabel "Redondo"@pt .
 
 terr:0711 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/07> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q990439> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0711" ;
-    skos:prefLabel "Reguengos De Monsaraz"@pt .
+    skos:prefLabel "Reguengos de Monsaraz"@pt .
 
 terr:0712 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/07> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q990418> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0712" ;
     skos:prefLabel "Vendas Novas"@pt .
 
 terr:0713 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/07> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q1022265> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0713" ;
-    skos:prefLabel "Viana Do Alentejo"@pt .
+    skos:prefLabel "Viana do Alentejo"@pt .
 
 terr:0714 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/07> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q1013623> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0714" ;
     skos:prefLabel "Vila Viçosa"@pt .
 
 terr:0801 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/08> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q373813> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0801" ;
     skos:prefLabel "Albufeira"@pt .
 
 terr:0802 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/08> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q1000041> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0802" ;
     skos:prefLabel "Alcoutim"@pt .
 
 terr:0803 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/08> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q986095> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0803" ;
     skos:prefLabel "Aljezur"@pt .
 
 terr:0804 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/08> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q986079> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0804" ;
     skos:prefLabel "Castro Marim"@pt .
 
 terr:0805 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/08> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q159457> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0805" ;
     skos:prefLabel "Faro"@pt .
 
 terr:0806 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/08> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q985519> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0806" ;
-    skos:prefLabel "Lagoa (Algarve)"@pt .
+    skos:prefLabel "Lagoa"@pt .
 
 terr:0807 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/08> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q732548> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0807" ;
     skos:prefLabel "Lagos"@pt .
 
 terr:0808 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/08> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q586722> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0808" ;
     skos:prefLabel "Loulé"@pt .
 
 terr:0809 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/08> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q957663> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0809" ;
     skos:prefLabel "Monchique"@pt .
 
 terr:0810 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/08> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q740845> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0810" ;
     skos:prefLabel "Olhão"@pt .
 
 terr:0811 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/08> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q543542> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0811" ;
     skos:prefLabel "Portimão"@pt .
 
 terr:0812 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/08> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q988667> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0812" ;
-    skos:prefLabel "São Brás De Alportel"@pt .
+    skos:prefLabel "São Brás de Alportel"@pt .
 
 terr:0813 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/08> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q749180> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0813" ;
     skos:prefLabel "Silves"@pt .
 
 terr:0814 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/08> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q372840> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0814" ;
     skos:prefLabel "Tavira"@pt .
 
 terr:0815 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/08> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q206320> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0815" ;
-    skos:prefLabel "Vila Do Bispo"@pt .
+    skos:prefLabel "Vila do Bispo"@pt .
 
 terr:0816 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/08> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q750578> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0816" ;
-    skos:prefLabel "Vila Real De Santo António"@pt .
+    skos:prefLabel "Vila Real de Santo António"@pt .
 
 terr:0901 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/09> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q175373> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0901" ;
-    skos:prefLabel "Aguiar Da Beira"@pt .
+    skos:prefLabel "Aguiar da Beira"@pt .
 
 terr:0902 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/09> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q617889> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0902" ;
     skos:prefLabel "Almeida"@pt .
 
 terr:0903 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/09> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q523596> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0903" ;
-    skos:prefLabel "Celorico Da Beira"@pt .
+    skos:prefLabel "Celorico da Beira"@pt .
 
 terr:0904 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/09> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q644782> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0904" ;
-    skos:prefLabel "Figueira De Castelo Rodrigo"@pt .
+    skos:prefLabel "Figueira de Castelo Rodrigo"@pt .
 
 terr:0905 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/09> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q641715> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0905" ;
-    skos:prefLabel "Fornos De Algodres"@pt .
+    skos:prefLabel "Fornos de Algodres"@pt .
 
 terr:0906 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/09> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q599317> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0906" ;
     skos:prefLabel "Gouveia"@pt .
 
 terr:0907 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/09> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q750594> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0907" ;
     skos:prefLabel "Guarda"@pt .
 
 terr:0908 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/09> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q986093> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0908" ;
     skos:prefLabel "Manteigas"@pt .
 
 terr:0909 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/09> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q990335> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0909" ;
     skos:prefLabel "Mêda"@pt .
 
 terr:0910 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/09> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q917335> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0910" ;
     skos:prefLabel "Pinhel"@pt .
 
 terr:0911 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/09> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q992645> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0911" ;
     skos:prefLabel "Sabugal"@pt .
 
 terr:0912 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/09> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q76017> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0912" ;
     skos:prefLabel "Seia"@pt .
 
 terr:0913 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/09> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q686868> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0913" ;
     skos:prefLabel "Trancoso"@pt .
 
 terr:0914 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/09> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q537471> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0914" ;
-    skos:prefLabel "Vila Nova De Foz Côa"@pt .
+    skos:prefLabel "Vila Nova de Foz Côa"@pt .
 
 terr:1001 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/10> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q651997> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1001" ;
     skos:prefLabel "Alcobaça"@pt .
 
 terr:1002 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/10> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q448229> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1002" ;
     skos:prefLabel "Alvaiázere"@pt .
 
 terr:1003 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/10> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q569929> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1003" ;
     skos:prefLabel "Ansião"@pt .
 
 terr:1004 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/10> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q810715> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1004" ;
     skos:prefLabel "Batalha"@pt .
 
 terr:1005 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/10> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q891820> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1005" ;
     skos:prefLabel "Bombarral"@pt .
 
 terr:1006 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/10> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q275689> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1006" ;
-    skos:prefLabel "Caldas Da Rainha"@pt .
+    skos:prefLabel "Caldas da Rainha"@pt .
 
 terr:1007 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/10> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q1013140> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1007" ;
-    skos:prefLabel "Castanheira De Pêra"@pt .
+    skos:prefLabel "Castanheira de Pêra"@pt .
 
 terr:1008 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/10> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q679642> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1008" ;
-    skos:prefLabel "Figueiró Dos Vinhos"@pt .
+    skos:prefLabel "Figueiró dos Vinhos"@pt .
 
 terr:1009 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/10> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q206933> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1009" ;
     skos:prefLabel "Leiria"@pt .
 
 terr:1010 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/10> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q289852> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1010" ;
     skos:prefLabel "Marinha Grande"@pt .
 
 terr:1011 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/10> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q497179> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1011" ;
     skos:prefLabel "Nazaré"@pt .
 
 terr:1012 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/10> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q275862> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1012" ;
     skos:prefLabel "Óbidos"@pt .
 
 terr:1013 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/10> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q1013094> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1013" ;
     skos:prefLabel "Pedrógão Grande"@pt .
 
 terr:1014 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/10> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q941967> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1014" ;
     skos:prefLabel "Peniche"@pt .
 
 terr:1015 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/10> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q966825> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1015" ;
     skos:prefLabel "Pombal"@pt .
 
 terr:1016 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/10> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q1012710> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1016" ;
-    skos:prefLabel "Porto De Mós"@pt .
+    skos:prefLabel "Porto de Mós"@pt .
 
 terr:1101 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/11> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q988830> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1101" ;
     skos:prefLabel "Alenquer"@pt .
 
 terr:1102 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/11> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q703854> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1102" ;
-    skos:prefLabel "Arruda Dos Vinhos"@pt .
+    skos:prefLabel "Arruda dos Vinhos"@pt .
 
 terr:1103 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/11> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q634164> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1103" ;
     skos:prefLabel "Azambuja"@pt .
 
 terr:1104 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/11> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q33661928> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1104" ;
     skos:prefLabel "Cadaval"@pt .
 
 terr:1105 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/11> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q273059> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1105" ;
     skos:prefLabel "Cascais"@pt .
 
 terr:1106 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/11> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q33690701> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1106" ;
     skos:prefLabel "Lisboa"@pt .
 
 terr:1107 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/11> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q917535> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1107" ;
     skos:prefLabel "Loures"@pt .
 
 terr:1108 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/11> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q986017> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1108" ;
     skos:prefLabel "Lourinhã"@pt .
 
 terr:1109 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/11> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q986419> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1109" ;
     skos:prefLabel "Mafra"@pt .
 
 terr:1110 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/11> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q926700> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1110" ;
     skos:prefLabel "Oeiras"@pt .
 
 terr:1111 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/11> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q190187> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1111" ;
     skos:prefLabel "Sintra"@pt .
 
 terr:1112 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/11> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q1005105> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1112" ;
-    skos:prefLabel "Sobral De Monte Agraço"@pt .
+    skos:prefLabel "Sobral de Monte Agraço"@pt .
 
 terr:1113 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/11> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q917319> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1113" ;
     skos:prefLabel "Torres Vedras"@pt .
 
 terr:1114 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/11> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q917326> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1114" ;
-    skos:prefLabel "Vila Franca De Xira"@pt .
+    skos:prefLabel "Vila Franca de Xira"@pt .
 
 terr:1115 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/11> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q189166> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1115" ;
     skos:prefLabel "Amadora"@pt .
 
 terr:1116 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/11> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q850837> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1116" ;
     skos:prefLabel "Odivelas"@pt .
 
 terr:1201 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/12> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q438263> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1201" ;
-    skos:prefLabel "Alter Do Chão"@pt .
+    skos:prefLabel "Alter do Chão"@pt .
 
 terr:1202 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/12> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q700311> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1202" ;
     skos:prefLabel "Arronches"@pt .
 
 terr:1203 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/12> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q791134> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1203" ;
     skos:prefLabel "Avis"@pt .
 
 terr:1204 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/12> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q995297> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1204" ;
     skos:prefLabel "Campo Maior"@pt .
 
 terr:1205 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/12> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q1000037> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1205" ;
-    skos:prefLabel "Castelo De Vide"@pt .
+    skos:prefLabel "Castelo de Vide"@pt .
 
 terr:1206 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/12> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q1005138> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1206" ;
     skos:prefLabel "Crato"@pt .
 
 terr:1207 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/12> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q243849> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1207" ;
     skos:prefLabel "Elvas"@pt .
 
 terr:1208 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/12> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q647467> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1208" ;
     skos:prefLabel "Fronteira"@pt .
 
 terr:1209 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/12> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q1005090> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1209" ;
     skos:prefLabel "Gavião"@pt .
 
 terr:1210 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/12> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q988863> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1210" ;
     skos:prefLabel "Marvão"@pt .
 
 terr:1211 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/12> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q769062> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1211" ;
     skos:prefLabel "Monforte"@pt .
 
 terr:1212 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/12> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q1013628> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1212" ;
     skos:prefLabel "Nisa"@pt .
 
 terr:1213 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/12> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q990365> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1213" ;
-    skos:prefLabel "Ponte De Sor"@pt .
+    skos:prefLabel "Ponte de Sor"@pt .
 
 terr:1214 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/12> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q622819> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1214" ;
     skos:prefLabel "Portalegre"@pt .
 
 terr:1215 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/12> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q7565244> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1215" ;
     skos:prefLabel "Sousel"@pt .
 
 terr:1301 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/13> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q454875> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1301" ;
     skos:prefLabel "Amarante"@pt .
 
 terr:1302 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/13> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q804064> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1302" ;
     skos:prefLabel "Baião"@pt .
 
 terr:1303 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/13> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q936904> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1303" ;
     skos:prefLabel "Felgueiras"@pt .
 
 terr:1304 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/13> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q983483> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1304" ;
     skos:prefLabel "Gondomar"@pt .
 
 terr:1305 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/13> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q986741> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1305" ;
     skos:prefLabel "Lousada"@pt .
 
 terr:1306 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/13> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q990403> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1306" ;
     skos:prefLabel "Maia"@pt .
 
 terr:1307 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/13> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q188050> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1307" ;
-    skos:prefLabel "Marco De Canaveses"@pt .
+    skos:prefLabel "Marco de Canaveses"@pt .
 
 terr:1308 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/13> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q841299> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1308" ;
     skos:prefLabel "Matosinhos"@pt .
 
 terr:1309 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/13> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q946398> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1309" ;
-    skos:prefLabel "Paços De Ferreira"@pt .
+    skos:prefLabel "Paços de Ferreira"@pt .
 
 terr:1310 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/13> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q631788> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1310" ;
     skos:prefLabel "Paredes"@pt .
 
 terr:1311 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/13> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q984656> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1311" ;
     skos:prefLabel "Penafiel"@pt .
 
 terr:1312 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/13> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q36433> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1312" ;
     skos:prefLabel "Porto"@pt .
 
 terr:1313 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/13> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q200459> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1313" ;
-    skos:prefLabel "Póvoa De Varzim"@pt .
+    skos:prefLabel "Póvoa de Varzim"@pt .
 
 terr:1314 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/13> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q917330> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1314" ;
     skos:prefLabel "Santo Tirso"@pt .
 
 terr:1315 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/13> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q604262> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1315" ;
     skos:prefLabel "Valongo"@pt .
 
 terr:1316 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/13> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q917313> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1316" ;
-    skos:prefLabel "Vila Do Conde"@pt .
+    skos:prefLabel "Vila do Conde"@pt .
 
 terr:1317 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/13> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q191135> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1317" ;
-    skos:prefLabel "Vila Nova De Gaia"@pt .
+    skos:prefLabel "Vila Nova de Gaia"@pt .
 
 terr:1318 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/13> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q987964> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1318" ;
     skos:prefLabel "Trofa"@pt .
 
 terr:1401 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/14> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q331191> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1401" ;
     skos:prefLabel "Abrantes"@pt .
 
 terr:1402 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/14> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q986107> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1402" ;
     skos:prefLabel "Alcanena"@pt .
 
 terr:1403 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/14> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q841235> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1403" ;
     skos:prefLabel "Almeirim"@pt .
 
 terr:1404 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/14> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q999923> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1404" ;
     skos:prefLabel "Alpiarça"@pt .
 
 terr:1405 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/14> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q571140> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1405" ;
     skos:prefLabel "Benavente"@pt .
 
 terr:1406 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/14> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q841304> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1406" ;
     skos:prefLabel "Cartaxo"@pt .
 
 terr:1407 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/14> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q1000093> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1407" ;
     skos:prefLabel "Chamusca"@pt .
 
 terr:1408 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/14> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q1003157> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1408" ;
     skos:prefLabel "Constância"@pt .
 
 terr:1409 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/14> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q1000052> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1409" ;
     skos:prefLabel "Coruche"@pt .
 
 terr:1410 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/14> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q990422> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1410" ;
     skos:prefLabel "Entroncamento"@pt .
 
 terr:1411 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/14> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q995202> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1411" ;
-    skos:prefLabel "Ferreira Do Zêzere"@pt .
+    skos:prefLabel "Ferreira do Zêzere"@pt .
 
 terr:1412 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/14> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q1012522> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1412" ;
     skos:prefLabel "Golegã"@pt .
 
 terr:1413 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/14> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q1012723> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1413" ;
     skos:prefLabel "Mação"@pt .
 
 terr:1414 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/14> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q941958> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1414" ;
     skos:prefLabel "Rio Maior"@pt .
 
 terr:1415 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/14> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q1027809> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1415" ;
-    skos:prefLabel "Salvaterra De Magos"@pt .
+    skos:prefLabel "Salvaterra de Magos"@pt .
 
 terr:1416 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/14> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q273877> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1416" ;
     skos:prefLabel "Santarém"@pt .
 
 terr:1417 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/14> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q635165> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1417" ;
     skos:prefLabel "Sardoal"@pt .
 
 terr:1418 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/14> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q622817> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1418" ;
     skos:prefLabel "Tomar"@pt .
 
 terr:1419 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/14> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q81139> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1419" ;
     skos:prefLabel "Torres Novas"@pt .
 
 terr:1420 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/14> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q995176> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1420" ;
-    skos:prefLabel "Vila Nova Da Barquinha"@pt .
+    skos:prefLabel "Vila Nova da Barquinha"@pt .
 
 terr:1421 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/14> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q771546> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1421" ;
     skos:prefLabel "Ourém"@pt .
 
 terr:1501 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/15> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q850697> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1501" ;
-    skos:prefLabel "Alcácer Do Sal"@pt .
+    skos:prefLabel "Alcácer do Sal"@pt .
 
 terr:1502 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/15> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q605319> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1502" ;
     skos:prefLabel "Alcochete"@pt .
 
 terr:1503 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/15> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q328015> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1503" ;
     skos:prefLabel "Almada"@pt .
 
 terr:1504 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/15> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q217394> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1504" ;
     skos:prefLabel "Barreiro"@pt .
 
 terr:1505 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/15> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q986019> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1505" ;
     skos:prefLabel "Grândola"@pt .
 
 terr:1506 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/15> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q933912> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1506" ;
     skos:prefLabel "Moita"@pt .
 
 terr:1507 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/15> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q826511> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1507" ;
     skos:prefLabel "Montijo"@pt .
 
 terr:1508 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/15> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q850855> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1508" ;
     skos:prefLabel "Palmela"@pt .
 
 terr:1509 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/15> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q990433> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1509" ;
-    skos:prefLabel "Santiago Do Cacém"@pt .
+    skos:prefLabel "Santiago do Cacém"@pt .
 
 terr:1510 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/15> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q990448> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1510" ;
     skos:prefLabel "Seixal"@pt .
 
 terr:1511 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/15> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q1006408> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1511" ;
     skos:prefLabel "Sesimbra"@pt .
 
 terr:1512 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/15> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q173699> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1512" ;
     skos:prefLabel "Setúbal"@pt .
 
 terr:1513 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/15> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q372922> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1513" ;
     skos:prefLabel "Sines"@pt .
 
 terr:1601 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/16> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q490302> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1601" ;
-    skos:prefLabel "Arcos De Valdevez"@pt .
+    skos:prefLabel "Arcos de Valdevez"@pt .
 
 terr:1602 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/16> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q1029544> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1602" ;
     skos:prefLabel "Caminha"@pt .
 
 terr:1603 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/16> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q491888> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1603" ;
     skos:prefLabel "Melgaço"@pt .
 
 terr:1604 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/16> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q425738> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1604" ;
     skos:prefLabel "Monção"@pt .
 
 terr:1605 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/16> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q489105> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1605" ;
-    skos:prefLabel "Paredes De Coura"@pt .
+    skos:prefLabel "Paredes de Coura"@pt .
 
 terr:1606 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/16> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q491484> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1606" ;
-    skos:prefLabel "Ponte Da Barca"@pt .
+    skos:prefLabel "Ponte da Barca"@pt .
 
 terr:1607 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/16> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q490180> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1607" ;
-    skos:prefLabel "Ponte De Lima"@pt .
+    skos:prefLabel "Ponte de Lima"@pt .
 
 terr:1608 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/16> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q492475> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1608" ;
     skos:prefLabel "Valença"@pt .
 
 terr:1609 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/16> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q208158> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1609" ;
-    skos:prefLabel "Viana Do Castelo"@pt .
+    skos:prefLabel "Viana do Castelo"@pt .
 
 terr:1610 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/16> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q164434> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1610" ;
-    skos:prefLabel "Vila Nova De Cerveira"@pt .
+    skos:prefLabel "Vila Nova de Cerveira"@pt .
 
 terr:1701 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/17> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q712064> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1701" ;
     skos:prefLabel "Alijó"@pt .
 
 terr:1702 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/17> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q894746> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1702" ;
     skos:prefLabel "Boticas"@pt .
 
 terr:1703 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/17> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q504580> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1703" ;
     skos:prefLabel "Chaves"@pt .
 
 terr:1704 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/17> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q1006385> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1704" ;
     skos:prefLabel "Mesão Frio"@pt .
 
 terr:1705 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/17> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q932771> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1705" ;
-    skos:prefLabel "Mondim De Basto"@pt .
+    skos:prefLabel "Mondim de Basto"@pt .
 
 terr:1706 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/17> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q757860> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1706" ;
     skos:prefLabel "Montalegre"@pt .
 
 terr:1707 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/17> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q513049> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1707" ;
     skos:prefLabel "Murça"@pt .
 
 terr:1708 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/17> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q757858> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1708" ;
-    skos:prefLabel "Peso Da Régua"@pt .
+    skos:prefLabel "Peso da Régua"@pt .
 
 terr:1709 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/17> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q1006378> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1709" ;
-    skos:prefLabel "Ribeira De Pena"@pt .
+    skos:prefLabel "Ribeira de Pena"@pt .
 
 terr:1710 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/17> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q1006389> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1710" ;
     skos:prefLabel "Sabrosa"@pt .
 
 terr:1711 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/17> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q1006372> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1711" ;
-    skos:prefLabel "Santa Marta De Penaguião"@pt .
+    skos:prefLabel "Santa Marta de Penaguião"@pt .
 
 terr:1712 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/17> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q757856> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1712" ;
     skos:prefLabel "Valpaços"@pt .
 
 terr:1713 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/17> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q1006397> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1713" ;
-    skos:prefLabel "Vila Pouca De Aguiar"@pt .
+    skos:prefLabel "Vila Pouca de Aguiar"@pt .
 
 terr:1714 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/17> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q503856> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1714" ;
     skos:prefLabel "Vila Real"@pt .
 
 terr:1801 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/18> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q558610> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1801" ;
     skos:prefLabel "Armamar"@pt .
 
 terr:1802 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/18> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q796938> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1802" ;
-    skos:prefLabel "Carregal Do Sal"@pt .
+    skos:prefLabel "Carregal do Sal"@pt .
 
 terr:1803 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/18> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q861199> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1803" ;
     skos:prefLabel "Castro Daire"@pt .
 
 terr:1804 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/18> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q861464> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1804" ;
     skos:prefLabel "Cinfães"@pt .
 
 terr:1805 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/18> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q117591> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1805" ;
     skos:prefLabel "Lamego"@pt .
 
 terr:1806 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/18> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q597789> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1806" ;
     skos:prefLabel "Mangualde"@pt .
 
 terr:1807 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/18> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q862822> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1807" ;
-    skos:prefLabel "Moimenta Da Beira"@pt .
+    skos:prefLabel "Moimenta da Beira"@pt .
 
 terr:1808 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/18> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q861592> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1808" ;
     skos:prefLabel "Mortágua"@pt .
 
 terr:1809 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/18> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q687790> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1809" ;
     skos:prefLabel "Nelas"@pt .
 
 terr:1810 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/18> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q861584> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1810" ;
-    skos:prefLabel "Oliveira De Frades"@pt .
+    skos:prefLabel "Oliveira de Frades"@pt .
 
 terr:1811 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/18> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q780374> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1811" ;
-    skos:prefLabel "Penalva Do Castelo"@pt .
+    skos:prefLabel "Penalva do Castelo"@pt .
 
 terr:1812 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/18> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q861589> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1812" ;
     skos:prefLabel "Penedono"@pt .
 
 terr:1813 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/18> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q863692> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1813" ;
     skos:prefLabel "Resende"@pt .
 
 terr:1814 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/18> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q861208> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1814" ;
     skos:prefLabel "Santa Comba Dão"@pt .
 
 terr:1815 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/18> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q1010466> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1815" ;
-    skos:prefLabel "São João Da Pesqueira"@pt .
+    skos:prefLabel "São João da Pesqueira"@pt .
 
 terr:1816 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/18> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q1484005> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1816" ;
-    skos:prefLabel "São Pedro Do Sul"@pt .
+    skos:prefLabel "São Pedro do Sul"@pt .
 
 terr:1817 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/18> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q923784> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1817" ;
     skos:prefLabel "Sátão"@pt .
 
 terr:1818 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/18> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q1003140> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1818" ;
     skos:prefLabel "Sernancelhe"@pt .
 
 terr:1819 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/18> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q1010659> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1819" ;
     skos:prefLabel "Tabuaço"@pt .
 
 terr:1820 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/18> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q990460> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1820" ;
     skos:prefLabel "Tarouca"@pt .
 
 terr:1821 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/18> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q796656> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1821" ;
     skos:prefLabel "Tondela"@pt .
 
 terr:1822 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/18> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q1003146> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1822" ;
-    skos:prefLabel "Vila Nova De Paiva"@pt .
+    skos:prefLabel "Vila Nova de Paiva"@pt .
 
 terr:1823 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/18> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q117676> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1823" ;
     skos:prefLabel "Viseu"@pt .
 
 terr:1824 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/18> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q1012714> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "1824" ;
     skos:prefLabel "Vouzela"@pt .
 
 terr:3101 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/RAM> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q757078> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "3101" ;
-    skos:prefLabel "Calheta (Madeira)"@pt .
+    skos:prefLabel "Calheta"@pt .
 
 terr:3102 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/RAM> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q623736> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "3102" ;
-    skos:prefLabel "Câmara De Lobos"@pt .
+    skos:prefLabel "Câmara de Lobos"@pt .
 
 terr:3103 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/RAM> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q25444> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "3103" ;
     skos:prefLabel "Funchal"@pt .
 
 terr:3104 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/RAM> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q693243> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "3104" ;
     skos:prefLabel "Machico"@pt .
 
 terr:3105 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/RAM> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q943911> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "3105" ;
-    skos:prefLabel "Ponta Do Sol"@pt .
+    skos:prefLabel "Ponta do Sol"@pt .
 
 terr:3106 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/RAM> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q221412> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "3106" ;
     skos:prefLabel "Porto Moniz"@pt .
 
 terr:3107 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/RAM> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q250139> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "3107" ;
     skos:prefLabel "Ribeira Brava"@pt .
 
 terr:3108 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/RAM> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q658823> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "3108" ;
     skos:prefLabel "Santa Cruz"@pt .
 
 terr:3109 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/RAM> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q752123> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "3109" ;
     skos:prefLabel "Santana"@pt .
 
 terr:3110 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/RAM> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q304464> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "3110" ;
     skos:prefLabel "São Vicente"@pt .
 
 terr:3201 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/RAM> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q27320> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "3201" ;
     skos:prefLabel "Porto Santo"@pt .
 
 terr:4101 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/RAA> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q1003164> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "4101" ;
-    skos:prefLabel "Vila Do Porto"@pt .
+    skos:prefLabel "Vila do Porto"@pt .
 
 terr:4201 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/RAA> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q564759> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "4201" ;
-    skos:prefLabel "Lagoa (São Miguel)"@pt .
+    skos:prefLabel "Lagoa"@pt .
 
 terr:4202 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/RAA> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q564762> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "4202" ;
     skos:prefLabel "Nordeste"@pt .
 
 terr:4203 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/RAA> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q208149> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "4203" ;
     skos:prefLabel "Ponta Delgada"@pt .
 
 terr:4204 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/RAA> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q565726> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "4204" ;
     skos:prefLabel "Povoação"@pt .
 
 terr:4205 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/RAA> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q565312> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "4205" ;
     skos:prefLabel "Ribeira Grande"@pt .
 
 terr:4206 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/RAA> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q565290> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "4206" ;
-    skos:prefLabel "Vila Franca Do Campo"@pt .
+    skos:prefLabel "Vila Franca do Campo"@pt .
 
 terr:4301 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/RAA> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q193677> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "4301" ;
-    skos:prefLabel "Angra Do Heroísmo"@pt .
+    skos:prefLabel "Angra do Heroísmo"@pt .
 
 terr:4302 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/RAA> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q73046> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "4302" ;
-    skos:prefLabel "Praia Da Vitória"@pt .
+    skos:prefLabel "Vila da Praia da Vitória"@pt .
 
 terr:4401 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/RAA> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q1010463> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "4401" ;
-    skos:prefLabel "Santa Cruz Da Graciosa"@pt .
+    skos:prefLabel "Santa Cruz da Graciosa"@pt .
 
 terr:4501 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/RAA> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q1019047> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "4501" ;
-    skos:prefLabel "Calheta (São Jorge)"@pt .
+    skos:prefLabel "Calheta"@pt .
 
 terr:4502 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/RAA> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q1010468> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "4502" ;
     skos:prefLabel "Velas"@pt .
 
 terr:4601 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/RAA> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q1019053> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "4601" ;
-    skos:prefLabel "Lajes Do Pico"@pt .
+    skos:prefLabel "Lajes do Pico"@pt .
 
 terr:4602 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/RAA> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q1002565> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "4602" ;
     skos:prefLabel "Madalena"@pt .
 
 terr:4603 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/RAA> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q1019042> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "4603" ;
-    skos:prefLabel "São Roque Do Pico"@pt .
+    skos:prefLabel "São Roque do Pico"@pt .
 
 terr:4701 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/RAA> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q990385> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "4701" ;
     skos:prefLabel "Horta"@pt .
 
 terr:4801 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/RAA> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q1021452> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "4801" ;
-    skos:prefLabel "Lajes Das Flores"@pt .
+    skos:prefLabel "Lajes das Flores"@pt .
 
 terr:4802 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/RAA> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q1003134> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "4802" ;
-    skos:prefLabel "Santa Cruz Das Flores"@pt .
+    skos:prefLabel "Santa Cruz das Flores"@pt .
 
 terr:4901 a skos:Concept ;
+    skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/RAA> ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q1006836> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "4901" ;
     skos:prefLabel "Corvo"@pt .
+
+<https://w3id.org/ws-megsi-g7/territorio/distrito-ra/16> a skos:Concept ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q326214> ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/distritos-regioes> ;
+    skos:notation "16" ;
+    skos:prefLabel "Viana do Castelo"@pt .
+
+<https://w3id.org/ws-megsi-g7/territorio/distrito-ra/05> a skos:Concept ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q273529> ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/distritos-regioes> ;
+    skos:notation "05" ;
+    skos:prefLabel "Castelo Branco"@pt .
+
+<https://w3id.org/ws-megsi-g7/territorio/distrito-ra/RAM> a skos:Concept ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q26253> ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/distritos-regioes> ;
+    skos:notation "RAM" ;
+    skos:prefLabel "Região Autónoma da Madeira"@pt .
+
+<https://w3id.org/ws-megsi-g7/territorio/distrito-ra/04> a skos:Concept ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q373528> ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/distritos-regioes> ;
+    skos:notation "04" ;
+    skos:prefLabel "Bragança"@pt .
+
+<https://w3id.org/ws-megsi-g7/territorio/distrito-ra/15> a skos:Concept ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q274109> ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/distritos-regioes> ;
+    skos:notation "15" ;
+    skos:prefLabel "Setúbal"@pt .
+
+<https://w3id.org/ws-megsi-g7/territorio/distrito-ra/02> a skos:Concept ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q321455> ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/distritos-regioes> ;
+    skos:notation "02" ;
+    skos:prefLabel "Beja"@pt .
+
+<https://w3id.org/ws-megsi-g7/territorio/distrito-ra/03> a skos:Concept ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q326203> ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/distritos-regioes> ;
+    skos:notation "03" ;
+    skos:prefLabel "Braga"@pt .
+
+<https://w3id.org/ws-megsi-g7/territorio/distrito-ra/07> a skos:Concept ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q274118> ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/distritos-regioes> ;
+    skos:notation "07" ;
+    skos:prefLabel "Évora"@pt .
+
+<https://w3id.org/ws-megsi-g7/territorio/distrito-ra/09> a skos:Concept ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q273533> ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/distritos-regioes> ;
+    skos:notation "09" ;
+    skos:prefLabel "Guarda"@pt .
+
+<https://w3id.org/ws-megsi-g7/territorio/distrito-ra/17> a skos:Concept ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q379372> ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/distritos-regioes> ;
+    skos:notation "17" ;
+    skos:prefLabel "Vila Real"@pt .
+
+<https://w3id.org/ws-megsi-g7/territorio/distrito-ra/12> a skos:Concept ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q225189> ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/distritos-regioes> ;
+    skos:notation "12" ;
+    skos:prefLabel "Portalegre"@pt .
+
+<https://w3id.org/ws-megsi-g7/territorio/distrito-ra/08> a skos:Concept ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q244521> ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/distritos-regioes> ;
+    skos:notation "08" ;
+    skos:prefLabel "Faro"@pt .
+
+<https://w3id.org/ws-megsi-g7/territorio/distrito-ra/10> a skos:Concept ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q244512> ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/distritos-regioes> ;
+    skos:notation "10" ;
+    skos:prefLabel "Leiria"@pt .
+
+<https://w3id.org/ws-megsi-g7/territorio/distrito-ra/11> a skos:Concept ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q207199> ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/distritos-regioes> ;
+    skos:notation "11" ;
+    skos:prefLabel "Lisboa"@pt .
+
+<https://w3id.org/ws-megsi-g7/territorio/distrito-ra/06> a skos:Concept ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q244517> ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/distritos-regioes> ;
+    skos:notation "06" ;
+    skos:prefLabel "Coimbra"@pt .
+
+<https://w3id.org/ws-megsi-g7/territorio/distrito-ra/13> a skos:Concept ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q322792> ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/distritos-regioes> ;
+    skos:notation "13" ;
+    skos:prefLabel "Porto"@pt .
+
+<https://w3id.org/ws-megsi-g7/territorio/distrito-ra/01> a skos:Concept ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q210527> ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/distritos-regioes> ;
+    skos:notation "01" ;
+    skos:prefLabel "Aveiro"@pt .
+
+<https://w3id.org/ws-megsi-g7/territorio/distrito-ra/RAA> a skos:Concept ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q25263> ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/distritos-regioes> ;
+    skos:notation "RAA" ;
+    skos:prefLabel "Região Autónoma dos Açores"@pt .
+
+<https://w3id.org/ws-megsi-g7/esquema/distritos-regioes> a skos:ConceptScheme ;
+    dct:title "Distritos e regiões autónomas de Portugal"@pt .
+
+<https://w3id.org/ws-megsi-g7/territorio/distrito-ra/14> a skos:Concept ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q244510> ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/distritos-regioes> ;
+    skos:notation "14" ;
+    skos:prefLabel "Santarém"@pt .
+
+<https://w3id.org/ws-megsi-g7/territorio/distrito-ra/18> a skos:Concept ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q273525> ;
+    skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/distritos-regioes> ;
+    skos:notation "18" ;
+    skos:prefLabel "Viseu"@pt .
 
 <https://w3id.org/ws-megsi-g7/esquema/municipios> a skos:ConceptScheme ;
     dct:title "Municípios portugueses (códigos INE)"@pt .

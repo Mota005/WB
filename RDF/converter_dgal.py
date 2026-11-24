@@ -4,13 +4,16 @@
 
 Grupo 7 | UC Web Semântica | tarefa 6.2: observações e catálogo DCAT-AP.
 
-Entradas: 12 CSV/XLSX da DGAL na pasta dados/ e
-          mapeamento-vocabulario-g7.csv na raiz do projeto.
+Entradas: 12 CSV/XLSX da DGAL na pasta dados/,
+          mapeamento-vocabulario-g7.csv, fontes_dgal.csv e
+          Ligacoes-Wikidata.csv na raiz da pasta RDF/.
 Saídas:   catálogo RDF (derivados), SKOS territorial e períodos,
           DSDs, 12 ficheiros com observações e manifesto de conversão.
 
 Metadados DCAT-AP do perfil do Grupo 7: catálogo, quatro séries, 12 datasets,
 12 distribuições, temas, cobertura temporal/espacial, proveniência e licença.
+Inclui 308 municípios ligados aos 18 distritos e 2 regiões autónomas por
+skos:broader e as correspondências Wikidata fornecidas pelo grupo.
 As URLs de origem são fornecidas em fontes_dgal.csv. Os URLs de acesso ao RDF
 apontam para os ficheiros públicos no GitHub, sem caminhos locais file://.
 Os nomes de domínio em w3id.org são propostos e ainda não estão registados.
@@ -30,6 +33,7 @@ As URLs do GitHub são construídas a partir do endereço e do ramo configurados
 a execução local não confirma, por si só, que os ficheiros estão online.
 
 Requisitos: Python >=3.10; pip install rdflib
+Limites: SHACL e enriquecimento estatístico INE são etapas separadas.
 Execução:   python converter_dgal.py
             python converter_dgal.py --dados dados --saida rdf
 """
@@ -38,7 +42,6 @@ from __future__ import annotations
 
 import argparse
 import csv
-import shutil
 import subprocess
 import re
 import sys
@@ -48,6 +51,7 @@ import zipfile
 from urllib.parse import quote, urlparse
 from collections import defaultdict
 from decimal import Decimal, InvalidOperation
+from datetime import date
 from pathlib import Path
 
 from rdflib import Graph, Literal, Namespace, URIRef
@@ -72,6 +76,9 @@ PROV = Namespace("http://www.w3.org/ns/prov#")
 ADMS = Namespace("http://www.w3.org/ns/adms#")
 VCARD = Namespace("http://www.w3.org/2006/vcard/ns#")
 LICENCA_CC_BY = EU_LICENSE.CC_BY_4_0
+TIPO_PUBLICADOR = Namespace("http://purl.org/adms/publishertype/")
+# Primeira publicação RDF no GitHub (confirmada no projeto em 22/11/2026).
+DATA_PRIMEIRA_PUBLICACAO = date(2026, 11, 22)
 
 # Descrições e palavras-chave criadas para o perfil do Grupo 7.
 TEMAS = (EU_THEME.ECON, EU_THEME.GOVE)
@@ -80,21 +87,25 @@ METADADOS_SERIES = {
         "descricao": "Receitas municipais de 308 municípios portugueses, incluindo impostos, transferências, financiamento e outras receitas; os trimestres apresentam valores acumulados.",
         "descricao_en": "Municipal revenues for Portugal's 308 municipalities, including taxes, transfers, funding and other revenue; quarterly values are cumulative.",
         "keywords": ("receitas municipais", "impostos municipais", "transferências", "finanças locais"),
+        "keywords_en": ("municipal revenue", "municipal taxes", "transfers", "local government finance"),
     },
     "Despesas": {
         "descricao": "Despesas municipais de 308 municípios portugueses, incluindo despesas correntes, investimento, pessoal e transferências; os trimestres apresentam valores acumulados.",
         "descricao_en": "Municipal expenditure for Portugal's 308 municipalities, including current expenses, investment, staff and transfers; quarterly values are cumulative.",
         "keywords": ("despesas municipais", "investimento", "despesas com pessoal", "finanças locais"),
+        "keywords_en": ("municipal expenditure", "investment", "personnel costs", "local government finance"),
     },
     "Recursos Humanos": {
         "descricao": "Indicadores de recursos humanos dos 308 municípios portugueses, incluindo trabalhadores, dirigentes, categorias e tipos de vínculo; 2017 contém apenas o período anual.",
         "descricao_en": "Human resources indicators for Portugal's 308 municipalities, including staff, management categories and employment contracts; 2017 includes annual observations only.",
         "keywords": ("recursos humanos", "trabalhadores municipais", "vínculos laborais", "dirigentes"),
+        "keywords_en": ("human resources", "municipal employees", "employment contracts", "managers"),
     },
     "Qualidade da Gestão": {
         "descricao": "Indicadores de gestão pública e sustentabilidade financeira dos 308 municípios portugueses, incluindo dívida, execução orçamental e prazos de pagamento.",
         "descricao_en": "Public management and financial sustainability indicators for Portugal's 308 municipalities, including debt, budget execution and payment times.",
         "keywords": ("gestão pública", "endividamento", "execução orçamental", "sustentabilidade financeira"),
+        "keywords_en": ("public management", "indebtedness", "budget execution", "financial sustainability"),
     },
 }
 
@@ -349,6 +360,53 @@ def ler_fontes_csv(caminho: Path | None) -> dict:
     return fontes
 
 
+def ler_ligacoes_territoriais(caminho: Path) -> dict[str, dict[str, str]]:
+    """Correspondência validável de 308 códigos INE com distrito/RA e Wikidata.
+
+    Fonte: Ligacoes-Wikidata.csv disponibilizado pelo grupo. Não deduz distritos
+    a partir de nomes ou de heurísticas. Falta de correspondência é erro explícito.
+    """
+    if not caminho.is_file():
+        raise FileNotFoundError(
+            f"Falta {caminho.name} junto ao conversor. "
+            "É necessário para preencher skos:broader nos 308 municípios."
+        )
+    ligacoes: dict[str, dict[str, str]] = {}
+    distritos: dict[str, tuple[str, str]] = {}
+    with caminho.open("r", encoding="utf-8-sig", newline="") as f:
+        leitor = csv.DictReader(f, delimiter=";")
+        obrigatorios = {
+            "CODIGOINE", "MUNICIPIO", "MUNICIPIO_WIKIDATA",
+            "DISTRITO_RA_COD", "DISTRITO_RA", "DISTRITO_RA_WIKIDATA",
+        }
+        if not obrigatorios.issubset(leitor.fieldnames or []):
+            raise ValueError(f"Colunas em falta em {caminho.name}: {obrigatorios - set(leitor.fieldnames or [])}")
+        for linha in leitor:
+            codigo = normaliza_codigo(linha["CODIGOINE"])
+            if codigo in ligacoes:
+                raise ValueError(f"Código INE repetido em {caminho.name}: {codigo}")
+            distrito_codigo = linha["DISTRITO_RA_COD"].strip()
+            distrito_nome = linha["DISTRITO_RA"].strip()
+            if not re.fullmatch(r"(?:\d{2}|RAA|RAM)", distrito_codigo) or not distrito_nome:
+                raise ValueError(f"Distrito/RA inválido para {codigo}: {distrito_codigo!r}")
+            ligacoes[codigo] = {
+                "municipio": linha["MUNICIPIO"].strip(),
+                "wikidata": linha["MUNICIPIO_WIKIDATA"].strip(),
+                "distrito_codigo": distrito_codigo,
+                "distrito_nome": distrito_nome,
+                "distrito_wikidata": linha["DISTRITO_RA_WIKIDATA"].strip(),
+            }
+            origem = distritos.setdefault(distrito_codigo, (distrito_nome, linha["DISTRITO_RA_WIKIDATA"].strip()))
+            if origem != (distrito_nome, linha["DISTRITO_RA_WIKIDATA"].strip()):
+                raise ValueError(f"Distrito/RA contraditório: {distrito_codigo}")
+            for campo in ("wikidata", "distrito_wikidata"):
+                if ligacoes[codigo][campo]:
+                    url_http_formato_valido(ligacoes[codigo][campo], f"{codigo} {campo}")
+    if len(ligacoes) != 308 or len(distritos) != 20:
+        raise ValueError(f"Ligacoes-Wikidata.csv incompleto: {len(ligacoes)} municípios, {len(distritos)} distritos/RA; esperados 308 e 20.")
+    return ligacoes
+
+
 def enriquecer_catalogo(
     catalogo: Graph, base: str, pasta_dados: Path, pasta_saida: Path,
     manifesto: list[dict], url_publica: str | None, fontes: dict,
@@ -360,6 +418,21 @@ def enriquecer_catalogo(
     cat = ws.catalogo
     catalogo.add((dgal, RDF.type, FOAF.Organization))
     catalogo.add((dgal, FOAF.name, Literal("Direção-Geral das Autarquias Locais", lang="pt")))
+    catalogo.add((dgal, DCT.type, TIPO_PUBLICADOR.NationalAuthority))
+    catalogo.add((grupo, DCT.type, TIPO_PUBLICADOR["Academia-ScientificOrganisation"]))
+    catalogo.add((grupo, FOAF.homepage, URIRef("https://github.com/Mota005/WB")))
+
+    # Contacto por URL pública do projeto (não se inventa um endereço de e-mail).
+    contacto = ws["contacto/grupo7"]
+    catalogo.add((contacto, RDF.type, VCARD.Organization))
+    catalogo.add((contacto, VCARD.fn, Literal("Grupo 7 — Web Semântica", lang="pt")))
+    catalogo.add((contacto, VCARD.hasURL, URIRef("https://github.com/Mota005/WB")))
+
+    data_modificacao = Literal(date.today().isoformat(), datatype=XSD.date)
+    data_publicacao = Literal(DATA_PRIMEIRA_PUBLICACAO.isoformat(), datatype=XSD.date)
+    catalogo.add((cat, DCT.issued, data_publicacao))
+    catalogo.add((cat, DCT.modified, data_modificacao))
+    catalogo.add((cat, FOAF.homepage, URIRef("https://github.com/Mota005/WB")))
     catalogo.add((cat, DCT.language, EU_LANG.POR))
     catalogo.add((cat, DCAT.themeTaxonomy, URIRef("http://publications.europa.eu/resource/authority/data-theme")))
     catalogo.add((cat, DCT.license, LICENCA_CC_BY))
@@ -379,6 +452,7 @@ def enriquecer_catalogo(
         catalogo.add((serie_uri, DCT.description, Literal(meta["descricao"], lang="pt")))
         catalogo.add((serie_uri, DCT.description, Literal(meta["descricao_en"], lang="en")))
         catalogo.add((serie_uri, DCT.publisher, grupo))
+        catalogo.add((serie_uri, DCAT.contactPoint, contacto))
         catalogo.add((serie_uri, DCT.accrualPeriodicity, EU_FREQUENCY.ANNUAL))
         catalogo.add((serie_uri, DCT.spatial, EU_COUNTRY.PRT))
         for tema in TEMAS:
@@ -405,6 +479,9 @@ def enriquecer_catalogo(
         catalogo.add((ds, DCT.temporal, intervalos[ano]))
         catalogo.add((ds, DCT.spatial, EU_COUNTRY.PRT))
         catalogo.add((ds, DCT.language, EU_LANG.POR))
+        catalogo.add((ds, DCT.issued, data_publicacao))
+        catalogo.add((ds, DCT.modified, data_modificacao))
+        catalogo.add((ds, DCAT.contactPoint, contacto))
         catalogo.add((ds, DCT.accessRights, EU_ACCESS.PUBLIC))
         catalogo.add((ds, DCT.license, LICENCA_CC_BY))
         catalogo.add((ds, DCT.rightsHolder, dgal))
@@ -418,6 +495,8 @@ def enriquecer_catalogo(
             catalogo.add((ds, DCAT.theme, tema))
         for palavra in meta["keywords"]:
             catalogo.add((ds, DCAT.keyword, Literal(palavra, lang="pt")))
+        for palavra in meta["keywords_en"]:
+            catalogo.add((ds, DCAT.keyword, Literal(palavra, lang="en")))
         nota = (f"Convertido a partir de {nome}; {item['linhas_sem_medidas']} linhas sem medidas não originaram "
                 "observações; valores omissos não foram substituídos por zero; valores numéricos tipados em RDF. "
                 "Os dados trimestrais são acumulados. Os dois indicadores adicionais de Recursos Humanos "
@@ -457,6 +536,7 @@ def enriquecer_catalogo(
             catalogo.add((dist, DCAT.accessURL, url))
             catalogo.add((dist, DCAT.downloadURL, url))
         catalogo.add((dist, DCT.license, LICENCA_CC_BY))
+        catalogo.add((dist, DCT.issued, data_publicacao))
         catalogo.add((dist, ADMS.status, EU_DISTR_STATUS.COMPLETED))
         catalogo.add((dist, DCAT.byteSize, Literal(ficheiro_rdf.stat().st_size, datatype=XSD.nonNegativeInteger)))
         catalogo.add((dist, DCT.description,
@@ -514,6 +594,7 @@ def main():
             f"({origens_confirmadas}/{len(INPUTS)} fontes identificadas)."
         )
     mapa = ler_mapeamento(args.mapeamento.resolve())
+    ligacoes = ler_ligacoes_territoriais(pasta / "Ligacoes-Wikidata.csv")
     faltam = [fn for _, _, fn, _ in INPUTS if not (dados / fn).is_file()]
     if faltam:
         raise FileNotFoundError("Faltam os seguintes ficheiros na pasta dados/: " + ", ".join(faltam))
@@ -552,10 +633,6 @@ def main():
     catalogo.add((cat, RDF.type, DCAT.Catalog))
     catalogo.add((cat, DCT.title, Literal("Catálogo RDF de indicadores municipais da DGAL (2017–2019)", lang="pt")))
     catalogo.add((cat, DCT.publisher, agente))
-    catalogo.add((cat, DCT.description, Literal(
-        "Metadados dos 12 conjuntos RDF derivados dos ficheiros CSV/XLSX da DGAL. "
-        "A ligação às páginas de origem no dados.gov.pt deve ser acrescentada "
-        "quando os respetivos URIs forem verificados.", lang="pt")))
 
     for serie, slug in SERIES.items():
         si = WS[f"dataset/serie-{slug}"]
@@ -663,12 +740,32 @@ def main():
         print(f"{serie:21s} {ano}: {observacoes:4d} obs; {len(g):6d} triplos; "
               f"{vazias:3d} linhas sem valores")
 
-    for codigo, nome in municipio_nome.items():
+    if set(municipio_nome) != set(ligacoes):
+        raise ValueError(
+            "Os municípios das observações não coincidem com Ligacoes-Wikidata.csv. "
+            f"Em falta: {sorted(set(municipio_nome) - set(ligacoes))}; "
+            f"não utilizados: {sorted(set(ligacoes) - set(municipio_nome))}"
+        )
+    esquema_distritos = URIRef(base + "esquema/distritos-regioes")
+    territ.add((esquema_distritos, RDF.type, SKOS.ConceptScheme))
+    territ.add((esquema_distritos, DCT.title, Literal("Distritos e regiões autónomas de Portugal", lang="pt")))
+    for codigo in sorted(municipio_nome):
+        linha = ligacoes[codigo]
         uri = TERR[codigo]
+        territorio_pai = TERR[f"distrito-ra/{linha['distrito_codigo']}"]
         territ.add((uri, RDF.type, SKOS.Concept))
         territ.add((uri, SKOS.inScheme, esquema_territorios))
         territ.add((uri, SKOS.notation, Literal(codigo)))
-        territ.add((uri, SKOS.prefLabel, Literal(nome, lang="pt")))
+        territ.add((uri, SKOS.prefLabel, Literal(linha["municipio"], lang="pt")))
+        territ.add((uri, SKOS.broader, territorio_pai))
+        if linha["wikidata"]:
+            territ.add((uri, SKOS.exactMatch, URIRef(linha["wikidata"])))
+        territ.add((territorio_pai, RDF.type, SKOS.Concept))
+        territ.add((territorio_pai, SKOS.inScheme, esquema_distritos))
+        territ.add((territorio_pai, SKOS.prefLabel, Literal(linha["distrito_nome"], lang="pt")))
+        territ.add((territorio_pai, SKOS.notation, Literal(linha["distrito_codigo"])))
+        if linha["distrito_wikidata"]:
+            territ.add((territorio_pai, SKOS.exactMatch, URIRef(linha["distrito_wikidata"])))
     guardar(territ, saida / "territorio.ttl")
     guardar(periodos, saida / "periodos.ttl")
 
@@ -706,20 +803,29 @@ def main():
     guardar(dsd_g, saida / "estruturas-dsd.ttl")
     enriquecer_catalogo(catalogo, base, dados, saida, manifest, url_publica, fontes)
     guardar(catalogo, saida / "catalogo-derivados.ttl")
-    # O vocabulário da secção 4.2 é um artefacto separado, mas deve ser
-    # carregado no mesmo repositório RDF que as observações.
+    # Vocabulário definido noutra tarefa do grupo: validar, mas NÃO duplicar.
+    # Manter o ficheiro original em RDF/vocabulario-g7_proposta.ttl.
+    # Se existir uma cópia gerada anteriormente em RDF/rdf/, remover apenas
+    # quando for byte a byte idêntica à original.
     voc_ficheiro = pasta / "vocabulario-g7_proposta.ttl"
+    copia_antiga = saida / "vocabulario-g7_proposta.ttl"
     if voc_ficheiro.is_file():
         voc_g = Graph()
-        voc_g.parse(voc_ficheiro, format="turtle")  # valida sintaxe antes de copiar
+        voc_g.parse(voc_ficheiro, format="turtle")
         if base != DEFAULT_BASE:
-            raise ValueError("O URI base difere do vocabulário proposto. Alinhar primeiro os namespaces.")
-        destino_vocab = saida / voc_ficheiro.name
-        if voc_ficheiro.resolve() != destino_vocab.resolve():
-            shutil.copyfile(voc_ficheiro, destino_vocab)
+            raise ValueError("O URI base difere do vocabulário do grupo; alinhar os namespaces.")
+        if copia_antiga.is_file():
+            if voc_ficheiro.read_bytes() == copia_antiga.read_bytes():
+                copia_antiga.unlink()
+                print("Vocabulário: cópia idêntica removida de rdf/; mantém-se o original na raiz RDF/.")
+            else:
+                print("AVISO: existem duas versões diferentes do vocabulário; não foi apagado nenhum ficheiro.")
+    elif copia_antiga.is_file():
+        voc_g = Graph()
+        voc_g.parse(copia_antiga, format="turtle")
+        print("Vocabulário encontrado apenas em rdf/; mantido sem alterações.")
     else:
-        print("AVISO: não foi encontrado vocabulario-g7_proposta.ttl junto ao script. "
-              "O RDF gerado usa propriedades g7: que precisam das definições do vocabulário.")
+        print("AVISO: vocabulário do grupo não encontrado; importar quando estiver disponível.")
     destino_manifesto = saida / "manifesto_conversao.csv"
     with destino_manifesto.open("w", encoding="utf-8-sig", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=list(manifest[0]), delimiter=";")
@@ -728,6 +834,7 @@ def main():
     print(f"\nTOTAL: {sum(m['observacoes_rdf'] for m in manifest)} observações "
           f"em {len(manifest)} datasets; {len(municipio_nome)} municípios identificados")
     print(f"Saída: {saida}")
+    print("Território: 308 municípios com skos:broader; 18 distritos + 2 regiões autónomas; ligações Wikidata do CSV.")
     print(relatorio_catalogo(catalogo, base))
     print("IMPORTANTE: confirmar que os 12 URLs abrem ficheiros .ttl e fazer git push se alteraste os dados.")
     print("Exemplo: " + url_publica.rstrip("/") + "/obs-receitas-municipais-2019.ttl")

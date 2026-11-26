@@ -1,0 +1,420 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-dimension: <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix g7: <https://w3id.org/ws-megsi-g7/vocab#> .
+@prefix g7sh: <https://w3id.org/ws-megsi-g7/shapes#> .
+
+# Shapes SHACL do perfil de aplicação do Grupo 7 (Tabela 7 do relatório).
+# Severidade: sh:Violation = obrigatório no perfil; sh:Warning = recomendado.
+# Validar com: python validar_shacl.py   (requer: pip install pyshacl)
+
+<https://w3id.org/ws-megsi-g7/shapes> a <http://www.w3.org/2002/07/owl#Ontology> ;
+    dct:title "Shapes SHACL do perfil de aplicação DCAT-AP do Grupo 7"@pt ;
+    sh:declare [ sh:prefix "qb" ; sh:namespace "http://purl.org/linked-data/cube#"^^xsd:anyURI ] ,
+               [ sh:prefix "sdmx" ; sh:namespace "http://purl.org/linked-data/sdmx/2009/dimension#"^^xsd:anyURI ] ,
+               [ sh:prefix "g7" ; sh:namespace "https://w3id.org/ws-megsi-g7/vocab#"^^xsd:anyURI ] .
+
+# ---------- Regras comuns: textos com língua (@pt obrigatório, @en recomendado) ----------
+g7sh:TituloPT a sh:PropertyShape ; sh:path dct:title ; sh:minCount 1 ; sh:datatype rdf:langString ; sh:uniqueLang true ;
+    sh:qualifiedValueShape [ sh:languageIn ( "pt" ) ] ; sh:qualifiedMinCount 1 ;
+    sh:message "dct:title obrigatório, com um valor em @pt e no máximo um por língua."@pt .
+g7sh:TituloEN a sh:PropertyShape ; sh:path dct:title ; sh:severity sh:Warning ;
+    sh:qualifiedValueShape [ sh:languageIn ( "en" ) ] ; sh:qualifiedMinCount 1 ;
+    sh:message "dct:title recomendado também em @en."@pt .
+g7sh:DescricaoPT a sh:PropertyShape ; sh:path dct:description ; sh:minCount 1 ; sh:datatype rdf:langString ; sh:uniqueLang true ;
+    sh:qualifiedValueShape [ sh:languageIn ( "pt" ) ] ; sh:qualifiedMinCount 1 ;
+    sh:message "dct:description obrigatória, com um valor em @pt e no máximo um por língua."@pt .
+g7sh:DescricaoEN a sh:PropertyShape ; sh:path dct:description ; sh:severity sh:Warning ;
+    sh:qualifiedValueShape [ sh:languageIn ( "en" ) ] ; sh:qualifiedMinCount 1 ;
+    sh:message "dct:description recomendada também em @en."@pt .
+
+# ---------- Catálogo ----------
+g7sh:Catalogo a sh:NodeShape ; sh:targetClass dcat:Catalog ;
+    sh:property g7sh:TituloPT , g7sh:TituloEN , g7sh:DescricaoPT , g7sh:DescricaoEN ;
+    sh:property [ sh:path dct:publisher ; sh:minCount 1 ; sh:maxCount 1 ; sh:class foaf:Organization ] ;
+    sh:property [ sh:path dcat:dataset ; sh:minCount 1 ; sh:class dcat:Dataset ;
+                  sh:message "dcat:dataset obrigatório (perfil) e aponta para dcat:Dataset descrito."@pt ] ;
+    sh:property [ sh:path dct:language ; sh:severity sh:Warning ; sh:minCount 1 ; sh:nodeKind sh:IRI ;
+                  sh:pattern "^http://publications.europa.eu/resource/authority/language/" ] ;
+    sh:property [ sh:path dct:license ; sh:severity sh:Warning ; sh:minCount 1 ;
+                  sh:pattern "^http://publications.europa.eu/resource/authority/licence/" ] ;
+    sh:property [ sh:path dct:issued ; sh:severity sh:Warning ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:date ] ;
+    sh:property [ sh:path dct:modified ; sh:severity sh:Warning ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:date ] ;
+    sh:property [ sh:path dcat:themeTaxonomy ; sh:severity sh:Warning ; sh:minCount 1 ;
+                  sh:hasValue <http://publications.europa.eu/resource/authority/data-theme> ] ;
+    sh:property [ sh:path foaf:homepage ; sh:severity sh:Warning ; sh:minCount 1 ; sh:nodeKind sh:IRI ] .
+
+# ---------- Série ----------
+g7sh:Serie a sh:NodeShape ; sh:targetClass dcat:DatasetSeries ;
+    sh:property g7sh:TituloPT , g7sh:TituloEN , g7sh:DescricaoPT , g7sh:DescricaoEN ;
+    sh:property [ sh:path dct:publisher ; sh:minCount 1 ; sh:class foaf:Organization ] ;
+    sh:property [ sh:path dct:accrualPeriodicity ; sh:minCount 1 ; sh:maxCount 1 ;
+                  sh:pattern "^http://publications.europa.eu/resource/authority/frequency/" ] ;
+    sh:property g7sh:Tema ;
+    sh:property [ sh:path dct:spatial ; sh:severity sh:Warning ; sh:minCount 1 ;
+                  sh:pattern "^http://publications.europa.eu/resource/authority/country/" ] ;
+    sh:property [ sh:path dct:temporal ; sh:severity sh:Warning ; sh:minCount 1 ; sh:class dct:PeriodOfTime ] ;
+    sh:property [ sh:path dcat:contactPoint ; sh:severity sh:Warning ; sh:minCount 1 ; sh:class vcard:Organization ] .
+
+g7sh:Tema a sh:PropertyShape ; sh:path dcat:theme ; sh:minCount 1 ; sh:nodeKind sh:IRI ;
+    sh:pattern "^http://publications.europa.eu/resource/authority/data-theme/" ;
+    sh:message "dcat:theme obrigatório, como URI da lista Data theme da UE."@pt .
+
+# ---------- Conjunto de dados (original da DGAL e derivado do grupo) ----------
+g7sh:ConjuntoDados a sh:NodeShape ; sh:targetClass dcat:Dataset ;
+    sh:property g7sh:TituloPT , g7sh:TituloEN , g7sh:DescricaoPT , g7sh:DescricaoEN , g7sh:Tema ;
+    sh:property [ sh:path dct:publisher ; sh:minCount 1 ; sh:maxCount 1 ; sh:class foaf:Organization ] ;
+    sh:property [ sh:path dct:temporal ; sh:minCount 1 ; sh:maxCount 1 ; sh:class dct:PeriodOfTime ;
+                  sh:message "dct:temporal exatamente uma vez (dct:PeriodOfTime)."@pt ] ;
+    sh:property [ sh:path dct:spatial ; sh:minCount 1 ;
+                  sh:pattern "^http://publications.europa.eu/resource/authority/country/" ] ;
+    sh:property [ sh:path dcat:distribution ; sh:minCount 1 ; sh:class dcat:Distribution ] ;
+    sh:property [ sh:path dct:language ; sh:severity sh:Warning ; sh:minCount 1 ;
+                  sh:pattern "^http://publications.europa.eu/resource/authority/language/" ] ;
+    sh:property [ sh:path dct:accessRights ; sh:severity sh:Warning ; sh:minCount 1 ;
+                  sh:pattern "^http://publications.europa.eu/resource/authority/access-right/" ] ;
+    sh:property [ sh:path dct:accrualPeriodicity ; sh:severity sh:Warning ; sh:maxCount 1 ;
+                  sh:pattern "^http://publications.europa.eu/resource/authority/frequency/" ] ;
+    sh:property [ sh:path dct:license ; sh:severity sh:Warning ;
+                  sh:pattern "^http://publications.europa.eu/resource/authority/licence/" ] ;
+    sh:property [ sh:path dct:issued ; sh:severity sh:Warning ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:date ] ;
+    sh:property [ sh:path dct:modified ; sh:maxCount 1 ; sh:datatype xsd:date ] ;
+    sh:property [ sh:path dcat:temporalResolution ; sh:datatype xsd:duration ] ;
+    sh:property [ sh:path dcat:keyword ; sh:severity sh:Warning ;
+                  sh:qualifiedValueShape [ sh:languageIn ( "pt" ) ] ; sh:qualifiedMinCount 3 ;
+                  sh:message "Recomendadas pelo menos três palavras-chave em @pt."@pt ] ;
+    sh:property [ sh:path dcat:landingPage ; sh:severity sh:Warning ; sh:minCount 1 ; sh:nodeKind sh:IRI ] ;
+    sh:property [ sh:path dct:identifier ; sh:severity sh:Warning ; sh:minCount 1 ] .
+
+# Regras adicionais do conjunto de dados derivado (também qb:DataSet)
+g7sh:ConjuntoDadosDerivado a sh:NodeShape ; sh:targetClass qb:DataSet ;
+    sh:property [ sh:path dcat:inSeries ; sh:minCount 1 ; sh:maxCount 1 ; sh:class dcat:DatasetSeries ;
+                  sh:message "dcat:inSeries exatamente uma vez."@pt ] ;
+    sh:property [ sh:path prov:wasDerivedFrom ; sh:minCount 1 ; sh:class dcat:Dataset ;
+                  sh:message "prov:wasDerivedFrom obrigatório e aponta para o conjunto de dados original descrito."@pt ] ;
+    sh:property [ sh:path dct:source ; sh:minCount 1 ; sh:nodeKind sh:IRI ] ;
+    sh:property [ sh:path dct:conformsTo ; sh:minCount 1 ; sh:class qb:DataStructureDefinition ] ;
+    sh:property [ sh:path qb:structure ; sh:minCount 1 ; sh:maxCount 1 ; sh:class qb:DataStructureDefinition ] ;
+    sh:property [ sh:path adms:versionNotes ; sh:severity sh:Warning ; sh:minCount 1 ] ;
+    sh:property [ sh:path dcat:contactPoint ; sh:severity sh:Warning ; sh:minCount 1 ; sh:class vcard:Organization ] ;
+    # Data Cube IC-12: uma só observação por conjunto de dados, município e período (o período inclui o ano).
+    sh:sparql [ sh:prefixes <https://w3id.org/ws-megsi-g7/shapes> ;
+        sh:message "Observações duplicadas para o mesmo município e período: {?area} {?periodo}"@pt ;
+        sh:select """SELECT $this ?area ?periodo WHERE {
+            ?o qb:dataSet $this ; sdmx:refArea ?area ; g7:periodo ?periodo .
+        } GROUP BY $this ?area ?periodo HAVING (COUNT(?o) > 1)""" ] ;
+    # Cada observação tem pelo menos uma medida (requer o vocabulário carregado).
+    sh:sparql [ sh:prefixes <https://w3id.org/ws-megsi-g7/shapes> ;
+        sh:message "Observação sem medidas: {?obs}"@pt ;
+        sh:select """SELECT $this ?obs WHERE {
+            ?obs qb:dataSet $this .
+            FILTER NOT EXISTS { ?obs ?m ?v . ?m a qb:MeasureProperty . }
+        }""" ] .
+
+# ---------- Distribuição ----------
+g7sh:Distribuicao a sh:NodeShape ; sh:targetClass dcat:Distribution ;
+    sh:property [ sh:path dcat:accessURL ; sh:minCount 1 ; sh:nodeKind sh:IRI ] ;
+    sh:property [ sh:path dct:format ; sh:minCount 1 ; sh:maxCount 1 ;
+                  sh:pattern "^http://publications.europa.eu/resource/authority/file-type/" ;
+                  sh:message "Um formato por distribuição, da lista File type da UE."@pt ] ;
+    sh:property [ sh:path dcat:mediaType ; sh:minCount 1 ; sh:maxCount 1 ;
+                  sh:pattern "^http://www.iana.org/assignments/media-types/" ] ;
+    sh:property [ sh:path dct:license ; sh:minCount 1 ;
+                  sh:pattern "^http://publications.europa.eu/resource/authority/licence/" ] ;
+    sh:property [ sh:path dcat:downloadURL ; sh:nodeKind sh:IRI ] ;
+    sh:property [ sh:path dct:title ; sh:severity sh:Warning ; sh:minCount 1 ; sh:datatype rdf:langString ] ;
+    sh:property [ sh:path adms:status ; sh:maxCount 1 ;
+                  sh:pattern "^http://publications.europa.eu/resource/authority/distribution-status/" ] ;
+    sh:property [ sh:path dcat:byteSize ; sh:maxCount 1 ; sh:datatype xsd:nonNegativeInteger ] ;
+    sh:property [ sh:path dct:issued ; sh:maxCount 1 ; sh:datatype xsd:date ] .
+
+# ---------- Agente ----------
+g7sh:Agente a sh:NodeShape ; sh:targetClass foaf:Organization ;
+    sh:property [ sh:path foaf:name ; sh:minCount 1 ] ;
+    sh:property [ sh:path dct:type ; sh:severity sh:Warning ; sh:minCount 1 ;
+                  sh:pattern "^http://purl.org/adms/publishertype/" ] .
+
+# ---------- Contacto ----------
+g7sh:Contacto a sh:NodeShape ; sh:targetClass vcard:Organization ;
+    sh:property [ sh:path vcard:fn ; sh:minCount 1 ] ;
+    sh:property [ sh:path vcard:hasEmail ; sh:nodeKind sh:IRI ; sh:pattern "^mailto:" ] ;
+    sh:or ( [ sh:path vcard:hasEmail ; sh:minCount 1 ] [ sh:path vcard:hasURL ; sh:minCount 1 ] ) ;
+    sh:message "Contacto com pelo menos um meio: vcard:hasEmail (mailto:) ou vcard:hasURL."@pt .
+
+# ---------- Período ----------
+g7sh:Periodo a sh:NodeShape ; sh:targetClass dct:PeriodOfTime ;
+    sh:property [ sh:path dcat:startDate ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:date ;
+                  sh:lessThanOrEquals dcat:endDate ; sh:message "Início obrigatório (xsd:date) e não posterior ao fim."@pt ] ;
+    sh:property [ sh:path dcat:endDate ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:date ] .
+
+# ---------- Observação ----------
+g7sh:Observacao a sh:NodeShape ; sh:targetClass qb:Observation ;
+    sh:property [ sh:path qb:dataSet ; sh:minCount 1 ; sh:maxCount 1 ; sh:class qb:DataSet ] ;
+    sh:property [ sh:path sdmx-dimension:refArea ; sh:minCount 1 ; sh:maxCount 1 ; sh:class skos:Concept ] ;
+    sh:property [ sh:path g7:ano ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:gYear ] ;
+    sh:property [ sh:path g7:periodo ; sh:minCount 1 ; sh:maxCount 1 ; sh:class skos:Concept ] .
+
+# ---------- Conceito (município, distrito, período) ----------
+g7sh:Conceito a sh:NodeShape ; sh:targetClass skos:Concept ;
+    sh:property [ sh:path skos:prefLabel ; sh:minCount 1 ; sh:maxCount 1 ; sh:languageIn ( "pt" ) ;
+                  sh:message "skos:prefLabel em @pt, um por conceito."@pt ] ;
+    sh:property [ sh:path skos:notation ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ] ;
+    sh:property [ sh:path skos:inScheme ; sh:minCount 1 ; sh:class skos:ConceptScheme ] .
+
+# Municípios = conceitos usados como área de referência das observações
+g7sh:Municipio a sh:NodeShape ; sh:targetObjectsOf sdmx-dimension:refArea ;
+    sh:property [ sh:path skos:notation ; sh:pattern "^[0-9]{4}$" ;
+                  sh:message "Código INE do município com quatro dígitos, como texto."@pt ] ;
+    sh:property [ sh:path skos:broader ; sh:minCount 1 ; sh:maxCount 1 ; sh:class skos:Concept ;
+                  sh:message "Município ligado a exatamente um distrito ou região autónoma."@pt ] ;
+    sh:property [ sh:path skos:exactMatch ; sh:severity sh:Warning ; sh:minCount 1 ;
+                  sh:pattern "^http://www.wikidata.org/entity/Q[0-9]+$" ] .
+
+# Períodos = conceitos usados em g7:periodo
+g7sh:PeriodoObservacao a sh:NodeShape ; sh:targetObjectsOf g7:periodo ;
+    sh:property [ sh:path skos:definition ; sh:severity sh:Warning ; sh:minCount 1 ; sh:languageIn ( "pt" ) ] .
+
+# ---------- Medidas: tipo de dados de cada medida (gerado a partir do vocabulário) ----------
+g7sh:Medida_cargosPoliticos a sh:NodeShape ;
+    sh:targetSubjectsOf g7:cargosPoliticos ;
+    sh:property [ sh:path g7:cargosPoliticos ; sh:maxCount 1 ; sh:datatype xsd:integer ;
+        sh:message "g7:cargosPoliticos: um único valor, tipado como xsd:integer."@pt ] .
+
+g7sh:Medida_comissaoServico a sh:NodeShape ;
+    sh:targetSubjectsOf g7:comissaoServico ;
+    sh:property [ sh:path g7:comissaoServico ; sh:maxCount 1 ; sh:datatype xsd:integer ;
+        sh:message "g7:comissaoServico: um único valor, tipado como xsd:integer."@pt ] .
+
+g7sh:Medida_densidadePopulacional a sh:NodeShape ;
+    sh:targetSubjectsOf g7:densidadePopulacional ;
+    sh:property [ sh:path g7:densidadePopulacional ; sh:maxCount 1 ; sh:datatype xsd:decimal ;
+        sh:message "g7:densidadePopulacional: um único valor, tipado como xsd:decimal."@pt ] .
+
+g7sh:Medida_derramaIRC a sh:NodeShape ;
+    sh:targetSubjectsOf g7:derramaIRC ;
+    sh:property [ sh:path g7:derramaIRC ; sh:maxCount 1 ; sh:datatype xsd:decimal ;
+        sh:message "g7:derramaIRC: um único valor, tipado como xsd:decimal."@pt ] .
+
+g7sh:Medida_despesaAquisicaoBens a sh:NodeShape ;
+    sh:targetSubjectsOf g7:despesaAquisicaoBens ;
+    sh:property [ sh:path g7:despesaAquisicaoBens ; sh:maxCount 1 ; sh:datatype xsd:decimal ;
+        sh:message "g7:despesaAquisicaoBens: um único valor, tipado como xsd:decimal."@pt ] .
+
+g7sh:Medida_despesaCorrente a sh:NodeShape ;
+    sh:targetSubjectsOf g7:despesaCorrente ;
+    sh:property [ sh:path g7:despesaCorrente ; sh:maxCount 1 ; sh:datatype xsd:decimal ;
+        sh:message "g7:despesaCorrente: um único valor, tipado como xsd:decimal."@pt ] .
+
+g7sh:Medida_despesaPessoal a sh:NodeShape ;
+    sh:targetSubjectsOf g7:despesaPessoal ;
+    sh:property [ sh:path g7:despesaPessoal ; sh:maxCount 1 ; sh:datatype xsd:decimal ;
+        sh:message "g7:despesaPessoal: um único valor, tipado como xsd:decimal."@pt ] .
+
+g7sh:Medida_despesaTotal a sh:NodeShape ;
+    sh:targetSubjectsOf g7:despesaTotal ;
+    sh:property [ sh:path g7:despesaTotal ; sh:maxCount 1 ; sh:datatype xsd:decimal ;
+        sh:message "g7:despesaTotal: um único valor, tipado como xsd:decimal."@pt ] .
+
+g7sh:Medida_despesaTotalQG a sh:NodeShape ;
+    sh:targetSubjectsOf g7:despesaTotalQG ;
+    sh:property [ sh:path g7:despesaTotalQG ; sh:maxCount 1 ; sh:datatype xsd:decimal ;
+        sh:message "g7:despesaTotalQG: um único valor, tipado como xsd:decimal."@pt ] .
+
+g7sh:Medida_dirigentes a sh:NodeShape ;
+    sh:targetSubjectsOf g7:dirigentes ;
+    sh:property [ sh:path g7:dirigentes ; sh:maxCount 1 ; sh:datatype xsd:integer ;
+        sh:message "g7:dirigentes: um único valor, tipado como xsd:integer."@pt ] .
+
+g7sh:Medida_dividaTotal a sh:NodeShape ;
+    sh:targetSubjectsOf g7:dividaTotal ;
+    sh:property [ sh:path g7:dividaTotal ; sh:maxCount 1 ; sh:datatype xsd:decimal ;
+        sh:message "g7:dividaTotal: um único valor, tipado como xsd:decimal."@pt ] .
+
+g7sh:Medida_execucaoDespesa a sh:NodeShape ;
+    sh:targetSubjectsOf g7:execucaoDespesa ;
+    sh:property [ sh:path g7:execucaoDespesa ; sh:maxCount 1 ; sh:datatype xsd:decimal ;
+        sh:message "g7:execucaoDespesa: um único valor, tipado como xsd:decimal."@pt ] .
+
+g7sh:Medida_execucaoReceita a sh:NodeShape ;
+    sh:targetSubjectsOf g7:execucaoReceita ;
+    sh:property [ sh:path g7:execucaoReceita ; sh:maxCount 1 ; sh:datatype xsd:decimal ;
+        sh:message "g7:execucaoReceita: um único valor, tipado como xsd:decimal."@pt ] .
+
+g7sh:Medida_financiamentoUE a sh:NodeShape ;
+    sh:targetSubjectsOf g7:financiamentoUE ;
+    sh:property [ sh:path g7:financiamentoUE ; sh:maxCount 1 ; sh:datatype xsd:decimal ;
+        sh:message "g7:financiamentoUE: um único valor, tipado como xsd:decimal."@pt ] .
+
+g7sh:Medida_grauEndividamento a sh:NodeShape ;
+    sh:targetSubjectsOf g7:grauEndividamento ;
+    sh:property [ sh:path g7:grauEndividamento ; sh:maxCount 1 ; sh:datatype xsd:decimal ;
+        sh:message "g7:grauEndividamento: um único valor, tipado como xsd:decimal."@pt ] .
+
+g7sh:Medida_imi a sh:NodeShape ;
+    sh:targetSubjectsOf g7:imi ;
+    sh:property [ sh:path g7:imi ; sh:maxCount 1 ; sh:datatype xsd:decimal ;
+        sh:message "g7:imi: um único valor, tipado como xsd:decimal."@pt ] .
+
+g7sh:Medida_impostosMunicipais a sh:NodeShape ;
+    sh:targetSubjectsOf g7:impostosMunicipais ;
+    sh:property [ sh:path g7:impostosMunicipais ; sh:maxCount 1 ; sh:datatype xsd:decimal ;
+        sh:message "g7:impostosMunicipais: um único valor, tipado como xsd:decimal."@pt ] .
+
+g7sh:Medida_imt a sh:NodeShape ;
+    sh:targetSubjectsOf g7:imt ;
+    sh:property [ sh:path g7:imt ; sh:maxCount 1 ; sh:datatype xsd:decimal ;
+        sh:message "g7:imt: um único valor, tipado como xsd:decimal."@pt ] .
+
+g7sh:Medida_independenciaFinanceira a sh:NodeShape ;
+    sh:targetSubjectsOf g7:independenciaFinanceira ;
+    sh:property [ sh:path g7:independenciaFinanceira ; sh:maxCount 1 ; sh:datatype xsd:decimal ;
+        sh:message "g7:independenciaFinanceira: um único valor, tipado como xsd:decimal."@pt ] .
+
+g7sh:Medida_investAcessibilidades a sh:NodeShape ;
+    sh:targetSubjectsOf g7:investAcessibilidades ;
+    sh:property [ sh:path g7:investAcessibilidades ; sh:maxCount 1 ; sh:datatype xsd:decimal ;
+        sh:message "g7:investAcessibilidades: um único valor, tipado como xsd:decimal."@pt ] .
+
+g7sh:Medida_investEdificios a sh:NodeShape ;
+    sh:targetSubjectsOf g7:investEdificios ;
+    sh:property [ sh:path g7:investEdificios ; sh:maxCount 1 ; sh:datatype xsd:decimal ;
+        sh:message "g7:investEdificios: um único valor, tipado como xsd:decimal."@pt ] .
+
+g7sh:Medida_investInfraestruturas a sh:NodeShape ;
+    sh:targetSubjectsOf g7:investInfraestruturas ;
+    sh:property [ sh:path g7:investInfraestruturas ; sh:maxCount 1 ; sh:datatype xsd:decimal ;
+        sh:message "g7:investInfraestruturas: um único valor, tipado como xsd:decimal."@pt ] .
+
+g7sh:Medida_investOutros a sh:NodeShape ;
+    sh:targetSubjectsOf g7:investOutros ;
+    sh:property [ sh:path g7:investOutros ; sh:maxCount 1 ; sh:datatype xsd:decimal ;
+        sh:message "g7:investOutros: um único valor, tipado como xsd:decimal."@pt ] .
+
+g7sh:Medida_investTerrenosHabitacoes a sh:NodeShape ;
+    sh:targetSubjectsOf g7:investTerrenosHabitacoes ;
+    sh:property [ sh:path g7:investTerrenosHabitacoes ; sh:maxCount 1 ; sh:datatype xsd:decimal ;
+        sh:message "g7:investTerrenosHabitacoes: um único valor, tipado como xsd:decimal."@pt ] .
+
+g7sh:Medida_investimentoTotal a sh:NodeShape ;
+    sh:targetSubjectsOf g7:investimentoTotal ;
+    sh:property [ sh:path g7:investimentoTotal ; sh:maxCount 1 ; sh:datatype xsd:decimal ;
+        sh:message "g7:investimentoTotal: um único valor, tipado como xsd:decimal."@pt ] .
+
+g7sh:Medida_iuc a sh:NodeShape ;
+    sh:targetSubjectsOf g7:iuc ;
+    sh:property [ sh:path g7:iuc ; sh:maxCount 1 ; sh:datatype xsd:decimal ;
+        sh:message "g7:iuc: um único valor, tipado como xsd:decimal."@pt ] .
+
+g7sh:Medida_jurosEncargos a sh:NodeShape ;
+    sh:targetSubjectsOf g7:jurosEncargos ;
+    sh:property [ sh:path g7:jurosEncargos ; sh:maxCount 1 ; sh:datatype xsd:decimal ;
+        sh:message "g7:jurosEncargos: um único valor, tipado como xsd:decimal."@pt ] .
+
+g7sh:Medida_outrasReceitas a sh:NodeShape ;
+    sh:targetSubjectsOf g7:outrasReceitas ;
+    sh:property [ sh:path g7:outrasReceitas ; sh:maxCount 1 ; sh:datatype xsd:decimal ;
+        sh:message "g7:outrasReceitas: um único valor, tipado como xsd:decimal."@pt ] .
+
+g7sh:Medida_outrosTrabalhadores a sh:NodeShape ;
+    sh:targetSubjectsOf g7:outrosTrabalhadores ;
+    sh:property [ sh:path g7:outrosTrabalhadores ; sh:maxCount 1 ; sh:datatype xsd:integer ;
+        sh:message "g7:outrosTrabalhadores: um único valor, tipado como xsd:integer."@pt ] .
+
+g7sh:Medida_pagamentosEmAtraso a sh:NodeShape ;
+    sh:targetSubjectsOf g7:pagamentosEmAtraso ;
+    sh:property [ sh:path g7:pagamentosEmAtraso ; sh:maxCount 1 ; sh:datatype xsd:decimal ;
+        sh:message "g7:pagamentosEmAtraso: um único valor, tipado como xsd:decimal."@pt ] .
+
+g7sh:Medida_populacaoResidente a sh:NodeShape ;
+    sh:targetSubjectsOf g7:populacaoResidente ;
+    sh:property [ sh:path g7:populacaoResidente ; sh:maxCount 1 ; sh:datatype xsd:integer ;
+        sh:message "g7:populacaoResidente: um único valor, tipado como xsd:integer."@pt ] .
+
+g7sh:Medida_prazoMedioPagamento a sh:NodeShape ;
+    sh:targetSubjectsOf g7:prazoMedioPagamento ;
+    sh:property [ sh:path g7:prazoMedioPagamento ; sh:maxCount 1 ; sh:datatype xsd:decimal ;
+        sh:message "g7:prazoMedioPagamento: um único valor, tipado como xsd:decimal."@pt ] .
+
+g7sh:Medida_receitaEfetiva a sh:NodeShape ;
+    sh:targetSubjectsOf g7:receitaEfetiva ;
+    sh:property [ sh:path g7:receitaEfetiva ; sh:maxCount 1 ; sh:datatype xsd:decimal ;
+        sh:message "g7:receitaEfetiva: um único valor, tipado como xsd:decimal."@pt ] .
+
+g7sh:Medida_receitaTotalQG a sh:NodeShape ;
+    sh:targetSubjectsOf g7:receitaTotalQG ;
+    sh:property [ sh:path g7:receitaTotalQG ; sh:maxCount 1 ; sh:datatype xsd:decimal ;
+        sh:message "g7:receitaTotalQG: um único valor, tipado como xsd:decimal."@pt ] .
+
+g7sh:Medida_receitasTotais a sh:NodeShape ;
+    sh:targetSubjectsOf g7:receitasTotais ;
+    sh:property [ sh:path g7:receitasTotais ; sh:maxCount 1 ; sh:datatype xsd:decimal ;
+        sh:message "g7:receitasTotais: um único valor, tipado como xsd:decimal."@pt ] .
+
+g7sh:Medida_representantesEleitos a sh:NodeShape ;
+    sh:targetSubjectsOf g7:representantesEleitos ;
+    sh:property [ sh:path g7:representantesEleitos ; sh:maxCount 1 ; sh:datatype xsd:integer ;
+        sh:message "g7:representantesEleitos: um único valor, tipado como xsd:integer."@pt ] .
+
+g7sh:Medida_saldoOrcamental a sh:NodeShape ;
+    sh:targetSubjectsOf g7:saldoOrcamental ;
+    sh:property [ sh:path g7:saldoOrcamental ; sh:maxCount 1 ; sh:datatype xsd:decimal ;
+        sh:message "g7:saldoOrcamental: um único valor, tipado como xsd:decimal."@pt ] .
+
+g7sh:Medida_semVinculoPermanente a sh:NodeShape ;
+    sh:targetSubjectsOf g7:semVinculoPermanente ;
+    sh:property [ sh:path g7:semVinculoPermanente ; sh:maxCount 1 ; sh:datatype xsd:integer ;
+        sh:message "g7:semVinculoPermanente: um único valor, tipado como xsd:integer."@pt ] .
+
+g7sh:Medida_taxasMultasOutros a sh:NodeShape ;
+    sh:targetSubjectsOf g7:taxasMultasOutros ;
+    sh:property [ sh:path g7:taxasMultasOutros ; sh:maxCount 1 ; sh:datatype xsd:decimal ;
+        sh:message "g7:taxasMultasOutros: um único valor, tipado como xsd:decimal."@pt ] .
+
+g7sh:Medida_tecnicosSuperiores a sh:NodeShape ;
+    sh:targetSubjectsOf g7:tecnicosSuperiores ;
+    sh:property [ sh:path g7:tecnicosSuperiores ; sh:maxCount 1 ; sh:datatype xsd:integer ;
+        sh:message "g7:tecnicosSuperiores: um único valor, tipado como xsd:integer."@pt ] .
+
+g7sh:Medida_trabalhadores a sh:NodeShape ;
+    sh:targetSubjectsOf g7:trabalhadores ;
+    sh:property [ sh:path g7:trabalhadores ; sh:maxCount 1 ; sh:datatype xsd:integer ;
+        sh:message "g7:trabalhadores: um único valor, tipado como xsd:integer."@pt ] .
+
+g7sh:Medida_trabalhadoresInclEleitos a sh:NodeShape ;
+    sh:targetSubjectsOf g7:trabalhadoresInclEleitos ;
+    sh:property [ sh:path g7:trabalhadoresInclEleitos ; sh:maxCount 1 ; sh:datatype xsd:integer ;
+        sh:message "g7:trabalhadoresInclEleitos: um único valor, tipado como xsd:integer."@pt ] .
+
+g7sh:Medida_transferenciasCapital a sh:NodeShape ;
+    sh:targetSubjectsOf g7:transferenciasCapital ;
+    sh:property [ sh:path g7:transferenciasCapital ; sh:maxCount 1 ; sh:datatype xsd:decimal ;
+        sh:message "g7:transferenciasCapital: um único valor, tipado como xsd:decimal."@pt ] .
+
+g7sh:Medida_transferenciasCorrentes a sh:NodeShape ;
+    sh:targetSubjectsOf g7:transferenciasCorrentes ;
+    sh:property [ sh:path g7:transferenciasCorrentes ; sh:maxCount 1 ; sh:datatype xsd:decimal ;
+        sh:message "g7:transferenciasCorrentes: um único valor, tipado como xsd:decimal."@pt ] .
+
+g7sh:Medida_transferenciasOE a sh:NodeShape ;
+    sh:targetSubjectsOf g7:transferenciasOE ;
+    sh:property [ sh:path g7:transferenciasOE ; sh:maxCount 1 ; sh:datatype xsd:decimal ;
+        sh:message "g7:transferenciasOE: um único valor, tipado como xsd:decimal."@pt ] .
+
+g7sh:Medida_vendaBensServicos a sh:NodeShape ;
+    sh:targetSubjectsOf g7:vendaBensServicos ;
+    sh:property [ sh:path g7:vendaBensServicos ; sh:maxCount 1 ; sh:datatype xsd:decimal ;
+        sh:message "g7:vendaBensServicos: um único valor, tipado como xsd:decimal."@pt ] .
+
+g7sh:Medida_vinculoPermanente a sh:NodeShape ;
+    sh:targetSubjectsOf g7:vinculoPermanente ;
+    sh:property [ sh:path g7:vinculoPermanente ; sh:maxCount 1 ; sh:datatype xsd:integer ;
+        sh:message "g7:vinculoPermanente: um único valor, tipado como xsd:integer."@pt ] .

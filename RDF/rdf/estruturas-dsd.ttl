@@ -1,9 +1,11 @@
 @prefix g7: <https://w3id.org/ws-megsi-g7/vocab#> .
 @prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix sdmx-attribute: <http://purl.org/linked-data/sdmx/2009/attribute#> .
 @prefix sdmx-dimension: <http://purl.org/linked-data/sdmx/2009/dimension#> .
 
 <https://w3id.org/ws-megsi-g7/dsd/despesas-municipais> a qb:DataStructureDefinition ;
-    qb:component <https://w3id.org/ws-megsi-g7/componente/despesas-municipais/dim-ano>,
+    qb:component <https://w3id.org/ws-megsi-g7/componente/despesas-municipais/atributo-unitMeasure>,
+        <https://w3id.org/ws-megsi-g7/componente/despesas-municipais/dim-ano>,
         <https://w3id.org/ws-megsi-g7/componente/despesas-municipais/dim-periodo>,
         <https://w3id.org/ws-megsi-g7/componente/despesas-municipais/dim-refArea>,
         <https://w3id.org/ws-megsi-g7/componente/despesas-municipais/medida-despesaAquisicaoBens>,
@@ -21,7 +23,8 @@
         <https://w3id.org/ws-megsi-g7/componente/despesas-municipais/medida-transferenciasCorrentes> .
 
 <https://w3id.org/ws-megsi-g7/dsd/qualidade-gestao> a qb:DataStructureDefinition ;
-    qb:component <https://w3id.org/ws-megsi-g7/componente/qualidade-gestao/dim-ano>,
+    qb:component <https://w3id.org/ws-megsi-g7/componente/qualidade-gestao/atributo-unitMeasure>,
+        <https://w3id.org/ws-megsi-g7/componente/qualidade-gestao/dim-ano>,
         <https://w3id.org/ws-megsi-g7/componente/qualidade-gestao/dim-periodo>,
         <https://w3id.org/ws-megsi-g7/componente/qualidade-gestao/dim-refArea>,
         <https://w3id.org/ws-megsi-g7/componente/qualidade-gestao/medida-despesaTotalQG>,
@@ -37,7 +40,8 @@
         <https://w3id.org/ws-megsi-g7/componente/qualidade-gestao/medida-saldoOrcamental> .
 
 <https://w3id.org/ws-megsi-g7/dsd/receitas-municipais> a qb:DataStructureDefinition ;
-    qb:component <https://w3id.org/ws-megsi-g7/componente/receitas-municipais/dim-ano>,
+    qb:component <https://w3id.org/ws-megsi-g7/componente/receitas-municipais/atributo-unitMeasure>,
+        <https://w3id.org/ws-megsi-g7/componente/receitas-municipais/dim-ano>,
         <https://w3id.org/ws-megsi-g7/componente/receitas-municipais/dim-periodo>,
         <https://w3id.org/ws-megsi-g7/componente/receitas-municipais/dim-refArea>,
         <https://w3id.org/ws-megsi-g7/componente/receitas-municipais/medida-derramaIRC>,
@@ -53,7 +57,8 @@
         <https://w3id.org/ws-megsi-g7/componente/receitas-municipais/medida-vendaBensServicos> .
 
 <https://w3id.org/ws-megsi-g7/dsd/recursos-humanos> a qb:DataStructureDefinition ;
-    qb:component <https://w3id.org/ws-megsi-g7/componente/recursos-humanos/dim-ano>,
+    qb:component <https://w3id.org/ws-megsi-g7/componente/recursos-humanos/atributo-unitMeasure>,
+        <https://w3id.org/ws-megsi-g7/componente/recursos-humanos/dim-ano>,
         <https://w3id.org/ws-megsi-g7/componente/recursos-humanos/dim-periodo>,
         <https://w3id.org/ws-megsi-g7/componente/recursos-humanos/dim-refArea>,
         <https://w3id.org/ws-megsi-g7/componente/recursos-humanos/medida-comissaoServico>,
@@ -65,7 +70,8 @@
         <https://w3id.org/ws-megsi-g7/componente/recursos-humanos/medida-vinculoPermanente> .
 
 <https://w3id.org/ws-megsi-g7/dsd/recursos-humanos-2017> a qb:DataStructureDefinition ;
-    qb:component <https://w3id.org/ws-megsi-g7/componente/recursos-humanos-2017/dim-ano>,
+    qb:component <https://w3id.org/ws-megsi-g7/componente/recursos-humanos-2017/atributo-unitMeasure>,
+        <https://w3id.org/ws-megsi-g7/componente/recursos-humanos-2017/dim-ano>,
         <https://w3id.org/ws-megsi-g7/componente/recursos-humanos-2017/dim-periodo>,
         <https://w3id.org/ws-megsi-g7/componente/recursos-humanos-2017/dim-refArea>,
         <https://w3id.org/ws-megsi-g7/componente/recursos-humanos-2017/medida-cargosPoliticos>,
@@ -78,6 +84,9 @@
         <https://w3id.org/ws-megsi-g7/componente/recursos-humanos-2017/medida-trabalhadores>,
         <https://w3id.org/ws-megsi-g7/componente/recursos-humanos-2017/medida-trabalhadoresInclEleitos>,
         <https://w3id.org/ws-megsi-g7/componente/recursos-humanos-2017/medida-vinculoPermanente> .
+
+<https://w3id.org/ws-megsi-g7/componente/despesas-municipais/atributo-unitMeasure> qb:attribute sdmx-attribute:unitMeasure ;
+    qb:componentAttachment qb:MeasureProperty .
 
 <https://w3id.org/ws-megsi-g7/componente/despesas-municipais/dim-ano> qb:dimension g7:ano .
 
@@ -111,6 +120,9 @@
 
 <https://w3id.org/ws-megsi-g7/componente/despesas-municipais/medida-transferenciasCorrentes> qb:measure g7:transferenciasCorrentes .
 
+<https://w3id.org/ws-megsi-g7/componente/qualidade-gestao/atributo-unitMeasure> qb:attribute sdmx-attribute:unitMeasure ;
+    qb:componentAttachment qb:MeasureProperty .
+
 <https://w3id.org/ws-megsi-g7/componente/qualidade-gestao/dim-ano> qb:dimension g7:ano .
 
 <https://w3id.org/ws-megsi-g7/componente/qualidade-gestao/dim-periodo> qb:dimension g7:periodo .
@@ -138,6 +150,9 @@
 <https://w3id.org/ws-megsi-g7/componente/qualidade-gestao/medida-receitaTotalQG> qb:measure g7:receitaTotalQG .
 
 <https://w3id.org/ws-megsi-g7/componente/qualidade-gestao/medida-saldoOrcamental> qb:measure g7:saldoOrcamental .
+
+<https://w3id.org/ws-megsi-g7/componente/receitas-municipais/atributo-unitMeasure> qb:attribute sdmx-attribute:unitMeasure ;
+    qb:componentAttachment qb:MeasureProperty .
 
 <https://w3id.org/ws-megsi-g7/componente/receitas-municipais/dim-ano> qb:dimension g7:ano .
 
@@ -167,6 +182,9 @@
 
 <https://w3id.org/ws-megsi-g7/componente/receitas-municipais/medida-vendaBensServicos> qb:measure g7:vendaBensServicos .
 
+<https://w3id.org/ws-megsi-g7/componente/recursos-humanos-2017/atributo-unitMeasure> qb:attribute sdmx-attribute:unitMeasure ;
+    qb:componentAttachment qb:MeasureProperty .
+
 <https://w3id.org/ws-megsi-g7/componente/recursos-humanos-2017/dim-ano> qb:dimension g7:ano .
 
 <https://w3id.org/ws-megsi-g7/componente/recursos-humanos-2017/dim-periodo> qb:dimension g7:periodo .
@@ -192,6 +210,9 @@
 <https://w3id.org/ws-megsi-g7/componente/recursos-humanos-2017/medida-trabalhadoresInclEleitos> qb:measure g7:trabalhadoresInclEleitos .
 
 <https://w3id.org/ws-megsi-g7/componente/recursos-humanos-2017/medida-vinculoPermanente> qb:measure g7:vinculoPermanente .
+
+<https://w3id.org/ws-megsi-g7/componente/recursos-humanos/atributo-unitMeasure> qb:attribute sdmx-attribute:unitMeasure ;
+    qb:componentAttachment qb:MeasureProperty .
 
 <https://w3id.org/ws-megsi-g7/componente/recursos-humanos/dim-ano> qb:dimension g7:ano .
 

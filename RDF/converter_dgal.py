@@ -109,6 +109,98 @@ METADADOS_SERIES = {
     },
 }
 
+# [CORREÇÃO 4] Títulos em inglês, unidades e descrições por conjunto de dados
+# (a descrição da série mencionava 2017 em todos os anos de Recursos Humanos).
+TITULOS_EN = {"Receitas": "Revenue", "Despesas": "Expenditure",
+              "Recursos Humanos": "Human Resources", "Qualidade da Gestão": "Management Quality"}
+DESCRICAO_DATASET = {
+    "Receitas": ("Receitas municipais dos 308 municípios portugueses: receitas totais, transferências do Orçamento do Estado, "
+                 "financiamento da UE, impostos municipais (IMI, IMT, IUC, derrama, taxas e multas), venda de bens e serviços "
+                 "e outras receitas. Valores em euros; os trimestres são acumulados desde o início do ano.",
+                 "Municipal revenue of Portugal's 308 municipalities: total revenue, State Budget transfers, EU funding, "
+                 "municipal taxes (IMI, IMT, IUC, corporate surcharge, fees and fines), sales of goods and services and other "
+                 "revenue. Values in euros; quarters are cumulative from the start of the year."),
+    "Despesas": ("Despesas municipais dos 308 municípios portugueses: despesa total, despesa corrente (pessoal, aquisição de bens, "
+                 "juros, transferências correntes), investimento (terrenos e habitações, edifícios, infraestruturas básicas, "
+                 "acessibilidades, outros) e transferências de capital. Valores em euros; os trimestres são acumulados.",
+                 "Municipal expenditure of Portugal's 308 municipalities: total expenditure, current expenditure (staff, goods, "
+                 "interest, current transfers), investment (land and housing, buildings, basic infrastructure, accessibility, "
+                 "other) and capital transfers. Values in euros; quarters are cumulative."),
+    "Recursos Humanos": ("Recursos humanos dos 308 municípios portugueses: total de trabalhadores, por tipologia (dirigentes, "
+                         "técnicos superiores, outros) e por vínculo (comissão de serviço, com e sem vínculo permanente). "
+                         "Número de pessoas.",
+                         "Human resources of Portugal's 308 municipalities: total staff, by category (managers, senior "
+                         "technical staff, other) and by employment link (service commission, permanent and non-permanent). "
+                         "Number of people."),
+    "Qualidade da Gestão": ("Indicadores de gestão e sustentabilidade financeira dos 308 municípios portugueses: dívida total, "
+                            "receita e despesa totais, receita efetiva, saldo orçamental e pagamentos em atraso (euros); graus "
+                            "de endividamento, de execução da receita e da despesa e de independência financeira (%); prazo "
+                            "médio de pagamento (dias).",
+                            "Management and financial sustainability indicators of Portugal's 308 municipalities: total debt, "
+                            "total revenue and expenditure, effective revenue, budget balance and overdue payments (euros); "
+                            "debt, revenue and expenditure execution and financial independence ratios (%); average payment "
+                            "period (days)."),
+}
+NOTA_ANO = {
+    ("Receitas", 2017): ("Sem valores anuais (A): o valor de fim de ano é o de T4.",
+                         "No annual (A) values: the year-end value is T4."),
+    ("Despesas", 2017): ("Sem valores anuais (A): o valor de fim de ano é o de T4.",
+                         "No annual (A) values: the year-end value is T4."),
+    ("Recursos Humanos", 2017): ("Só período anual; inclui também representantes eleitos e cargos políticos.",
+                                 "Annual period only; also includes elected representatives and political positions."),
+}
+
+# [CORREÇÃO 1 do catálogo] Conjuntos de dados ORIGINAIS da DGAL, descritos no catálogo
+# (Secção 3.3 / Tabela 6 do relatório). Metadados recolhidos pelo grupo no portal
+# (Tabela 3 do relatório): títulos com acentos corrigidos, datas de criação/modificação
+# e palavras-chave corrigidas («tranferencias» corrigido, «migrado» retirado).
+# Datas não indicadas no relatório ficam em falta (None) em vez de inventadas.
+TITULO_ORIGINAL = {"Receitas": "Receitas Municipais {ano}", "Despesas": "Despesas Municipais {ano}",
+                   "Recursos Humanos": "Recursos Humanos {ano}",
+                   "Qualidade da Gestão": "Qualidade da Gestão Pública {ano}"}
+TITULO_ORIGINAL_EN = {"Receitas": "Municipal Revenue {ano}", "Despesas": "Municipal Expenditure {ano}",
+                      "Recursos Humanos": "Municipal Human Resources {ano}",
+                      "Qualidade da Gestão": "Public Management Quality {ano}"}
+DATAS_ORIGINAL = {  # (dct:issued, dct:modified) no portal
+    ("Receitas", 2017): (date(2018, 5, 4), date(2018, 5, 14)),
+    ("Despesas", 2017): (date(2018, 5, 4), date(2018, 5, 14)),
+    ("Recursos Humanos", 2017): (date(2018, 5, 4), date(2018, 5, 14)),
+    ("Receitas", 2018): (date(2020, 12, 28), None), ("Receitas", 2019): (date(2020, 12, 28), None),
+    ("Despesas", 2018): (date(2020, 12, 28), None), ("Despesas", 2019): (date(2020, 12, 28), None),
+    ("Qualidade da Gestão", 2017): (date(2021, 10, 29), None),
+    ("Qualidade da Gestão", 2018): (date(2021, 10, 29), None),
+    ("Qualidade da Gestão", 2019): (date(2021, 10, 29), None),
+    ("Recursos Humanos", 2018): (date(2021, 10, 29), date(2021, 12, 13)),
+    ("Recursos Humanos", 2019): (date(2021, 10, 29), date(2021, 12, 13)),
+}
+KEYWORDS_ORIGINAL = {
+    "Receitas": (("derrama", "financiamento", "IMI", "IMT", "IRC", "IUC", "receita", "transferências"),
+                 ("municipal surcharge", "funding", "property tax", "property transfer tax", "corporate income tax",
+                  "vehicle tax", "revenue", "transfers")),
+    "Despesas": (("despesa", "encargos", "investimentos", "juros"),
+                 ("expenditure", "charges", "investment", "interest")),
+    "Qualidade da Gestão": (("assistência", "dívida", "endividamento", "execução", "independência financeira",
+                             "pagamentos em atraso"),
+                            ("financial assistance", "debt", "indebtedness", "execution", "financial independence",
+                             "overdue payments")),
+    "Recursos Humanos": (("cargos", "comissão de serviço", "dirigentes", "eleitos", "funcionários", "técnicos", "vínculo"),
+                         ("positions", "service commission", "managers", "elected representatives", "employees",
+                          "technical staff", "employment link")),
+}
+IANA = "http://www.iana.org/assignments/media-types/"
+MEDIA_TYPE = {"csv": URIRef(IANA + "text/csv"),
+              "xlsx": URIRef(IANA + "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"),
+              "ttl": URIRef(IANA + "text/turtle")}
+# Contacto oficial da DGAL: preencher com um URL ou e-mail confirmado (ex.: "mailto:...").
+# Enquanto for None, os conjuntos de dados originais não têm dcat:contactPoint.
+CONTACTO_DGAL = None
+PAGINA_PROJETO = "https://github.com/Mota005/WB"
+
+# [CORREÇÃO 5] Nomes de municípios: homónimos desambiguados com o nome usado pela DGAL
+# («Lagoa (Algarve)», «Calheta (Madeira)», ...) e nome oficial quando o CSV usa outro.
+# O nome do CSV de ligações fica em skos:altLabel.
+NOMES_OFICIAIS = {"4302": "Praia da Vitória"}
+
 
 # Ficheiros originais identificados no projeto. 2017: latin-1;
 # 2018-2019: CP850 (testado nos nomes municipais com acentos).
@@ -367,6 +459,7 @@ def grafo(base: str):
         "dcat": str(DCAT),
         "qb": str(QB),
         "sdmx-dimension": str(SDMX_DIM),
+        "sdmx-attribute": str(SDMX_ATT),
         "dct": str(DCT),
         "skos": str(SKOS),
         "xsd": str(XSD),
@@ -511,6 +604,65 @@ def ler_ligacoes_territoriais(caminho: Path) -> dict[str, dict[str, str]]:
     return ligacoes
 
 
+def descrever_original(catalogo: Graph, ws: Namespace, cat, dgal, serie: str, ano: int, slug: str,
+                       ficheiro: str, original: URIRef, download: URIRef | None, intervalo) -> None:
+    """Descreve no catálogo o conjunto de dados original da DGAL e a distribuição usada."""
+    catalogo.add((cat, DCAT.dataset, original))
+    catalogo.add((original, RDF.type, DCAT.Dataset))
+    catalogo.add((original, DCT.title, Literal(TITULO_ORIGINAL[serie].format(ano=ano), lang="pt")))
+    catalogo.add((original, DCT.title, Literal(TITULO_ORIGINAL_EN[serie].format(ano=ano), lang="en")))
+    desc_pt, desc_en = DESCRICAO_DATASET[serie]
+    nota_pt, nota_en = NOTA_ANO.get((serie, ano), ("", ""))
+    catalogo.add((original, DCT.description, Literal(
+        f"Conjunto de dados original publicado pela DGAL. {desc_pt} Ano de referência: {ano}. {nota_pt}".strip(), lang="pt")))
+    catalogo.add((original, DCT.description, Literal(
+        f"Original dataset published by DGAL. {desc_en} Reference year: {ano}. {nota_en}".strip(), lang="en")))
+    catalogo.add((original, DCT.publisher, dgal))
+    catalogo.add((original, DCT.rightsHolder, dgal))
+    catalogo.add((original, DCT.identifier, Literal(str(original).rstrip("/").rsplit("/", 1)[1])))
+    catalogo.add((original, DCAT.landingPage, original))
+    catalogo.add((original, DCT.license, LICENCA_CC_BY))
+    catalogo.add((original, DCT.accessRights, EU_ACCESS.PUBLIC))
+    catalogo.add((original, DCT.language, EU_LANG.POR))
+    catalogo.add((original, DCT.spatial, EU_COUNTRY.PRT))
+    catalogo.add((original, DCT.temporal, intervalo))
+    catalogo.add((original, DCT.accrualPeriodicity, EU_FREQUENCY.NEVER))
+    for tema in TEMAS:
+        catalogo.add((original, DCAT.theme, tema))
+    emitido, modificado = DATAS_ORIGINAL[(serie, ano)]
+    catalogo.add((original, DCT.issued, Literal(emitido.isoformat(), datatype=XSD.date)))
+    if modificado:
+        catalogo.add((original, DCT.modified, Literal(modificado.isoformat(), datatype=XSD.date)))
+    kw_pt, kw_en = KEYWORDS_ORIGINAL[serie]
+    for palavra in kw_pt:
+        catalogo.add((original, DCAT.keyword, Literal(palavra, lang="pt")))
+    for palavra in kw_en:
+        catalogo.add((original, DCAT.keyword, Literal(palavra, lang="en")))
+    if CONTACTO_DGAL:
+        contacto = ws["contacto/dgal"]
+        catalogo.add((contacto, RDF.type, VCARD.Organization))
+        catalogo.add((contacto, VCARD.fn, Literal("Direção-Geral das Autarquias Locais", lang="pt")))
+        catalogo.add((contacto, VCARD.hasEmail if CONTACTO_DGAL.startswith("mailto:") else VCARD.hasURL,
+                      URIRef(CONTACTO_DGAL)))
+        catalogo.add((original, DCAT.contactPoint, contacto))
+    # Distribuição: o ficheiro efetivamente descarregado e convertido pelo grupo.
+    formato = "csv" if ficheiro.lower().endswith(".csv") else "xlsx"
+    dist = ws[f"distribuicao/dgal-{slug}-{ano}-{formato}"]
+    catalogo.add((original, DCAT.distribution, dist))
+    catalogo.add((dist, RDF.type, DCAT.Distribution))
+    catalogo.add((dist, DCT.title, Literal(f"Ficheiro DGAL {ficheiro}", lang="pt")))
+    catalogo.add((dist, DCT.title, Literal(f"DGAL file {ficheiro}", lang="en")))
+    catalogo.add((dist, DCT.identifier, Literal(ficheiro)))
+    catalogo.add((dist, DCT.format, EU_FILE.CSV if formato == "csv" else EU_FILE.XLSX))
+    catalogo.add((dist, DCAT.mediaType, MEDIA_TYPE[formato]))
+    catalogo.add((dist, DCT.license, LICENCA_CC_BY))
+    # accessURL: página do conjunto de dados no portal (permitido pelo DCAT-AP);
+    # downloadURL só quando o URL direto do ficheiro estiver confirmado em fontes_dgal.csv.
+    catalogo.add((dist, DCAT.accessURL, original))
+    if download:
+        catalogo.add((dist, DCAT.downloadURL, download))
+
+
 def enriquecer_catalogo(
     catalogo: Graph, base: str, pasta_dados: Path, pasta_saida: Path,
     manifesto: list[dict], url_publica: str | None, fontes: dict,
@@ -547,7 +699,20 @@ def enriquecer_catalogo(
         "CSV e XLSX da Direção-Geral das Autarquias Locais (DGAL), referentes a "
         "2017, 2018 e 2019. Organiza os conjuntos de dados em quatro séries "
         "temáticas e descreve as respetivas distribuições, licenças, cobertura "
-        "temporal e espacial e proveniência.", lang="pt")))
+        "temporal e espacial e proveniência. Descreve também os 12 conjuntos de dados "
+        "originais da DGAL no Portal Nacional de Dados Abertos.", lang="pt")))
+    catalogo.add((cat, DCT.title, Literal("RDF catalogue of DGAL municipal indicators (2017–2019)", lang="en")))
+    catalogo.add((cat, DCT.description, Literal(
+        "Catalogue of 12 RDF/Turtle datasets derived from the CSV and XLSX files of the Portuguese "
+        "Directorate-General for Local Authorities (DGAL) for 2017, 2018 and 2019, organised in four "
+        "thematic series, together with the 12 original DGAL datasets in the Portuguese open data portal.",
+        lang="en")))
+
+    # Cobertura temporal das séries (recomendada no perfil): 2017-01-01 a 2019-12-31.
+    intervalo_series = ws["intervalo/2017-2019"]
+    catalogo.add((intervalo_series, RDF.type, DCT.PeriodOfTime))
+    catalogo.add((intervalo_series, DCAT.startDate, Literal("2017-01-01", datatype=XSD.date)))
+    catalogo.add((intervalo_series, DCAT.endDate, Literal("2019-12-31", datatype=XSD.date)))
 
     # Cada série é um recurso distinto com frequência anual e duas categorias EU.
     for serie, slug in SERIES.items():
@@ -559,6 +724,8 @@ def enriquecer_catalogo(
         catalogo.add((serie_uri, DCAT.contactPoint, contacto))
         catalogo.add((serie_uri, DCT.accrualPeriodicity, EU_FREQUENCY.ANNUAL))
         catalogo.add((serie_uri, DCT.spatial, EU_COUNTRY.PRT))
+        catalogo.add((serie_uri, DCT.title, Literal(TITULOS_EN[serie], lang="en")))
+        catalogo.add((serie_uri, DCT.temporal, intervalo_series))
         for tema in TEMAS:
             catalogo.add((serie_uri, DCAT.theme, tema))
 
@@ -593,8 +760,13 @@ def enriquecer_catalogo(
         catalogo.add((ds, DCT.accrualPeriodicity, EU_FREQUENCY.NEVER))
         catalogo.add((ds, DCAT.temporalResolution,
                       Literal("P1Y" if serie == "Recursos Humanos" and ano == 2017 else "P3M", datatype=XSD.duration)))
-        catalogo.add((ds, DCT.description,
-                      Literal(meta["descricao_en"] + f" Reference year: {ano}.", lang="en")))
+        desc_pt, desc_en = DESCRICAO_DATASET[serie]
+        nota_pt, nota_en = NOTA_ANO.get((serie, ano), ("", ""))
+        catalogo.add((ds, DCT.description, Literal(
+            f"{desc_pt} Ano de referência: {ano}. {nota_pt}".strip(), lang="pt")))
+        catalogo.add((ds, DCT.description, Literal(
+            f"{desc_en} Reference year: {ano}. {nota_en}".strip(), lang="en")))
+        catalogo.add((ds, DCT.title, Literal(f"{TITULOS_EN[serie]} {ano} — data converted to RDF", lang="en")))
         for tema in TEMAS:
             catalogo.add((ds, DCAT.theme, tema))
         for palavra in meta["keywords"]:
@@ -620,23 +792,18 @@ def enriquecer_catalogo(
                                "de eleitos e de cargos políticos têm estrutura estatística própria.")
         catalogo.add((ds, ADMS.versionNotes, Literal(" ".join(partes_nota), lang="pt")))
 
-        # Proveniência: identificar a cópia local sem divulgar caminhos do computador.
-        # Quando houver URL oficial, essa passa a ser a origem e a landing page.
+        # [CORREÇÃO 1 do catálogo] O conjunto de dados ORIGINAL da DGAL é identificado pelo
+        # endereço da sua página no portal (fontes_dgal.csv) e descrito no catálogo, com a
+        # distribuição CSV/XLSX usada. O derivado aponta para ele (dct:source, prov:wasDerivedFrom).
         fonte = fontes.get((serie, ano), {})
-        fonte_local = ws[f"fonte/dgal/{slug}/{ano}"]
-        catalogo.add((fonte_local, RDF.type, FOAF.Document))
-        catalogo.add((fonte_local, DCT.identifier, Literal(nome)))
-        catalogo.add((fonte_local, DCT.title,
-                      Literal(f"Ficheiro DGAL original: {nome}", lang="pt")))
-        catalogo.add((fonte_local, DCT.format,
-                      EU_FILE.CSV if nome.lower().endswith(".csv") else EU_FILE.XLSX))
-        origem = fonte.get("dataset") or fonte.get("download") or fonte_local
-        catalogo.add((ds, DCT.source, origem))
-        catalogo.add((ds, PROV.wasDerivedFrom, origem))
-        if origem != fonte_local:
-            catalogo.add((fonte_local, DCT.source, origem))
-        if fonte.get("dataset"):
-            catalogo.add((ds, DCAT.landingPage, fonte["dataset"]))
+        original = fonte.get("dataset")
+        if original is None:
+            raise ValueError(f"Falta url_dataset_original em fontes_dgal.csv para {serie} {ano}")
+        catalogo.add((ds, DCT.source, original))
+        catalogo.add((ds, PROV.wasDerivedFrom, original))
+        catalogo.add((ds, DCAT.landingPage, URIRef(PAGINA_PROJETO)))
+        descrever_original(catalogo, ws, cat, dgal, serie, ano, slug, nome, original,
+                           fonte.get("download"), intervalos[ano])
 
         # Distribuições: NÃO publicar caminhos file:// privados no catálogo.
         # Os URLs públicos apontam para os Turtle no GitHub (ou para o endereço
@@ -651,6 +818,10 @@ def enriquecer_catalogo(
             catalogo.add((dist, DCAT.downloadURL, url))
         catalogo.add((dist, DCT.license, LICENCA_CC_BY))
         catalogo.add((dist, DCT.issued, data_publicacao))
+        catalogo.add((dist, DCT.title, Literal(f"RDF observations {TITULOS_EN[serie]} {ano} (Turtle)", lang="en")))
+        catalogo.add((dist, DCT.description, Literal(
+            f"RDF/Turtle distribution of the {TITULOS_EN[serie]} series, year {ano}, with {item['observacoes_rdf']} observations.",
+            lang="en")))
         catalogo.add((dist, ADMS.status, EU_DISTR_STATUS.COMPLETED))
         catalogo.add((dist, DCAT.byteSize, Literal(ficheiro_rdf.stat().st_size, datatype=XSD.nonNegativeInteger)))
         catalogo.add((dist, DCT.description,
@@ -830,16 +1001,13 @@ def main():
         catalogo.add((ds, DCT.title, Literal(f"{serie} {ano} — dados convertidos para RDF", lang="pt")))
         catalogo.add((ds, DCT.publisher, agente))
         catalogo.add((ds, DCT.identifier, Literal(f"rdf-{serie_slug}-{ano}")))
-        catalogo.add((ds, DCT.description, Literal(
-            f"Conversão do ficheiro DGAL {ficheiro}; {observacoes} observações não vazias. "
-            "Códigos de município e período preservados. Fonte disponível no Portal Nacional de Dados Abertos.", lang="pt")))
         # A fonte exata no dados.gov.pt é deixada em aberto para não inventar o URI.
         distr = WS[f"distribuicao/rdf-{serie_slug}-{ano}-turtle"]
         catalogo.add((ds, DCAT.distribution, distr))
         catalogo.add((distr, RDF.type, DCAT.Distribution))
         catalogo.add((distr, DCT.title, Literal(f"Observações RDF {serie} {ano} (Turtle)", lang="pt")))
         catalogo.add((distr, DCT.format, EU_FILE.RDF_TURTLE))
-        catalogo.add((distr, DCAT.mediaType, URIRef("https://www.iana.org/assignments/media-types/text/turtle")))
+        catalogo.add((distr, DCAT.mediaType, MEDIA_TYPE["ttl"]))
         # RH 2017 tem duas medidas ausentes de RH 2018 e RH 2019.
         nome_dsd = (
             "recursos-humanos-2017"
@@ -870,6 +1038,9 @@ def main():
     esquema_distritos = URIRef(base + "esquema/distritos-regioes")
     territ.add((esquema_distritos, RDF.type, SKOS.ConceptScheme))
     territ.add((esquema_distritos, DCT.title, Literal("Distritos e regiões autónomas de Portugal", lang="pt")))
+    contagem_nomes = defaultdict(int)
+    for linha in ligacoes.values():
+        contagem_nomes[linha["municipio"]] += 1
     for codigo in sorted(municipio_nome):
         linha = ligacoes[codigo]
         uri = TERR[codigo]
@@ -877,7 +1048,15 @@ def main():
         territ.add((uri, RDF.type, SKOS.Concept))
         territ.add((uri, SKOS.inScheme, esquema_territorios))
         territ.add((uri, SKOS.notation, Literal(codigo)))
-        territ.add((uri, SKOS.prefLabel, Literal(linha["municipio"], lang="pt")))
+        # [CORREÇÃO 5] prefLabel único: homónimos com o nome DGAL («Lagoa (Algarve)»).
+        rotulo = NOMES_OFICIAIS.get(codigo, linha["municipio"])
+        if contagem_nomes[linha["municipio"]] > 1:
+            rotulo = municipio_nome[codigo]
+            if "(" not in rotulo:
+                raise ValueError(f"Município homónimo sem desambiguação na fonte DGAL: {codigo} {rotulo}")
+        territ.add((uri, SKOS.prefLabel, Literal(rotulo, lang="pt")))
+        if rotulo != linha["municipio"]:
+            territ.add((uri, SKOS.altLabel, Literal(linha["municipio"], lang="pt")))
         territ.add((uri, SKOS.broader, territorio_pai))
         if linha["wikidata"]:
             territ.add((uri, SKOS.exactMatch, URIRef(linha["wikidata"])))
@@ -887,6 +1066,13 @@ def main():
         territ.add((territorio_pai, SKOS.notation, Literal(linha["distrito_codigo"])))
         if linha["distrito_wikidata"]:
             territ.add((territorio_pai, SKOS.exactMatch, URIRef(linha["distrito_wikidata"])))
+    rotulos = defaultdict(list)  # só no esquema dos municípios (distritos podem repetir nomes de capitais)
+    for s, p, o in territ.triples((None, SKOS.prefLabel, None)):
+        if (s, SKOS.inScheme, esquema_territorios) in set(territ.triples((s, SKOS.inScheme, None))):
+            rotulos[str(o)].append(s)
+    repetidos = {r: v for r, v in rotulos.items() if len(v) > 1}
+    if repetidos:
+        raise ValueError(f"skos:prefLabel repetido no território: {sorted(repetidos)}")
     guardar(territ, saida / "territorio.ttl")
     guardar(periodos, saida / "periodos.ttl")
 
@@ -916,6 +1102,12 @@ def main():
                 dsd_g.add((dsd, QB.component, comp))
                 dsd_g.add((comp, QB.dimension, dim))
 
+            # Atributo de unidade: o valor está em cada medida do vocabulário
+            # (sdmx-attribute:unitMeasure), por isso o atributo liga-se à MeasureProperty.
+            comp_unidade = WS[f"componente/{nome_dsd}/atributo-unitMeasure"]
+            dsd_g.add((dsd, QB.component, comp_unidade))
+            dsd_g.add((comp_unidade, QB.attribute, SDMX_ATT.unitMeasure))
+            dsd_g.add((comp_unidade, QB.componentAttachment, QB.MeasureProperty))
             for medida in sorted(medidas_dsd):
                 prop = URIRef(base + "vocab#" + medida.split(":", 1)[1])
                 comp = WS[f"componente/{nome_dsd}/medida-{medida.split(':', 1)[1]}"]
@@ -977,7 +1169,8 @@ def main():
     if confirmadas < 12:
         print(f"AVISO: {12 - confirmadas} fontes DGAL ainda sem URLs oficiais confirmadas. ")
         print("Preencher as restantes URLs oficiais em fontes_dgal.csv e voltar a executar.")
-    print("Pendente: verificar URLs de publicacao, registar w3id.org e executar validacao formal SHACL na tarefa 6.3.")
+    print("Seguinte: validar com SHACL -> python validar_shacl.py (requer pip install pyshacl).")
+    print("Pendente: registar w3id.org; preencher url_download_original em fontes_dgal.csv e CONTACTO_DGAL, se confirmados.")
 
 
 if __name__ == "__main__":

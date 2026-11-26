@@ -745,11 +745,12 @@ terr:0805 a skos:Concept ;
     skos:prefLabel "Faro"@pt .
 
 terr:0806 a skos:Concept ;
+    skos:altLabel "Lagoa"@pt ;
     skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/08> ;
     skos:exactMatch <http://www.wikidata.org/entity/Q985519> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "0806" ;
-    skos:prefLabel "Lagoa"@pt .
+    skos:prefLabel "Lagoa (Algarve)"@pt .
 
 terr:0807 a skos:Concept ;
     skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/08> ;
@@ -1949,11 +1950,12 @@ terr:1824 a skos:Concept ;
     skos:prefLabel "Vouzela"@pt .
 
 terr:3101 a skos:Concept ;
+    skos:altLabel "Calheta"@pt ;
     skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/RAM> ;
     skos:exactMatch <http://www.wikidata.org/entity/Q757078> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "3101" ;
-    skos:prefLabel "Calheta"@pt .
+    skos:prefLabel "Calheta (Madeira)"@pt .
 
 terr:3102 a skos:Concept ;
     skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/RAM> ;
@@ -2033,11 +2035,12 @@ terr:4101 a skos:Concept ;
     skos:prefLabel "Vila do Porto"@pt .
 
 terr:4201 a skos:Concept ;
+    skos:altLabel "Lagoa"@pt ;
     skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/RAA> ;
     skos:exactMatch <http://www.wikidata.org/entity/Q564759> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "4201" ;
-    skos:prefLabel "Lagoa"@pt .
+    skos:prefLabel "Lagoa (São Miguel)"@pt .
 
 terr:4202 a skos:Concept ;
     skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/RAA> ;
@@ -2082,11 +2085,12 @@ terr:4301 a skos:Concept ;
     skos:prefLabel "Angra do Heroísmo"@pt .
 
 terr:4302 a skos:Concept ;
+    skos:altLabel "Vila da Praia da Vitória"@pt ;
     skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/RAA> ;
     skos:exactMatch <http://www.wikidata.org/entity/Q73046> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "4302" ;
-    skos:prefLabel "Vila da Praia da Vitória"@pt .
+    skos:prefLabel "Praia da Vitória"@pt .
 
 terr:4401 a skos:Concept ;
     skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/RAA> ;
@@ -2096,11 +2100,12 @@ terr:4401 a skos:Concept ;
     skos:prefLabel "Santa Cruz da Graciosa"@pt .
 
 terr:4501 a skos:Concept ;
+    skos:altLabel "Calheta"@pt ;
     skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/RAA> ;
     skos:exactMatch <http://www.wikidata.org/entity/Q1019047> ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/municipios> ;
     skos:notation "4501" ;
-    skos:prefLabel "Calheta"@pt .
+    skos:prefLabel "Calheta (São Jorge)"@pt .
 
 terr:4502 a skos:Concept ;
     skos:broader <https://w3id.org/ws-megsi-g7/territorio/distrito-ra/RAA> ;

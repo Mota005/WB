@@ -41,6 +41,7 @@ Execução:   python converter_dgal.py
 from __future__ import annotations
 
 import argparse
+import hashlib
 import csv
 import subprocess
 import re
@@ -161,15 +162,17 @@ TITULO_ORIGINAL = {"Receitas": "Receitas Municipais {ano}", "Despesas": "Despesa
 TITULO_ORIGINAL_EN = {"Receitas": "Municipal Revenue {ano}", "Despesas": "Municipal Expenditure {ano}",
                       "Recursos Humanos": "Municipal Human Resources {ano}",
                       "Qualidade da Gestão": "Public Management Quality {ano}"}
-DATAS_ORIGINAL = {  # (dct:issued, dct:modified) no portal
+DATAS_ORIGINAL = {  # (dct:issued, dct:modified) — API do dados.gov.pt, consultada em 26/11/2026
     ("Receitas", 2017): (date(2018, 5, 4), date(2018, 5, 14)),
     ("Despesas", 2017): (date(2018, 5, 4), date(2018, 5, 14)),
     ("Recursos Humanos", 2017): (date(2018, 5, 4), date(2018, 5, 14)),
-    ("Receitas", 2018): (date(2020, 12, 28), None), ("Receitas", 2019): (date(2020, 12, 28), None),
-    ("Despesas", 2018): (date(2020, 12, 28), None), ("Despesas", 2019): (date(2020, 12, 28), None),
-    ("Qualidade da Gestão", 2017): (date(2021, 10, 29), None),
-    ("Qualidade da Gestão", 2018): (date(2021, 10, 29), None),
-    ("Qualidade da Gestão", 2019): (date(2021, 10, 29), None),
+    ("Receitas", 2018): (date(2020, 12, 28), date(2020, 12, 28)),
+    ("Receitas", 2019): (date(2020, 12, 28), date(2020, 12, 28)),
+    ("Despesas", 2018): (date(2020, 12, 28), date(2020, 12, 28)),
+    ("Despesas", 2019): (date(2020, 12, 28), date(2020, 12, 28)),
+    ("Qualidade da Gestão", 2017): (date(2021, 10, 29), date(2021, 10, 29)),
+    ("Qualidade da Gestão", 2018): (date(2021, 10, 29), date(2021, 10, 29)),
+    ("Qualidade da Gestão", 2019): (date(2021, 10, 29), date(2021, 10, 29)),
     ("Recursos Humanos", 2018): (date(2021, 10, 29), date(2021, 12, 13)),
     ("Recursos Humanos", 2019): (date(2021, 10, 29), date(2021, 12, 13)),
 }
@@ -191,9 +194,11 @@ IANA = "http://www.iana.org/assignments/media-types/"
 MEDIA_TYPE = {"csv": URIRef(IANA + "text/csv"),
               "xlsx": URIRef(IANA + "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"),
               "ttl": URIRef(IANA + "text/turtle")}
-# Contacto oficial da DGAL: preencher com um URL ou e-mail confirmado (ex.: "mailto:...").
-# Enquanto for None, os conjuntos de dados originais não têm dcat:contactPoint.
-CONTACTO_DGAL = None
+# Contacto oficial da DGAL: sítio indicado na página da organização no dados.gov.pt
+# (API /api/1/organizations/direccao-geral-das-autarquias-locais/, campo url).
+CONTACTO_DGAL = "http://www.portalautarquico.dgal.gov.pt"
+PAGINA_DGAL_PORTAL = "https://dados.gov.pt/organizations/direccao-geral-das-autarquias-locais"
+SPDX = Namespace("http://spdx.org/rdf/terms#")
 PAGINA_PROJETO = "https://github.com/Mota005/WB"
 
 # [CORREÇÃO 5] Nomes de municípios: homónimos desambiguados com o nome usado pela DGAL
@@ -467,6 +472,8 @@ def grafo(base: str):
         "adms": str(ADMS),
         "vcard": str(VCARD),
         "foaf": str(FOAF),
+        "spdx": str(SPDX),
+        "rdfs": str(RDFS),
     }
     for p, iri in prefixos.items():
         g.bind(p, Namespace(iri))
@@ -605,7 +612,8 @@ def ler_ligacoes_territoriais(caminho: Path) -> dict[str, dict[str, str]]:
 
 
 def descrever_original(catalogo: Graph, ws: Namespace, cat, dgal, serie: str, ano: int, slug: str,
-                       ficheiro: str, original: URIRef, download: URIRef | None, intervalo) -> None:
+                       ficheiro: str, original: URIRef, download: URIRef | None, intervalo,
+                       pasta_dados: Path) -> None:
     """Descreve no catálogo o conjunto de dados original da DGAL e a distribuição usada."""
     catalogo.add((cat, DCAT.dataset, original))
     catalogo.add((original, RDF.type, DCAT.Dataset))
@@ -661,6 +669,19 @@ def descrever_original(catalogo: Graph, ws: Namespace, cat, dgal, serie: str, an
     catalogo.add((dist, DCAT.accessURL, original))
     if download:
         catalogo.add((dist, DCAT.downloadURL, download))
+        nome_portal = str(download).rsplit("/", 1)[1]
+        catalogo.add((dist, RDFS.comment, Literal(
+            f"Ficheiro publicado no portal como {nome_portal}; guardado localmente como {ficheiro}.", lang="pt")))
+    # Tamanho e impressão digital SHA-256 do ficheiro usado na conversão (spdx:checksum, DCAT-AP).
+    # Permite verificar que o ficheiro convertido é idêntico ao publicado pela DGAL.
+    local = pasta_dados / ficheiro
+    conteudo = local.read_bytes()
+    catalogo.add((dist, DCAT.byteSize, Literal(len(conteudo), datatype=XSD.nonNegativeInteger)))
+    soma = ws[f"distribuicao/dgal-{slug}-{ano}-{formato}/checksum"]
+    catalogo.add((dist, SPDX.checksum, soma))
+    catalogo.add((soma, RDF.type, SPDX.Checksum))
+    catalogo.add((soma, SPDX.algorithm, SPDX.checksumAlgorithm_sha256))
+    catalogo.add((soma, SPDX.checksumValue, Literal(hashlib.sha256(conteudo).hexdigest(), datatype=XSD.hexBinary)))
 
 
 def enriquecer_catalogo(
@@ -675,6 +696,8 @@ def enriquecer_catalogo(
     catalogo.add((dgal, RDF.type, FOAF.Organization))
     catalogo.add((dgal, FOAF.name, Literal("Direção-Geral das Autarquias Locais", lang="pt")))
     catalogo.add((dgal, DCT.type, TIPO_PUBLICADOR.NationalAuthority))
+    catalogo.add((dgal, FOAF.homepage, URIRef(CONTACTO_DGAL)))
+    catalogo.add((dgal, RDFS.seeAlso, URIRef(PAGINA_DGAL_PORTAL)))
     catalogo.add((grupo, DCT.type, TIPO_PUBLICADOR["Academia-ScientificOrganisation"]))
     catalogo.add((grupo, FOAF.homepage, URIRef("https://github.com/Mota005/WB")))
 
@@ -803,7 +826,7 @@ def enriquecer_catalogo(
         catalogo.add((ds, PROV.wasDerivedFrom, original))
         catalogo.add((ds, DCAT.landingPage, URIRef(PAGINA_PROJETO)))
         descrever_original(catalogo, ws, cat, dgal, serie, ano, slug, nome, original,
-                           fonte.get("download"), intervalos[ano])
+                           fonte.get("download"), intervalos[ano], pasta_dados)
 
         # Distribuições: NÃO publicar caminhos file:// privados no catálogo.
         # Os URLs públicos apontam para os Turtle no GitHub (ou para o endereço
@@ -1170,7 +1193,7 @@ def main():
         print(f"AVISO: {12 - confirmadas} fontes DGAL ainda sem URLs oficiais confirmadas. ")
         print("Preencher as restantes URLs oficiais em fontes_dgal.csv e voltar a executar.")
     print("Seguinte: validar com SHACL -> python validar_shacl.py (requer pip install pyshacl).")
-    print("Pendente: registar w3id.org; preencher url_download_original em fontes_dgal.csv e CONTACTO_DGAL, se confirmados.")
+    print("Pendente: registar o domínio w3id.org.")
 
 
 if __name__ == "__main__":

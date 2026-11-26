@@ -4,6 +4,8 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix ws: <https://w3id.org/ws-megsi-g7/> .
 @prefix wsds: <https://w3id.org/ws-megsi-g7/dataset/> .
@@ -508,8 +510,16 @@ wsds:rdf-recursos-humanos-2019 a qb:DataSet,
     dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
     dct:title "DGAL file DespesasMunicipais-2017.csv"@en,
         "Ficheiro DGAL DespesasMunicipais-2017.csv"@pt ;
+    spdx:checksum <https://w3id.org/ws-megsi-g7/distribuicao/dgal-despesas-municipais-2017-csv/checksum> ;
+    rdfs:comment "Ficheiro publicado no portal como AIIIDM2017.csv; guardado localmente como DespesasMunicipais-2017.csv."@pt ;
     dcat:accessURL <https://dados.gov.pt/pt/datasets/despesas-municipais-2017> ;
+    dcat:byteSize "192022"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://dados.gov.pt/s/resources/despesas-municipais-2017/20180510-165815/AIIIDM2017.csv> ;
     dcat:mediaType <http://www.iana.org/assignments/media-types/text/csv> .
+
+<https://w3id.org/ws-megsi-g7/distribuicao/dgal-despesas-municipais-2017-csv/checksum> a spdx:Checksum ;
+    spdx:algorithm spdx:checksumAlgorithm_sha256 ;
+    spdx:checksumValue "1efdc5b45f0f720422d53066bf0271682af4012d1aea470d99b185b0e2f20e35"^^xsd:hexBinary .
 
 <https://w3id.org/ws-megsi-g7/distribuicao/dgal-despesas-municipais-2018-csv> a dcat:Distribution ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
@@ -517,8 +527,16 @@ wsds:rdf-recursos-humanos-2019 a qb:DataSet,
     dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
     dct:title "DGAL file DespesasMunicipais-2018.csv"@en,
         "Ficheiro DGAL DespesasMunicipais-2018.csv"@pt ;
+    spdx:checksum <https://w3id.org/ws-megsi-g7/distribuicao/dgal-despesas-municipais-2018-csv/checksum> ;
+    rdfs:comment "Ficheiro publicado no portal como despesasmunicipais-2018.csv; guardado localmente como DespesasMunicipais-2018.csv."@pt ;
     dcat:accessURL <https://dados.gov.pt/pt/datasets/despesas-municipais-2018-1> ;
+    dcat:byteSize "246534"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://dados.gov.pt/s/resources/despesas-municipais-2018-1/20201228-142558/despesasmunicipais-2018.csv> ;
     dcat:mediaType <http://www.iana.org/assignments/media-types/text/csv> .
+
+<https://w3id.org/ws-megsi-g7/distribuicao/dgal-despesas-municipais-2018-csv/checksum> a spdx:Checksum ;
+    spdx:algorithm spdx:checksumAlgorithm_sha256 ;
+    spdx:checksumValue "fe0f411ec6f5f2d004e5076b41d66e3ea6c570d76702f1e79a7e17fdfdffad07"^^xsd:hexBinary .
 
 <https://w3id.org/ws-megsi-g7/distribuicao/dgal-despesas-municipais-2019-csv> a dcat:Distribution ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
@@ -526,8 +544,16 @@ wsds:rdf-recursos-humanos-2019 a qb:DataSet,
     dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
     dct:title "DGAL file DespesasMunicipais-2019.csv"@en,
         "Ficheiro DGAL DespesasMunicipais-2019.csv"@pt ;
+    spdx:checksum <https://w3id.org/ws-megsi-g7/distribuicao/dgal-despesas-municipais-2019-csv/checksum> ;
+    rdfs:comment "Ficheiro publicado no portal como despesasmunicipais-2019.csv; guardado localmente como DespesasMunicipais-2019.csv."@pt ;
     dcat:accessURL <https://dados.gov.pt/pt/datasets/despesas-municipais-2019> ;
+    dcat:byteSize "247353"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://dados.gov.pt/s/resources/despesas-municipais-2019/20201228-144209/despesasmunicipais-2019.csv> ;
     dcat:mediaType <http://www.iana.org/assignments/media-types/text/csv> .
+
+<https://w3id.org/ws-megsi-g7/distribuicao/dgal-despesas-municipais-2019-csv/checksum> a spdx:Checksum ;
+    spdx:algorithm spdx:checksumAlgorithm_sha256 ;
+    spdx:checksumValue "603ae57585d2f6c570499ffb682460efb968fca48f04d1ef224e9dea01378657"^^xsd:hexBinary .
 
 <https://w3id.org/ws-megsi-g7/distribuicao/dgal-qualidade-gestao-2017-xlsx> a dcat:Distribution ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/XLSX> ;
@@ -535,8 +561,16 @@ wsds:rdf-recursos-humanos-2019 a qb:DataSet,
     dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
     dct:title "DGAL file QualidadeGestaoPublica-2017.xlsx"@en,
         "Ficheiro DGAL QualidadeGestaoPublica-2017.xlsx"@pt ;
+    spdx:checksum <https://w3id.org/ws-megsi-g7/distribuicao/dgal-qualidade-gestao-2017-xlsx/checksum> ;
+    rdfs:comment "Ficheiro publicado no portal como aiqgp2017.xlsx; guardado localmente como QualidadeGestaoPublica-2017.xlsx."@pt ;
     dcat:accessURL <https://dados.gov.pt/pt/datasets/qualidade-gestao-publica-2017-1> ;
+    dcat:byteSize "202488"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://dados.gov.pt/s/resources/qualidade-gestao-publica-2017-1/20211029-152650/aiqgp2017.xlsx> ;
     dcat:mediaType <http://www.iana.org/assignments/media-types/application/vnd.openxmlformats-officedocument.spreadsheetml.sheet> .
+
+<https://w3id.org/ws-megsi-g7/distribuicao/dgal-qualidade-gestao-2017-xlsx/checksum> a spdx:Checksum ;
+    spdx:algorithm spdx:checksumAlgorithm_sha256 ;
+    spdx:checksumValue "e554ab492f9751f157e8b12c4cf2f0e5c1dcac18f6f7237b0426d2cb244d0d63"^^xsd:hexBinary .
 
 <https://w3id.org/ws-megsi-g7/distribuicao/dgal-qualidade-gestao-2018-xlsx> a dcat:Distribution ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/XLSX> ;
@@ -544,8 +578,16 @@ wsds:rdf-recursos-humanos-2019 a qb:DataSet,
     dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
     dct:title "DGAL file QualidadeGestaoPublica-2018.xlsx"@en,
         "Ficheiro DGAL QualidadeGestaoPublica-2018.xlsx"@pt ;
+    spdx:checksum <https://w3id.org/ws-megsi-g7/distribuicao/dgal-qualidade-gestao-2018-xlsx/checksum> ;
+    rdfs:comment "Ficheiro publicado no portal como aiqgp2018.xlsx; guardado localmente como QualidadeGestaoPublica-2018.xlsx."@pt ;
     dcat:accessURL <https://dados.gov.pt/pt/datasets/qualidade-gestao-publica-2018-1> ;
+    dcat:byteSize "200764"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://dados.gov.pt/s/resources/qualidade-gestao-publica-2018-1/20211029-152902/aiqgp2018.xlsx> ;
     dcat:mediaType <http://www.iana.org/assignments/media-types/application/vnd.openxmlformats-officedocument.spreadsheetml.sheet> .
+
+<https://w3id.org/ws-megsi-g7/distribuicao/dgal-qualidade-gestao-2018-xlsx/checksum> a spdx:Checksum ;
+    spdx:algorithm spdx:checksumAlgorithm_sha256 ;
+    spdx:checksumValue "681d5145f7d309d0949de3f25b68d016ec1a7eb614b269f0e4879ac50526dec3"^^xsd:hexBinary .
 
 <https://w3id.org/ws-megsi-g7/distribuicao/dgal-qualidade-gestao-2019-xlsx> a dcat:Distribution ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/XLSX> ;
@@ -553,8 +595,16 @@ wsds:rdf-recursos-humanos-2019 a qb:DataSet,
     dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
     dct:title "DGAL file QualidadeGestaoPublica-2019.xlsx"@en,
         "Ficheiro DGAL QualidadeGestaoPublica-2019.xlsx"@pt ;
+    spdx:checksum <https://w3id.org/ws-megsi-g7/distribuicao/dgal-qualidade-gestao-2019-xlsx/checksum> ;
+    rdfs:comment "Ficheiro publicado no portal como aiqgp2019.xlsx; guardado localmente como QualidadeGestaoPublica-2019.xlsx."@pt ;
     dcat:accessURL <https://dados.gov.pt/pt/datasets/qualidade-gestao-publica-2019> ;
+    dcat:byteSize "201782"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://dados.gov.pt/s/resources/qualidade-gestao-publica-2019/20211029-153025/aiqgp2019.xlsx> ;
     dcat:mediaType <http://www.iana.org/assignments/media-types/application/vnd.openxmlformats-officedocument.spreadsheetml.sheet> .
+
+<https://w3id.org/ws-megsi-g7/distribuicao/dgal-qualidade-gestao-2019-xlsx/checksum> a spdx:Checksum ;
+    spdx:algorithm spdx:checksumAlgorithm_sha256 ;
+    spdx:checksumValue "9ceb45965d7473e9541953f95289af85a709603a6468287ef8fe139604bc4cde"^^xsd:hexBinary .
 
 <https://w3id.org/ws-megsi-g7/distribuicao/dgal-receitas-municipais-2017-csv> a dcat:Distribution ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
@@ -562,8 +612,16 @@ wsds:rdf-recursos-humanos-2019 a qb:DataSet,
     dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
     dct:title "DGAL file ReceitasMunicipais-2017.csv"@en,
         "Ficheiro DGAL ReceitasMunicipais-2017.csv"@pt ;
+    spdx:checksum <https://w3id.org/ws-megsi-g7/distribuicao/dgal-receitas-municipais-2017-csv/checksum> ;
+    rdfs:comment "Ficheiro publicado no portal como AIIRM2017.csv; guardado localmente como ReceitasMunicipais-2017.csv."@pt ;
     dcat:accessURL <https://dados.gov.pt/pt/datasets/receitas-municipais-2017> ;
+    dcat:byteSize "174991"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://dados.gov.pt/s/resources/receitas-municipais-2017/20180510-170830/AIIRM2017.csv> ;
     dcat:mediaType <http://www.iana.org/assignments/media-types/text/csv> .
+
+<https://w3id.org/ws-megsi-g7/distribuicao/dgal-receitas-municipais-2017-csv/checksum> a spdx:Checksum ;
+    spdx:algorithm spdx:checksumAlgorithm_sha256 ;
+    spdx:checksumValue "e4df171d261499f425b0da564e25cd601df17a4be221fb5aa9b2d814c24a6ce8"^^xsd:hexBinary .
 
 <https://w3id.org/ws-megsi-g7/distribuicao/dgal-receitas-municipais-2018-csv> a dcat:Distribution ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
@@ -571,8 +629,16 @@ wsds:rdf-recursos-humanos-2019 a qb:DataSet,
     dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
     dct:title "DGAL file ReceitasMunicipais-2018.csv"@en,
         "Ficheiro DGAL ReceitasMunicipais-2018.csv"@pt ;
+    spdx:checksum <https://w3id.org/ws-megsi-g7/distribuicao/dgal-receitas-municipais-2018-csv/checksum> ;
+    rdfs:comment "Ficheiro publicado no portal como aiirmano-anual-2018.csv; guardado localmente como ReceitasMunicipais-2018.csv."@pt ;
     dcat:accessURL <https://dados.gov.pt/pt/datasets/receitas-municipais-2018-1> ;
+    dcat:byteSize "215989"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://dados.gov.pt/s/resources/receitas-municipais-2018-1/20201228-140519/aiirmano-anual-2018.csv> ;
     dcat:mediaType <http://www.iana.org/assignments/media-types/text/csv> .
+
+<https://w3id.org/ws-megsi-g7/distribuicao/dgal-receitas-municipais-2018-csv/checksum> a spdx:Checksum ;
+    spdx:algorithm spdx:checksumAlgorithm_sha256 ;
+    spdx:checksumValue "5a8f48e823d5d9abdc71afbb812dcfc5a1cbbdbaa4bbba691898fd0a16d30f90"^^xsd:hexBinary .
 
 <https://w3id.org/ws-megsi-g7/distribuicao/dgal-receitas-municipais-2019-csv> a dcat:Distribution ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
@@ -580,8 +646,16 @@ wsds:rdf-recursos-humanos-2019 a qb:DataSet,
     dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
     dct:title "DGAL file ReceitasMunicipais-2019.csv"@en,
         "Ficheiro DGAL ReceitasMunicipais-2019.csv"@pt ;
+    spdx:checksum <https://w3id.org/ws-megsi-g7/distribuicao/dgal-receitas-municipais-2019-csv/checksum> ;
+    rdfs:comment "Ficheiro publicado no portal como aiirmano-anual-2019.csv; guardado localmente como ReceitasMunicipais-2019.csv."@pt ;
     dcat:accessURL <https://dados.gov.pt/pt/datasets/receitas-municipais-2019> ;
+    dcat:byteSize "216821"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://dados.gov.pt/s/resources/receitas-municipais-2019/20201228-144444/aiirmano-anual-2019.csv> ;
     dcat:mediaType <http://www.iana.org/assignments/media-types/text/csv> .
+
+<https://w3id.org/ws-megsi-g7/distribuicao/dgal-receitas-municipais-2019-csv/checksum> a spdx:Checksum ;
+    spdx:algorithm spdx:checksumAlgorithm_sha256 ;
+    spdx:checksumValue "db08cf8e0ab12201a37e625dda9478c8520a7185c323690bff50cd78bf139ceb"^^xsd:hexBinary .
 
 <https://w3id.org/ws-megsi-g7/distribuicao/dgal-recursos-humanos-2017-xlsx> a dcat:Distribution ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/XLSX> ;
@@ -589,8 +663,16 @@ wsds:rdf-recursos-humanos-2019 a qb:DataSet,
     dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
     dct:title "DGAL file RecursosHumanos-2017.xlsx"@en,
         "Ficheiro DGAL RecursosHumanos-2017.xlsx"@pt ;
+    spdx:checksum <https://w3id.org/ws-megsi-g7/distribuicao/dgal-recursos-humanos-2017-xlsx/checksum> ;
+    rdfs:comment "Ficheiro publicado no portal como AIVRH2017.xlsx; guardado localmente como RecursosHumanos-2017.xlsx."@pt ;
     dcat:accessURL <https://dados.gov.pt/pt/datasets/recursos-humanos-2017> ;
+    dcat:byteSize "27130"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://dados.gov.pt/s/resources/recursos-humanos-2017/20180510-170333/AIVRH2017.xlsx> ;
     dcat:mediaType <http://www.iana.org/assignments/media-types/application/vnd.openxmlformats-officedocument.spreadsheetml.sheet> .
+
+<https://w3id.org/ws-megsi-g7/distribuicao/dgal-recursos-humanos-2017-xlsx/checksum> a spdx:Checksum ;
+    spdx:algorithm spdx:checksumAlgorithm_sha256 ;
+    spdx:checksumValue "7e3bca2ae3d6b943674900a6454e29d8e08bb09699e70d5d6f75f7a7c71b2467"^^xsd:hexBinary .
 
 <https://w3id.org/ws-megsi-g7/distribuicao/dgal-recursos-humanos-2018-xlsx> a dcat:Distribution ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/XLSX> ;
@@ -598,8 +680,16 @@ wsds:rdf-recursos-humanos-2019 a qb:DataSet,
     dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
     dct:title "DGAL file RecursosHumanos-2018.xlsx"@en,
         "Ficheiro DGAL RecursosHumanos-2018.xlsx"@pt ;
+    spdx:checksum <https://w3id.org/ws-megsi-g7/distribuicao/dgal-recursos-humanos-2018-xlsx/checksum> ;
+    rdfs:comment "Ficheiro publicado no portal como aivrh2018v2.xlsx; guardado localmente como RecursosHumanos-2018.xlsx."@pt ;
     dcat:accessURL <https://dados.gov.pt/pt/datasets/recursos-humanos-2018-1> ;
+    dcat:byteSize "122249"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://dados.gov.pt/s/resources/recursos-humanos-2018-1/20211213-113310/aivrh2018v2.xlsx> ;
     dcat:mediaType <http://www.iana.org/assignments/media-types/application/vnd.openxmlformats-officedocument.spreadsheetml.sheet> .
+
+<https://w3id.org/ws-megsi-g7/distribuicao/dgal-recursos-humanos-2018-xlsx/checksum> a spdx:Checksum ;
+    spdx:algorithm spdx:checksumAlgorithm_sha256 ;
+    spdx:checksumValue "18e3e01036e25ff31688867e10eaa3f653aea027f7b83ccf723b307c7359a2b1"^^xsd:hexBinary .
 
 <https://w3id.org/ws-megsi-g7/distribuicao/dgal-recursos-humanos-2019-xlsx> a dcat:Distribution ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/XLSX> ;
@@ -607,8 +697,16 @@ wsds:rdf-recursos-humanos-2019 a qb:DataSet,
     dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
     dct:title "DGAL file RecursosHumanos-2019.xlsx"@en,
         "Ficheiro DGAL RecursosHumanos-2019.xlsx"@pt ;
+    spdx:checksum <https://w3id.org/ws-megsi-g7/distribuicao/dgal-recursos-humanos-2019-xlsx/checksum> ;
+    rdfs:comment "Ficheiro publicado no portal como aivrh2019v2.xlsx; guardado localmente como RecursosHumanos-2019.xlsx."@pt ;
     dcat:accessURL <https://dados.gov.pt/pt/datasets/recursos-humanos-2019> ;
+    dcat:byteSize "122187"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://dados.gov.pt/s/resources/recursos-humanos-2019/20211213-113521/aivrh2019v2.xlsx> ;
     dcat:mediaType <http://www.iana.org/assignments/media-types/application/vnd.openxmlformats-officedocument.spreadsheetml.sheet> .
+
+<https://w3id.org/ws-megsi-g7/distribuicao/dgal-recursos-humanos-2019-xlsx/checksum> a spdx:Checksum ;
+    spdx:algorithm spdx:checksumAlgorithm_sha256 ;
+    spdx:checksumValue "c854d0ae01840a8a33c04d2364ff346abfab78103a3aa337e416c300ab4ecdfc"^^xsd:hexBinary .
 
 <https://w3id.org/ws-megsi-g7/distribuicao/rdf-despesas-municipais-2017-turtle> a dcat:Distribution ;
     dct:description "RDF/Turtle distribution of the Expenditure series, year 2017, with 1228 observations."@en,
@@ -850,6 +948,7 @@ wsds:serie-recursos-humanos a dcat:DatasetSeries ;
     dct:temporal <https://w3id.org/ws-megsi-g7/intervalo/2017> ;
     dct:title "Municipal Expenditure 2017"@en,
         "Despesas Municipais 2017"@pt ;
+    dcat:contactPoint <https://w3id.org/ws-megsi-g7/contacto/dgal> ;
     dcat:distribution <https://w3id.org/ws-megsi-g7/distribuicao/dgal-despesas-municipais-2017-csv> ;
     dcat:keyword "charges"@en,
         "expenditure"@en,
@@ -872,12 +971,14 @@ wsds:serie-recursos-humanos a dcat:DatasetSeries ;
     dct:issued "2020-12-28"^^xsd:date ;
     dct:language <http://publications.europa.eu/resource/authority/language/POR> ;
     dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
+    dct:modified "2020-12-28"^^xsd:date ;
     dct:publisher <https://w3id.org/ws-megsi-g7/agente/dgal> ;
     dct:rightsHolder <https://w3id.org/ws-megsi-g7/agente/dgal> ;
     dct:spatial <http://publications.europa.eu/resource/authority/country/PRT> ;
     dct:temporal <https://w3id.org/ws-megsi-g7/intervalo/2018> ;
     dct:title "Municipal Expenditure 2018"@en,
         "Despesas Municipais 2018"@pt ;
+    dcat:contactPoint <https://w3id.org/ws-megsi-g7/contacto/dgal> ;
     dcat:distribution <https://w3id.org/ws-megsi-g7/distribuicao/dgal-despesas-municipais-2018-csv> ;
     dcat:keyword "charges"@en,
         "expenditure"@en,
@@ -900,12 +1001,14 @@ wsds:serie-recursos-humanos a dcat:DatasetSeries ;
     dct:issued "2020-12-28"^^xsd:date ;
     dct:language <http://publications.europa.eu/resource/authority/language/POR> ;
     dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
+    dct:modified "2020-12-28"^^xsd:date ;
     dct:publisher <https://w3id.org/ws-megsi-g7/agente/dgal> ;
     dct:rightsHolder <https://w3id.org/ws-megsi-g7/agente/dgal> ;
     dct:spatial <http://publications.europa.eu/resource/authority/country/PRT> ;
     dct:temporal <https://w3id.org/ws-megsi-g7/intervalo/2019> ;
     dct:title "Municipal Expenditure 2019"@en,
         "Despesas Municipais 2019"@pt ;
+    dcat:contactPoint <https://w3id.org/ws-megsi-g7/contacto/dgal> ;
     dcat:distribution <https://w3id.org/ws-megsi-g7/distribuicao/dgal-despesas-municipais-2019-csv> ;
     dcat:keyword "charges"@en,
         "expenditure"@en,
@@ -928,12 +1031,14 @@ wsds:serie-recursos-humanos a dcat:DatasetSeries ;
     dct:issued "2021-10-29"^^xsd:date ;
     dct:language <http://publications.europa.eu/resource/authority/language/POR> ;
     dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
+    dct:modified "2021-10-29"^^xsd:date ;
     dct:publisher <https://w3id.org/ws-megsi-g7/agente/dgal> ;
     dct:rightsHolder <https://w3id.org/ws-megsi-g7/agente/dgal> ;
     dct:spatial <http://publications.europa.eu/resource/authority/country/PRT> ;
     dct:temporal <https://w3id.org/ws-megsi-g7/intervalo/2017> ;
     dct:title "Public Management Quality 2017"@en,
         "Qualidade da Gestão Pública 2017"@pt ;
+    dcat:contactPoint <https://w3id.org/ws-megsi-g7/contacto/dgal> ;
     dcat:distribution <https://w3id.org/ws-megsi-g7/distribuicao/dgal-qualidade-gestao-2017-xlsx> ;
     dcat:keyword "debt"@en,
         "execution"@en,
@@ -960,12 +1065,14 @@ wsds:serie-recursos-humanos a dcat:DatasetSeries ;
     dct:issued "2021-10-29"^^xsd:date ;
     dct:language <http://publications.europa.eu/resource/authority/language/POR> ;
     dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
+    dct:modified "2021-10-29"^^xsd:date ;
     dct:publisher <https://w3id.org/ws-megsi-g7/agente/dgal> ;
     dct:rightsHolder <https://w3id.org/ws-megsi-g7/agente/dgal> ;
     dct:spatial <http://publications.europa.eu/resource/authority/country/PRT> ;
     dct:temporal <https://w3id.org/ws-megsi-g7/intervalo/2018> ;
     dct:title "Public Management Quality 2018"@en,
         "Qualidade da Gestão Pública 2018"@pt ;
+    dcat:contactPoint <https://w3id.org/ws-megsi-g7/contacto/dgal> ;
     dcat:distribution <https://w3id.org/ws-megsi-g7/distribuicao/dgal-qualidade-gestao-2018-xlsx> ;
     dcat:keyword "debt"@en,
         "execution"@en,
@@ -992,12 +1099,14 @@ wsds:serie-recursos-humanos a dcat:DatasetSeries ;
     dct:issued "2021-10-29"^^xsd:date ;
     dct:language <http://publications.europa.eu/resource/authority/language/POR> ;
     dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
+    dct:modified "2021-10-29"^^xsd:date ;
     dct:publisher <https://w3id.org/ws-megsi-g7/agente/dgal> ;
     dct:rightsHolder <https://w3id.org/ws-megsi-g7/agente/dgal> ;
     dct:spatial <http://publications.europa.eu/resource/authority/country/PRT> ;
     dct:temporal <https://w3id.org/ws-megsi-g7/intervalo/2019> ;
     dct:title "Public Management Quality 2019"@en,
         "Qualidade da Gestão Pública 2019"@pt ;
+    dcat:contactPoint <https://w3id.org/ws-megsi-g7/contacto/dgal> ;
     dcat:distribution <https://w3id.org/ws-megsi-g7/distribuicao/dgal-qualidade-gestao-2019-xlsx> ;
     dcat:keyword "debt"@en,
         "execution"@en,
@@ -1031,6 +1140,7 @@ wsds:serie-recursos-humanos a dcat:DatasetSeries ;
     dct:temporal <https://w3id.org/ws-megsi-g7/intervalo/2017> ;
     dct:title "Municipal Revenue 2017"@en,
         "Receitas Municipais 2017"@pt ;
+    dcat:contactPoint <https://w3id.org/ws-megsi-g7/contacto/dgal> ;
     dcat:distribution <https://w3id.org/ws-megsi-g7/distribuicao/dgal-receitas-municipais-2017-csv> ;
     dcat:keyword "corporate income tax"@en,
         "funding"@en,
@@ -1061,12 +1171,14 @@ wsds:serie-recursos-humanos a dcat:DatasetSeries ;
     dct:issued "2020-12-28"^^xsd:date ;
     dct:language <http://publications.europa.eu/resource/authority/language/POR> ;
     dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
+    dct:modified "2020-12-28"^^xsd:date ;
     dct:publisher <https://w3id.org/ws-megsi-g7/agente/dgal> ;
     dct:rightsHolder <https://w3id.org/ws-megsi-g7/agente/dgal> ;
     dct:spatial <http://publications.europa.eu/resource/authority/country/PRT> ;
     dct:temporal <https://w3id.org/ws-megsi-g7/intervalo/2018> ;
     dct:title "Municipal Revenue 2018"@en,
         "Receitas Municipais 2018"@pt ;
+    dcat:contactPoint <https://w3id.org/ws-megsi-g7/contacto/dgal> ;
     dcat:distribution <https://w3id.org/ws-megsi-g7/distribuicao/dgal-receitas-municipais-2018-csv> ;
     dcat:keyword "corporate income tax"@en,
         "funding"@en,
@@ -1097,12 +1209,14 @@ wsds:serie-recursos-humanos a dcat:DatasetSeries ;
     dct:issued "2020-12-28"^^xsd:date ;
     dct:language <http://publications.europa.eu/resource/authority/language/POR> ;
     dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
+    dct:modified "2020-12-28"^^xsd:date ;
     dct:publisher <https://w3id.org/ws-megsi-g7/agente/dgal> ;
     dct:rightsHolder <https://w3id.org/ws-megsi-g7/agente/dgal> ;
     dct:spatial <http://publications.europa.eu/resource/authority/country/PRT> ;
     dct:temporal <https://w3id.org/ws-megsi-g7/intervalo/2019> ;
     dct:title "Municipal Revenue 2019"@en,
         "Receitas Municipais 2019"@pt ;
+    dcat:contactPoint <https://w3id.org/ws-megsi-g7/contacto/dgal> ;
     dcat:distribution <https://w3id.org/ws-megsi-g7/distribuicao/dgal-receitas-municipais-2019-csv> ;
     dcat:keyword "corporate income tax"@en,
         "funding"@en,
@@ -1140,6 +1254,7 @@ wsds:serie-recursos-humanos a dcat:DatasetSeries ;
     dct:temporal <https://w3id.org/ws-megsi-g7/intervalo/2017> ;
     dct:title "Municipal Human Resources 2017"@en,
         "Recursos Humanos 2017"@pt ;
+    dcat:contactPoint <https://w3id.org/ws-megsi-g7/contacto/dgal> ;
     dcat:distribution <https://w3id.org/ws-megsi-g7/distribuicao/dgal-recursos-humanos-2017-xlsx> ;
     dcat:keyword "elected representatives"@en,
         "employees"@en,
@@ -1175,6 +1290,7 @@ wsds:serie-recursos-humanos a dcat:DatasetSeries ;
     dct:temporal <https://w3id.org/ws-megsi-g7/intervalo/2018> ;
     dct:title "Municipal Human Resources 2018"@en,
         "Recursos Humanos 2018"@pt ;
+    dcat:contactPoint <https://w3id.org/ws-megsi-g7/contacto/dgal> ;
     dcat:distribution <https://w3id.org/ws-megsi-g7/distribuicao/dgal-recursos-humanos-2018-xlsx> ;
     dcat:keyword "elected representatives"@en,
         "employees"@en,
@@ -1210,6 +1326,7 @@ wsds:serie-recursos-humanos a dcat:DatasetSeries ;
     dct:temporal <https://w3id.org/ws-megsi-g7/intervalo/2019> ;
     dct:title "Municipal Human Resources 2019"@en,
         "Recursos Humanos 2019"@pt ;
+    dcat:contactPoint <https://w3id.org/ws-megsi-g7/contacto/dgal> ;
     dcat:distribution <https://w3id.org/ws-megsi-g7/distribuicao/dgal-recursos-humanos-2019-xlsx> ;
     dcat:keyword "elected representatives"@en,
         "employees"@en,
@@ -1241,6 +1358,10 @@ wsds:serie-recursos-humanos a dcat:DatasetSeries ;
     dcat:endDate "2019-12-31"^^xsd:date ;
     dcat:startDate "2019-01-01"^^xsd:date .
 
+<https://w3id.org/ws-megsi-g7/contacto/dgal> a vcard:Organization ;
+    vcard:fn "Direção-Geral das Autarquias Locais"@pt ;
+    vcard:hasURL <http://www.portalautarquico.dgal.gov.pt> .
+
 <https://w3id.org/ws-megsi-g7/contacto/grupo7> a vcard:Organization ;
     vcard:fn "Grupo 7 — Web Semântica"@pt ;
     vcard:hasURL <https://github.com/Mota005/WB> .
@@ -1252,5 +1373,7 @@ wsds:serie-recursos-humanos a dcat:DatasetSeries ;
 
 <https://w3id.org/ws-megsi-g7/agente/dgal> a foaf:Organization ;
     dct:type <http://purl.org/adms/publishertype/NationalAuthority> ;
+    rdfs:seeAlso <https://dados.gov.pt/organizations/direccao-geral-das-autarquias-locais> ;
+    foaf:homepage <http://www.portalautarquico.dgal.gov.pt> ;
     foaf:name "Direção-Geral das Autarquias Locais"@pt .
 

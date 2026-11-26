@@ -418,3 +418,11 @@ g7sh:Medida_vinculoPermanente a sh:NodeShape ;
     sh:targetSubjectsOf g7:vinculoPermanente ;
     sh:property [ sh:path g7:vinculoPermanente ; sh:maxCount 1 ; sh:datatype xsd:integer ;
         sh:message "g7:vinculoPermanente: um único valor, tipado como xsd:integer."@pt ] .
+
+# ---------- Impressão digital das distribuições originais (spdx:checksum, DCAT-AP) ----------
+g7sh:Checksum a sh:NodeShape ; sh:targetClass <http://spdx.org/rdf/terms#Checksum> ;
+    sh:property [ sh:path <http://spdx.org/rdf/terms#algorithm> ; sh:minCount 1 ; sh:maxCount 1 ;
+                  sh:hasValue <http://spdx.org/rdf/terms#checksumAlgorithm_sha256> ] ;
+    sh:property [ sh:path <http://spdx.org/rdf/terms#checksumValue> ; sh:minCount 1 ; sh:maxCount 1 ;
+                  sh:datatype xsd:hexBinary ; sh:pattern "^[0-9a-f]{64}$" ;
+                  sh:message "SHA-256 com 64 caracteres hexadecimais."@pt ] .

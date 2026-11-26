@@ -3,76 +3,91 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
 per:2017 a skos:Concept ;
+    skos:definition "Valor anual de 2017 publicado pela DGAL. Em 2017 não existe nas séries Receitas e Despesas; nesses casos o valor de fim de ano é o de T4."@pt ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/periodos> ;
     skos:notation "2017-A" ;
     skos:prefLabel "2017 — A"@pt .
 
 per:2017-T1 a skos:Concept ;
+    skos:definition "Período de 1 de janeiro a 31 de março de 2017. Nas receitas e despesas o valor é acumulado desde o início do ano; na dívida, nos rácios e nos recursos humanos refere-se à situação no fim do período."@pt ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/periodos> ;
     skos:notation "2017-T1" ;
     skos:prefLabel "2017 — T1"@pt .
 
 per:2017-T2 a skos:Concept ;
+    skos:definition "Período de 1 de janeiro a 30 de junho de 2017. Nas receitas e despesas o valor é acumulado desde o início do ano; na dívida, nos rácios e nos recursos humanos refere-se à situação no fim do período."@pt ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/periodos> ;
     skos:notation "2017-T2" ;
     skos:prefLabel "2017 — T2"@pt .
 
 per:2017-T3 a skos:Concept ;
+    skos:definition "Período de 1 de janeiro a 30 de setembro de 2017. Nas receitas e despesas o valor é acumulado desde o início do ano; na dívida, nos rácios e nos recursos humanos refere-se à situação no fim do período."@pt ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/periodos> ;
     skos:notation "2017-T3" ;
     skos:prefLabel "2017 — T3"@pt .
 
 per:2017-T4 a skos:Concept ;
+    skos:definition "Período de 1 de janeiro a 31 de dezembro de 2017. Nas receitas e despesas o valor é acumulado desde o início do ano; na dívida, nos rácios e nos recursos humanos refere-se à situação no fim do período."@pt ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/periodos> ;
     skos:notation "2017-T4" ;
     skos:prefLabel "2017 — T4"@pt .
 
 per:2018 a skos:Concept ;
+    skos:definition "Valor anual de 2018 publicado pela DGAL. Em 2017 não existe nas séries Receitas e Despesas; nesses casos o valor de fim de ano é o de T4."@pt ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/periodos> ;
     skos:notation "2018-A" ;
     skos:prefLabel "2018 — A"@pt .
 
 per:2018-T1 a skos:Concept ;
+    skos:definition "Período de 1 de janeiro a 31 de março de 2018. Nas receitas e despesas o valor é acumulado desde o início do ano; na dívida, nos rácios e nos recursos humanos refere-se à situação no fim do período."@pt ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/periodos> ;
     skos:notation "2018-T1" ;
     skos:prefLabel "2018 — T1"@pt .
 
 per:2018-T2 a skos:Concept ;
+    skos:definition "Período de 1 de janeiro a 30 de junho de 2018. Nas receitas e despesas o valor é acumulado desde o início do ano; na dívida, nos rácios e nos recursos humanos refere-se à situação no fim do período."@pt ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/periodos> ;
     skos:notation "2018-T2" ;
     skos:prefLabel "2018 — T2"@pt .
 
 per:2018-T3 a skos:Concept ;
+    skos:definition "Período de 1 de janeiro a 30 de setembro de 2018. Nas receitas e despesas o valor é acumulado desde o início do ano; na dívida, nos rácios e nos recursos humanos refere-se à situação no fim do período."@pt ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/periodos> ;
     skos:notation "2018-T3" ;
     skos:prefLabel "2018 — T3"@pt .
 
 per:2018-T4 a skos:Concept ;
+    skos:definition "Período de 1 de janeiro a 31 de dezembro de 2018. Nas receitas e despesas o valor é acumulado desde o início do ano; na dívida, nos rácios e nos recursos humanos refere-se à situação no fim do período."@pt ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/periodos> ;
     skos:notation "2018-T4" ;
     skos:prefLabel "2018 — T4"@pt .
 
 per:2019 a skos:Concept ;
+    skos:definition "Valor anual de 2019 publicado pela DGAL. Em 2017 não existe nas séries Receitas e Despesas; nesses casos o valor de fim de ano é o de T4."@pt ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/periodos> ;
     skos:notation "2019-A" ;
     skos:prefLabel "2019 — A"@pt .
 
 per:2019-T1 a skos:Concept ;
+    skos:definition "Período de 1 de janeiro a 31 de março de 2019. Nas receitas e despesas o valor é acumulado desde o início do ano; na dívida, nos rácios e nos recursos humanos refere-se à situação no fim do período."@pt ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/periodos> ;
     skos:notation "2019-T1" ;
     skos:prefLabel "2019 — T1"@pt .
 
 per:2019-T2 a skos:Concept ;
+    skos:definition "Período de 1 de janeiro a 30 de junho de 2019. Nas receitas e despesas o valor é acumulado desde o início do ano; na dívida, nos rácios e nos recursos humanos refere-se à situação no fim do período."@pt ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/periodos> ;
     skos:notation "2019-T2" ;
     skos:prefLabel "2019 — T2"@pt .
 
 per:2019-T3 a skos:Concept ;
+    skos:definition "Período de 1 de janeiro a 30 de setembro de 2019. Nas receitas e despesas o valor é acumulado desde o início do ano; na dívida, nos rácios e nos recursos humanos refere-se à situação no fim do período."@pt ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/periodos> ;
     skos:notation "2019-T3" ;
     skos:prefLabel "2019 — T3"@pt .
 
 per:2019-T4 a skos:Concept ;
+    skos:definition "Período de 1 de janeiro a 31 de dezembro de 2019. Nas receitas e despesas o valor é acumulado desde o início do ano; na dívida, nos rácios e nos recursos humanos refere-se à situação no fim do período."@pt ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/periodos> ;
     skos:notation "2019-T4" ;
     skos:prefLabel "2019 — T4"@pt .

@@ -18,7 +18,8 @@
     g7:representantesEleitos 5 ;
     g7:semVinculoPermanente 2 ;
     g7:tecnicosSuperiores 65 ;
-    g7:trabalhadores 446 ;
+    g7:trabalhadores 441 ;
+    g7:trabalhadoresInclEleitos 446 ;
     g7:vinculoPermanente 424 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0102> a qb:Observation ;
@@ -33,7 +34,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 11 ;
     g7:tecnicosSuperiores 36 ;
-    g7:trabalhadores 232 ;
+    g7:trabalhadores 228 ;
+    g7:trabalhadoresInclEleitos 232 ;
     g7:vinculoPermanente 208 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0103> a qb:Observation ;
@@ -48,7 +50,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 26 ;
     g7:tecnicosSuperiores 36 ;
-    g7:trabalhadores 245 ;
+    g7:trabalhadores 241 ;
+    g7:trabalhadoresInclEleitos 245 ;
     g7:vinculoPermanente 205 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0104> a qb:Observation ;
@@ -63,7 +66,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 35 ;
-    g7:trabalhadores 180 ;
+    g7:trabalhadores 176 ;
+    g7:trabalhadoresInclEleitos 180 ;
     g7:vinculoPermanente 170 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0105> a qb:Observation ;
@@ -78,7 +82,8 @@
     g7:representantesEleitos 5 ;
     g7:semVinculoPermanente 44 ;
     g7:tecnicosSuperiores 139 ;
-    g7:trabalhadores 594 ;
+    g7:trabalhadores 589 ;
+    g7:trabalhadoresInclEleitos 594 ;
     g7:vinculoPermanente 528 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0106> a qb:Observation ;
@@ -93,7 +98,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 2 ;
     g7:tecnicosSuperiores 21 ;
-    g7:trabalhadores 144 ;
+    g7:trabalhadores 141 ;
+    g7:trabalhadoresInclEleitos 144 ;
     g7:vinculoPermanente 133 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0107> a qb:Observation ;
@@ -108,7 +114,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 6 ;
     g7:tecnicosSuperiores 63 ;
-    g7:trabalhadores 528 ;
+    g7:trabalhadores 524 ;
+    g7:trabalhadoresInclEleitos 528 ;
     g7:vinculoPermanente 507 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0108> a qb:Observation ;
@@ -123,7 +130,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 36 ;
-    g7:trabalhadores 194 ;
+    g7:trabalhadores 190 ;
+    g7:trabalhadoresInclEleitos 194 ;
     g7:vinculoPermanente 186 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0109> a qb:Observation ;
@@ -138,7 +146,8 @@
     g7:representantesEleitos 6 ;
     g7:semVinculoPermanente 105 ;
     g7:tecnicosSuperiores 158 ;
-    g7:trabalhadores 768 ;
+    g7:trabalhadores 762 ;
+    g7:trabalhadoresInclEleitos 768 ;
     g7:vinculoPermanente 633 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0110> a qb:Observation ;
@@ -153,7 +162,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 56 ;
     g7:tecnicosSuperiores 103 ;
-    g7:trabalhadores 291 ;
+    g7:trabalhadores 287 ;
+    g7:trabalhadoresInclEleitos 291 ;
     g7:vinculoPermanente 219 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0111> a qb:Observation ;
@@ -168,7 +178,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 34 ;
     g7:tecnicosSuperiores 53 ;
-    g7:trabalhadores 304 ;
+    g7:trabalhadores 300 ;
+    g7:trabalhadoresInclEleitos 304 ;
     g7:vinculoPermanente 255 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0112> a qb:Observation ;
@@ -183,7 +194,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 14 ;
-    g7:trabalhadores 69 ;
+    g7:trabalhadores 66 ;
+    g7:trabalhadoresInclEleitos 69 ;
     g7:vinculoPermanente 62 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0113> a qb:Observation ;
@@ -198,7 +210,8 @@
     g7:representantesEleitos 5 ;
     g7:semVinculoPermanente 1 ;
     g7:tecnicosSuperiores 119 ;
-    g7:trabalhadores 790 ;
+    g7:trabalhadores 785 ;
+    g7:trabalhadoresInclEleitos 790 ;
     g7:vinculoPermanente 773 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0114> a qb:Observation ;
@@ -213,7 +226,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 42 ;
     g7:tecnicosSuperiores 62 ;
-    g7:trabalhadores 275 ;
+    g7:trabalhadores 271 ;
+    g7:trabalhadoresInclEleitos 275 ;
     g7:vinculoPermanente 222 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0115> a qb:Observation ;
@@ -228,7 +242,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 4 ;
     g7:tecnicosSuperiores 76 ;
-    g7:trabalhadores 368 ;
+    g7:trabalhadores 364 ;
+    g7:trabalhadoresInclEleitos 368 ;
     g7:vinculoPermanente 348 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0116> a qb:Observation ;
@@ -243,7 +258,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 32 ;
     g7:tecnicosSuperiores 71 ;
-    g7:trabalhadores 271 ;
+    g7:trabalhadores 268 ;
+    g7:trabalhadoresInclEleitos 271 ;
     g7:vinculoPermanente 224 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0117> a qb:Observation ;
@@ -258,7 +274,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 17 ;
-    g7:trabalhadores 113 ;
+    g7:trabalhadores 109 ;
+    g7:trabalhadoresInclEleitos 113 ;
     g7:vinculoPermanente 109 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0118> a qb:Observation ;
@@ -273,7 +290,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 1 ;
     g7:tecnicosSuperiores 39 ;
-    g7:trabalhadores 177 ;
+    g7:trabalhadores 173 ;
+    g7:trabalhadoresInclEleitos 177 ;
     g7:vinculoPermanente 163 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0119> a qb:Observation ;
@@ -288,7 +306,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 42 ;
-    g7:trabalhadores 190 ;
+    g7:trabalhadores 186 ;
+    g7:trabalhadoresInclEleitos 190 ;
     g7:vinculoPermanente 179 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0201> a qb:Observation ;
@@ -303,7 +322,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 57 ;
     g7:tecnicosSuperiores 35 ;
-    g7:trabalhadores 207 ;
+    g7:trabalhadores 204 ;
+    g7:trabalhadoresInclEleitos 207 ;
     g7:vinculoPermanente 147 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0202> a qb:Observation ;
@@ -318,7 +338,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 10 ;
     g7:tecnicosSuperiores 37 ;
-    g7:trabalhadores 204 ;
+    g7:trabalhadores 201 ;
+    g7:trabalhadoresInclEleitos 204 ;
     g7:vinculoPermanente 185 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0203> a qb:Observation ;
@@ -333,7 +354,8 @@
     g7:representantesEleitos 2 ;
     g7:semVinculoPermanente 6 ;
     g7:tecnicosSuperiores 13 ;
-    g7:trabalhadores 112 ;
+    g7:trabalhadores 110 ;
+    g7:trabalhadoresInclEleitos 112 ;
     g7:vinculoPermanente 101 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0204> a qb:Observation ;
@@ -348,7 +370,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 9 ;
-    g7:trabalhadores 91 ;
+    g7:trabalhadores 88 ;
+    g7:trabalhadoresInclEleitos 91 ;
     g7:vinculoPermanente 83 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0205> a qb:Observation ;
@@ -363,7 +386,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 27 ;
     g7:tecnicosSuperiores 58 ;
-    g7:trabalhadores 481 ;
+    g7:trabalhadores 477 ;
+    g7:trabalhadoresInclEleitos 481 ;
     g7:vinculoPermanente 443 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0206> a qb:Observation ;
@@ -378,7 +402,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 2 ;
     g7:tecnicosSuperiores 35 ;
-    g7:trabalhadores 207 ;
+    g7:trabalhadores 204 ;
+    g7:trabalhadoresInclEleitos 207 ;
     g7:vinculoPermanente 197 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0207> a qb:Observation ;
@@ -393,7 +418,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 7 ;
     g7:tecnicosSuperiores 12 ;
-    g7:trabalhadores 123 ;
+    g7:trabalhadores 120 ;
+    g7:trabalhadoresInclEleitos 123 ;
     g7:vinculoPermanente 111 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0208> a qb:Observation ;
@@ -408,7 +434,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 18 ;
     g7:tecnicosSuperiores 27 ;
-    g7:trabalhadores 228 ;
+    g7:trabalhadores 225 ;
+    g7:trabalhadoresInclEleitos 228 ;
     g7:vinculoPermanente 200 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0209> a qb:Observation ;
@@ -423,7 +450,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 3 ;
     g7:tecnicosSuperiores 38 ;
-    g7:trabalhadores 270 ;
+    g7:trabalhadores 267 ;
+    g7:trabalhadoresInclEleitos 270 ;
     g7:vinculoPermanente 259 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0210> a qb:Observation ;
@@ -438,7 +466,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 4 ;
     g7:tecnicosSuperiores 48 ;
-    g7:trabalhadores 363 ;
+    g7:trabalhadores 359 ;
+    g7:trabalhadoresInclEleitos 363 ;
     g7:vinculoPermanente 347 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0211> a qb:Observation ;
@@ -453,7 +482,8 @@
     g7:representantesEleitos 5 ;
     g7:semVinculoPermanente 1 ;
     g7:tecnicosSuperiores 59 ;
-    g7:trabalhadores 456 ;
+    g7:trabalhadores 451 ;
+    g7:trabalhadoresInclEleitos 456 ;
     g7:vinculoPermanente 438 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0212> a qb:Observation ;
@@ -468,7 +498,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 93 ;
     g7:tecnicosSuperiores 28 ;
-    g7:trabalhadores 269 ;
+    g7:trabalhadores 265 ;
+    g7:trabalhadoresInclEleitos 269 ;
     g7:vinculoPermanente 167 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0213> a qb:Observation ;
@@ -483,7 +514,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 60 ;
     g7:tecnicosSuperiores 48 ;
-    g7:trabalhadores 357 ;
+    g7:trabalhadores 353 ;
+    g7:trabalhadoresInclEleitos 357 ;
     g7:vinculoPermanente 287 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0214> a qb:Observation ;
@@ -498,7 +530,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 21 ;
-    g7:trabalhadores 210 ;
+    g7:trabalhadores 207 ;
+    g7:trabalhadoresInclEleitos 210 ;
     g7:vinculoPermanente 206 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0301> a qb:Observation ;
@@ -513,7 +546,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 21 ;
-    g7:trabalhadores 204 ;
+    g7:trabalhadores 201 ;
+    g7:trabalhadoresInclEleitos 204 ;
     g7:vinculoPermanente 191 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0302> a qb:Observation ;
@@ -528,7 +562,8 @@
     g7:representantesEleitos 6 ;
     g7:semVinculoPermanente 28 ;
     g7:tecnicosSuperiores 172 ;
-    g7:trabalhadores 651 ;
+    g7:trabalhadores 645 ;
+    g7:trabalhadoresInclEleitos 651 ;
     g7:vinculoPermanente 593 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0303> a qb:Observation ;
@@ -543,7 +578,8 @@
     g7:representantesEleitos 5 ;
     g7:semVinculoPermanente 138 ;
     g7:tecnicosSuperiores 143 ;
-    g7:trabalhadores 1447 ;
+    g7:trabalhadores 1442 ;
+    g7:trabalhadoresInclEleitos 1447 ;
     g7:vinculoPermanente 1256 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0304> a qb:Observation ;
@@ -558,7 +594,8 @@
     g7:representantesEleitos 2 ;
     g7:semVinculoPermanente 3 ;
     g7:tecnicosSuperiores 20 ;
-    g7:trabalhadores 263 ;
+    g7:trabalhadores 261 ;
+    g7:trabalhadoresInclEleitos 263 ;
     g7:vinculoPermanente 252 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0305> a qb:Observation ;
@@ -573,7 +610,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 17 ;
     g7:tecnicosSuperiores 47 ;
-    g7:trabalhadores 261 ;
+    g7:trabalhadores 258 ;
+    g7:trabalhadoresInclEleitos 261 ;
     g7:vinculoPermanente 233 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0306> a qb:Observation ;
@@ -588,7 +626,8 @@
     g7:representantesEleitos 5 ;
     g7:semVinculoPermanente 1 ;
     g7:tecnicosSuperiores 55 ;
-    g7:trabalhadores 175 ;
+    g7:trabalhadores 170 ;
+    g7:trabalhadoresInclEleitos 175 ;
     g7:vinculoPermanente 164 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0307> a qb:Observation ;
@@ -603,7 +642,8 @@
     g7:representantesEleitos 6 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 54 ;
-    g7:trabalhadores 449 ;
+    g7:trabalhadores 443 ;
+    g7:trabalhadoresInclEleitos 449 ;
     g7:vinculoPermanente 428 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0308> a qb:Observation ;
@@ -618,7 +658,8 @@
     g7:representantesEleitos 6 ;
     g7:semVinculoPermanente 125 ;
     g7:tecnicosSuperiores 242 ;
-    g7:trabalhadores 1615 ;
+    g7:trabalhadores 1609 ;
+    g7:trabalhadoresInclEleitos 1615 ;
     g7:vinculoPermanente 1443 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0309> a qb:Observation ;
@@ -633,7 +674,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 49 ;
-    g7:trabalhadores 196 ;
+    g7:trabalhadores 193 ;
+    g7:trabalhadoresInclEleitos 196 ;
     g7:vinculoPermanente 188 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0310> a qb:Observation ;
@@ -648,7 +690,8 @@
     g7:representantesEleitos 2 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 35 ;
-    g7:trabalhadores 194 ;
+    g7:trabalhadores 192 ;
+    g7:trabalhadoresInclEleitos 194 ;
     g7:vinculoPermanente 185 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0311> a qb:Observation ;
@@ -663,7 +706,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 12 ;
     g7:tecnicosSuperiores 41 ;
-    g7:trabalhadores 149 ;
+    g7:trabalhadores 145 ;
+    g7:trabalhadoresInclEleitos 149 ;
     g7:vinculoPermanente 129 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0312> a qb:Observation ;
@@ -678,7 +722,8 @@
     g7:representantesEleitos 7 ;
     g7:semVinculoPermanente 27 ;
     g7:tecnicosSuperiores 179 ;
-    g7:trabalhadores 1430 ;
+    g7:trabalhadores 1423 ;
+    g7:trabalhadoresInclEleitos 1430 ;
     g7:vinculoPermanente 1362 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0313> a qb:Observation ;
@@ -693,7 +738,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 5 ;
     g7:tecnicosSuperiores 50 ;
-    g7:trabalhadores 364 ;
+    g7:trabalhadores 360 ;
+    g7:trabalhadoresInclEleitos 364 ;
     g7:vinculoPermanente 341 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0314> a qb:Observation ;
@@ -708,7 +754,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 16 ;
     g7:tecnicosSuperiores 28 ;
-    g7:trabalhadores 243 ;
+    g7:trabalhadores 240 ;
+    g7:trabalhadoresInclEleitos 243 ;
     g7:vinculoPermanente 221 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0401> a qb:Observation ;
@@ -723,7 +770,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 23 ;
     g7:tecnicosSuperiores 25 ;
-    g7:trabalhadores 145 ;
+    g7:trabalhadores 142 ;
+    g7:trabalhadoresInclEleitos 145 ;
     g7:vinculoPermanente 119 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0402> a qb:Observation ;
@@ -738,7 +786,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 8 ;
     g7:tecnicosSuperiores 42 ;
-    g7:trabalhadores 360 ;
+    g7:trabalhadores 356 ;
+    g7:trabalhadoresInclEleitos 360 ;
     g7:vinculoPermanente 337 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0403> a qb:Observation ;
@@ -753,7 +802,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 10 ;
-    g7:trabalhadores 122 ;
+    g7:trabalhadores 119 ;
+    g7:trabalhadoresInclEleitos 122 ;
     g7:vinculoPermanente 116 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0404> a qb:Observation ;
@@ -768,7 +818,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 5 ;
     g7:tecnicosSuperiores 16 ;
-    g7:trabalhadores 164 ;
+    g7:trabalhadores 161 ;
+    g7:trabalhadoresInclEleitos 164 ;
     g7:vinculoPermanente 155 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0405> a qb:Observation ;
@@ -783,7 +834,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 25 ;
     g7:tecnicosSuperiores 66 ;
-    g7:trabalhadores 263 ;
+    g7:trabalhadores 259 ;
+    g7:trabalhadoresInclEleitos 263 ;
     g7:vinculoPermanente 226 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0406> a qb:Observation ;
@@ -798,7 +850,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 18 ;
     g7:tecnicosSuperiores 22 ;
-    g7:trabalhadores 161 ;
+    g7:trabalhadores 158 ;
+    g7:trabalhadoresInclEleitos 161 ;
     g7:vinculoPermanente 133 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0407> a qb:Observation ;
@@ -813,7 +866,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 3 ;
     g7:tecnicosSuperiores 40 ;
-    g7:trabalhadores 298 ;
+    g7:trabalhadores 294 ;
+    g7:trabalhadoresInclEleitos 298 ;
     g7:vinculoPermanente 273 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0408> a qb:Observation ;
@@ -828,7 +882,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 4 ;
     g7:tecnicosSuperiores 10 ;
-    g7:trabalhadores 138 ;
+    g7:trabalhadores 134 ;
+    g7:trabalhadoresInclEleitos 138 ;
     g7:vinculoPermanente 126 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0409> a qb:Observation ;
@@ -843,7 +898,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 20 ;
     g7:tecnicosSuperiores 22 ;
-    g7:trabalhadores 148 ;
+    g7:trabalhadores 145 ;
+    g7:trabalhadoresInclEleitos 148 ;
     g7:vinculoPermanente 118 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0410> a qb:Observation ;
@@ -858,7 +914,8 @@
     g7:representantesEleitos 5 ;
     g7:semVinculoPermanente 36 ;
     g7:tecnicosSuperiores 28 ;
-    g7:trabalhadores 153 ;
+    g7:trabalhadores 148 ;
+    g7:trabalhadoresInclEleitos 153 ;
     g7:vinculoPermanente 112 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0411> a qb:Observation ;
@@ -873,7 +930,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 8 ;
     g7:tecnicosSuperiores 17 ;
-    g7:trabalhadores 133 ;
+    g7:trabalhadores 130 ;
+    g7:trabalhadoresInclEleitos 133 ;
     g7:vinculoPermanente 116 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0412> a qb:Observation ;
@@ -888,7 +946,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 7 ;
     g7:tecnicosSuperiores 31 ;
-    g7:trabalhadores 175 ;
+    g7:trabalhadores 171 ;
+    g7:trabalhadoresInclEleitos 175 ;
     g7:vinculoPermanente 163 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0501> a qb:Observation ;
@@ -903,7 +962,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 11 ;
     g7:tecnicosSuperiores 10 ;
-    g7:trabalhadores 58 ;
+    g7:trabalhadores 55 ;
+    g7:trabalhadoresInclEleitos 58 ;
     g7:vinculoPermanente 41 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0502> a qb:Observation ;
@@ -918,7 +978,8 @@
     g7:representantesEleitos 5 ;
     g7:semVinculoPermanente 5 ;
     g7:tecnicosSuperiores 37 ;
-    g7:trabalhadores 394 ;
+    g7:trabalhadores 389 ;
+    g7:trabalhadoresInclEleitos 394 ;
     g7:vinculoPermanente 373 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0503> a qb:Observation ;
@@ -933,7 +994,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 52 ;
-    g7:trabalhadores 300 ;
+    g7:trabalhadores 297 ;
+    g7:trabalhadoresInclEleitos 300 ;
     g7:vinculoPermanente 283 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0504> a qb:Observation ;
@@ -948,7 +1010,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 12 ;
     g7:tecnicosSuperiores 69 ;
-    g7:trabalhadores 274 ;
+    g7:trabalhadores 271 ;
+    g7:trabalhadoresInclEleitos 274 ;
     g7:vinculoPermanente 248 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0505> a qb:Observation ;
@@ -963,7 +1026,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 9 ;
     g7:tecnicosSuperiores 44 ;
-    g7:trabalhadores 238 ;
+    g7:trabalhadores 234 ;
+    g7:trabalhadoresInclEleitos 238 ;
     g7:vinculoPermanente 220 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0506> a qb:Observation ;
@@ -978,7 +1042,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 7 ;
     g7:tecnicosSuperiores 19 ;
-    g7:trabalhadores 117 ;
+    g7:trabalhadores 114 ;
+    g7:trabalhadoresInclEleitos 117 ;
     g7:vinculoPermanente 104 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0507> a qb:Observation ;
@@ -993,7 +1058,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 12 ;
-    g7:trabalhadores 90 ;
+    g7:trabalhadores 87 ;
+    g7:trabalhadoresInclEleitos 90 ;
     g7:vinculoPermanente 84 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0508> a qb:Observation ;
@@ -1008,7 +1074,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 27 ;
-    g7:trabalhadores 143 ;
+    g7:trabalhadores 140 ;
+    g7:trabalhadoresInclEleitos 143 ;
     g7:vinculoPermanente 137 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0509> a qb:Observation ;
@@ -1023,7 +1090,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 33 ;
-    g7:trabalhadores 216 ;
+    g7:trabalhadores 212 ;
+    g7:trabalhadoresInclEleitos 216 ;
     g7:vinculoPermanente 209 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0510> a qb:Observation ;
@@ -1038,7 +1106,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 12 ;
     g7:tecnicosSuperiores 24 ;
-    g7:trabalhadores 124 ;
+    g7:trabalhadores 121 ;
+    g7:trabalhadoresInclEleitos 124 ;
     g7:vinculoPermanente 107 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0511> a qb:Observation ;
@@ -1053,7 +1122,8 @@
     g7:representantesEleitos 2 ;
     g7:semVinculoPermanente 1 ;
     g7:tecnicosSuperiores 18 ;
-    g7:trabalhadores 113 ;
+    g7:trabalhadores 111 ;
+    g7:trabalhadoresInclEleitos 113 ;
     g7:vinculoPermanente 110 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0601> a qb:Observation ;
@@ -1068,7 +1138,8 @@
     g7:representantesEleitos 5 ;
     g7:semVinculoPermanente 15 ;
     g7:tecnicosSuperiores 33 ;
-    g7:trabalhadores 193 ;
+    g7:trabalhadores 188 ;
+    g7:trabalhadoresInclEleitos 193 ;
     g7:vinculoPermanente 173 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0602> a qb:Observation ;
@@ -1083,7 +1154,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 55 ;
-    g7:trabalhadores 238 ;
+    g7:trabalhadores 235 ;
+    g7:trabalhadoresInclEleitos 238 ;
     g7:vinculoPermanente 220 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0603> a qb:Observation ;
@@ -1098,7 +1170,8 @@
     g7:representantesEleitos 6 ;
     g7:semVinculoPermanente 34 ;
     g7:tecnicosSuperiores 288 ;
-    g7:trabalhadores 1227 ;
+    g7:trabalhadores 1221 ;
+    g7:trabalhadoresInclEleitos 1227 ;
     g7:vinculoPermanente 1140 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0604> a qb:Observation ;
@@ -1113,7 +1186,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 2 ;
     g7:tecnicosSuperiores 28 ;
-    g7:trabalhadores 183 ;
+    g7:trabalhadores 179 ;
+    g7:trabalhadoresInclEleitos 183 ;
     g7:vinculoPermanente 173 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0605> a qb:Observation ;
@@ -1128,7 +1202,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 52 ;
     g7:tecnicosSuperiores 95 ;
-    g7:trabalhadores 498 ;
+    g7:trabalhadores 494 ;
+    g7:trabalhadoresInclEleitos 498 ;
     g7:vinculoPermanente 427 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0606> a qb:Observation ;
@@ -1143,7 +1218,8 @@
     g7:representantesEleitos 2 ;
     g7:semVinculoPermanente 14 ;
     g7:tecnicosSuperiores 25 ;
-    g7:trabalhadores 171 ;
+    g7:trabalhadores 169 ;
+    g7:trabalhadoresInclEleitos 171 ;
     g7:vinculoPermanente 151 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0607> a qb:Observation ;
@@ -1158,7 +1234,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 28 ;
-    g7:trabalhadores 205 ;
+    g7:trabalhadores 201 ;
+    g7:trabalhadoresInclEleitos 205 ;
     g7:vinculoPermanente 200 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0608> a qb:Observation ;
@@ -1173,7 +1250,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 5 ;
     g7:tecnicosSuperiores 29 ;
-    g7:trabalhadores 198 ;
+    g7:trabalhadores 195 ;
+    g7:trabalhadoresInclEleitos 198 ;
     g7:vinculoPermanente 185 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0609> a qb:Observation ;
@@ -1188,7 +1266,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 27 ;
     g7:tecnicosSuperiores 41 ;
-    g7:trabalhadores 177 ;
+    g7:trabalhadores 173 ;
+    g7:trabalhadoresInclEleitos 177 ;
     g7:vinculoPermanente 141 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0610> a qb:Observation ;
@@ -1203,7 +1282,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 3 ;
     g7:tecnicosSuperiores 43 ;
-    g7:trabalhadores 199 ;
+    g7:trabalhadores 195 ;
+    g7:trabalhadoresInclEleitos 199 ;
     g7:vinculoPermanente 182 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0611> a qb:Observation ;
@@ -1218,7 +1298,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 24 ;
     g7:tecnicosSuperiores 20 ;
-    g7:trabalhadores 225 ;
+    g7:trabalhadores 221 ;
+    g7:trabalhadoresInclEleitos 225 ;
     g7:vinculoPermanente 194 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0612> a qb:Observation ;
@@ -1233,7 +1314,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 27 ;
-    g7:trabalhadores 148 ;
+    g7:trabalhadores 144 ;
+    g7:trabalhadoresInclEleitos 148 ;
     g7:vinculoPermanente 140 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0613> a qb:Observation ;
@@ -1248,7 +1330,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 30 ;
     g7:tecnicosSuperiores 21 ;
-    g7:trabalhadores 152 ;
+    g7:trabalhadores 148 ;
+    g7:trabalhadoresInclEleitos 152 ;
     g7:vinculoPermanente 114 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0614> a qb:Observation ;
@@ -1263,7 +1346,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 22 ;
-    g7:trabalhadores 110 ;
+    g7:trabalhadores 107 ;
+    g7:trabalhadoresInclEleitos 110 ;
     g7:vinculoPermanente 104 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0615> a qb:Observation ;
@@ -1278,7 +1362,8 @@
     g7:representantesEleitos 2 ;
     g7:semVinculoPermanente 13 ;
     g7:tecnicosSuperiores 41 ;
-    g7:trabalhadores 232 ;
+    g7:trabalhadores 230 ;
+    g7:trabalhadoresInclEleitos 232 ;
     g7:vinculoPermanente 213 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0616> a qb:Observation ;
@@ -1293,7 +1378,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 6 ;
     g7:tecnicosSuperiores 37 ;
-    g7:trabalhadores 157 ;
+    g7:trabalhadores 154 ;
+    g7:trabalhadoresInclEleitos 157 ;
     g7:vinculoPermanente 143 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0617> a qb:Observation ;
@@ -1308,7 +1394,8 @@
     g7:representantesEleitos 2 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 28 ;
-    g7:trabalhadores 116 ;
+    g7:trabalhadores 114 ;
+    g7:trabalhadoresInclEleitos 116 ;
     g7:vinculoPermanente 111 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0701> a qb:Observation ;
@@ -1323,7 +1410,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 26 ;
     g7:tecnicosSuperiores 30 ;
-    g7:trabalhadores 194 ;
+    g7:trabalhadores 191 ;
+    g7:trabalhadoresInclEleitos 194 ;
     g7:vinculoPermanente 165 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0702> a qb:Observation ;
@@ -1338,7 +1426,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 14 ;
-    g7:trabalhadores 145 ;
+    g7:trabalhadores 142 ;
+    g7:trabalhadoresInclEleitos 145 ;
     g7:vinculoPermanente 137 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0703> a qb:Observation ;
@@ -1353,7 +1442,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 15 ;
-    g7:trabalhadores 173 ;
+    g7:trabalhadores 170 ;
+    g7:trabalhadoresInclEleitos 173 ;
     g7:vinculoPermanente 170 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0704> a qb:Observation ;
@@ -1368,7 +1458,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 6 ;
     g7:tecnicosSuperiores 32 ;
-    g7:trabalhadores 212 ;
+    g7:trabalhadores 208 ;
+    g7:trabalhadoresInclEleitos 212 ;
     g7:vinculoPermanente 195 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0705> a qb:Observation ;
@@ -1383,7 +1474,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 67 ;
     g7:tecnicosSuperiores 177 ;
-    g7:trabalhadores 1027 ;
+    g7:trabalhadores 1023 ;
+    g7:trabalhadoresInclEleitos 1027 ;
     g7:vinculoPermanente 940 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0706> a qb:Observation ;
@@ -1398,7 +1490,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 5 ;
     g7:tecnicosSuperiores 55 ;
-    g7:trabalhadores 338 ;
+    g7:trabalhadores 334 ;
+    g7:trabalhadoresInclEleitos 338 ;
     g7:vinculoPermanente 325 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0707> a qb:Observation ;
@@ -1413,7 +1506,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 18 ;
     g7:tecnicosSuperiores 17 ;
-    g7:trabalhadores 148 ;
+    g7:trabalhadores 145 ;
+    g7:trabalhadoresInclEleitos 148 ;
     g7:vinculoPermanente 125 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0708> a qb:Observation ;
@@ -1428,7 +1522,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 10 ;
-    g7:trabalhadores 162 ;
+    g7:trabalhadores 159 ;
+    g7:trabalhadoresInclEleitos 162 ;
     g7:vinculoPermanente 159 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0709> a qb:Observation ;
@@ -1443,7 +1538,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 15 ;
     g7:tecnicosSuperiores 22 ;
-    g7:trabalhadores 216 ;
+    g7:trabalhadores 212 ;
+    g7:trabalhadoresInclEleitos 216 ;
     g7:vinculoPermanente 193 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0710> a qb:Observation ;
@@ -1458,7 +1554,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 41 ;
-    g7:trabalhadores 261 ;
+    g7:trabalhadores 258 ;
+    g7:trabalhadoresInclEleitos 261 ;
     g7:vinculoPermanente 253 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0711> a qb:Observation ;
@@ -1473,7 +1570,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 31 ;
-    g7:trabalhadores 240 ;
+    g7:trabalhadores 237 ;
+    g7:trabalhadoresInclEleitos 240 ;
     g7:vinculoPermanente 231 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0712> a qb:Observation ;
@@ -1488,7 +1586,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 15 ;
-    g7:trabalhadores 212 ;
+    g7:trabalhadores 208 ;
+    g7:trabalhadoresInclEleitos 212 ;
     g7:vinculoPermanente 202 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0713> a qb:Observation ;
@@ -1503,7 +1602,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 4 ;
     g7:tecnicosSuperiores 19 ;
-    g7:trabalhadores 111 ;
+    g7:trabalhadores 108 ;
+    g7:trabalhadoresInclEleitos 111 ;
     g7:vinculoPermanente 100 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0714> a qb:Observation ;
@@ -1518,7 +1618,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 10 ;
-    g7:trabalhadores 143 ;
+    g7:trabalhadores 140 ;
+    g7:trabalhadoresInclEleitos 143 ;
     g7:vinculoPermanente 133 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0801> a qb:Observation ;
@@ -1533,7 +1634,8 @@
     g7:representantesEleitos 5 ;
     g7:semVinculoPermanente 63 ;
     g7:tecnicosSuperiores 174 ;
-    g7:trabalhadores 1135 ;
+    g7:trabalhadores 1130 ;
+    g7:trabalhadoresInclEleitos 1135 ;
     g7:vinculoPermanente 1065 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0802> a qb:Observation ;
@@ -1548,7 +1650,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 15 ;
     g7:tecnicosSuperiores 21 ;
-    g7:trabalhadores 184 ;
+    g7:trabalhadores 181 ;
+    g7:trabalhadoresInclEleitos 184 ;
     g7:vinculoPermanente 160 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0803> a qb:Observation ;
@@ -1563,7 +1666,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 5 ;
     g7:tecnicosSuperiores 19 ;
-    g7:trabalhadores 173 ;
+    g7:trabalhadores 169 ;
+    g7:trabalhadoresInclEleitos 173 ;
     g7:vinculoPermanente 157 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0804> a qb:Observation ;
@@ -1578,7 +1682,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 8 ;
     g7:tecnicosSuperiores 27 ;
-    g7:trabalhadores 150 ;
+    g7:trabalhadores 147 ;
+    g7:trabalhadoresInclEleitos 150 ;
     g7:vinculoPermanente 131 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0805> a qb:Observation ;
@@ -1593,7 +1698,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 2 ;
     g7:tecnicosSuperiores 145 ;
-    g7:trabalhadores 784 ;
+    g7:trabalhadores 780 ;
+    g7:trabalhadoresInclEleitos 784 ;
     g7:vinculoPermanente 753 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0806> a qb:Observation ;
@@ -1608,7 +1714,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 52 ;
-    g7:trabalhadores 426 ;
+    g7:trabalhadores 422 ;
+    g7:trabalhadoresInclEleitos 426 ;
     g7:vinculoPermanente 407 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0807> a qb:Observation ;
@@ -1623,7 +1730,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 2 ;
     g7:tecnicosSuperiores 85 ;
-    g7:trabalhadores 684 ;
+    g7:trabalhadores 680 ;
+    g7:trabalhadoresInclEleitos 684 ;
     g7:vinculoPermanente 678 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0808> a qb:Observation ;
@@ -1638,7 +1746,8 @@
     g7:representantesEleitos 5 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 179 ;
-    g7:trabalhadores 1541 ;
+    g7:trabalhadores 1536 ;
+    g7:trabalhadoresInclEleitos 1541 ;
     g7:vinculoPermanente 1488 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0809> a qb:Observation ;
@@ -1653,7 +1762,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 4 ;
     g7:tecnicosSuperiores 28 ;
-    g7:trabalhadores 230 ;
+    g7:trabalhadores 227 ;
+    g7:trabalhadoresInclEleitos 230 ;
     g7:vinculoPermanente 213 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0810> a qb:Observation ;
@@ -1668,7 +1778,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 38 ;
     g7:tecnicosSuperiores 64 ;
-    g7:trabalhadores 517 ;
+    g7:trabalhadores 514 ;
+    g7:trabalhadoresInclEleitos 517 ;
     g7:vinculoPermanente 460 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0811> a qb:Observation ;
@@ -1683,7 +1794,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 15 ;
     g7:tecnicosSuperiores 134 ;
-    g7:trabalhadores 856 ;
+    g7:trabalhadores 852 ;
+    g7:trabalhadoresInclEleitos 856 ;
     g7:vinculoPermanente 816 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0812> a qb:Observation ;
@@ -1698,7 +1810,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 6 ;
     g7:tecnicosSuperiores 21 ;
-    g7:trabalhadores 258 ;
+    g7:trabalhadores 255 ;
+    g7:trabalhadoresInclEleitos 258 ;
     g7:vinculoPermanente 245 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0813> a qb:Observation ;
@@ -1713,7 +1826,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 10 ;
     g7:tecnicosSuperiores 96 ;
-    g7:trabalhadores 676 ;
+    g7:trabalhadores 673 ;
+    g7:trabalhadoresInclEleitos 676 ;
     g7:vinculoPermanente 663 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0814> a qb:Observation ;
@@ -1728,7 +1842,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 8 ;
     g7:tecnicosSuperiores 89 ;
-    g7:trabalhadores 426 ;
+    g7:trabalhadores 422 ;
+    g7:trabalhadoresInclEleitos 426 ;
     g7:vinculoPermanente 402 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0815> a qb:Observation ;
@@ -1743,7 +1858,8 @@
     g7:representantesEleitos 2 ;
     g7:semVinculoPermanente 5 ;
     g7:tecnicosSuperiores 34 ;
-    g7:trabalhadores 237 ;
+    g7:trabalhadores 235 ;
+    g7:trabalhadoresInclEleitos 237 ;
     g7:vinculoPermanente 228 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0816> a qb:Observation ;
@@ -1758,7 +1874,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 60 ;
-    g7:trabalhadores 346 ;
+    g7:trabalhadores 342 ;
+    g7:trabalhadoresInclEleitos 346 ;
     g7:vinculoPermanente 328 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0901> a qb:Observation ;
@@ -1773,7 +1890,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 11 ;
-    g7:trabalhadores 95 ;
+    g7:trabalhadores 92 ;
+    g7:trabalhadoresInclEleitos 95 ;
     g7:vinculoPermanente 89 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0902> a qb:Observation ;
@@ -1788,7 +1906,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 32 ;
-    g7:trabalhadores 153 ;
+    g7:trabalhadores 150 ;
+    g7:trabalhadoresInclEleitos 153 ;
     g7:vinculoPermanente 149 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0903> a qb:Observation ;
@@ -1803,7 +1922,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 3 ;
     g7:tecnicosSuperiores 36 ;
-    g7:trabalhadores 206 ;
+    g7:trabalhadores 203 ;
+    g7:trabalhadoresInclEleitos 206 ;
     g7:vinculoPermanente 200 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0904> a qb:Observation ;
@@ -1818,7 +1938,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 7 ;
     g7:tecnicosSuperiores 27 ;
-    g7:trabalhadores 143 ;
+    g7:trabalhadores 140 ;
+    g7:trabalhadoresInclEleitos 143 ;
     g7:vinculoPermanente 130 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0905> a qb:Observation ;
@@ -1833,7 +1954,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 10 ;
-    g7:trabalhadores 89 ;
+    g7:trabalhadores 86 ;
+    g7:trabalhadoresInclEleitos 89 ;
     g7:vinculoPermanente 86 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0906> a qb:Observation ;
@@ -1848,7 +1970,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 25 ;
-    g7:trabalhadores 177 ;
+    g7:trabalhadores 174 ;
+    g7:trabalhadoresInclEleitos 177 ;
     g7:vinculoPermanente 167 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0907> a qb:Observation ;
@@ -1863,7 +1986,8 @@
     g7:representantesEleitos 5 ;
     g7:semVinculoPermanente 6 ;
     g7:tecnicosSuperiores 116 ;
-    g7:trabalhadores 539 ;
+    g7:trabalhadores 534 ;
+    g7:trabalhadoresInclEleitos 539 ;
     g7:vinculoPermanente 518 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0908> a qb:Observation ;
@@ -1878,7 +2002,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 7 ;
-    g7:trabalhadores 65 ;
+    g7:trabalhadores 62 ;
+    g7:trabalhadoresInclEleitos 65 ;
     g7:vinculoPermanente 59 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0909> a qb:Observation ;
@@ -1893,7 +2018,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 3 ;
     g7:tecnicosSuperiores 36 ;
-    g7:trabalhadores 166 ;
+    g7:trabalhadores 163 ;
+    g7:trabalhadoresInclEleitos 166 ;
     g7:vinculoPermanente 160 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0910> a qb:Observation ;
@@ -1908,7 +2034,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 1 ;
     g7:tecnicosSuperiores 45 ;
-    g7:trabalhadores 168 ;
+    g7:trabalhadores 164 ;
+    g7:trabalhadoresInclEleitos 168 ;
     g7:vinculoPermanente 160 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0911> a qb:Observation ;
@@ -1923,7 +2050,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 5 ;
     g7:tecnicosSuperiores 51 ;
-    g7:trabalhadores 189 ;
+    g7:trabalhadores 185 ;
+    g7:trabalhadoresInclEleitos 189 ;
     g7:vinculoPermanente 176 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0912> a qb:Observation ;
@@ -1938,7 +2066,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 18 ;
     g7:tecnicosSuperiores 50 ;
-    g7:trabalhadores 230 ;
+    g7:trabalhadores 226 ;
+    g7:trabalhadoresInclEleitos 230 ;
     g7:vinculoPermanente 200 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0913> a qb:Observation ;
@@ -1953,7 +2082,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 33 ;
-    g7:trabalhadores 200 ;
+    g7:trabalhadores 196 ;
+    g7:trabalhadoresInclEleitos 200 ;
     g7:vinculoPermanente 189 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/0914> a qb:Observation ;
@@ -1968,7 +2098,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 1 ;
     g7:tecnicosSuperiores 17 ;
-    g7:trabalhadores 172 ;
+    g7:trabalhadores 169 ;
+    g7:trabalhadoresInclEleitos 172 ;
     g7:vinculoPermanente 163 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1001> a qb:Observation ;
@@ -1983,7 +2114,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 2 ;
     g7:tecnicosSuperiores 54 ;
-    g7:trabalhadores 314 ;
+    g7:trabalhadores 311 ;
+    g7:trabalhadoresInclEleitos 314 ;
     g7:vinculoPermanente 295 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1002> a qb:Observation ;
@@ -1998,7 +2130,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 7 ;
     g7:tecnicosSuperiores 15 ;
-    g7:trabalhadores 84 ;
+    g7:trabalhadores 81 ;
+    g7:trabalhadoresInclEleitos 84 ;
     g7:vinculoPermanente 70 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1003> a qb:Observation ;
@@ -2013,7 +2146,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 3 ;
     g7:tecnicosSuperiores 13 ;
-    g7:trabalhadores 104 ;
+    g7:trabalhadores 101 ;
+    g7:trabalhadoresInclEleitos 104 ;
     g7:vinculoPermanente 95 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1004> a qb:Observation ;
@@ -2028,7 +2162,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 6 ;
     g7:tecnicosSuperiores 25 ;
-    g7:trabalhadores 139 ;
+    g7:trabalhadores 135 ;
+    g7:trabalhadoresInclEleitos 139 ;
     g7:vinculoPermanente 124 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1005> a qb:Observation ;
@@ -2043,7 +2178,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 14 ;
     g7:tecnicosSuperiores 24 ;
-    g7:trabalhadores 164 ;
+    g7:trabalhadores 160 ;
+    g7:trabalhadoresInclEleitos 164 ;
     g7:vinculoPermanente 144 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1006> a qb:Observation ;
@@ -2058,7 +2194,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 3 ;
     g7:tecnicosSuperiores 35 ;
-    g7:trabalhadores 332 ;
+    g7:trabalhadores 329 ;
+    g7:trabalhadoresInclEleitos 332 ;
     g7:vinculoPermanente 315 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1007> a qb:Observation ;
@@ -2073,7 +2210,8 @@
     g7:representantesEleitos 2 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 8 ;
-    g7:trabalhadores 71 ;
+    g7:trabalhadores 69 ;
+    g7:trabalhadoresInclEleitos 71 ;
     g7:vinculoPermanente 66 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1008> a qb:Observation ;
@@ -2088,7 +2226,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 4 ;
     g7:tecnicosSuperiores 27 ;
-    g7:trabalhadores 143 ;
+    g7:trabalhadores 140 ;
+    g7:trabalhadoresInclEleitos 143 ;
     g7:vinculoPermanente 133 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1009> a qb:Observation ;
@@ -2103,7 +2242,8 @@
     g7:representantesEleitos 8 ;
     g7:semVinculoPermanente 18 ;
     g7:tecnicosSuperiores 116 ;
-    g7:trabalhadores 676 ;
+    g7:trabalhadores 668 ;
+    g7:trabalhadoresInclEleitos 676 ;
     g7:vinculoPermanente 619 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1010> a qb:Observation ;
@@ -2118,7 +2258,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 4 ;
     g7:tecnicosSuperiores 53 ;
-    g7:trabalhadores 251 ;
+    g7:trabalhadores 247 ;
+    g7:trabalhadoresInclEleitos 251 ;
     g7:vinculoPermanente 231 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1011> a qb:Observation ;
@@ -2133,7 +2274,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 22 ;
     g7:tecnicosSuperiores 56 ;
-    g7:trabalhadores 174 ;
+    g7:trabalhadores 170 ;
+    g7:trabalhadoresInclEleitos 174 ;
     g7:vinculoPermanente 144 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1012> a qb:Observation ;
@@ -2148,7 +2290,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 6 ;
     g7:tecnicosSuperiores 47 ;
-    g7:trabalhadores 275 ;
+    g7:trabalhadores 271 ;
+    g7:trabalhadoresInclEleitos 275 ;
     g7:vinculoPermanente 259 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1013> a qb:Observation ;
@@ -2163,7 +2306,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 9 ;
-    g7:trabalhadores 84 ;
+    g7:trabalhadores 81 ;
+    g7:trabalhadoresInclEleitos 84 ;
     g7:vinculoPermanente 78 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1014> a qb:Observation ;
@@ -2178,7 +2322,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 59 ;
     g7:tecnicosSuperiores 84 ;
-    g7:trabalhadores 374 ;
+    g7:trabalhadores 371 ;
+    g7:trabalhadoresInclEleitos 374 ;
     g7:vinculoPermanente 304 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1015> a qb:Observation ;
@@ -2193,7 +2338,8 @@
     g7:representantesEleitos 6 ;
     g7:semVinculoPermanente 13 ;
     g7:tecnicosSuperiores 53 ;
-    g7:trabalhadores 435 ;
+    g7:trabalhadores 429 ;
+    g7:trabalhadoresInclEleitos 435 ;
     g7:vinculoPermanente 401 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1016> a qb:Observation ;
@@ -2208,7 +2354,8 @@
     g7:representantesEleitos 5 ;
     g7:semVinculoPermanente 45 ;
     g7:tecnicosSuperiores 34 ;
-    g7:trabalhadores 311 ;
+    g7:trabalhadores 306 ;
+    g7:trabalhadoresInclEleitos 311 ;
     g7:vinculoPermanente 256 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1101> a qb:Observation ;
@@ -2223,7 +2370,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 3 ;
     g7:tecnicosSuperiores 65 ;
-    g7:trabalhadores 535 ;
+    g7:trabalhadores 531 ;
+    g7:trabalhadoresInclEleitos 535 ;
     g7:vinculoPermanente 514 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1102> a qb:Observation ;
@@ -2238,7 +2386,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 24 ;
-    g7:trabalhadores 228 ;
+    g7:trabalhadores 225 ;
+    g7:trabalhadoresInclEleitos 228 ;
     g7:vinculoPermanente 218 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1103> a qb:Observation ;
@@ -2253,7 +2402,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 5 ;
     g7:tecnicosSuperiores 45 ;
-    g7:trabalhadores 318 ;
+    g7:trabalhadores 314 ;
+    g7:trabalhadoresInclEleitos 318 ;
     g7:vinculoPermanente 300 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1104> a qb:Observation ;
@@ -2268,7 +2418,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 26 ;
-    g7:trabalhadores 186 ;
+    g7:trabalhadores 182 ;
+    g7:trabalhadoresInclEleitos 186 ;
     g7:vinculoPermanente 174 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1105> a qb:Observation ;
@@ -2283,7 +2434,8 @@
     g7:representantesEleitos 6 ;
     g7:semVinculoPermanente 32 ;
     g7:tecnicosSuperiores 479 ;
-    g7:trabalhadores 1971 ;
+    g7:trabalhadores 1965 ;
+    g7:trabalhadoresInclEleitos 1971 ;
     g7:vinculoPermanente 1852 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1106> a qb:Observation ;
@@ -2298,7 +2450,8 @@
     g7:representantesEleitos 11 ;
     g7:semVinculoPermanente 9 ;
     g7:tecnicosSuperiores 2154 ;
-    g7:trabalhadores 7732 ;
+    g7:trabalhadores 7721 ;
+    g7:trabalhadoresInclEleitos 7732 ;
     g7:vinculoPermanente 7544 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1107> a qb:Observation ;
@@ -2313,7 +2466,8 @@
     g7:representantesEleitos 6 ;
     g7:semVinculoPermanente 38 ;
     g7:tecnicosSuperiores 468 ;
-    g7:trabalhadores 2212 ;
+    g7:trabalhadores 2206 ;
+    g7:trabalhadoresInclEleitos 2212 ;
     g7:vinculoPermanente 2116 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1108> a qb:Observation ;
@@ -2328,7 +2482,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 29 ;
     g7:tecnicosSuperiores 45 ;
-    g7:trabalhadores 410 ;
+    g7:trabalhadores 406 ;
+    g7:trabalhadoresInclEleitos 410 ;
     g7:vinculoPermanente 377 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1109> a qb:Observation ;
@@ -2343,7 +2498,8 @@
     g7:representantesEleitos 5 ;
     g7:semVinculoPermanente 62 ;
     g7:tecnicosSuperiores 93 ;
-    g7:trabalhadores 925 ;
+    g7:trabalhadores 920 ;
+    g7:trabalhadoresInclEleitos 925 ;
     g7:vinculoPermanente 857 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1110> a qb:Observation ;
@@ -2358,7 +2514,8 @@
     g7:representantesEleitos 7 ;
     g7:semVinculoPermanente 48 ;
     g7:tecnicosSuperiores 416 ;
-    g7:trabalhadores 2400 ;
+    g7:trabalhadores 2393 ;
+    g7:trabalhadoresInclEleitos 2400 ;
     g7:vinculoPermanente 2292 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1111> a qb:Observation ;
@@ -2373,7 +2530,8 @@
     g7:representantesEleitos 7 ;
     g7:semVinculoPermanente 17 ;
     g7:tecnicosSuperiores 425 ;
-    g7:trabalhadores 3070 ;
+    g7:trabalhadores 3063 ;
+    g7:trabalhadoresInclEleitos 3070 ;
     g7:vinculoPermanente 2970 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1112> a qb:Observation ;
@@ -2388,7 +2546,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 1 ;
     g7:tecnicosSuperiores 23 ;
-    g7:trabalhadores 170 ;
+    g7:trabalhadores 167 ;
+    g7:trabalhadoresInclEleitos 170 ;
     g7:vinculoPermanente 161 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1113> a qb:Observation ;
@@ -2403,7 +2562,8 @@
     g7:representantesEleitos 6 ;
     g7:semVinculoPermanente 1 ;
     g7:tecnicosSuperiores 98 ;
-    g7:trabalhadores 639 ;
+    g7:trabalhadores 633 ;
+    g7:trabalhadoresInclEleitos 639 ;
     g7:vinculoPermanente 619 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1114> a qb:Observation ;
@@ -2418,7 +2578,8 @@
     g7:representantesEleitos 5 ;
     g7:semVinculoPermanente 5 ;
     g7:tecnicosSuperiores 180 ;
-    g7:trabalhadores 851 ;
+    g7:trabalhadores 846 ;
+    g7:trabalhadoresInclEleitos 851 ;
     g7:vinculoPermanente 821 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1115> a qb:Observation ;
@@ -2433,7 +2594,8 @@
     g7:representantesEleitos 7 ;
     g7:semVinculoPermanente 147 ;
     g7:tecnicosSuperiores 213 ;
-    g7:trabalhadores 1710 ;
+    g7:trabalhadores 1703 ;
+    g7:trabalhadoresInclEleitos 1710 ;
     g7:vinculoPermanente 1508 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1116> a qb:Observation ;
@@ -2448,7 +2610,8 @@
     g7:representantesEleitos 8 ;
     g7:semVinculoPermanente 22 ;
     g7:tecnicosSuperiores 305 ;
-    g7:trabalhadores 1151 ;
+    g7:trabalhadores 1143 ;
+    g7:trabalhadoresInclEleitos 1151 ;
     g7:vinculoPermanente 1085 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1201> a qb:Observation ;
@@ -2463,7 +2626,8 @@
     g7:representantesEleitos 2 ;
     g7:semVinculoPermanente 6 ;
     g7:tecnicosSuperiores 19 ;
-    g7:trabalhadores 136 ;
+    g7:trabalhadores 134 ;
+    g7:trabalhadoresInclEleitos 136 ;
     g7:vinculoPermanente 125 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1202> a qb:Observation ;
@@ -2478,7 +2642,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 6 ;
     g7:tecnicosSuperiores 12 ;
-    g7:trabalhadores 100 ;
+    g7:trabalhadores 97 ;
+    g7:trabalhadoresInclEleitos 100 ;
     g7:vinculoPermanente 90 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1203> a qb:Observation ;
@@ -2493,7 +2658,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 4 ;
     g7:tecnicosSuperiores 36 ;
-    g7:trabalhadores 168 ;
+    g7:trabalhadores 165 ;
+    g7:trabalhadoresInclEleitos 168 ;
     g7:vinculoPermanente 155 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1204> a qb:Observation ;
@@ -2508,7 +2674,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 36 ;
     g7:tecnicosSuperiores 23 ;
-    g7:trabalhadores 187 ;
+    g7:trabalhadores 184 ;
+    g7:trabalhadoresInclEleitos 187 ;
     g7:vinculoPermanente 144 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1205> a qb:Observation ;
@@ -2523,7 +2690,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 5 ;
     g7:tecnicosSuperiores 16 ;
-    g7:trabalhadores 152 ;
+    g7:trabalhadores 149 ;
+    g7:trabalhadoresInclEleitos 152 ;
     g7:vinculoPermanente 140 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1206> a qb:Observation ;
@@ -2538,7 +2706,8 @@
     g7:representantesEleitos 2 ;
     g7:semVinculoPermanente 1 ;
     g7:tecnicosSuperiores 9 ;
-    g7:trabalhadores 112 ;
+    g7:trabalhadores 110 ;
+    g7:trabalhadoresInclEleitos 112 ;
     g7:vinculoPermanente 104 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1207> a qb:Observation ;
@@ -2553,7 +2722,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 6 ;
     g7:tecnicosSuperiores 39 ;
-    g7:trabalhadores 248 ;
+    g7:trabalhadores 244 ;
+    g7:trabalhadoresInclEleitos 248 ;
     g7:vinculoPermanente 229 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1208> a qb:Observation ;
@@ -2568,7 +2738,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 18 ;
     g7:tecnicosSuperiores 15 ;
-    g7:trabalhadores 91 ;
+    g7:trabalhadores 88 ;
+    g7:trabalhadoresInclEleitos 91 ;
     g7:vinculoPermanente 67 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1209> a qb:Observation ;
@@ -2583,7 +2754,8 @@
     g7:representantesEleitos 2 ;
     g7:semVinculoPermanente 1 ;
     g7:tecnicosSuperiores 7 ;
-    g7:trabalhadores 116 ;
+    g7:trabalhadores 114 ;
+    g7:trabalhadoresInclEleitos 116 ;
     g7:vinculoPermanente 108 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1210> a qb:Observation ;
@@ -2598,7 +2770,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 4 ;
     g7:tecnicosSuperiores 8 ;
-    g7:trabalhadores 103 ;
+    g7:trabalhadores 100 ;
+    g7:trabalhadoresInclEleitos 103 ;
     g7:vinculoPermanente 96 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1211> a qb:Observation ;
@@ -2613,7 +2786,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 3 ;
     g7:tecnicosSuperiores 22 ;
-    g7:trabalhadores 144 ;
+    g7:trabalhadores 141 ;
+    g7:trabalhadoresInclEleitos 144 ;
     g7:vinculoPermanente 132 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1212> a qb:Observation ;
@@ -2628,7 +2802,8 @@
     g7:representantesEleitos 2 ;
     g7:semVinculoPermanente 19 ;
     g7:tecnicosSuperiores 27 ;
-    g7:trabalhadores 229 ;
+    g7:trabalhadores 227 ;
+    g7:trabalhadoresInclEleitos 229 ;
     g7:vinculoPermanente 204 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1213> a qb:Observation ;
@@ -2643,7 +2818,8 @@
     g7:representantesEleitos 5 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 23 ;
-    g7:trabalhadores 266 ;
+    g7:trabalhadores 261 ;
+    g7:trabalhadoresInclEleitos 266 ;
     g7:vinculoPermanente 248 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1214> a qb:Observation ;
@@ -2658,7 +2834,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 9 ;
     g7:tecnicosSuperiores 55 ;
-    g7:trabalhadores 298 ;
+    g7:trabalhadores 294 ;
+    g7:trabalhadoresInclEleitos 298 ;
     g7:vinculoPermanente 279 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1215> a qb:Observation ;
@@ -2673,7 +2850,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 23 ;
     g7:tecnicosSuperiores 27 ;
-    g7:trabalhadores 179 ;
+    g7:trabalhadores 176 ;
+    g7:trabalhadoresInclEleitos 179 ;
     g7:vinculoPermanente 146 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1301> a qb:Observation ;
@@ -2688,7 +2866,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 65 ;
     g7:tecnicosSuperiores 135 ;
-    g7:trabalhadores 563 ;
+    g7:trabalhadores 559 ;
+    g7:trabalhadoresInclEleitos 563 ;
     g7:vinculoPermanente 484 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1302> a qb:Observation ;
@@ -2703,7 +2882,8 @@
     g7:representantesEleitos 5 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 41 ;
-    g7:trabalhadores 293 ;
+    g7:trabalhadores 288 ;
+    g7:trabalhadoresInclEleitos 293 ;
     g7:vinculoPermanente 284 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1303> a qb:Observation ;
@@ -2718,7 +2898,8 @@
     g7:representantesEleitos 6 ;
     g7:semVinculoPermanente 90 ;
     g7:tecnicosSuperiores 106 ;
-    g7:trabalhadores 664 ;
+    g7:trabalhadores 658 ;
+    g7:trabalhadoresInclEleitos 664 ;
     g7:vinculoPermanente 552 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1304> a qb:Observation ;
@@ -2733,7 +2914,8 @@
     g7:representantesEleitos 6 ;
     g7:semVinculoPermanente 147 ;
     g7:tecnicosSuperiores 232 ;
-    g7:trabalhadores 1507 ;
+    g7:trabalhadores 1501 ;
+    g7:trabalhadoresInclEleitos 1507 ;
     g7:vinculoPermanente 1334 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1305> a qb:Observation ;
@@ -2748,7 +2930,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 11 ;
     g7:tecnicosSuperiores 57 ;
-    g7:trabalhadores 614 ;
+    g7:trabalhadores 610 ;
+    g7:trabalhadoresInclEleitos 614 ;
     g7:vinculoPermanente 599 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1306> a qb:Observation ;
@@ -2763,7 +2946,8 @@
     g7:representantesEleitos 7 ;
     g7:semVinculoPermanente 168 ;
     g7:tecnicosSuperiores 335 ;
-    g7:trabalhadores 1007 ;
+    g7:trabalhadores 1000 ;
+    g7:trabalhadoresInclEleitos 1007 ;
     g7:vinculoPermanente 799 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1307> a qb:Observation ;
@@ -2778,7 +2962,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 24 ;
     g7:tecnicosSuperiores 61 ;
-    g7:trabalhadores 374 ;
+    g7:trabalhadores 370 ;
+    g7:trabalhadoresInclEleitos 374 ;
     g7:vinculoPermanente 332 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1308> a qb:Observation ;
@@ -2793,7 +2978,8 @@
     g7:representantesEleitos 7 ;
     g7:semVinculoPermanente 179 ;
     g7:tecnicosSuperiores 396 ;
-    g7:trabalhadores 1925 ;
+    g7:trabalhadores 1918 ;
+    g7:trabalhadoresInclEleitos 1925 ;
     g7:vinculoPermanente 1683 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1309> a qb:Observation ;
@@ -2808,7 +2994,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 2 ;
     g7:tecnicosSuperiores 52 ;
-    g7:trabalhadores 434 ;
+    g7:trabalhadores 430 ;
+    g7:trabalhadoresInclEleitos 434 ;
     g7:vinculoPermanente 422 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1310> a qb:Observation ;
@@ -2823,7 +3010,8 @@
     g7:representantesEleitos 5 ;
     g7:semVinculoPermanente 48 ;
     g7:tecnicosSuperiores 129 ;
-    g7:trabalhadores 582 ;
+    g7:trabalhadores 577 ;
+    g7:trabalhadoresInclEleitos 582 ;
     g7:vinculoPermanente 503 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1311> a qb:Observation ;
@@ -2838,7 +3026,8 @@
     g7:representantesEleitos 5 ;
     g7:semVinculoPermanente 106 ;
     g7:tecnicosSuperiores 173 ;
-    g7:trabalhadores 621 ;
+    g7:trabalhadores 616 ;
+    g7:trabalhadoresInclEleitos 621 ;
     g7:vinculoPermanente 497 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1312> a qb:Observation ;
@@ -2853,7 +3042,8 @@
     g7:representantesEleitos 8 ;
     g7:semVinculoPermanente 233 ;
     g7:tecnicosSuperiores 778 ;
-    g7:trabalhadores 3024 ;
+    g7:trabalhadores 3016 ;
+    g7:trabalhadoresInclEleitos 3024 ;
     g7:vinculoPermanente 2520 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1313> a qb:Observation ;
@@ -2868,7 +3058,8 @@
     g7:representantesEleitos 5 ;
     g7:semVinculoPermanente 33 ;
     g7:tecnicosSuperiores 125 ;
-    g7:trabalhadores 619 ;
+    g7:trabalhadores 614 ;
+    g7:trabalhadoresInclEleitos 619 ;
     g7:vinculoPermanente 573 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1314> a qb:Observation ;
@@ -2883,7 +3074,8 @@
     g7:representantesEleitos 5 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 71 ;
-    g7:trabalhadores 382 ;
+    g7:trabalhadores 377 ;
+    g7:trabalhadoresInclEleitos 382 ;
     g7:vinculoPermanente 338 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1315> a qb:Observation ;
@@ -2898,7 +3090,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 7 ;
     g7:tecnicosSuperiores 95 ;
-    g7:trabalhadores 569 ;
+    g7:trabalhadores 565 ;
+    g7:trabalhadoresInclEleitos 569 ;
     g7:vinculoPermanente 558 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1316> a qb:Observation ;
@@ -2913,7 +3106,8 @@
     g7:representantesEleitos 5 ;
     g7:semVinculoPermanente 248 ;
     g7:tecnicosSuperiores 155 ;
-    g7:trabalhadores 1109 ;
+    g7:trabalhadores 1104 ;
+    g7:trabalhadoresInclEleitos 1109 ;
     g7:vinculoPermanente 838 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1317> a qb:Observation ;
@@ -2928,7 +3122,8 @@
     g7:representantesEleitos 8 ;
     g7:semVinculoPermanente 410 ;
     g7:tecnicosSuperiores 599 ;
-    g7:trabalhadores 1911 ;
+    g7:trabalhadores 1903 ;
+    g7:trabalhadoresInclEleitos 1911 ;
     g7:vinculoPermanente 1437 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1318> a qb:Observation ;
@@ -2943,7 +3138,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 15 ;
     g7:tecnicosSuperiores 70 ;
-    g7:trabalhadores 290 ;
+    g7:trabalhadores 286 ;
+    g7:trabalhadoresInclEleitos 290 ;
     g7:vinculoPermanente 256 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1401> a qb:Observation ;
@@ -2958,7 +3154,8 @@
     g7:representantesEleitos 5 ;
     g7:semVinculoPermanente 3 ;
     g7:tecnicosSuperiores 82 ;
-    g7:trabalhadores 331 ;
+    g7:trabalhadores 326 ;
+    g7:trabalhadoresInclEleitos 331 ;
     g7:vinculoPermanente 314 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1402> a qb:Observation ;
@@ -2973,7 +3170,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 25 ;
-    g7:trabalhadores 160 ;
+    g7:trabalhadores 156 ;
+    g7:trabalhadoresInclEleitos 160 ;
     g7:vinculoPermanente 152 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1403> a qb:Observation ;
@@ -2988,7 +3186,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 13 ;
     g7:tecnicosSuperiores 31 ;
-    g7:trabalhadores 259 ;
+    g7:trabalhadores 255 ;
+    g7:trabalhadoresInclEleitos 259 ;
     g7:vinculoPermanente 242 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1404> a qb:Observation ;
@@ -3003,7 +3202,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 2 ;
     g7:tecnicosSuperiores 15 ;
-    g7:trabalhadores 151 ;
+    g7:trabalhadores 148 ;
+    g7:trabalhadoresInclEleitos 151 ;
     g7:vinculoPermanente 143 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1405> a qb:Observation ;
@@ -3018,7 +3218,8 @@
     g7:representantesEleitos 5 ;
     g7:semVinculoPermanente 2 ;
     g7:tecnicosSuperiores 54 ;
-    g7:trabalhadores 366 ;
+    g7:trabalhadores 361 ;
+    g7:trabalhadoresInclEleitos 366 ;
     g7:vinculoPermanente 351 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1406> a qb:Observation ;
@@ -3033,7 +3234,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 41 ;
-    g7:trabalhadores 321 ;
+    g7:trabalhadores 318 ;
+    g7:trabalhadoresInclEleitos 321 ;
     g7:vinculoPermanente 313 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1407> a qb:Observation ;
@@ -3048,7 +3250,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 5 ;
     g7:tecnicosSuperiores 23 ;
-    g7:trabalhadores 155 ;
+    g7:trabalhadores 152 ;
+    g7:trabalhadoresInclEleitos 155 ;
     g7:vinculoPermanente 145 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1408> a qb:Observation ;
@@ -3063,7 +3266,8 @@
     g7:representantesEleitos 2 ;
     g7:semVinculoPermanente 3 ;
     g7:tecnicosSuperiores 23 ;
-    g7:trabalhadores 107 ;
+    g7:trabalhadores 105 ;
+    g7:trabalhadoresInclEleitos 107 ;
     g7:vinculoPermanente 100 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1409> a qb:Observation ;
@@ -3078,7 +3282,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 4 ;
     g7:tecnicosSuperiores 41 ;
-    g7:trabalhadores 359 ;
+    g7:trabalhadores 355 ;
+    g7:trabalhadoresInclEleitos 359 ;
     g7:vinculoPermanente 341 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1410> a qb:Observation ;
@@ -3093,7 +3298,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 41 ;
-    g7:trabalhadores 316 ;
+    g7:trabalhadores 312 ;
+    g7:trabalhadoresInclEleitos 316 ;
     g7:vinculoPermanente 303 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1411> a qb:Observation ;
@@ -3108,7 +3314,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 1 ;
     g7:tecnicosSuperiores 22 ;
-    g7:trabalhadores 126 ;
+    g7:trabalhadores 123 ;
+    g7:trabalhadoresInclEleitos 126 ;
     g7:vinculoPermanente 122 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1412> a qb:Observation ;
@@ -3123,7 +3330,8 @@
     g7:representantesEleitos 2 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 10 ;
-    g7:trabalhadores 116 ;
+    g7:trabalhadores 114 ;
+    g7:trabalhadoresInclEleitos 116 ;
     g7:vinculoPermanente 111 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1413> a qb:Observation ;
@@ -3138,7 +3346,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 23 ;
-    g7:trabalhadores 176 ;
+    g7:trabalhadores 173 ;
+    g7:trabalhadoresInclEleitos 176 ;
     g7:vinculoPermanente 169 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1414> a qb:Observation ;
@@ -3153,7 +3362,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 3 ;
     g7:tecnicosSuperiores 47 ;
-    g7:trabalhadores 297 ;
+    g7:trabalhadores 293 ;
+    g7:trabalhadoresInclEleitos 297 ;
     g7:vinculoPermanente 290 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1415> a qb:Observation ;
@@ -3168,7 +3378,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 2 ;
     g7:tecnicosSuperiores 34 ;
-    g7:trabalhadores 230 ;
+    g7:trabalhadores 227 ;
+    g7:trabalhadoresInclEleitos 230 ;
     g7:vinculoPermanente 218 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1416> a qb:Observation ;
@@ -3183,7 +3394,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 5 ;
     g7:tecnicosSuperiores 116 ;
-    g7:trabalhadores 721 ;
+    g7:trabalhadores 717 ;
+    g7:trabalhadoresInclEleitos 721 ;
     g7:vinculoPermanente 702 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1417> a qb:Observation ;
@@ -3198,7 +3410,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 10 ;
     g7:tecnicosSuperiores 18 ;
-    g7:trabalhadores 164 ;
+    g7:trabalhadores 161 ;
+    g7:trabalhadoresInclEleitos 164 ;
     g7:vinculoPermanente 147 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1418> a qb:Observation ;
@@ -3213,7 +3426,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 13 ;
     g7:tecnicosSuperiores 70 ;
-    g7:trabalhadores 457 ;
+    g7:trabalhadores 453 ;
+    g7:trabalhadoresInclEleitos 457 ;
     g7:vinculoPermanente 428 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1419> a qb:Observation ;
@@ -3228,7 +3442,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 1 ;
     g7:tecnicosSuperiores 79 ;
-    g7:trabalhadores 485 ;
+    g7:trabalhadores 481 ;
+    g7:trabalhadoresInclEleitos 485 ;
     g7:vinculoPermanente 467 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1420> a qb:Observation ;
@@ -3243,7 +3458,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 15 ;
-    g7:trabalhadores 165 ;
+    g7:trabalhadores 161 ;
+    g7:trabalhadoresInclEleitos 165 ;
     g7:vinculoPermanente 160 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1421> a qb:Observation ;
@@ -3258,7 +3474,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 64 ;
-    g7:trabalhadores 382 ;
+    g7:trabalhadores 379 ;
+    g7:trabalhadoresInclEleitos 382 ;
     g7:vinculoPermanente 363 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1501> a qb:Observation ;
@@ -3273,7 +3490,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 39 ;
-    g7:trabalhadores 409 ;
+    g7:trabalhadores 405 ;
+    g7:trabalhadoresInclEleitos 409 ;
     g7:vinculoPermanente 401 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1502> a qb:Observation ;
@@ -3288,7 +3506,8 @@
     g7:representantesEleitos 5 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 74 ;
-    g7:trabalhadores 345 ;
+    g7:trabalhadores 340 ;
+    g7:trabalhadoresInclEleitos 345 ;
     g7:vinculoPermanente 336 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1503> a qb:Observation ;
@@ -3303,7 +3522,8 @@
     g7:representantesEleitos 6 ;
     g7:semVinculoPermanente 122 ;
     g7:tecnicosSuperiores 255 ;
-    g7:trabalhadores 1648 ;
+    g7:trabalhadores 1642 ;
+    g7:trabalhadoresInclEleitos 1648 ;
     g7:vinculoPermanente 1498 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1504> a qb:Observation ;
@@ -3318,7 +3538,8 @@
     g7:representantesEleitos 5 ;
     g7:semVinculoPermanente 58 ;
     g7:tecnicosSuperiores 130 ;
-    g7:trabalhadores 760 ;
+    g7:trabalhadores 755 ;
+    g7:trabalhadoresInclEleitos 760 ;
     g7:vinculoPermanente 682 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1505> a qb:Observation ;
@@ -3333,7 +3554,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 5 ;
     g7:tecnicosSuperiores 83 ;
-    g7:trabalhadores 426 ;
+    g7:trabalhadores 422 ;
+    g7:trabalhadoresInclEleitos 426 ;
     g7:vinculoPermanente 404 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1506> a qb:Observation ;
@@ -3348,7 +3570,8 @@
     g7:representantesEleitos 5 ;
     g7:semVinculoPermanente 10 ;
     g7:tecnicosSuperiores 85 ;
-    g7:trabalhadores 697 ;
+    g7:trabalhadores 692 ;
+    g7:trabalhadoresInclEleitos 697 ;
     g7:vinculoPermanente 663 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1507> a qb:Observation ;
@@ -3363,7 +3586,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 25 ;
     g7:tecnicosSuperiores 94 ;
-    g7:trabalhadores 822 ;
+    g7:trabalhadores 819 ;
+    g7:trabalhadoresInclEleitos 822 ;
     g7:vinculoPermanente 780 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1508> a qb:Observation ;
@@ -3378,7 +3602,8 @@
     g7:representantesEleitos 5 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 165 ;
-    g7:trabalhadores 897 ;
+    g7:trabalhadores 892 ;
+    g7:trabalhadoresInclEleitos 897 ;
     g7:vinculoPermanente 870 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1509> a qb:Observation ;
@@ -3393,7 +3618,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 69 ;
-    g7:trabalhadores 526 ;
+    g7:trabalhadores 522 ;
+    g7:trabalhadoresInclEleitos 526 ;
     g7:vinculoPermanente 505 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1510> a qb:Observation ;
@@ -3408,7 +3634,8 @@
     g7:representantesEleitos 9 ;
     g7:semVinculoPermanente 4 ;
     g7:tecnicosSuperiores 266 ;
-    g7:trabalhadores 1550 ;
+    g7:trabalhadores 1541 ;
+    g7:trabalhadoresInclEleitos 1550 ;
     g7:vinculoPermanente 1496 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1511> a qb:Observation ;
@@ -3423,7 +3650,8 @@
     g7:representantesEleitos 5 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 160 ;
-    g7:trabalhadores 860 ;
+    g7:trabalhadores 855 ;
+    g7:trabalhadoresInclEleitos 860 ;
     g7:vinculoPermanente 839 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1512> a qb:Observation ;
@@ -3438,7 +3666,8 @@
     g7:representantesEleitos 6 ;
     g7:semVinculoPermanente 5 ;
     g7:tecnicosSuperiores 214 ;
-    g7:trabalhadores 1285 ;
+    g7:trabalhadores 1279 ;
+    g7:trabalhadoresInclEleitos 1285 ;
     g7:vinculoPermanente 1234 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1513> a qb:Observation ;
@@ -3453,7 +3682,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 4 ;
     g7:tecnicosSuperiores 57 ;
-    g7:trabalhadores 396 ;
+    g7:trabalhadores 392 ;
+    g7:trabalhadoresInclEleitos 396 ;
     g7:vinculoPermanente 380 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1601> a qb:Observation ;
@@ -3468,7 +3698,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 31 ;
-    g7:trabalhadores 288 ;
+    g7:trabalhadores 285 ;
+    g7:trabalhadoresInclEleitos 288 ;
     g7:vinculoPermanente 285 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1602> a qb:Observation ;
@@ -3483,7 +3714,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 2 ;
     g7:tecnicosSuperiores 53 ;
-    g7:trabalhadores 275 ;
+    g7:trabalhadores 271 ;
+    g7:trabalhadoresInclEleitos 275 ;
     g7:vinculoPermanente 266 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1603> a qb:Observation ;
@@ -3498,7 +3730,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 16 ;
     g7:tecnicosSuperiores 50 ;
-    g7:trabalhadores 279 ;
+    g7:trabalhadores 276 ;
+    g7:trabalhadoresInclEleitos 279 ;
     g7:vinculoPermanente 256 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1604> a qb:Observation ;
@@ -3513,7 +3746,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 9 ;
     g7:tecnicosSuperiores 38 ;
-    g7:trabalhadores 257 ;
+    g7:trabalhadores 254 ;
+    g7:trabalhadoresInclEleitos 257 ;
     g7:vinculoPermanente 232 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1605> a qb:Observation ;
@@ -3528,7 +3762,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 3 ;
     g7:tecnicosSuperiores 22 ;
-    g7:trabalhadores 160 ;
+    g7:trabalhadores 157 ;
+    g7:trabalhadoresInclEleitos 160 ;
     g7:vinculoPermanente 151 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1606> a qb:Observation ;
@@ -3543,7 +3778,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 1 ;
     g7:tecnicosSuperiores 34 ;
-    g7:trabalhadores 246 ;
+    g7:trabalhadores 243 ;
+    g7:trabalhadoresInclEleitos 246 ;
     g7:vinculoPermanente 236 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1607> a qb:Observation ;
@@ -3558,7 +3794,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 1 ;
     g7:tecnicosSuperiores 42 ;
-    g7:trabalhadores 536 ;
+    g7:trabalhadores 532 ;
+    g7:trabalhadoresInclEleitos 536 ;
     g7:vinculoPermanente 522 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1608> a qb:Observation ;
@@ -3573,7 +3810,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 32 ;
-    g7:trabalhadores 287 ;
+    g7:trabalhadores 283 ;
+    g7:trabalhadoresInclEleitos 287 ;
     g7:vinculoPermanente 278 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1609> a qb:Observation ;
@@ -3588,7 +3826,8 @@
     g7:representantesEleitos 5 ;
     g7:semVinculoPermanente 20 ;
     g7:tecnicosSuperiores 115 ;
-    g7:trabalhadores 965 ;
+    g7:trabalhadores 960 ;
+    g7:trabalhadoresInclEleitos 965 ;
     g7:vinculoPermanente 917 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1610> a qb:Observation ;
@@ -3603,7 +3842,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 35 ;
     g7:tecnicosSuperiores 46 ;
-    g7:trabalhadores 252 ;
+    g7:trabalhadores 249 ;
+    g7:trabalhadoresInclEleitos 252 ;
     g7:vinculoPermanente 208 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1701> a qb:Observation ;
@@ -3618,7 +3858,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 20 ;
-    g7:trabalhadores 131 ;
+    g7:trabalhadores 128 ;
+    g7:trabalhadoresInclEleitos 131 ;
     g7:vinculoPermanente 116 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1702> a qb:Observation ;
@@ -3633,7 +3874,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 9 ;
     g7:tecnicosSuperiores 22 ;
-    g7:trabalhadores 121 ;
+    g7:trabalhadores 118 ;
+    g7:trabalhadoresInclEleitos 121 ;
     g7:vinculoPermanente 102 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1703> a qb:Observation ;
@@ -3648,7 +3890,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 79 ;
-    g7:trabalhadores 447 ;
+    g7:trabalhadores 443 ;
+    g7:trabalhadoresInclEleitos 447 ;
     g7:vinculoPermanente 431 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1704> a qb:Observation ;
@@ -3663,7 +3906,8 @@
     g7:representantesEleitos 2 ;
     g7:semVinculoPermanente 1 ;
     g7:tecnicosSuperiores 9 ;
-    g7:trabalhadores 104 ;
+    g7:trabalhadores 102 ;
+    g7:trabalhadoresInclEleitos 104 ;
     g7:vinculoPermanente 97 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1705> a qb:Observation ;
@@ -3678,7 +3922,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 5 ;
     g7:tecnicosSuperiores 24 ;
-    g7:trabalhadores 139 ;
+    g7:trabalhadores 136 ;
+    g7:trabalhadoresInclEleitos 139 ;
     g7:vinculoPermanente 122 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1706> a qb:Observation ;
@@ -3693,7 +3938,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 26 ;
     g7:tecnicosSuperiores 20 ;
-    g7:trabalhadores 268 ;
+    g7:trabalhadores 265 ;
+    g7:trabalhadoresInclEleitos 268 ;
     g7:vinculoPermanente 239 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1707> a qb:Observation ;
@@ -3708,7 +3954,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 17 ;
-    g7:trabalhadores 121 ;
+    g7:trabalhadores 118 ;
+    g7:trabalhadoresInclEleitos 121 ;
     g7:vinculoPermanente 116 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1708> a qb:Observation ;
@@ -3723,7 +3970,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 28 ;
     g7:tecnicosSuperiores 42 ;
-    g7:trabalhadores 277 ;
+    g7:trabalhadores 274 ;
+    g7:trabalhadoresInclEleitos 277 ;
     g7:vinculoPermanente 240 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1709> a qb:Observation ;
@@ -3738,7 +3986,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 25 ;
-    g7:trabalhadores 170 ;
+    g7:trabalhadores 167 ;
+    g7:trabalhadoresInclEleitos 170 ;
     g7:vinculoPermanente 160 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1710> a qb:Observation ;
@@ -3753,7 +4002,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 2 ;
     g7:tecnicosSuperiores 23 ;
-    g7:trabalhadores 152 ;
+    g7:trabalhadores 149 ;
+    g7:trabalhadoresInclEleitos 152 ;
     g7:vinculoPermanente 147 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1711> a qb:Observation ;
@@ -3768,7 +4018,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 31 ;
     g7:tecnicosSuperiores 16 ;
-    g7:trabalhadores 146 ;
+    g7:trabalhadores 143 ;
+    g7:trabalhadoresInclEleitos 146 ;
     g7:vinculoPermanente 110 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1712> a qb:Observation ;
@@ -3783,7 +4034,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 23 ;
-    g7:trabalhadores 175 ;
+    g7:trabalhadores 171 ;
+    g7:trabalhadoresInclEleitos 175 ;
     g7:vinculoPermanente 162 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1713> a qb:Observation ;
@@ -3798,7 +4050,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 9 ;
     g7:tecnicosSuperiores 58 ;
-    g7:trabalhadores 224 ;
+    g7:trabalhadores 220 ;
+    g7:trabalhadoresInclEleitos 224 ;
     g7:vinculoPermanente 202 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1714> a qb:Observation ;
@@ -3813,7 +4066,8 @@
     g7:representantesEleitos 5 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 77 ;
-    g7:trabalhadores 343 ;
+    g7:trabalhadores 338 ;
+    g7:trabalhadoresInclEleitos 343 ;
     g7:vinculoPermanente 326 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1801> a qb:Observation ;
@@ -3828,7 +4082,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 3 ;
     g7:tecnicosSuperiores 26 ;
-    g7:trabalhadores 179 ;
+    g7:trabalhadores 176 ;
+    g7:trabalhadoresInclEleitos 179 ;
     g7:vinculoPermanente 168 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1802> a qb:Observation ;
@@ -3843,7 +4098,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 19 ;
-    g7:trabalhadores 124 ;
+    g7:trabalhadores 121 ;
+    g7:trabalhadoresInclEleitos 124 ;
     g7:vinculoPermanente 117 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1803> a qb:Observation ;
@@ -3858,7 +4114,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 90 ;
     g7:tecnicosSuperiores 32 ;
-    g7:trabalhadores 285 ;
+    g7:trabalhadores 281 ;
+    g7:trabalhadoresInclEleitos 285 ;
     g7:vinculoPermanente 185 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1804> a qb:Observation ;
@@ -3873,7 +4130,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 17 ;
     g7:tecnicosSuperiores 35 ;
-    g7:trabalhadores 245 ;
+    g7:trabalhadores 241 ;
+    g7:trabalhadoresInclEleitos 245 ;
     g7:vinculoPermanente 219 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1805> a qb:Observation ;
@@ -3888,7 +4146,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 64 ;
     g7:tecnicosSuperiores 65 ;
-    g7:trabalhadores 289 ;
+    g7:trabalhadores 285 ;
+    g7:trabalhadoresInclEleitos 289 ;
     g7:vinculoPermanente 212 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1806> a qb:Observation ;
@@ -3903,7 +4162,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 34 ;
-    g7:trabalhadores 233 ;
+    g7:trabalhadores 229 ;
+    g7:trabalhadoresInclEleitos 233 ;
     g7:vinculoPermanente 226 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1807> a qb:Observation ;
@@ -3918,7 +4178,8 @@
     g7:representantesEleitos 5 ;
     g7:semVinculoPermanente 13 ;
     g7:tecnicosSuperiores 43 ;
-    g7:trabalhadores 131 ;
+    g7:trabalhadores 126 ;
+    g7:trabalhadoresInclEleitos 131 ;
     g7:vinculoPermanente 109 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1808> a qb:Observation ;
@@ -3933,7 +4194,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 12 ;
-    g7:trabalhadores 147 ;
+    g7:trabalhadores 143 ;
+    g7:trabalhadoresInclEleitos 147 ;
     g7:vinculoPermanente 138 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1809> a qb:Observation ;
@@ -3948,7 +4210,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 18 ;
     g7:tecnicosSuperiores 36 ;
-    g7:trabalhadores 187 ;
+    g7:trabalhadores 184 ;
+    g7:trabalhadoresInclEleitos 187 ;
     g7:vinculoPermanente 166 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1810> a qb:Observation ;
@@ -3963,7 +4226,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 22 ;
-    g7:trabalhadores 161 ;
+    g7:trabalhadores 157 ;
+    g7:trabalhadoresInclEleitos 161 ;
     g7:vinculoPermanente 157 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1811> a qb:Observation ;
@@ -3978,7 +4242,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 1 ;
     g7:tecnicosSuperiores 13 ;
-    g7:trabalhadores 89 ;
+    g7:trabalhadores 86 ;
+    g7:trabalhadoresInclEleitos 89 ;
     g7:vinculoPermanente 83 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1812> a qb:Observation ;
@@ -3993,7 +4258,8 @@
     g7:representantesEleitos 2 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 9 ;
-    g7:trabalhadores 82 ;
+    g7:trabalhadores 80 ;
+    g7:trabalhadoresInclEleitos 82 ;
     g7:vinculoPermanente 79 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1813> a qb:Observation ;
@@ -4008,7 +4274,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 4 ;
     g7:tecnicosSuperiores 33 ;
-    g7:trabalhadores 254 ;
+    g7:trabalhadores 250 ;
+    g7:trabalhadoresInclEleitos 254 ;
     g7:vinculoPermanente 238 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1814> a qb:Observation ;
@@ -4023,7 +4290,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 1 ;
     g7:tecnicosSuperiores 18 ;
-    g7:trabalhadores 134 ;
+    g7:trabalhadores 131 ;
+    g7:trabalhadoresInclEleitos 134 ;
     g7:vinculoPermanente 128 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1815> a qb:Observation ;
@@ -4038,7 +4306,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 18 ;
     g7:tecnicosSuperiores 14 ;
-    g7:trabalhadores 75 ;
+    g7:trabalhadores 72 ;
+    g7:trabalhadoresInclEleitos 75 ;
     g7:vinculoPermanente 54 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1816> a qb:Observation ;
@@ -4053,7 +4322,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 1 ;
     g7:tecnicosSuperiores 43 ;
-    g7:trabalhadores 362 ;
+    g7:trabalhadores 358 ;
+    g7:trabalhadoresInclEleitos 362 ;
     g7:vinculoPermanente 349 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1817> a qb:Observation ;
@@ -4068,7 +4338,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 3 ;
     g7:tecnicosSuperiores 18 ;
-    g7:trabalhadores 167 ;
+    g7:trabalhadores 163 ;
+    g7:trabalhadoresInclEleitos 167 ;
     g7:vinculoPermanente 156 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1818> a qb:Observation ;
@@ -4083,7 +4354,8 @@
     g7:representantesEleitos 5 ;
     g7:semVinculoPermanente 1 ;
     g7:tecnicosSuperiores 24 ;
-    g7:trabalhadores 89 ;
+    g7:trabalhadores 84 ;
+    g7:trabalhadoresInclEleitos 89 ;
     g7:vinculoPermanente 78 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1819> a qb:Observation ;
@@ -4098,7 +4370,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 1 ;
     g7:tecnicosSuperiores 17 ;
-    g7:trabalhadores 99 ;
+    g7:trabalhadores 96 ;
+    g7:trabalhadoresInclEleitos 99 ;
     g7:vinculoPermanente 92 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1820> a qb:Observation ;
@@ -4113,7 +4386,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 2 ;
     g7:tecnicosSuperiores 29 ;
-    g7:trabalhadores 232 ;
+    g7:trabalhadores 229 ;
+    g7:trabalhadoresInclEleitos 232 ;
     g7:vinculoPermanente 226 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1821> a qb:Observation ;
@@ -4128,7 +4402,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 67 ;
     g7:tecnicosSuperiores 37 ;
-    g7:trabalhadores 268 ;
+    g7:trabalhadores 264 ;
+    g7:trabalhadoresInclEleitos 268 ;
     g7:vinculoPermanente 189 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1822> a qb:Observation ;
@@ -4143,7 +4418,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 6 ;
     g7:tecnicosSuperiores 19 ;
-    g7:trabalhadores 120 ;
+    g7:trabalhadores 117 ;
+    g7:trabalhadoresInclEleitos 120 ;
     g7:vinculoPermanente 108 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1823> a qb:Observation ;
@@ -4158,7 +4434,8 @@
     g7:representantesEleitos 5 ;
     g7:semVinculoPermanente 220 ;
     g7:tecnicosSuperiores 81 ;
-    g7:trabalhadores 734 ;
+    g7:trabalhadores 729 ;
+    g7:trabalhadoresInclEleitos 734 ;
     g7:vinculoPermanente 492 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/1824> a qb:Observation ;
@@ -4173,7 +4450,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 23 ;
     g7:tecnicosSuperiores 15 ;
-    g7:trabalhadores 189 ;
+    g7:trabalhadores 185 ;
+    g7:trabalhadoresInclEleitos 189 ;
     g7:vinculoPermanente 160 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/3101> a qb:Observation ;
@@ -4188,7 +4466,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 12 ;
-    g7:trabalhadores 141 ;
+    g7:trabalhadores 138 ;
+    g7:trabalhadoresInclEleitos 141 ;
     g7:vinculoPermanente 137 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/3102> a qb:Observation ;
@@ -4203,7 +4482,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 20 ;
-    g7:trabalhadores 217 ;
+    g7:trabalhadores 213 ;
+    g7:trabalhadoresInclEleitos 217 ;
     g7:vinculoPermanente 208 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/3103> a qb:Observation ;
@@ -4218,7 +4498,8 @@
     g7:representantesEleitos 5 ;
     g7:semVinculoPermanente 18 ;
     g7:tecnicosSuperiores 155 ;
-    g7:trabalhadores 1562 ;
+    g7:trabalhadores 1557 ;
+    g7:trabalhadoresInclEleitos 1562 ;
     g7:vinculoPermanente 1486 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/3104> a qb:Observation ;
@@ -4233,7 +4514,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 15 ;
-    g7:trabalhadores 178 ;
+    g7:trabalhadores 174 ;
+    g7:trabalhadoresInclEleitos 178 ;
     g7:vinculoPermanente 166 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/3105> a qb:Observation ;
@@ -4248,7 +4530,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 6 ;
-    g7:trabalhadores 77 ;
+    g7:trabalhadores 73 ;
+    g7:trabalhadoresInclEleitos 77 ;
     g7:vinculoPermanente 73 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/3106> a qb:Observation ;
@@ -4263,7 +4546,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 1 ;
-    g7:trabalhadores 63 ;
+    g7:trabalhadores 60 ;
+    g7:trabalhadoresInclEleitos 63 ;
     g7:vinculoPermanente 59 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/3107> a qb:Observation ;
@@ -4278,7 +4562,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 9 ;
-    g7:trabalhadores 96 ;
+    g7:trabalhadores 92 ;
+    g7:trabalhadoresInclEleitos 96 ;
     g7:vinculoPermanente 90 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/3108> a qb:Observation ;
@@ -4293,7 +4578,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 29 ;
-    g7:trabalhadores 344 ;
+    g7:trabalhadores 340 ;
+    g7:trabalhadoresInclEleitos 344 ;
     g7:vinculoPermanente 340 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/3109> a qb:Observation ;
@@ -4308,7 +4594,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 9 ;
-    g7:trabalhadores 86 ;
+    g7:trabalhadores 83 ;
+    g7:trabalhadoresInclEleitos 86 ;
     g7:vinculoPermanente 82 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/3110> a qb:Observation ;
@@ -4323,7 +4610,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 13 ;
-    g7:trabalhadores 64 ;
+    g7:trabalhadores 61 ;
+    g7:trabalhadoresInclEleitos 64 ;
     g7:vinculoPermanente 58 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/3201> a qb:Observation ;
@@ -4338,7 +4626,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 2 ;
     g7:tecnicosSuperiores 5 ;
-    g7:trabalhadores 114 ;
+    g7:trabalhadores 111 ;
+    g7:trabalhadoresInclEleitos 114 ;
     g7:vinculoPermanente 109 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/4101> a qb:Observation ;
@@ -4353,7 +4642,8 @@
     g7:representantesEleitos 1 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 8 ;
-    g7:trabalhadores 89 ;
+    g7:trabalhadores 88 ;
+    g7:trabalhadoresInclEleitos 89 ;
     g7:vinculoPermanente 87 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/4201> a qb:Observation ;
@@ -4368,7 +4658,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 2 ;
     g7:tecnicosSuperiores 15 ;
-    g7:trabalhadores 138 ;
+    g7:trabalhadores 134 ;
+    g7:trabalhadoresInclEleitos 138 ;
     g7:vinculoPermanente 129 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/4202> a qb:Observation ;
@@ -4383,7 +4674,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 4 ;
-    g7:trabalhadores 74 ;
+    g7:trabalhadores 71 ;
+    g7:trabalhadoresInclEleitos 74 ;
     g7:vinculoPermanente 70 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/4203> a qb:Observation ;
@@ -4398,7 +4690,8 @@
     g7:representantesEleitos 5 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 33 ;
-    g7:trabalhadores 558 ;
+    g7:trabalhadores 553 ;
+    g7:trabalhadoresInclEleitos 558 ;
     g7:vinculoPermanente 528 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/4204> a qb:Observation ;
@@ -4413,7 +4706,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 6 ;
-    g7:trabalhadores 97 ;
+    g7:trabalhadores 93 ;
+    g7:trabalhadoresInclEleitos 97 ;
     g7:vinculoPermanente 92 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/4205> a qb:Observation ;
@@ -4428,7 +4722,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 20 ;
-    g7:trabalhadores 245 ;
+    g7:trabalhadores 241 ;
+    g7:trabalhadoresInclEleitos 245 ;
     g7:vinculoPermanente 241 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/4206> a qb:Observation ;
@@ -4443,7 +4738,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 7 ;
-    g7:trabalhadores 93 ;
+    g7:trabalhadores 89 ;
+    g7:trabalhadoresInclEleitos 93 ;
     g7:vinculoPermanente 85 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/4301> a qb:Observation ;
@@ -4458,7 +4754,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 3 ;
     g7:tecnicosSuperiores 38 ;
-    g7:trabalhadores 228 ;
+    g7:trabalhadores 224 ;
+    g7:trabalhadoresInclEleitos 228 ;
     g7:vinculoPermanente 212 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/4302> a qb:Observation ;
@@ -4473,7 +4770,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 24 ;
-    g7:trabalhadores 164 ;
+    g7:trabalhadores 160 ;
+    g7:trabalhadoresInclEleitos 164 ;
     g7:vinculoPermanente 159 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/4401> a qb:Observation ;
@@ -4488,7 +4786,8 @@
     g7:representantesEleitos 2 ;
     g7:semVinculoPermanente 10 ;
     g7:tecnicosSuperiores 5 ;
-    g7:trabalhadores 66 ;
+    g7:trabalhadores 64 ;
+    g7:trabalhadoresInclEleitos 66 ;
     g7:vinculoPermanente 54 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/4501> a qb:Observation ;
@@ -4503,7 +4802,8 @@
     g7:representantesEleitos 2 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 3 ;
-    g7:trabalhadores 96 ;
+    g7:trabalhadores 94 ;
+    g7:trabalhadoresInclEleitos 96 ;
     g7:vinculoPermanente 91 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/4502> a qb:Observation ;
@@ -4518,7 +4818,8 @@
     g7:representantesEleitos 2 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 4 ;
-    g7:trabalhadores 77 ;
+    g7:trabalhadores 75 ;
+    g7:trabalhadoresInclEleitos 77 ;
     g7:vinculoPermanente 72 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/4601> a qb:Observation ;
@@ -4533,7 +4834,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 2 ;
     g7:tecnicosSuperiores 16 ;
-    g7:trabalhadores 87 ;
+    g7:trabalhadores 84 ;
+    g7:trabalhadoresInclEleitos 87 ;
     g7:vinculoPermanente 80 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/4602> a qb:Observation ;
@@ -4548,7 +4850,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 18 ;
-    g7:trabalhadores 101 ;
+    g7:trabalhadores 98 ;
+    g7:trabalhadoresInclEleitos 101 ;
     g7:vinculoPermanente 93 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/4603> a qb:Observation ;
@@ -4563,7 +4866,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 6 ;
-    g7:trabalhadores 51 ;
+    g7:trabalhadores 48 ;
+    g7:trabalhadoresInclEleitos 51 ;
     g7:vinculoPermanente 46 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/4701> a qb:Observation ;
@@ -4578,7 +4882,8 @@
     g7:representantesEleitos 4 ;
     g7:semVinculoPermanente 1 ;
     g7:tecnicosSuperiores 12 ;
-    g7:trabalhadores 157 ;
+    g7:trabalhadores 153 ;
+    g7:trabalhadoresInclEleitos 157 ;
     g7:vinculoPermanente 149 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/4801> a qb:Observation ;
@@ -4593,7 +4898,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 29 ;
     g7:tecnicosSuperiores 6 ;
-    g7:trabalhadores 77 ;
+    g7:trabalhadores 74 ;
+    g7:trabalhadoresInclEleitos 77 ;
     g7:vinculoPermanente 43 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/4802> a qb:Observation ;
@@ -4608,7 +4914,8 @@
     g7:representantesEleitos 3 ;
     g7:semVinculoPermanente 1 ;
     g7:tecnicosSuperiores 2 ;
-    g7:trabalhadores 51 ;
+    g7:trabalhadores 48 ;
+    g7:trabalhadoresInclEleitos 51 ;
     g7:vinculoPermanente 44 .
 
 <https://w3id.org/ws-megsi-g7/obs/recursos-humanos/2017/A/4901> a qb:Observation ;
@@ -4623,6 +4930,7 @@
     g7:representantesEleitos 2 ;
     g7:semVinculoPermanente 0 ;
     g7:tecnicosSuperiores 1 ;
-    g7:trabalhadores 37 ;
+    g7:trabalhadores 35 ;
+    g7:trabalhadoresInclEleitos 37 ;
     g7:vinculoPermanente 35 .
 

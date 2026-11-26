@@ -5,7 +5,7 @@ Receitas;2019;ReceitasMunicipais-2019.csv;csv;cp850;1540;0;1540;24640;A:308, T1:
 Despesas;2017;DespesasMunicipais-2017.csv;csv;iso-8859-1;1232;4;1228;22104;T1:308, T2:308, T3:308, T4:304;13;13;;obs-despesas-municipais-2017.ttl
 Despesas;2018;DespesasMunicipais-2018.csv;csv;cp850;1540;0;1540;27720;A:308, T1:308, T2:308, T3:308, T4:308;13;13;;obs-despesas-municipais-2018.ttl
 Despesas;2019;DespesasMunicipais-2019.csv;csv;cp850;1540;0;1540;27720;A:308, T1:308, T2:308, T3:308, T4:308;13;13;;obs-despesas-municipais-2019.ttl
-Recursos Humanos;2017;RecursosHumanos-2017.xlsx;xlsx;XLSX;308;0;308;4312;A:308;9;9;;obs-recursos-humanos-2017.ttl
+Recursos Humanos;2017;RecursosHumanos-2017.xlsx;xlsx;XLSX;308;0;308;4620;A:308;9;10;;obs-recursos-humanos-2017.ttl
 Recursos Humanos;2018;RecursosHumanos-2018.xlsx;xlsx;XLSX;1540;0;1540;18480;A:308, T1:308, T2:308, T3:308, T4:308;7;7;CARGOSMANDATOSPOLITICOS, REPRESENTANTESELEITOS;obs-recursos-humanos-2018.ttl
 Recursos Humanos;2019;RecursosHumanos-2019.xlsx;xlsx;XLSX;1540;0;1540;18480;A:308, T1:308, T2:308, T3:308, T4:308;7;7;CARGOSMANDATOSPOLITICOS, REPRESENTANTESELEITOS;obs-recursos-humanos-2019.ttl
 Qualidade da Gestão;2017;QualidadeGestaoPublica-2017.xlsx;xlsx;XLSX;1540;0;1540;24640;A:308, T1:308, T2:308, T3:308, T4:308;11;11;;obs-qualidade-gestao-2017.ttl

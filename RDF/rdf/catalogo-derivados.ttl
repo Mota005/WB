@@ -14,7 +14,7 @@ ws:catalogo a dcat:Catalog ;
     dct:issued "2026-11-22"^^xsd:date ;
     dct:language <http://publications.europa.eu/resource/authority/language/POR> ;
     dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
-    dct:modified "2026-11-24"^^xsd:date ;
+    dct:modified "2026-11-26"^^xsd:date ;
     dct:publisher <https://w3id.org/ws-megsi-g7/agente/grupo7> ;
     dct:title "Catálogo RDF de indicadores municipais da DGAL (2017–2019)"@pt ;
     dcat:dataset wsds:rdf-despesas-municipais-2017,
@@ -115,7 +115,7 @@ wsds:rdf-despesas-municipais-2017 a qb:DataSet,
     dct:issued "2026-11-22"^^xsd:date ;
     dct:language <http://publications.europa.eu/resource/authority/language/POR> ;
     dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
-    dct:modified "2026-11-24"^^xsd:date ;
+    dct:modified "2026-11-26"^^xsd:date ;
     dct:publisher <https://w3id.org/ws-megsi-g7/agente/grupo7> ;
     dct:rightsHolder <https://w3id.org/ws-megsi-g7/agente/dgal> ;
     dct:source <https://dados.gov.pt/pt/datasets/despesas-municipais-2017> ;
@@ -123,7 +123,7 @@ wsds:rdf-despesas-municipais-2017 a qb:DataSet,
     dct:temporal <https://w3id.org/ws-megsi-g7/intervalo/2017> ;
     dct:title "Despesas 2017 — dados convertidos para RDF"@pt ;
     qb:structure <https://w3id.org/ws-megsi-g7/dsd/despesas-municipais> ;
-    adms:versionNotes "Convertido a partir de DespesasMunicipais-2017.csv; 4 linhas sem medidas não originaram observações; valores omissos não foram substituídos por zero; valores numéricos tipados em RDF. Os dados trimestrais são acumulados."@pt ;
+    adms:versionNotes "Convertido a partir de DespesasMunicipais-2017.csv; 4 linhas sem medidas não originaram observações; valores omissos não foram substituídos por zero; valores numéricos tipados em RDF. Os valores trimestrais (T1 a T4) são acumulados desde o início do ano. O ficheiro não tem valores anuais (A); o valor de fim de ano é o de T4."@pt ;
     dcat:contactPoint <https://w3id.org/ws-megsi-g7/contacto/grupo7> ;
     dcat:distribution <https://w3id.org/ws-megsi-g7/distribuicao/rdf-despesas-municipais-2017-turtle> ;
     dcat:inSeries wsds:serie-despesas-municipais ;
@@ -152,7 +152,7 @@ wsds:rdf-despesas-municipais-2018 a qb:DataSet,
     dct:issued "2026-11-22"^^xsd:date ;
     dct:language <http://publications.europa.eu/resource/authority/language/POR> ;
     dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
-    dct:modified "2026-11-24"^^xsd:date ;
+    dct:modified "2026-11-26"^^xsd:date ;
     dct:publisher <https://w3id.org/ws-megsi-g7/agente/grupo7> ;
     dct:rightsHolder <https://w3id.org/ws-megsi-g7/agente/dgal> ;
     dct:source <https://dados.gov.pt/pt/datasets/despesas-municipais-2018-1> ;
@@ -160,7 +160,7 @@ wsds:rdf-despesas-municipais-2018 a qb:DataSet,
     dct:temporal <https://w3id.org/ws-megsi-g7/intervalo/2018> ;
     dct:title "Despesas 2018 — dados convertidos para RDF"@pt ;
     qb:structure <https://w3id.org/ws-megsi-g7/dsd/despesas-municipais> ;
-    adms:versionNotes "Convertido a partir de DespesasMunicipais-2018.csv; 0 linhas sem medidas não originaram observações; valores omissos não foram substituídos por zero; valores numéricos tipados em RDF. Os dados trimestrais são acumulados."@pt ;
+    adms:versionNotes "Convertido a partir de DespesasMunicipais-2018.csv; 0 linhas sem medidas não originaram observações; valores omissos não foram substituídos por zero; valores numéricos tipados em RDF. Os valores trimestrais (T1 a T4) são acumulados desde o início do ano."@pt ;
     dcat:contactPoint <https://w3id.org/ws-megsi-g7/contacto/grupo7> ;
     dcat:distribution <https://w3id.org/ws-megsi-g7/distribuicao/rdf-despesas-municipais-2018-turtle> ;
     dcat:inSeries wsds:serie-despesas-municipais ;
@@ -189,7 +189,7 @@ wsds:rdf-despesas-municipais-2019 a qb:DataSet,
     dct:issued "2026-11-22"^^xsd:date ;
     dct:language <http://publications.europa.eu/resource/authority/language/POR> ;
     dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
-    dct:modified "2026-11-24"^^xsd:date ;
+    dct:modified "2026-11-26"^^xsd:date ;
     dct:publisher <https://w3id.org/ws-megsi-g7/agente/grupo7> ;
     dct:rightsHolder <https://w3id.org/ws-megsi-g7/agente/dgal> ;
     dct:source <https://dados.gov.pt/pt/datasets/despesas-municipais-2019> ;
@@ -197,7 +197,7 @@ wsds:rdf-despesas-municipais-2019 a qb:DataSet,
     dct:temporal <https://w3id.org/ws-megsi-g7/intervalo/2019> ;
     dct:title "Despesas 2019 — dados convertidos para RDF"@pt ;
     qb:structure <https://w3id.org/ws-megsi-g7/dsd/despesas-municipais> ;
-    adms:versionNotes "Convertido a partir de DespesasMunicipais-2019.csv; 0 linhas sem medidas não originaram observações; valores omissos não foram substituídos por zero; valores numéricos tipados em RDF. Os dados trimestrais são acumulados."@pt ;
+    adms:versionNotes "Convertido a partir de DespesasMunicipais-2019.csv; 0 linhas sem medidas não originaram observações; valores omissos não foram substituídos por zero; valores numéricos tipados em RDF. Os valores trimestrais (T1 a T4) são acumulados desde o início do ano."@pt ;
     dcat:contactPoint <https://w3id.org/ws-megsi-g7/contacto/grupo7> ;
     dcat:distribution <https://w3id.org/ws-megsi-g7/distribuicao/rdf-despesas-municipais-2019-turtle> ;
     dcat:inSeries wsds:serie-despesas-municipais ;
@@ -226,7 +226,7 @@ wsds:rdf-qualidade-gestao-2017 a qb:DataSet,
     dct:issued "2026-11-22"^^xsd:date ;
     dct:language <http://publications.europa.eu/resource/authority/language/POR> ;
     dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
-    dct:modified "2026-11-24"^^xsd:date ;
+    dct:modified "2026-11-26"^^xsd:date ;
     dct:publisher <https://w3id.org/ws-megsi-g7/agente/grupo7> ;
     dct:rightsHolder <https://w3id.org/ws-megsi-g7/agente/dgal> ;
     dct:source <https://dados.gov.pt/pt/datasets/qualidade-gestao-publica-2017-1> ;
@@ -234,7 +234,7 @@ wsds:rdf-qualidade-gestao-2017 a qb:DataSet,
     dct:temporal <https://w3id.org/ws-megsi-g7/intervalo/2017> ;
     dct:title "Qualidade da Gestão 2017 — dados convertidos para RDF"@pt ;
     qb:structure <https://w3id.org/ws-megsi-g7/dsd/qualidade-gestao> ;
-    adms:versionNotes "Convertido a partir de QualidadeGestaoPublica-2017.xlsx; 0 linhas sem medidas não originaram observações; valores omissos não foram substituídos por zero; valores numéricos tipados em RDF. Os dados trimestrais são acumulados."@pt ;
+    adms:versionNotes "Convertido a partir de QualidadeGestaoPublica-2017.xlsx; 0 linhas sem medidas não originaram observações; valores omissos não foram substituídos por zero; valores numéricos tipados em RDF. A receita total e a despesa total usam g7:receitaTotalQG e g7:despesaTotalQG, distintas das medidas das séries Receitas e Despesas."@pt ;
     dcat:contactPoint <https://w3id.org/ws-megsi-g7/contacto/grupo7> ;
     dcat:distribution <https://w3id.org/ws-megsi-g7/distribuicao/rdf-qualidade-gestao-2017-turtle> ;
     dcat:inSeries wsds:serie-qualidade-gestao ;
@@ -263,7 +263,7 @@ wsds:rdf-qualidade-gestao-2018 a qb:DataSet,
     dct:issued "2026-11-22"^^xsd:date ;
     dct:language <http://publications.europa.eu/resource/authority/language/POR> ;
     dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
-    dct:modified "2026-11-24"^^xsd:date ;
+    dct:modified "2026-11-26"^^xsd:date ;
     dct:publisher <https://w3id.org/ws-megsi-g7/agente/grupo7> ;
     dct:rightsHolder <https://w3id.org/ws-megsi-g7/agente/dgal> ;
     dct:source <https://dados.gov.pt/pt/datasets/qualidade-gestao-publica-2018-1> ;
@@ -271,7 +271,7 @@ wsds:rdf-qualidade-gestao-2018 a qb:DataSet,
     dct:temporal <https://w3id.org/ws-megsi-g7/intervalo/2018> ;
     dct:title "Qualidade da Gestão 2018 — dados convertidos para RDF"@pt ;
     qb:structure <https://w3id.org/ws-megsi-g7/dsd/qualidade-gestao> ;
-    adms:versionNotes "Convertido a partir de QualidadeGestaoPublica-2018.xlsx; 0 linhas sem medidas não originaram observações; valores omissos não foram substituídos por zero; valores numéricos tipados em RDF. Os dados trimestrais são acumulados."@pt ;
+    adms:versionNotes "Convertido a partir de QualidadeGestaoPublica-2018.xlsx; 0 linhas sem medidas não originaram observações; valores omissos não foram substituídos por zero; valores numéricos tipados em RDF. A receita total e a despesa total usam g7:receitaTotalQG e g7:despesaTotalQG, distintas das medidas das séries Receitas e Despesas."@pt ;
     dcat:contactPoint <https://w3id.org/ws-megsi-g7/contacto/grupo7> ;
     dcat:distribution <https://w3id.org/ws-megsi-g7/distribuicao/rdf-qualidade-gestao-2018-turtle> ;
     dcat:inSeries wsds:serie-qualidade-gestao ;
@@ -300,7 +300,7 @@ wsds:rdf-qualidade-gestao-2019 a qb:DataSet,
     dct:issued "2026-11-22"^^xsd:date ;
     dct:language <http://publications.europa.eu/resource/authority/language/POR> ;
     dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
-    dct:modified "2026-11-24"^^xsd:date ;
+    dct:modified "2026-11-26"^^xsd:date ;
     dct:publisher <https://w3id.org/ws-megsi-g7/agente/grupo7> ;
     dct:rightsHolder <https://w3id.org/ws-megsi-g7/agente/dgal> ;
     dct:source <https://dados.gov.pt/pt/datasets/qualidade-gestao-publica-2019> ;
@@ -308,7 +308,7 @@ wsds:rdf-qualidade-gestao-2019 a qb:DataSet,
     dct:temporal <https://w3id.org/ws-megsi-g7/intervalo/2019> ;
     dct:title "Qualidade da Gestão 2019 — dados convertidos para RDF"@pt ;
     qb:structure <https://w3id.org/ws-megsi-g7/dsd/qualidade-gestao> ;
-    adms:versionNotes "Convertido a partir de QualidadeGestaoPublica-2019.xlsx; 0 linhas sem medidas não originaram observações; valores omissos não foram substituídos por zero; valores numéricos tipados em RDF. Os dados trimestrais são acumulados."@pt ;
+    adms:versionNotes "Convertido a partir de QualidadeGestaoPublica-2019.xlsx; 0 linhas sem medidas não originaram observações; valores omissos não foram substituídos por zero; valores numéricos tipados em RDF. A receita total e a despesa total usam g7:receitaTotalQG e g7:despesaTotalQG, distintas das medidas das séries Receitas e Despesas."@pt ;
     dcat:contactPoint <https://w3id.org/ws-megsi-g7/contacto/grupo7> ;
     dcat:distribution <https://w3id.org/ws-megsi-g7/distribuicao/rdf-qualidade-gestao-2019-turtle> ;
     dcat:inSeries wsds:serie-qualidade-gestao ;
@@ -337,7 +337,7 @@ wsds:rdf-receitas-municipais-2017 a qb:DataSet,
     dct:issued "2026-11-22"^^xsd:date ;
     dct:language <http://publications.europa.eu/resource/authority/language/POR> ;
     dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
-    dct:modified "2026-11-24"^^xsd:date ;
+    dct:modified "2026-11-26"^^xsd:date ;
     dct:publisher <https://w3id.org/ws-megsi-g7/agente/grupo7> ;
     dct:rightsHolder <https://w3id.org/ws-megsi-g7/agente/dgal> ;
     dct:source <https://dados.gov.pt/pt/datasets/receitas-municipais-2017> ;
@@ -345,7 +345,7 @@ wsds:rdf-receitas-municipais-2017 a qb:DataSet,
     dct:temporal <https://w3id.org/ws-megsi-g7/intervalo/2017> ;
     dct:title "Receitas 2017 — dados convertidos para RDF"@pt ;
     qb:structure <https://w3id.org/ws-megsi-g7/dsd/receitas-municipais> ;
-    adms:versionNotes "Convertido a partir de ReceitasMunicipais-2017.csv; 321 linhas sem medidas não originaram observações; valores omissos não foram substituídos por zero; valores numéricos tipados em RDF. Os dados trimestrais são acumulados."@pt ;
+    adms:versionNotes "Convertido a partir de ReceitasMunicipais-2017.csv; 321 linhas sem medidas não originaram observações; valores omissos não foram substituídos por zero; valores numéricos tipados em RDF. Os valores trimestrais (T1 a T4) são acumulados desde o início do ano. O ficheiro não tem valores anuais (A); o valor de fim de ano é o de T4."@pt ;
     dcat:contactPoint <https://w3id.org/ws-megsi-g7/contacto/grupo7> ;
     dcat:distribution <https://w3id.org/ws-megsi-g7/distribuicao/rdf-receitas-municipais-2017-turtle> ;
     dcat:inSeries wsds:serie-receitas-municipais ;
@@ -374,7 +374,7 @@ wsds:rdf-receitas-municipais-2018 a qb:DataSet,
     dct:issued "2026-11-22"^^xsd:date ;
     dct:language <http://publications.europa.eu/resource/authority/language/POR> ;
     dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
-    dct:modified "2026-11-24"^^xsd:date ;
+    dct:modified "2026-11-26"^^xsd:date ;
     dct:publisher <https://w3id.org/ws-megsi-g7/agente/grupo7> ;
     dct:rightsHolder <https://w3id.org/ws-megsi-g7/agente/dgal> ;
     dct:source <https://dados.gov.pt/pt/datasets/receitas-municipais-2018-1> ;
@@ -382,7 +382,7 @@ wsds:rdf-receitas-municipais-2018 a qb:DataSet,
     dct:temporal <https://w3id.org/ws-megsi-g7/intervalo/2018> ;
     dct:title "Receitas 2018 — dados convertidos para RDF"@pt ;
     qb:structure <https://w3id.org/ws-megsi-g7/dsd/receitas-municipais> ;
-    adms:versionNotes "Convertido a partir de ReceitasMunicipais-2018.csv; 0 linhas sem medidas não originaram observações; valores omissos não foram substituídos por zero; valores numéricos tipados em RDF. Os dados trimestrais são acumulados."@pt ;
+    adms:versionNotes "Convertido a partir de ReceitasMunicipais-2018.csv; 0 linhas sem medidas não originaram observações; valores omissos não foram substituídos por zero; valores numéricos tipados em RDF. Os valores trimestrais (T1 a T4) são acumulados desde o início do ano."@pt ;
     dcat:contactPoint <https://w3id.org/ws-megsi-g7/contacto/grupo7> ;
     dcat:distribution <https://w3id.org/ws-megsi-g7/distribuicao/rdf-receitas-municipais-2018-turtle> ;
     dcat:inSeries wsds:serie-receitas-municipais ;
@@ -411,7 +411,7 @@ wsds:rdf-receitas-municipais-2019 a qb:DataSet,
     dct:issued "2026-11-22"^^xsd:date ;
     dct:language <http://publications.europa.eu/resource/authority/language/POR> ;
     dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
-    dct:modified "2026-11-24"^^xsd:date ;
+    dct:modified "2026-11-26"^^xsd:date ;
     dct:publisher <https://w3id.org/ws-megsi-g7/agente/grupo7> ;
     dct:rightsHolder <https://w3id.org/ws-megsi-g7/agente/dgal> ;
     dct:source <https://dados.gov.pt/pt/datasets/receitas-municipais-2019> ;
@@ -419,7 +419,7 @@ wsds:rdf-receitas-municipais-2019 a qb:DataSet,
     dct:temporal <https://w3id.org/ws-megsi-g7/intervalo/2019> ;
     dct:title "Receitas 2019 — dados convertidos para RDF"@pt ;
     qb:structure <https://w3id.org/ws-megsi-g7/dsd/receitas-municipais> ;
-    adms:versionNotes "Convertido a partir de ReceitasMunicipais-2019.csv; 0 linhas sem medidas não originaram observações; valores omissos não foram substituídos por zero; valores numéricos tipados em RDF. Os dados trimestrais são acumulados."@pt ;
+    adms:versionNotes "Convertido a partir de ReceitasMunicipais-2019.csv; 0 linhas sem medidas não originaram observações; valores omissos não foram substituídos por zero; valores numéricos tipados em RDF. Os valores trimestrais (T1 a T4) são acumulados desde o início do ano."@pt ;
     dcat:contactPoint <https://w3id.org/ws-megsi-g7/contacto/grupo7> ;
     dcat:distribution <https://w3id.org/ws-megsi-g7/distribuicao/rdf-receitas-municipais-2019-turtle> ;
     dcat:inSeries wsds:serie-receitas-municipais ;
@@ -448,7 +448,7 @@ wsds:rdf-recursos-humanos-2017 a qb:DataSet,
     dct:issued "2026-11-22"^^xsd:date ;
     dct:language <http://publications.europa.eu/resource/authority/language/POR> ;
     dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
-    dct:modified "2026-11-24"^^xsd:date ;
+    dct:modified "2026-11-26"^^xsd:date ;
     dct:publisher <https://w3id.org/ws-megsi-g7/agente/grupo7> ;
     dct:rightsHolder <https://w3id.org/ws-megsi-g7/agente/dgal> ;
     dct:source <https://dados.gov.pt/pt/datasets/recursos-humanos-2017> ;
@@ -456,7 +456,7 @@ wsds:rdf-recursos-humanos-2017 a qb:DataSet,
     dct:temporal <https://w3id.org/ws-megsi-g7/intervalo/2017> ;
     dct:title "Recursos Humanos 2017 — dados convertidos para RDF"@pt ;
     qb:structure <https://w3id.org/ws-megsi-g7/dsd/recursos-humanos-2017> ;
-    adms:versionNotes "Convertido a partir de RecursosHumanos-2017.xlsx; 0 linhas sem medidas não originaram observações; valores omissos não foram substituídos por zero; valores numéricos tipados em RDF. Os dados trimestrais são acumulados. Os dois indicadores adicionais de Recursos Humanos de 2017 foram separados em estrutura estatística própria."@pt ;
+    adms:versionNotes "Convertido a partir de RecursosHumanos-2017.xlsx; 0 linhas sem medidas não originaram observações; valores omissos não foram substituídos por zero; valores numéricos tipados em RDF. Só tem o período anual (A). A coluna totalrh inclui os representantes eleitos e foi convertida em g7:trabalhadoresInclEleitos; g7:trabalhadores é calculado sem os eleitos (dirigentes + técnicos superiores + outros), comparável com 2018 e 2019. Os indicadores de eleitos e de cargos políticos têm estrutura estatística própria."@pt ;
     dcat:contactPoint <https://w3id.org/ws-megsi-g7/contacto/grupo7> ;
     dcat:distribution <https://w3id.org/ws-megsi-g7/distribuicao/rdf-recursos-humanos-2017-turtle> ;
     dcat:inSeries wsds:serie-recursos-humanos ;
@@ -485,7 +485,7 @@ wsds:rdf-recursos-humanos-2018 a qb:DataSet,
     dct:issued "2026-11-22"^^xsd:date ;
     dct:language <http://publications.europa.eu/resource/authority/language/POR> ;
     dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
-    dct:modified "2026-11-24"^^xsd:date ;
+    dct:modified "2026-11-26"^^xsd:date ;
     dct:publisher <https://w3id.org/ws-megsi-g7/agente/grupo7> ;
     dct:rightsHolder <https://w3id.org/ws-megsi-g7/agente/dgal> ;
     dct:source <https://dados.gov.pt/pt/datasets/recursos-humanos-2018-1> ;
@@ -493,7 +493,7 @@ wsds:rdf-recursos-humanos-2018 a qb:DataSet,
     dct:temporal <https://w3id.org/ws-megsi-g7/intervalo/2018> ;
     dct:title "Recursos Humanos 2018 — dados convertidos para RDF"@pt ;
     qb:structure <https://w3id.org/ws-megsi-g7/dsd/recursos-humanos> ;
-    adms:versionNotes "Convertido a partir de RecursosHumanos-2018.xlsx; 0 linhas sem medidas não originaram observações; valores omissos não foram substituídos por zero; valores numéricos tipados em RDF. Os dados trimestrais são acumulados. Os dois indicadores adicionais de Recursos Humanos de 2017 foram separados em estrutura estatística própria."@pt ;
+    adms:versionNotes "Convertido a partir de RecursosHumanos-2018.xlsx; 0 linhas sem medidas não originaram observações; valores omissos não foram substituídos por zero; valores numéricos tipados em RDF."@pt ;
     dcat:contactPoint <https://w3id.org/ws-megsi-g7/contacto/grupo7> ;
     dcat:distribution <https://w3id.org/ws-megsi-g7/distribuicao/rdf-recursos-humanos-2018-turtle> ;
     dcat:inSeries wsds:serie-recursos-humanos ;
@@ -522,7 +522,7 @@ wsds:rdf-recursos-humanos-2019 a qb:DataSet,
     dct:issued "2026-11-22"^^xsd:date ;
     dct:language <http://publications.europa.eu/resource/authority/language/POR> ;
     dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
-    dct:modified "2026-11-24"^^xsd:date ;
+    dct:modified "2026-11-26"^^xsd:date ;
     dct:publisher <https://w3id.org/ws-megsi-g7/agente/grupo7> ;
     dct:rightsHolder <https://w3id.org/ws-megsi-g7/agente/dgal> ;
     dct:source <https://dados.gov.pt/pt/datasets/recursos-humanos-2019> ;
@@ -530,7 +530,7 @@ wsds:rdf-recursos-humanos-2019 a qb:DataSet,
     dct:temporal <https://w3id.org/ws-megsi-g7/intervalo/2019> ;
     dct:title "Recursos Humanos 2019 — dados convertidos para RDF"@pt ;
     qb:structure <https://w3id.org/ws-megsi-g7/dsd/recursos-humanos> ;
-    adms:versionNotes "Convertido a partir de RecursosHumanos-2019.xlsx; 0 linhas sem medidas não originaram observações; valores omissos não foram substituídos por zero; valores numéricos tipados em RDF. Os dados trimestrais são acumulados. Os dois indicadores adicionais de Recursos Humanos de 2017 foram separados em estrutura estatística própria."@pt ;
+    adms:versionNotes "Convertido a partir de RecursosHumanos-2019.xlsx; 0 linhas sem medidas não originaram observações; valores omissos não foram substituídos por zero; valores numéricos tipados em RDF."@pt ;
     dcat:contactPoint <https://w3id.org/ws-megsi-g7/contacto/grupo7> ;
     dcat:distribution <https://w3id.org/ws-megsi-g7/distribuicao/rdf-recursos-humanos-2019-turtle> ;
     dcat:inSeries wsds:serie-recursos-humanos ;
@@ -592,7 +592,7 @@ wsds:rdf-recursos-humanos-2019 a qb:DataSet,
     dct:title "Observações RDF Qualidade da Gestão 2017 (Turtle)"@pt ;
     adms:status <http://publications.europa.eu/resource/authority/distribution-status/COMPLETED> ;
     dcat:accessURL <https://raw.githubusercontent.com/Mota005/WB/main/RDF/rdf/obs-qualidade-gestao-2017.ttl> ;
-    dcat:byteSize "974637"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "977717"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://raw.githubusercontent.com/Mota005/WB/main/RDF/rdf/obs-qualidade-gestao-2017.ttl> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
@@ -604,7 +604,7 @@ wsds:rdf-recursos-humanos-2019 a qb:DataSet,
     dct:title "Observações RDF Qualidade da Gestão 2018 (Turtle)"@pt ;
     adms:status <http://publications.europa.eu/resource/authority/distribution-status/COMPLETED> ;
     dcat:accessURL <https://raw.githubusercontent.com/Mota005/WB/main/RDF/rdf/obs-qualidade-gestao-2018.ttl> ;
-    dcat:byteSize "974404"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "977484"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://raw.githubusercontent.com/Mota005/WB/main/RDF/rdf/obs-qualidade-gestao-2018.ttl> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
@@ -616,7 +616,7 @@ wsds:rdf-recursos-humanos-2019 a qb:DataSet,
     dct:title "Observações RDF Qualidade da Gestão 2019 (Turtle)"@pt ;
     adms:status <http://publications.europa.eu/resource/authority/distribution-status/COMPLETED> ;
     dcat:accessURL <https://raw.githubusercontent.com/Mota005/WB/main/RDF/rdf/obs-qualidade-gestao-2019.ttl> ;
-    dcat:byteSize "974290"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "977370"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://raw.githubusercontent.com/Mota005/WB/main/RDF/rdf/obs-qualidade-gestao-2019.ttl> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
@@ -664,7 +664,7 @@ wsds:rdf-recursos-humanos-2019 a qb:DataSet,
     dct:title "Observações RDF Recursos Humanos 2017 (Turtle)"@pt ;
     adms:status <http://publications.europa.eu/resource/authority/distribution-status/COMPLETED> ;
     dcat:accessURL <https://raw.githubusercontent.com/Mota005/WB/main/RDF/rdf/obs-recursos-humanos-2017.ttl> ;
-    dcat:byteSize "151872"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "163565"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://raw.githubusercontent.com/Mota005/WB/main/RDF/rdf/obs-recursos-humanos-2017.ttl> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 

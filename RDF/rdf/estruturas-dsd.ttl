@@ -24,7 +24,7 @@
     qb:component <https://w3id.org/ws-megsi-g7/componente/qualidade-gestao/dim-ano>,
         <https://w3id.org/ws-megsi-g7/componente/qualidade-gestao/dim-periodo>,
         <https://w3id.org/ws-megsi-g7/componente/qualidade-gestao/dim-refArea>,
-        <https://w3id.org/ws-megsi-g7/componente/qualidade-gestao/medida-despesaTotal>,
+        <https://w3id.org/ws-megsi-g7/componente/qualidade-gestao/medida-despesaTotalQG>,
         <https://w3id.org/ws-megsi-g7/componente/qualidade-gestao/medida-dividaTotal>,
         <https://w3id.org/ws-megsi-g7/componente/qualidade-gestao/medida-execucaoDespesa>,
         <https://w3id.org/ws-megsi-g7/componente/qualidade-gestao/medida-execucaoReceita>,
@@ -33,7 +33,7 @@
         <https://w3id.org/ws-megsi-g7/componente/qualidade-gestao/medida-pagamentosEmAtraso>,
         <https://w3id.org/ws-megsi-g7/componente/qualidade-gestao/medida-prazoMedioPagamento>,
         <https://w3id.org/ws-megsi-g7/componente/qualidade-gestao/medida-receitaEfetiva>,
-        <https://w3id.org/ws-megsi-g7/componente/qualidade-gestao/medida-receitasTotais>,
+        <https://w3id.org/ws-megsi-g7/componente/qualidade-gestao/medida-receitaTotalQG>,
         <https://w3id.org/ws-megsi-g7/componente/qualidade-gestao/medida-saldoOrcamental> .
 
 <https://w3id.org/ws-megsi-g7/dsd/receitas-municipais> a qb:DataStructureDefinition ;
@@ -76,6 +76,7 @@
         <https://w3id.org/ws-megsi-g7/componente/recursos-humanos-2017/medida-semVinculoPermanente>,
         <https://w3id.org/ws-megsi-g7/componente/recursos-humanos-2017/medida-tecnicosSuperiores>,
         <https://w3id.org/ws-megsi-g7/componente/recursos-humanos-2017/medida-trabalhadores>,
+        <https://w3id.org/ws-megsi-g7/componente/recursos-humanos-2017/medida-trabalhadoresInclEleitos>,
         <https://w3id.org/ws-megsi-g7/componente/recursos-humanos-2017/medida-vinculoPermanente> .
 
 <https://w3id.org/ws-megsi-g7/componente/despesas-municipais/dim-ano> qb:dimension g7:ano .
@@ -116,7 +117,7 @@
 
 <https://w3id.org/ws-megsi-g7/componente/qualidade-gestao/dim-refArea> qb:dimension sdmx-dimension:refArea .
 
-<https://w3id.org/ws-megsi-g7/componente/qualidade-gestao/medida-despesaTotal> qb:measure g7:despesaTotal .
+<https://w3id.org/ws-megsi-g7/componente/qualidade-gestao/medida-despesaTotalQG> qb:measure g7:despesaTotalQG .
 
 <https://w3id.org/ws-megsi-g7/componente/qualidade-gestao/medida-dividaTotal> qb:measure g7:dividaTotal .
 
@@ -134,7 +135,7 @@
 
 <https://w3id.org/ws-megsi-g7/componente/qualidade-gestao/medida-receitaEfetiva> qb:measure g7:receitaEfetiva .
 
-<https://w3id.org/ws-megsi-g7/componente/qualidade-gestao/medida-receitasTotais> qb:measure g7:receitasTotais .
+<https://w3id.org/ws-megsi-g7/componente/qualidade-gestao/medida-receitaTotalQG> qb:measure g7:receitaTotalQG .
 
 <https://w3id.org/ws-megsi-g7/componente/qualidade-gestao/medida-saldoOrcamental> qb:measure g7:saldoOrcamental .
 
@@ -187,6 +188,8 @@
 <https://w3id.org/ws-megsi-g7/componente/recursos-humanos-2017/medida-tecnicosSuperiores> qb:measure g7:tecnicosSuperiores .
 
 <https://w3id.org/ws-megsi-g7/componente/recursos-humanos-2017/medida-trabalhadores> qb:measure g7:trabalhadores .
+
+<https://w3id.org/ws-megsi-g7/componente/recursos-humanos-2017/medida-trabalhadoresInclEleitos> qb:measure g7:trabalhadoresInclEleitos .
 
 <https://w3id.org/ws-megsi-g7/componente/recursos-humanos-2017/medida-vinculoPermanente> qb:measure g7:vinculoPermanente .
 

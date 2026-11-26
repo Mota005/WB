@@ -43,5 +43,5 @@ Recursos Humanos;representanteseleitos;g7:representantesEleitos;Representantes e
 Recursos Humanos;cargosmandatospoliticos;g7:cargosPoliticos;Cargos e mandatos políticos;xsd:integer;NUM
 Enriquecimento INE;POPULACAO_RESIDENTE;g7:populacaoResidente;População residente;xsd:integer;NUM
 Enriquecimento INE;DENSIDADE_POP_HAB_KM2;g7:densidadePopulacional;Densidade populacional;xsd:decimal;HAB/KM2
-Qualidade da Gestão;TOTAL_RECEITA;g7:receitasTotais;Receitas totais municipais;xsd:decimal;EUR
-Qualidade da Gestão;TOTAL_DESPESA;g7:despesaTotal;Despesa total municipal;xsd:decimal;EUR
+Qualidade da Gestão;TOTAL_RECEITA;g7:receitaTotalQG;Receita total (indicador de qualidade da gestão);xsd:decimal;EUR
+Qualidade da Gestão;TOTAL_DESPESA;g7:despesaTotalQG;Despesa total (indicador de qualidade da gestão);xsd:decimal;EUR

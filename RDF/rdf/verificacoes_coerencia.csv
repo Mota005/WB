@@ -1,0 +1,22 @@
+﻿controlo;serie;ano;casos_ok;casos_verificados;nota
+A igual a T4;Receitas;2017;0;0;"Sem período A no ficheiro; usar T4 como valor de fim de ano"
+A igual a T4;Receitas;2018;271;308;Onde A ≠ T4, as consultas devem usar sempre o mesmo período em todos os anos
+A igual a T4;Receitas;2019;270;308;Onde A ≠ T4, as consultas devem usar sempre o mesmo período em todos os anos
+A igual a T4;Despesas;2017;0;0;"Sem período A no ficheiro; usar T4 como valor de fim de ano"
+A igual a T4;Despesas;2018;287;308;Onde A ≠ T4, as consultas devem usar sempre o mesmo período em todos os anos
+A igual a T4;Despesas;2019;278;308;Onde A ≠ T4, as consultas devem usar sempre o mesmo período em todos os anos
+T1 ≤ T2 ≤ T3 ≤ T4;Receitas;2017;295;296;Confirma que os trimestres são acumulados
+T1 ≤ T2 ≤ T3 ≤ T4;Receitas;2018;308;308;Confirma que os trimestres são acumulados
+T1 ≤ T2 ≤ T3 ≤ T4;Receitas;2019;308;308;Confirma que os trimestres são acumulados
+T1 ≤ T2 ≤ T3 ≤ T4;Despesas;2017;304;304;Confirma que os trimestres são acumulados
+T1 ≤ T2 ≤ T3 ≤ T4;Despesas;2018;308;308;Confirma que os trimestres são acumulados
+T1 ≤ T2 ≤ T3 ≤ T4;Despesas;2019;308;308;Confirma que os trimestres são acumulados
+Receitas igual a Qualidade da Gestão;Receitas;2017;1186;1219;Diferenças justificam propriedades separadas (g7:receitaTotalQG / g7:despesaTotalQG)
+Receitas igual a Qualidade da Gestão;Receitas;2018;1540;1540;Diferenças justificam propriedades separadas (g7:receitaTotalQG / g7:despesaTotalQG)
+Receitas igual a Qualidade da Gestão;Receitas;2019;1540;1540;Diferenças justificam propriedades separadas (g7:receitaTotalQG / g7:despesaTotalQG)
+Despesas igual a Qualidade da Gestão;Despesas;2017;1221;1228;Diferenças justificam propriedades separadas (g7:receitaTotalQG / g7:despesaTotalQG)
+Despesas igual a Qualidade da Gestão;Despesas;2018;1540;1540;Diferenças justificam propriedades separadas (g7:receitaTotalQG / g7:despesaTotalQG)
+Despesas igual a Qualidade da Gestão;Despesas;2019;1540;1540;Diferenças justificam propriedades separadas (g7:receitaTotalQG / g7:despesaTotalQG)
+trabalhadores = dirigentes + técnicos + outros;Recursos Humanos;2017;308;308;g7:trabalhadores comparável entre anos (2017 sem eleitos)
+trabalhadores = dirigentes + técnicos + outros;Recursos Humanos;2018;1540;1540;g7:trabalhadores comparável entre anos (2017 sem eleitos)
+trabalhadores = dirigentes + técnicos + outros;Recursos Humanos;2019;1540;1540;g7:trabalhadores comparável entre anos (2017 sem eleitos)

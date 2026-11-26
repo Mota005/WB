@@ -1,0 +1,5 @@
+# Garante quebras de linha LF nos ficheiros RDF e scripts (dcat:byteSize correto)
+*.ttl text eol=lf
+*.rq  text eol=lf
+*.py  text eol=lf
+*.csv text eol=lf

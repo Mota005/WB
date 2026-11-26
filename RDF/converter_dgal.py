@@ -134,6 +134,110 @@ SERIES = {
 }
 PERIODOS_VALIDOS = {"A", "T1", "T2", "T3", "T4"}
 
+# [CORREÇÃO 3] Definição de cada período (skos:definition), para que o grafo
+# diga explicitamente que os trimestres são acumulados nas séries de fluxos.
+FIM_TRIMESTRE = {"T1": "31 de março", "T2": "30 de junho", "T3": "30 de setembro", "T4": "31 de dezembro"}
+
+
+def definicao_periodo(ano: int, periodo: str) -> str:
+    if periodo == "A":
+        return (f"Valor anual de {ano} publicado pela DGAL. Em 2017 não existe nas séries "
+                "Receitas e Despesas; nesses casos o valor de fim de ano é o de T4.")
+    return (f"Período de 1 de janeiro a {FIM_TRIMESTRE[periodo]} de {ano}. Nas receitas e despesas "
+            "o valor é acumulado desde o início do ano; na dívida, nos rácios e nos recursos humanos "
+            "refere-se à situação no fim do período.")
+
+
+# [CORREÇÃO 1] Em Recursos Humanos 2017 a coluna totalrh inclui os representantes
+# eleitos (totalrh = dirigentes + técnicos superiores + outros + eleitos);
+# em 2018 e 2019 não inclui. Para g7:trabalhadores ter o mesmo significado nos
+# três anos, em 2017 o valor original passa a g7:trabalhadoresInclEleitos e
+# g7:trabalhadores é calculado sem os eleitos. A identidade é verificada linha a linha.
+def ajustar_rh_2017(meas: list, g7: Namespace, contexto: str) -> list:
+    valores = dict(meas)
+    total = valores.get(g7.trabalhadores)
+    eleitos = valores.get(g7.representantesEleitos)
+    partes = [valores.get(g7.dirigentes), valores.get(g7.tecnicosSuperiores), valores.get(g7.outrosTrabalhadores)]
+    if total is None or eleitos is None or any(p is None for p in partes):
+        raise ValueError(f"{contexto}: RH 2017 sem os campos necessários para separar os eleitos")
+    soma_partes = sum(int(str(p)) for p in partes)
+    if int(str(total)) != soma_partes + int(str(eleitos)):
+        raise ValueError(f"{contexto}: totalrh ({total}) ≠ dirigentes + técnicos + outros + eleitos "
+                         f"({soma_partes} + {eleitos}); rever a regra de RH 2017")
+    valores[g7.trabalhadoresInclEleitos] = total
+    valores[g7.trabalhadores] = Literal(soma_partes, datatype=XSD.integer)
+    return list(valores.items())
+
+
+def verificacoes_coerencia(valores: dict, g7: Namespace, destino: Path) -> list[dict]:
+    """[VALIDAÇÃO] Controlos de coerência entre períodos e entre séries.
+
+    Não altera dados: regista o resultado em verificacoes_coerencia.csv para o relatório.
+    valores[(serie, ano, periodo, codigo)] = {propriedade: Decimal}
+    """
+    linhas = []
+
+    def registar(controlo, serie, ano, ok, total, nota):
+        linhas.append({"controlo": controlo, "serie": serie, "ano": ano,
+                       "casos_ok": ok, "casos_verificados": total, "nota": nota})
+
+    municipios = sorted({k[3] for k in valores})
+    # 1) Valor anual (A) vs 4.º trimestre (T4) nas séries de fluxos.
+    for serie, prop in (("Receitas", g7.receitasTotais), ("Despesas", g7.despesaTotal)):
+        for ano in (2017, 2018, 2019):
+            pares = [(valores.get((serie, ano, "A", m), {}).get(prop), valores.get((serie, ano, "T4", m), {}).get(prop))
+                     for m in municipios]
+            pares = [(a, t) for a, t in pares if t is not None]
+            com_a = [(a, t) for a, t in pares if a is not None]
+            if not com_a:
+                registar("A igual a T4", serie, ano, 0, 0,
+                         "Sem período A no ficheiro; usar T4 como valor de fim de ano")
+            else:
+                registar("A igual a T4", serie, ano, sum(a == t for a, t in com_a), len(com_a),
+                         "Onde A ≠ T4, as consultas devem usar sempre o mesmo período em todos os anos")
+    # 2) Trimestres acumulados: T1 ≤ T2 ≤ T3 ≤ T4.
+    for serie, prop in (("Receitas", g7.receitasTotais), ("Despesas", g7.despesaTotal)):
+        for ano in (2017, 2018, 2019):
+            ok = tot = 0
+            for m in municipios:
+                seq = [valores.get((serie, ano, p, m), {}).get(prop) for p in ("T1", "T2", "T3", "T4")]
+                if None in seq:
+                    continue
+                tot += 1
+                ok += seq == sorted(seq)
+            registar("T1 ≤ T2 ≤ T3 ≤ T4", serie, ano, ok, tot, "Confirma que os trimestres são acumulados")
+    # 3) Totais da Qualidade da Gestão vs séries Receitas e Despesas.
+    for serie, prop, prop_qg in (("Receitas", g7.receitasTotais, g7.receitaTotalQG),
+                                 ("Despesas", g7.despesaTotal, g7.despesaTotalQG)):
+        for ano in (2017, 2018, 2019):
+            ok = tot = 0
+            for (s, a, p, m), v in valores.items():
+                if s != "Qualidade da Gestão" or a != ano or prop_qg not in v:
+                    continue
+                outro = valores.get((serie, ano, p, m), {}).get(prop)
+                if outro is None:
+                    continue
+                tot += 1
+                ok += abs(outro - v[prop_qg]) <= Decimal("0.01")
+            registar(f"{serie} igual a Qualidade da Gestão", serie, ano, ok, tot,
+                     "Diferenças justificam propriedades separadas (g7:receitaTotalQG / g7:despesaTotalQG)")
+    # 4) Recursos Humanos: total = dirigentes + técnicos + outros (sem eleitos) em todos os anos.
+    for ano in (2017, 2018, 2019):
+        ok = tot = 0
+        for (s, a, p, m), v in valores.items():
+            if s != "Recursos Humanos" or a != ano:
+                continue
+            tot += 1
+            ok += v.get(g7.trabalhadores) == (v.get(g7.dirigentes, 0) + v.get(g7.tecnicosSuperiores, 0)
+                                              + v.get(g7.outrosTrabalhadores, 0))
+        registar("trabalhadores = dirigentes + técnicos + outros", "Recursos Humanos", ano, ok, tot,
+                 "g7:trabalhadores comparável entre anos (2017 sem eleitos)")
+    with destino.open("w", encoding="utf-8-sig", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=list(linhas[0]), delimiter=";")
+        w.writeheader()
+        w.writerows(linhas)
+    return linhas
+
 
 def norm(coluna: str) -> str:
     """Aceita CODIGO_PERIODO / codigoperiodo / CODIGOPERIODO."""
@@ -497,14 +601,24 @@ def enriquecer_catalogo(
             catalogo.add((ds, DCAT.keyword, Literal(palavra, lang="pt")))
         for palavra in meta["keywords_en"]:
             catalogo.add((ds, DCAT.keyword, Literal(palavra, lang="en")))
-        nota = (f"Convertido a partir de {nome}; {item['linhas_sem_medidas']} linhas sem medidas não originaram "
-                "observações; valores omissos não foram substituídos por zero; valores numéricos tipados em RDF. "
-                "Os dados trimestrais são acumulados. Os dois indicadores adicionais de Recursos Humanos "
-                "de 2017 foram separados em estrutura estatística própria." if serie == "Recursos Humanos" else
-                f"Convertido a partir de {nome}; {item['linhas_sem_medidas']} linhas sem medidas não originaram "
-                "observações; valores omissos não foram substituídos por zero; valores numéricos tipados em RDF. "
-                "Os dados trimestrais são acumulados.")
-        catalogo.add((ds, ADMS.versionNotes, Literal(nota, lang="pt")))
+        # [CORREÇÃO 1-3] Notas específicas de cada série e ano (antes o texto era repetido).
+        partes_nota = [
+            f"Convertido a partir de {nome}; {item['linhas_sem_medidas']} linhas sem medidas não originaram "
+            "observações; valores omissos não foram substituídos por zero; valores numéricos tipados em RDF."
+        ]
+        if serie in ("Receitas", "Despesas"):
+            partes_nota.append("Os valores trimestrais (T1 a T4) são acumulados desde o início do ano.")
+            if ano == 2017:
+                partes_nota.append("O ficheiro não tem valores anuais (A); o valor de fim de ano é o de T4.")
+        if serie == "Qualidade da Gestão":
+            partes_nota.append("A receita total e a despesa total usam g7:receitaTotalQG e g7:despesaTotalQG, "
+                               "distintas das medidas das séries Receitas e Despesas.")
+        if serie == "Recursos Humanos" and ano == 2017:
+            partes_nota.append("Só tem o período anual (A). A coluna totalrh inclui os representantes eleitos e foi "
+                               "convertida em g7:trabalhadoresInclEleitos; g7:trabalhadores é calculado sem os eleitos "
+                               "(dirigentes + técnicos superiores + outros), comparável com 2018 e 2019. Os indicadores "
+                               "de eleitos e de cargos políticos têm estrutura estatística própria.")
+        catalogo.add((ds, ADMS.versionNotes, Literal(" ".join(partes_nota), lang="pt")))
 
         # Proveniência: identificar a cópia local sem divulgar caminhos do computador.
         # Quando houver URL oficial, essa passa a ser a origem e a landing page.
@@ -625,6 +739,7 @@ def main():
             periodos.add((uri, SKOS.inScheme, esquema_periodos))
             periodos.add((uri, SKOS.notation, Literal(f"{ano}-{p}")))
             periodos.add((uri, SKOS.prefLabel, Literal(f"{ano} — {p}", lang="pt")))
+            periodos.add((uri, SKOS.definition, Literal(definicao_periodo(ano, p), lang="pt")))
 
     agente = WS["agente/grupo7"]
     catalogo.add((agente, RDF.type, FOAF.Organization))
@@ -640,6 +755,7 @@ def main():
         catalogo.add((si, DCT.title, Literal(serie, lang="pt")))
 
     manifest = []
+    valores_coerencia = {}
     all_obs = set()
     all_mes = defaultdict(set)
     for serie, ano, ficheiro, codificacao in INPUTS:
@@ -679,6 +795,11 @@ def main():
             if not meas:
                 vazias += 1
                 continue
+            if serie == "Recursos Humanos" and ano == 2017:
+                meas = ajustar_rh_2017(meas, G7, f"{ficheiro}, linha {linha_num}")
+                medidas_encontradas.add("g7:trabalhadoresInclEleitos")
+            valores_coerencia[(serie, ano, periodo, normaliza_codigo(row.get("CODIGOINE")))] = {
+                prop: Decimal(str(lit)) for prop, lit in meas}
             obs_uri = WS[f"obs/{serie_slug}/{ano}/{periodo}/{codigo}"]
             if obs_uri in all_obs:
                 raise ValueError(f"URI de observação duplicado: {obs_uri} em {ficheiro}, linha {linha_num}")
@@ -773,7 +894,7 @@ def main():
     # - RH 2017: 9 medidas, incluindo cargos políticos e representantes eleitos;
     # - RH 2018-2019: 7 medidas comuns.
     # As medidas não são substituídas por zeros quando não existem na fonte.
-    exclusivas_rh_2017 = {"g7:cargosPoliticos", "g7:representantesEleitos"}
+    exclusivas_rh_2017 = {"g7:cargosPoliticos", "g7:representantesEleitos", "g7:trabalhadoresInclEleitos"}
 
     for serie, medidas in all_mes.items():
         slug = SERIES[serie]
@@ -825,7 +946,21 @@ def main():
         voc_g.parse(copia_antiga, format="turtle")
         print("Vocabulário encontrado apenas em rdf/; mantido sem alterações.")
     else:
+        voc_g = None
         print("AVISO: vocabulário do grupo não encontrado; importar quando estiver disponível.")
+    # [VALIDAÇÃO] Todas as medidas usadas nas observações têm de estar declaradas no vocabulário.
+    if voc_g is not None:
+        declaradas = {str(s) for s in voc_g.subjects(RDF.type, QB.MeasureProperty)}
+        usadas = {base + "vocab#" + m.split(":", 1)[1] for ms in all_mes.values() for m in ms}
+        em_falta = sorted(u.split("#", 1)[1] for u in usadas - declaradas)
+        if em_falta:
+            raise ValueError("Medidas usadas mas não declaradas como qb:MeasureProperty no vocabulário: "
+                             + ", ".join(em_falta))
+        print(f"Vocabulário: as {len(usadas)} medidas usadas estão declaradas.")
+    # [VALIDAÇÃO] Controlos de coerência entre períodos e entre séries.
+    print("\nControlos de coerência (verificacoes_coerencia.csv):")
+    for c in verificacoes_coerencia(valores_coerencia, G7, saida / "verificacoes_coerencia.csv"):
+        print(f"  {c['controlo']:47s} {c['serie']:20s} {c['ano']}: {c['casos_ok']}/{c['casos_verificados']}")
     destino_manifesto = saida / "manifesto_conversao.csv"
     with destino_manifesto.open("w", encoding="utf-8-sig", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=list(manifest[0]), delimiter=";")

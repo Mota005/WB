@@ -97,8 +97,7 @@ g7:despesaTotal a qb:MeasureProperty,
         rdf:Property ;
     rdfs:label "Total municipal expenditure"@en,
         "Despesa total municipal"@pt ;
-    dct:identifier "DESPESA_TOTAL",
-        "TOTAL_DESPESA" ;
+    dct:identifier "DESPESA_TOTAL" ;
     sdmx-attribute:unitMeasure eu-cur:EUR ;
     rdfs:comment "Indicador correspondente à coluna DESPESA_TOTAL dos ficheiros Despesas. A definição contabilística exata deve ser confirmada na documentação da fonte."@pt ;
     rdfs:range xsd:decimal ;
@@ -355,8 +354,7 @@ g7:receitasTotais a qb:MeasureProperty,
         rdf:Property ;
     rdfs:label "Total municipal revenue"@en,
         "Receitas totais municipais"@pt ;
-    dct:identifier "RECEITAS_TOTAIS",
-        "TOTAL_RECEITA" ;
+    dct:identifier "RECEITAS_TOTAIS" ;
     sdmx-attribute:unitMeasure eu-cur:EUR ;
     rdfs:comment "Indicador correspondente à coluna RECEITAS_TOTAIS dos ficheiros Receitas. A definição contabilística exata deve ser confirmada na documentação da fonte."@pt ;
     rdfs:range xsd:decimal ;
@@ -412,13 +410,46 @@ g7:tecnicosSuperiores a qb:MeasureProperty,
     rdfs:range xsd:integer ;
     rdfs:subPropertyOf sdmx-measure:obsValue .
 
+g7:receitaTotalQG a qb:MeasureProperty,
+        rdf:Property ;
+    rdfs:label "Total revenue (management quality indicator)"@en,
+        "Receita total (indicador de qualidade da gestão)"@pt ;
+    dct:identifier "TOTAL_RECEITA" ;
+    sdmx-attribute:unitMeasure eu-cur:EUR ;
+    rdfs:comment "Indicador correspondente à coluna TOTAL_RECEITA dos ficheiros Qualidade da Gestão. Distinto de g7:receitasTotais (série Receitas): em 2017 os valores das duas fontes diferem em alguns municípios e períodos."@pt ;
+    rdfs:seeAlso g7:receitasTotais ;
+    rdfs:range xsd:decimal ;
+    rdfs:subPropertyOf sdmx-measure:obsValue .
+
+g7:despesaTotalQG a qb:MeasureProperty,
+        rdf:Property ;
+    rdfs:label "Total expenditure (management quality indicator)"@en,
+        "Despesa total (indicador de qualidade da gestão)"@pt ;
+    dct:identifier "TOTAL_DESPESA" ;
+    sdmx-attribute:unitMeasure eu-cur:EUR ;
+    rdfs:comment "Indicador correspondente à coluna TOTAL_DESPESA dos ficheiros Qualidade da Gestão. Distinto de g7:despesaTotal (série Despesas): em 2017 os valores das duas fontes diferem em alguns municípios e períodos."@pt ;
+    rdfs:seeAlso g7:despesaTotal ;
+    rdfs:range xsd:decimal ;
+    rdfs:subPropertyOf sdmx-measure:obsValue .
+
+g7:trabalhadoresInclEleitos a qb:MeasureProperty,
+        rdf:Property ;
+    rdfs:label "Total municipal staff including elected representatives"@en,
+        "Total de recursos humanos, incluindo representantes eleitos"@pt ;
+    dct:identifier "totalrh" ;
+    sdmx-attribute:unitMeasure unit:NUM ;
+    rdfs:comment "Valor original da coluna totalrh no ficheiro Recursos Humanos 2017, que inclui os representantes eleitos (totalrh = dirigentes + técnicos superiores + outros + representantes eleitos). Em 2017, g7:trabalhadores é calculado sem os eleitos, para ser comparável com 2018 e 2019."@pt ;
+    rdfs:seeAlso g7:trabalhadores ;
+    rdfs:range xsd:integer ;
+    rdfs:subPropertyOf sdmx-measure:obsValue .
+
 g7:trabalhadores a qb:MeasureProperty,
         rdf:Property ;
     rdfs:label "Total municipal employees"@en,
         "Total de trabalhadores municipais"@pt ;
     dct:identifier "totalrh" ;
     sdmx-attribute:unitMeasure unit:NUM ;
-    rdfs:comment "Indicador correspondente à coluna totalrh dos ficheiros Recursos Humanos. A definição contabilística exata deve ser confirmada na documentação da fonte."@pt ;
+    rdfs:comment "Total de trabalhadores municipais (dirigentes + técnicos superiores + outros), sem representantes eleitos. Em 2018 e 2019 corresponde à coluna totalrh; em 2017 é calculado como totalrh menos representanteseleitos (ver g7:trabalhadoresInclEleitos)."@pt ;
     rdfs:range xsd:integer ;
     rdfs:subPropertyOf sdmx-measure:obsValue .
 

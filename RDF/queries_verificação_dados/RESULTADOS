@@ -10,14 +10,14 @@ Foram importados:
 - vocabulario-g7_proposta.ttl
 
 ## Verificações SPARQL
-As consultas estão disponíveis na pasta `RDF/queries`.
+As consultas estão disponíveis na pasta `RDF/queries_verificação_dados`.
 
 Resultados obtidos:
 - 16 615 observações
-- 12 datasets
+- 12 datasets com observações (derivados)
 - 308 municípios
 - 5 estruturas estatísticas
-- 12 distribuições com URLs públicas
+- 24 datasets no catálogo (12 originais da DGAL + 12 derivados), com 24 distribuições e 24 URLs públicas
 
 ## Consulta de exemplo
 Receitas totais de Braga em 2019:

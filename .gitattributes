@@ -3,3 +3,7 @@
 *.rq  text eol=lf
 *.py  text eol=lf
 *.csv text eol=lf
+
+# Ficheiros originais da DGAL: guardar byte a byte, sem conversão de quebras de linha,
+# para que o tamanho e a SHA-256 registados no catálogo coincidam com os do portal.
+RDF/dados/** -text -eol

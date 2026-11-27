@@ -33,7 +33,7 @@ per:2017-T4 a skos:Concept ;
     skos:prefLabel "2017 — T4"@pt .
 
 per:2018 a skos:Concept ;
-    skos:definition "Valor anual de 2018 publicado pela DGAL. Em 2017 não existe nas séries Receitas e Despesas; nesses casos o valor de fim de ano é o de T4."@pt ;
+    skos:definition "Valor anual de 2018 publicado pela DGAL."@pt ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/periodos> ;
     skos:notation "2018-A" ;
     skos:prefLabel "2018 — A"@pt .
@@ -63,7 +63,7 @@ per:2018-T4 a skos:Concept ;
     skos:prefLabel "2018 — T4"@pt .
 
 per:2019 a skos:Concept ;
-    skos:definition "Valor anual de 2019 publicado pela DGAL. Em 2017 não existe nas séries Receitas e Despesas; nesses casos o valor de fim de ano é o de T4."@pt ;
+    skos:definition "Valor anual de 2019 publicado pela DGAL."@pt ;
     skos:inScheme <https://w3id.org/ws-megsi-g7/esquema/periodos> ;
     skos:notation "2019-A" ;
     skos:prefLabel "2019 — A"@pt .

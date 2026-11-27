@@ -1,122 +1,124 @@
-shapeID,shapeLabel,propertyID,propertyLabel,obrigatoriedade,mandatory,repeatable,valueNodeType,valueDataType,valueConstraint,valueConstraintType,valueShape,note
-Catalogo,Catálogo (dcat:Catalog),dct:title,Título,Obrigatória,TRUE,TRUE,literal,rdf:langString,pt en,languageTag,,"Um por língua; @pt obrigatório, @en recomendado"
-Catalogo,Catálogo (dcat:Catalog),dct:description,Descrição,Obrigatória,TRUE,TRUE,literal,rdf:langString,pt en,languageTag,,"Um por língua; @pt obrigatório, @en recomendado"
-Catalogo,Catálogo (dcat:Catalog),dct:publisher,Editor,Obrigatória,TRUE,FALSE,IRI,,,,Agente,Grupo 7
-Catalogo,Catálogo (dcat:Catalog),dcat:dataset,Conjunto de dados,Obrigatória,TRUE,TRUE,IRI,,,,ConjuntoDados,Obrigatória no perfil (recomendada no DCAT-AP); originais e derivados
-Catalogo,Catálogo (dcat:Catalog),dct:language,Língua,Recomendada,FALSE,TRUE,IRI,,http://publications.europa.eu/resource/authority/language/,IRIstem,,POR
-Catalogo,Catálogo (dcat:Catalog),dct:license,Licença,Recomendada,FALSE,FALSE,IRI,,http://publications.europa.eu/resource/authority/licence/,IRIstem,,CC_BY_4_0
-Catalogo,Catálogo (dcat:Catalog),dct:issued,Data de publicação,Recomendada,FALSE,FALSE,literal,xsd:date,,,,
-Catalogo,Catálogo (dcat:Catalog),dct:modified,Data de modificação,Recomendada,FALSE,FALSE,literal,xsd:date,,,,
-Catalogo,Catálogo (dcat:Catalog),dcat:themeTaxonomy,Taxonomia de temas,Recomendada,FALSE,TRUE,IRI,,http://publications.europa.eu/resource/authority/data-theme,picklist,,Lista Data theme da UE
-Catalogo,Catálogo (dcat:Catalog),foaf:homepage,Página,Recomendada,FALSE,FALSE,IRI,,,,,Repositório do projeto
-Serie,Série (dcat:DatasetSeries),dct:title,Título,Obrigatória,TRUE,TRUE,literal,rdf:langString,pt en,languageTag,,Sem o ano
-Serie,Série (dcat:DatasetSeries),dct:description,Descrição,Obrigatória,TRUE,TRUE,literal,rdf:langString,pt en,languageTag,,
-Serie,Série (dcat:DatasetSeries),dct:publisher,Editor,Obrigatória,TRUE,FALSE,IRI,,,,Agente,Obrigatória no perfil
-Serie,Série (dcat:DatasetSeries),dct:accrualPeriodicity,Frequência,Obrigatória,TRUE,FALSE,IRI,,http://publications.europa.eu/resource/authority/frequency/,IRIstem,,ANNUAL; obrigatória no perfil
-Serie,Série (dcat:DatasetSeries),dcat:theme,Tema,Obrigatória,TRUE,TRUE,IRI,,http://publications.europa.eu/resource/authority/data-theme/,IRIstem,,ECON e GOVE; obrigatória no perfil
-Serie,Série (dcat:DatasetSeries),dct:spatial,Cobertura espacial,Recomendada,FALSE,TRUE,IRI,,http://publications.europa.eu/resource/authority/country/,IRIstem,,PRT
-Serie,Série (dcat:DatasetSeries),dct:temporal,Cobertura temporal,Recomendada,FALSE,FALSE,IRI,,,,Periodo,2017-01-01 a 2019-12-31
-Serie,Série (dcat:DatasetSeries),dcat:contactPoint,Contacto,Recomendada,FALSE,TRUE,IRI,,,,Contacto,
-ConjuntoDados,Conjunto de dados (dcat:Dataset; o derivado é também qb:DataSet),dct:title,Título,Obrigatória,TRUE,TRUE,literal,rdf:langString,pt en,languageTag,,
-ConjuntoDados,Conjunto de dados (dcat:Dataset; o derivado é também qb:DataSet),dct:description,Descrição,Obrigatória,TRUE,TRUE,literal,rdf:langString,pt en,languageTag,,"Tema, colunas, unidades, âmbito e trimestres acumulados"
-ConjuntoDados,Conjunto de dados (dcat:Dataset; o derivado é também qb:DataSet),dct:publisher,Editor,Obrigatória,TRUE,FALSE,IRI,,,,Agente,DGAL no original; Grupo 7 no derivado; obrigatória no perfil
-ConjuntoDados,Conjunto de dados (dcat:Dataset; o derivado é também qb:DataSet),dcat:theme,Tema,Obrigatória,TRUE,TRUE,IRI,,http://publications.europa.eu/resource/authority/data-theme/,IRIstem,,ECON e GOVE; obrigatória no perfil
-ConjuntoDados,Conjunto de dados (dcat:Dataset; o derivado é também qb:DataSet),dct:temporal,Cobertura temporal,Obrigatória,TRUE,FALSE,IRI,,,,Periodo,Ano civil; exatamente uma; obrigatória no perfil
-ConjuntoDados,Conjunto de dados (dcat:Dataset; o derivado é também qb:DataSet),dct:spatial,Cobertura espacial,Obrigatória,TRUE,TRUE,IRI,,http://publications.europa.eu/resource/authority/country/,IRIstem,,PRT; obrigatória no perfil
-ConjuntoDados,Conjunto de dados (dcat:Dataset; o derivado é também qb:DataSet),dcat:distribution,Distribuição,Obrigatória,TRUE,TRUE,IRI,,,,Distribuicao,Obrigatória no perfil
-ConjuntoDados,Conjunto de dados (dcat:Dataset; o derivado é também qb:DataSet),dcat:inSeries,Série,Obrigatória,TRUE,FALSE,IRI,,,,Serie,Só no derivado; exatamente uma; obrigatória no perfil
-ConjuntoDados,Conjunto de dados (dcat:Dataset; o derivado é também qb:DataSet),prov:wasDerivedFrom,Derivado de,Obrigatória,TRUE,TRUE,IRI,,,,ConjuntoDados,Só no derivado; aponta para o original; obrigatória no perfil
-ConjuntoDados,Conjunto de dados (dcat:Dataset; o derivado é também qb:DataSet),dct:source,Fonte,Obrigatória,TRUE,TRUE,IRI,,,,ConjuntoDados,Só no derivado; obrigatória no perfil
-ConjuntoDados,Conjunto de dados (dcat:Dataset; o derivado é também qb:DataSet),dct:conformsTo,Conforme a,Obrigatória,TRUE,TRUE,IRI,,,,,Só no derivado; qb:DataStructureDefinition da série; obrigatória no perfil
-ConjuntoDados,Conjunto de dados (dcat:Dataset; o derivado é também qb:DataSet),qb:structure,Estrutura,Obrigatória,TRUE,FALSE,IRI,,,,,Só no derivado; qb:DataStructureDefinition; exatamente uma
-ConjuntoDados,Conjunto de dados (dcat:Dataset; o derivado é também qb:DataSet),dcat:keyword,Palavra-chave,Recomendada,FALSE,TRUE,literal,rdf:langString,pt en,languageTag,,Pelo menos três em @pt
-ConjuntoDados,Conjunto de dados (dcat:Dataset; o derivado é também qb:DataSet),dct:issued,Data de publicação,Recomendada,FALSE,FALSE,literal,xsd:date,,,,Data do portal no original
-ConjuntoDados,Conjunto de dados (dcat:Dataset; o derivado é também qb:DataSet),dct:modified,Data de modificação,Opcional,FALSE,FALSE,literal,xsd:date,,,,
-ConjuntoDados,Conjunto de dados (dcat:Dataset; o derivado é também qb:DataSet),dct:language,Língua,Recomendada,FALSE,TRUE,IRI,,http://publications.europa.eu/resource/authority/language/,IRIstem,,POR
-ConjuntoDados,Conjunto de dados (dcat:Dataset; o derivado é também qb:DataSet),dct:accessRights,Direitos de acesso,Recomendada,FALSE,FALSE,IRI,,http://publications.europa.eu/resource/authority/access-right/,IRIstem,,PUBLIC
-ConjuntoDados,Conjunto de dados (dcat:Dataset; o derivado é também qb:DataSet),dct:accrualPeriodicity,Frequência,Opcional,FALSE,FALSE,IRI,,http://publications.europa.eu/resource/authority/frequency/,IRIstem,,NEVER
-ConjuntoDados,Conjunto de dados (dcat:Dataset; o derivado é também qb:DataSet),dct:license,Licença,Opcional,FALSE,TRUE,IRI,,http://publications.europa.eu/resource/authority/licence/,IRIstem,,CC_BY_4_0 (também na distribuição)
-ConjuntoDados,Conjunto de dados (dcat:Dataset; o derivado é também qb:DataSet),dct:rightsHolder,Titular dos direitos,Opcional,FALSE,FALSE,IRI,,,,Agente,DGAL
-ConjuntoDados,Conjunto de dados (dcat:Dataset; o derivado é também qb:DataSet),dcat:contactPoint,Contacto,Recomendada,FALSE,TRUE,IRI,,,,Contacto,DGAL no original; Grupo 7 no derivado
-ConjuntoDados,Conjunto de dados (dcat:Dataset; o derivado é também qb:DataSet),dcat:landingPage,Página de entrada,Recomendada,FALSE,TRUE,IRI,,,,,Página do portal no original; GitHub no derivado
-ConjuntoDados,Conjunto de dados (dcat:Dataset; o derivado é também qb:DataSet),dct:identifier,Identificador,Recomendada,FALSE,FALSE,literal,xsd:string,,,,Nome no portal ou rdf-{tema}-{ano}
-ConjuntoDados,Conjunto de dados (dcat:Dataset; o derivado é também qb:DataSet),dcat:temporalResolution,Resolução temporal,Opcional,FALSE,FALSE,literal,xsd:duration,,,,Só no derivado; P3M ou P1Y
-ConjuntoDados,Conjunto de dados (dcat:Dataset; o derivado é também qb:DataSet),adms:versionNotes,Notas de versão,Recomendada,FALSE,FALSE,literal,rdf:langString,pt,languageTag,,Só no derivado; alterações face ao original
-Distribuicao,Distribuição (dcat:Distribution),dcat:accessURL,URL de acesso,Obrigatória,TRUE,TRUE,IRI,,,,,
-Distribuicao,Distribuição (dcat:Distribution),dct:format,Formato,Obrigatória,TRUE,FALSE,IRI,,http://publications.europa.eu/resource/authority/file-type/,IRIstem,,"CSV, XLSX ou RDF_TURTLE; obrigatória no perfil"
-Distribuicao,Distribuição (dcat:Distribution),dcat:mediaType,Tipo de media,Obrigatória,TRUE,FALSE,IRI,,http://www.iana.org/assignments/media-types/,IRIstem,,Obrigatória no perfil
-Distribuicao,Distribuição (dcat:Distribution),dct:license,Licença,Obrigatória,TRUE,TRUE,IRI,,http://publications.europa.eu/resource/authority/licence/,IRIstem,,CC_BY_4_0; obrigatória no perfil
-Distribuicao,Distribuição (dcat:Distribution),dcat:downloadURL,URL de descarga,Recomendada,FALSE,TRUE,IRI,,,,,
-Distribuicao,Distribuição (dcat:Distribution),dct:title,Título,Recomendada,FALSE,TRUE,literal,rdf:langString,pt en,languageTag,,
-Distribuicao,Distribuição (dcat:Distribution),adms:status,Estado,Opcional,FALSE,FALSE,IRI,,http://publications.europa.eu/resource/authority/distribution-status/,IRIstem,,COMPLETED
-Distribuicao,Distribuição (dcat:Distribution),dcat:byteSize,Tamanho,Recomendada,FALSE,FALSE,literal,xsd:nonNegativeInteger,,,,Bytes
-Distribuicao,Distribuição (dcat:Distribution),dct:issued,Data de publicação,Opcional,FALSE,FALSE,literal,xsd:date,,,,
-Distribuicao,Distribuição (dcat:Distribution),spdx:checksum,Impressão digital,Opcional,FALSE,FALSE,IRI,,,,Checksum,Nas distribuições originais
-Checksum,Impressão digital (spdx:Checksum),spdx:algorithm,Algoritmo,Obrigatória,TRUE,FALSE,IRI,,spdx:checksumAlgorithm_sha256,picklist,,SHA-256
-Checksum,Impressão digital (spdx:Checksum),spdx:checksumValue,Valor,Obrigatória,TRUE,FALSE,literal,xsd:hexBinary,^[0-9a-f]{64}$,pattern,,
-Agente,Agente (foaf:Organization),foaf:name,Nome,Obrigatória,TRUE,TRUE,literal,rdf:langString,,,,
-Agente,Agente (foaf:Organization),dct:type,Tipo,Recomendada,FALSE,FALSE,IRI,,http://purl.org/adms/publishertype/,IRIstem,,NationalAuthority; Academia-ScientificOrganisation
-Agente,Agente (foaf:Organization),foaf:homepage,Página,Opcional,FALSE,FALSE,IRI,,,,,
-Contacto,Contacto (vcard:Organization),vcard:fn,Nome,Obrigatória,TRUE,FALSE,literal,rdf:langString,,,,Obrigatória no perfil
-Contacto,Contacto (vcard:Organization),vcard:hasURL,Endereço web,Recomendada,FALSE,TRUE,IRI,,,,,Obrigatório pelo menos um de vcard:hasURL ou vcard:hasEmail (sh:or na shape Contacto)
-Contacto,Contacto (vcard:Organization),vcard:hasEmail,E-mail,Recomendada,FALSE,TRUE,IRI,,^mailto:,pattern,,Obrigatório pelo menos um de vcard:hasURL ou vcard:hasEmail (sh:or na shape Contacto); IRI mailto:
-Periodo,Período (dct:PeriodOfTime),dcat:startDate,Início,Obrigatória,TRUE,FALSE,literal,xsd:date,,,,Não posterior ao fim; obrigatória no perfil
-Periodo,Período (dct:PeriodOfTime),dcat:endDate,Fim,Obrigatória,TRUE,FALSE,literal,xsd:date,,,,Obrigatória no perfil
-Observacao,Observação (qb:Observation),qb:dataSet,Conjunto de dados,Obrigatória,TRUE,FALSE,IRI,,,,ConjuntoDados,
-Observacao,Observação (qb:Observation),sdmx-dimension:refArea,Município,Obrigatória,TRUE,FALSE,IRI,,,,Conceito,
-Observacao,Observação (qb:Observation),g7:ano,Ano,Obrigatória,TRUE,FALSE,literal,xsd:gYear,,,,
-Observacao,Observação (qb:Observation),g7:periodo,Período,Obrigatória,TRUE,FALSE,IRI,,,,Conceito,T1 a T4 ou A
-Conceito,"Conceito (skos:Concept: município, distrito ou região, período)",skos:prefLabel,Nome,Obrigatória,TRUE,FALSE,literal,rdf:langString,pt,languageTag,,Um por conceito; homónimos desambiguados
-Conceito,"Conceito (skos:Concept: município, distrito ou região, período)",skos:notation,Código,Obrigatória,TRUE,FALSE,literal,xsd:string,,,,Código INE com quatro dígitos nos municípios
-Conceito,"Conceito (skos:Concept: município, distrito ou região, período)",skos:inScheme,Esquema,Obrigatória,TRUE,TRUE,IRI,,,,,
-Conceito,"Conceito (skos:Concept: município, distrito ou região, período)",skos:broader,Distrito ou região,Obrigatória,TRUE,FALSE,IRI,,,,Conceito,Só nos municípios; exatamente um
-Conceito,"Conceito (skos:Concept: município, distrito ou região, período)",skos:altLabel,Nome alternativo,Opcional,FALSE,TRUE,literal,rdf:langString,pt,languageTag,,Nome simples dos homónimos
-Conceito,"Conceito (skos:Concept: município, distrito ou região, período)",skos:exactMatch,Correspondência,Recomendada,FALSE,TRUE,IRI,,http://www.wikidata.org/entity/,IRIstem,,Item da Wikidata (municípios e distritos)
-Conceito,"Conceito (skos:Concept: município, distrito ou região, período)",skos:definition,Definição,Recomendada,FALSE,FALSE,literal,rdf:langString,pt,languageTag,,Nos períodos
-Observacao,Observação (qb:Observation),g7:cargosPoliticos,Cargos e mandatos políticos,Opcional,FALSE,FALSE,literal,xsd:integer,,,,Medida; pelo menos uma por observação
-Observacao,Observação (qb:Observation),g7:comissaoServico,Trabalhadores em comissão de serviço,Opcional,FALSE,FALSE,literal,xsd:integer,,,,Medida; pelo menos uma por observação
-Observacao,Observação (qb:Observation),g7:densidadePopulacional,Densidade populacional,Opcional,FALSE,FALSE,literal,xsd:decimal,,,,Medida; pelo menos uma por observação
-Observacao,Observação (qb:Observation),g7:derramaIRC,Derrama municipal de IRC,Opcional,FALSE,FALSE,literal,xsd:decimal,,,,Medida; pelo menos uma por observação
-Observacao,Observação (qb:Observation),g7:despesaAquisicaoBens,Despesa com aquisição de bens,Opcional,FALSE,FALSE,literal,xsd:decimal,,,,Medida; pelo menos uma por observação
-Observacao,Observação (qb:Observation),g7:despesaCorrente,Despesa corrente,Opcional,FALSE,FALSE,literal,xsd:decimal,,,,Medida; pelo menos uma por observação
-Observacao,Observação (qb:Observation),g7:despesaPessoal,Despesa com pessoal,Opcional,FALSE,FALSE,literal,xsd:decimal,,,,Medida; pelo menos uma por observação
-Observacao,Observação (qb:Observation),g7:despesaTotal,Despesa total municipal,Opcional,FALSE,FALSE,literal,xsd:decimal,,,,Medida; pelo menos uma por observação
-Observacao,Observação (qb:Observation),g7:despesaTotalQG,Despesa total (indicador de qualidade da gestão),Opcional,FALSE,FALSE,literal,xsd:decimal,,,,Medida; pelo menos uma por observação
-Observacao,Observação (qb:Observation),g7:dirigentes,Dirigentes municipais,Opcional,FALSE,FALSE,literal,xsd:integer,,,,Medida; pelo menos uma por observação
-Observacao,Observação (qb:Observation),g7:dividaTotal,Dívida total municipal,Opcional,FALSE,FALSE,literal,xsd:decimal,,,,Medida; pelo menos uma por observação
-Observacao,Observação (qb:Observation),g7:execucaoDespesa,Grau de execução da despesa orçamentada,Opcional,FALSE,FALSE,literal,xsd:decimal,,,,Medida; pelo menos uma por observação
-Observacao,Observação (qb:Observation),g7:execucaoReceita,Grau de execução da receita orçamentada,Opcional,FALSE,FALSE,literal,xsd:decimal,,,,Medida; pelo menos uma por observação
-Observacao,Observação (qb:Observation),g7:financiamentoUE,Financiamento da União Europeia,Opcional,FALSE,FALSE,literal,xsd:decimal,,,,Medida; pelo menos uma por observação
-Observacao,Observação (qb:Observation),g7:grauEndividamento,Grau de endividamento,Opcional,FALSE,FALSE,literal,xsd:decimal,,,,Medida; pelo menos uma por observação
-Observacao,Observação (qb:Observation),g7:imi,Imposto Municipal sobre Imóveis,Opcional,FALSE,FALSE,literal,xsd:decimal,,,,Medida; pelo menos uma por observação
-Observacao,Observação (qb:Observation),g7:impostosMunicipais,Impostos municipais,Opcional,FALSE,FALSE,literal,xsd:decimal,,,,Medida; pelo menos uma por observação
-Observacao,Observação (qb:Observation),g7:imt,Imposto Municipal sobre Transmissões Onerosas de Imóveis,Opcional,FALSE,FALSE,literal,xsd:decimal,,,,Medida; pelo menos uma por observação
-Observacao,Observação (qb:Observation),g7:independenciaFinanceira,Grau de independência financeira,Opcional,FALSE,FALSE,literal,xsd:decimal,,,,Medida; pelo menos uma por observação
-Observacao,Observação (qb:Observation),g7:investAcessibilidades,Investimento em acessibilidades,Opcional,FALSE,FALSE,literal,xsd:decimal,,,,Medida; pelo menos uma por observação
-Observacao,Observação (qb:Observation),g7:investEdificios,Investimento em edifícios,Opcional,FALSE,FALSE,literal,xsd:decimal,,,,Medida; pelo menos uma por observação
-Observacao,Observação (qb:Observation),g7:investInfraestruturas,Investimento em infraestruturas básicas,Opcional,FALSE,FALSE,literal,xsd:decimal,,,,Medida; pelo menos uma por observação
-Observacao,Observação (qb:Observation),g7:investOutros,Outros investimentos em bens de capital,Opcional,FALSE,FALSE,literal,xsd:decimal,,,,Medida; pelo menos uma por observação
-Observacao,Observação (qb:Observation),g7:investTerrenosHabitacoes,Investimento em terrenos e habitações,Opcional,FALSE,FALSE,literal,xsd:decimal,,,,Medida; pelo menos uma por observação
-Observacao,Observação (qb:Observation),g7:investimentoTotal,Investimentos e outros bens de capital,Opcional,FALSE,FALSE,literal,xsd:decimal,,,,Medida; pelo menos uma por observação
-Observacao,Observação (qb:Observation),g7:iuc,Imposto Único de Circulação,Opcional,FALSE,FALSE,literal,xsd:decimal,,,,Medida; pelo menos uma por observação
-Observacao,Observação (qb:Observation),g7:jurosEncargos,Juros e encargos,Opcional,FALSE,FALSE,literal,xsd:decimal,,,,Medida; pelo menos uma por observação
-Observacao,Observação (qb:Observation),g7:outrasReceitas,Outras receitas,Opcional,FALSE,FALSE,literal,xsd:decimal,,,,Medida; pelo menos uma por observação
-Observacao,Observação (qb:Observation),g7:outrosTrabalhadores,Funcionários não superiores,Opcional,FALSE,FALSE,literal,xsd:integer,,,,Medida; pelo menos uma por observação
-Observacao,Observação (qb:Observation),g7:pagamentosEmAtraso,Pagamentos em atraso,Opcional,FALSE,FALSE,literal,xsd:decimal,,,,Medida; pelo menos uma por observação
-Observacao,Observação (qb:Observation),g7:populacaoResidente,População residente,Opcional,FALSE,FALSE,literal,xsd:integer,,,,Medida; pelo menos uma por observação
-Observacao,Observação (qb:Observation),g7:prazoMedioPagamento,Prazo médio de pagamento,Opcional,FALSE,FALSE,literal,xsd:decimal,,,,Medida; pelo menos uma por observação
-Observacao,Observação (qb:Observation),g7:receitaEfetiva,Receita efetiva,Opcional,FALSE,FALSE,literal,xsd:decimal,,,,Medida; pelo menos uma por observação
-Observacao,Observação (qb:Observation),g7:receitaTotalQG,Receita total (indicador de qualidade da gestão),Opcional,FALSE,FALSE,literal,xsd:decimal,,,,Medida; pelo menos uma por observação
-Observacao,Observação (qb:Observation),g7:receitasTotais,Receitas totais municipais,Opcional,FALSE,FALSE,literal,xsd:decimal,,,,Medida; pelo menos uma por observação
-Observacao,Observação (qb:Observation),g7:representantesEleitos,Representantes eleitos,Opcional,FALSE,FALSE,literal,xsd:integer,,,,Medida; pelo menos uma por observação
-Observacao,Observação (qb:Observation),g7:saldoOrcamental,Saldo orçamental,Opcional,FALSE,FALSE,literal,xsd:decimal,,,,Medida; pelo menos uma por observação
-Observacao,Observação (qb:Observation),g7:semVinculoPermanente,Trabalhadores sem vínculo permanente,Opcional,FALSE,FALSE,literal,xsd:integer,,,,Medida; pelo menos uma por observação
-Observacao,Observação (qb:Observation),g7:taxasMultasOutros,"Taxas, multas e outros impostos",Opcional,FALSE,FALSE,literal,xsd:decimal,,,,Medida; pelo menos uma por observação
-Observacao,Observação (qb:Observation),g7:tecnicosSuperiores,Técnicos superiores,Opcional,FALSE,FALSE,literal,xsd:integer,,,,Medida; pelo menos uma por observação
-Observacao,Observação (qb:Observation),g7:trabalhadores,Total de trabalhadores municipais,Opcional,FALSE,FALSE,literal,xsd:integer,,,,Medida; pelo menos uma por observação
-Observacao,Observação (qb:Observation),g7:trabalhadoresInclEleitos,"Total de recursos humanos, incluindo representantes eleitos",Opcional,FALSE,FALSE,literal,xsd:integer,,,,Medida; pelo menos uma por observação
-Observacao,Observação (qb:Observation),g7:transferenciasCapital,Transferências e outras despesas de capital,Opcional,FALSE,FALSE,literal,xsd:decimal,,,,Medida; pelo menos uma por observação
-Observacao,Observação (qb:Observation),g7:transferenciasCorrentes,Transferências correntes,Opcional,FALSE,FALSE,literal,xsd:decimal,,,,Medida; pelo menos uma por observação
-Observacao,Observação (qb:Observation),g7:transferenciasOE,Transferências do Orçamento do Estado,Opcional,FALSE,FALSE,literal,xsd:decimal,,,,Medida; pelo menos uma por observação
-Observacao,Observação (qb:Observation),g7:vendaBensServicos,Venda de bens e serviços,Opcional,FALSE,FALSE,literal,xsd:decimal,,,,Medida; pelo menos uma por observação
-Observacao,Observação (qb:Observation),g7:vinculoPermanente,Trabalhadores com vínculo permanente,Opcional,FALSE,FALSE,literal,xsd:integer,,,,Medida; pelo menos uma por observação
+shapeID,shapeLabel,propertyID,propertyLabel,mandatory,repeatable,valueNodeType,valueDataType,valueConstraint,valueConstraintType,valueShape,note
+Catalogo,Catálogo (dcat:Catalog),dct:title,Título,TRUE,TRUE,literal,rdf:langString,pt en,languageTag,,"Um por língua; @pt obrigatório, @en recomendado"
+,,dct:description,Descrição,TRUE,TRUE,literal,rdf:langString,pt en,languageTag,,"Um por língua; @pt obrigatório, @en recomendado"
+,,dct:publisher,Editor,TRUE,FALSE,IRI,,,,Agente,Grupo 7
+,,dcat:dataset,Conjunto de dados,TRUE,TRUE,IRI,,,,ConjuntoDados,Recomendada no DCAT-AP; originais e derivados
+,,dct:language,Língua,FALSE,TRUE,IRI,,http://publications.europa.eu/resource/authority/language/,IRIstem,,Recomendada; POR
+,,dct:license,Licença,FALSE,FALSE,IRI,,http://publications.europa.eu/resource/authority/licence/,IRIstem,,Recomendada; CC_BY_4_0
+,,dct:issued,Data de publicação,FALSE,FALSE,literal,xsd:date,,,,Recomendada
+,,dct:modified,Data de modificação,FALSE,FALSE,literal,xsd:date,,,,Recomendada
+,,dcat:themeTaxonomy,Taxonomia de temas,FALSE,TRUE,IRI,,http://publications.europa.eu/resource/authority/data-theme,picklist,,Recomendada; Lista Data theme da UE
+,,foaf:homepage,Página,FALSE,FALSE,IRI,,,,,Recomendada; Repositório do projeto
+Serie,Série (dcat:DatasetSeries),dct:title,Título,TRUE,TRUE,literal,rdf:langString,pt en,languageTag,,Sem o ano
+,,dct:description,Descrição,TRUE,TRUE,literal,rdf:langString,pt en,languageTag,,
+,,dct:publisher,Editor,TRUE,FALSE,IRI,,,,Agente,
+,,dct:accrualPeriodicity,Frequência,TRUE,FALSE,IRI,,http://publications.europa.eu/resource/authority/frequency/,IRIstem,,ANNUAL
+,,dcat:theme,Tema,TRUE,TRUE,IRI,,http://publications.europa.eu/resource/authority/data-theme/,IRIstem,,ECON e GOVE
+,,dct:spatial,Cobertura espacial,FALSE,TRUE,IRI,,http://publications.europa.eu/resource/authority/country/,IRIstem,,Recomendada; PRT
+,,dct:temporal,Cobertura temporal,FALSE,FALSE,IRI,,,,Periodo,Recomendada; 2017-01-01 a 2019-12-31
+,,dcat:contactPoint,Contacto,FALSE,TRUE,IRI,,,,Contacto,Recomendada
+ConjuntoDados,Conjunto de dados (dcat:Dataset),dct:title,Título,TRUE,TRUE,literal,rdf:langString,pt en,languageTag,,
+,,dct:description,Descrição,TRUE,TRUE,literal,rdf:langString,pt en,languageTag,,"Tema, colunas, unidades, âmbito e trimestres acumulados"
+,,dct:publisher,Editor,TRUE,FALSE,IRI,,,,Agente,DGAL no original; Grupo 7 no derivado
+,,dcat:theme,Tema,TRUE,TRUE,IRI,,http://publications.europa.eu/resource/authority/data-theme/,IRIstem,,ECON e GOVE
+,,dct:temporal,Cobertura temporal,TRUE,FALSE,IRI,,,,Periodo,Ano civil; exatamente uma
+,,dct:spatial,Cobertura espacial,TRUE,TRUE,IRI,,http://publications.europa.eu/resource/authority/country/,IRIstem,,PRT
+,,dcat:distribution,Distribuição,TRUE,TRUE,IRI,,,,Distribuicao,
+,,dcat:keyword,Palavra-chave,FALSE,TRUE,literal,rdf:langString,pt en,languageTag,,Recomendada; Pelo menos três em @pt
+,,dct:issued,Data de publicação,FALSE,FALSE,literal,xsd:date,,,,Recomendada; Data do portal no original
+,,dct:language,Língua,FALSE,TRUE,IRI,,http://publications.europa.eu/resource/authority/language/,IRIstem,,Recomendada; POR
+,,dct:accessRights,Direitos de acesso,FALSE,FALSE,IRI,,http://publications.europa.eu/resource/authority/access-right/,IRIstem,,Recomendada; PUBLIC
+,,dcat:contactPoint,Contacto,FALSE,TRUE,IRI,,,,Contacto,Recomendada; DGAL no original; Grupo 7 no derivado
+,,dcat:landingPage,Página de entrada,FALSE,TRUE,IRI,,,,,Recomendada; Página do portal no original; GitHub no derivado
+,,dct:identifier,Identificador,FALSE,FALSE,literal,xsd:string,,,,Recomendada; Nome no portal ou rdf-{tema}-{ano}
+,,dct:modified,Data de modificação,FALSE,FALSE,literal,xsd:date,,,,Opcional
+,,dct:accrualPeriodicity,Frequência,FALSE,FALSE,IRI,,http://publications.europa.eu/resource/authority/frequency/,IRIstem,,Opcional; NEVER
+,,dct:license,Licença,FALSE,TRUE,IRI,,http://publications.europa.eu/resource/authority/licence/,IRIstem,,Opcional; CC_BY_4_0 (também na distribuição)
+,,dct:rightsHolder,Titular dos direitos,FALSE,FALSE,IRI,,,,Agente,Opcional; DGAL
+,,dcat:temporalResolution,Resolução temporal,FALSE,FALSE,literal,xsd:duration,,,,Opcional; P3M ou P1Y (preenchida nos derivados)
+ConjuntoDadosDerivado,Conjunto de dados derivado (qb:DataSet),dcat:inSeries,Série,TRUE,FALSE,IRI,,,,Serie,exatamente uma
+,,prov:wasDerivedFrom,Derivado de,TRUE,TRUE,IRI,,,,ConjuntoDados,aponta para o original
+,,dct:source,Fonte,TRUE,TRUE,IRI,,,,,IRI da página do conjunto original no dados.gov.pt
+,,dct:conformsTo,Conforme a,TRUE,TRUE,IRI,,,,,qb:DataStructureDefinition da série (classe)
+,,qb:structure,Estrutura,TRUE,FALSE,IRI,,,,,qb:DataStructureDefinition (classe); exatamente uma. Regras SPARQL: sem observações duplicadas por município e período (IC-12); cada observação com pelo menos uma medida
+,,adms:versionNotes,Notas de versão,FALSE,FALSE,literal,rdf:langString,pt,languageTag,,Recomendada; alterações face ao original
+Distribuicao,Distribuição (dcat:Distribution),dcat:accessURL,URL de acesso,TRUE,TRUE,IRI,,,,,
+,,dct:format,Formato,TRUE,FALSE,IRI,,http://publications.europa.eu/resource/authority/file-type/,IRIstem,,"CSV, XLSX ou RDF_TURTLE"
+,,dcat:mediaType,Tipo de media,TRUE,FALSE,IRI,,http://www.iana.org/assignments/media-types/,IRIstem,,
+,,dct:license,Licença,TRUE,TRUE,IRI,,http://publications.europa.eu/resource/authority/licence/,IRIstem,,CC_BY_4_0
+,,dcat:downloadURL,URL de descarga,FALSE,TRUE,IRI,,,,,Recomendada
+,,dct:title,Título,FALSE,TRUE,literal,rdf:langString,pt en,languageTag,,Recomendada
+,,dcat:byteSize,Tamanho,FALSE,FALSE,literal,xsd:nonNegativeInteger,,,,Recomendada; Bytes
+,,adms:status,Estado,FALSE,FALSE,IRI,,http://publications.europa.eu/resource/authority/distribution-status/,IRIstem,,Opcional; COMPLETED
+,,dct:issued,Data de publicação,FALSE,FALSE,literal,xsd:date,,,,Opcional
+,,spdx:checksum,Impressão digital,FALSE,FALSE,IRI,,,,Checksum,Opcional; Nas distribuições originais
+Checksum,Impressão digital (spdx:Checksum),spdx:algorithm,Algoritmo,TRUE,FALSE,IRI,,spdx:checksumAlgorithm_sha256,picklist,,SHA-256
+,,spdx:checksumValue,Valor,TRUE,FALSE,literal,xsd:hexBinary,^[0-9a-f]{64}$,pattern,,
+Agente,Agente (foaf:Organization),foaf:name,Nome,TRUE,TRUE,literal,rdf:langString,,,,
+,,dct:type,Tipo,FALSE,FALSE,IRI,,http://purl.org/adms/publishertype/,IRIstem,,Recomendada; NationalAuthority; Academia-ScientificOrganisation
+,,foaf:homepage,Página,FALSE,FALSE,IRI,,,,,Opcional
+Contacto,Contacto (vcard:Organization),vcard:fn,Nome,TRUE,FALSE,literal,rdf:langString,,,,
+,,vcard:hasURL,Endereço web,FALSE,TRUE,IRI,,,,,Recomendada; Obrigatório pelo menos um de vcard:hasURL ou vcard:hasEmail (sh:or na shape Contacto)
+,,vcard:hasEmail,E-mail,FALSE,TRUE,IRI,,^mailto:,pattern,,Recomendada; Obrigatório pelo menos um de vcard:hasURL ou vcard:hasEmail (sh:or na shape Contacto); IRI mailto:
+Periodo,Período (dct:PeriodOfTime),dcat:startDate,Início,TRUE,FALSE,literal,xsd:date,,,,Não posterior ao fim
+,,dcat:endDate,Fim,TRUE,FALSE,literal,xsd:date,,,,
+Observacao,Observação (qb:Observation),qb:dataSet,Conjunto de dados,TRUE,FALSE,IRI,,,,ConjuntoDadosDerivado,
+,,sdmx-dimension:refArea,Município,TRUE,FALSE,IRI,,,,Municipio,
+,,g7:ano,Ano,TRUE,FALSE,literal,xsd:gYear,,,,
+,,g7:periodo,Período,TRUE,FALSE,IRI,,,,PeriodoObservacao,T1 a T4 ou A
+,,g7:cargosPoliticos,Cargos e mandatos políticos,FALSE,FALSE,literal,xsd:integer,,,,Opcional; Medida; pelo menos uma por observação
+,,g7:comissaoServico,Trabalhadores em comissão de serviço,FALSE,FALSE,literal,xsd:integer,,,,Opcional; Medida; pelo menos uma por observação
+,,g7:densidadePopulacional,Densidade populacional,FALSE,FALSE,literal,xsd:decimal,,,,Opcional; Medida; pelo menos uma por observação
+,,g7:derramaIRC,Derrama municipal de IRC,FALSE,FALSE,literal,xsd:decimal,,,,Opcional; Medida; pelo menos uma por observação
+,,g7:despesaAquisicaoBens,Despesa com aquisição de bens,FALSE,FALSE,literal,xsd:decimal,,,,Opcional; Medida; pelo menos uma por observação
+,,g7:despesaCorrente,Despesa corrente,FALSE,FALSE,literal,xsd:decimal,,,,Opcional; Medida; pelo menos uma por observação
+,,g7:despesaPessoal,Despesa com pessoal,FALSE,FALSE,literal,xsd:decimal,,,,Opcional; Medida; pelo menos uma por observação
+,,g7:despesaTotal,Despesa total municipal,FALSE,FALSE,literal,xsd:decimal,,,,Opcional; Medida; pelo menos uma por observação
+,,g7:despesaTotalQG,Despesa total (indicador de qualidade da gestão),FALSE,FALSE,literal,xsd:decimal,,,,Opcional; Medida; pelo menos uma por observação
+,,g7:dirigentes,Dirigentes municipais,FALSE,FALSE,literal,xsd:integer,,,,Opcional; Medida; pelo menos uma por observação
+,,g7:dividaTotal,Dívida total municipal,FALSE,FALSE,literal,xsd:decimal,,,,Opcional; Medida; pelo menos uma por observação
+,,g7:execucaoDespesa,Grau de execução da despesa orçamentada,FALSE,FALSE,literal,xsd:decimal,,,,Opcional; Medida; pelo menos uma por observação
+,,g7:execucaoReceita,Grau de execução da receita orçamentada,FALSE,FALSE,literal,xsd:decimal,,,,Opcional; Medida; pelo menos uma por observação
+,,g7:financiamentoUE,Financiamento da União Europeia,FALSE,FALSE,literal,xsd:decimal,,,,Opcional; Medida; pelo menos uma por observação
+,,g7:grauEndividamento,Grau de endividamento,FALSE,FALSE,literal,xsd:decimal,,,,Opcional; Medida; pelo menos uma por observação
+,,g7:imi,Imposto Municipal sobre Imóveis,FALSE,FALSE,literal,xsd:decimal,,,,Opcional; Medida; pelo menos uma por observação
+,,g7:impostosMunicipais,Impostos municipais,FALSE,FALSE,literal,xsd:decimal,,,,Opcional; Medida; pelo menos uma por observação
+,,g7:imt,Imposto Municipal sobre Transmissões Onerosas de Imóveis,FALSE,FALSE,literal,xsd:decimal,,,,Opcional; Medida; pelo menos uma por observação
+,,g7:independenciaFinanceira,Grau de independência financeira,FALSE,FALSE,literal,xsd:decimal,,,,Opcional; Medida; pelo menos uma por observação
+,,g7:investAcessibilidades,Investimento em acessibilidades,FALSE,FALSE,literal,xsd:decimal,,,,Opcional; Medida; pelo menos uma por observação
+,,g7:investEdificios,Investimento em edifícios,FALSE,FALSE,literal,xsd:decimal,,,,Opcional; Medida; pelo menos uma por observação
+,,g7:investInfraestruturas,Investimento em infraestruturas básicas,FALSE,FALSE,literal,xsd:decimal,,,,Opcional; Medida; pelo menos uma por observação
+,,g7:investOutros,Outros investimentos em bens de capital,FALSE,FALSE,literal,xsd:decimal,,,,Opcional; Medida; pelo menos uma por observação
+,,g7:investTerrenosHabitacoes,Investimento em terrenos e habitações,FALSE,FALSE,literal,xsd:decimal,,,,Opcional; Medida; pelo menos uma por observação
+,,g7:investimentoTotal,Investimentos e outros bens de capital,FALSE,FALSE,literal,xsd:decimal,,,,Opcional; Medida; pelo menos uma por observação
+,,g7:iuc,Imposto Único de Circulação,FALSE,FALSE,literal,xsd:decimal,,,,Opcional; Medida; pelo menos uma por observação
+,,g7:jurosEncargos,Juros e encargos,FALSE,FALSE,literal,xsd:decimal,,,,Opcional; Medida; pelo menos uma por observação
+,,g7:outrasReceitas,Outras receitas,FALSE,FALSE,literal,xsd:decimal,,,,Opcional; Medida; pelo menos uma por observação
+,,g7:outrosTrabalhadores,Funcionários não superiores,FALSE,FALSE,literal,xsd:integer,,,,Opcional; Medida; pelo menos uma por observação
+,,g7:pagamentosEmAtraso,Pagamentos em atraso,FALSE,FALSE,literal,xsd:decimal,,,,Opcional; Medida; pelo menos uma por observação
+,,g7:populacaoResidente,População residente,FALSE,FALSE,literal,xsd:integer,,,,Opcional; Medida; pelo menos uma por observação
+,,g7:prazoMedioPagamento,Prazo médio de pagamento,FALSE,FALSE,literal,xsd:decimal,,,,Opcional; Medida; pelo menos uma por observação
+,,g7:receitaEfetiva,Receita efetiva,FALSE,FALSE,literal,xsd:decimal,,,,Opcional; Medida; pelo menos uma por observação
+,,g7:receitaTotalQG,Receita total (indicador de qualidade da gestão),FALSE,FALSE,literal,xsd:decimal,,,,Opcional; Medida; pelo menos uma por observação
+,,g7:receitasTotais,Receitas totais municipais,FALSE,FALSE,literal,xsd:decimal,,,,Opcional; Medida; pelo menos uma por observação
+,,g7:representantesEleitos,Representantes eleitos,FALSE,FALSE,literal,xsd:integer,,,,Opcional; Medida; pelo menos uma por observação
+,,g7:saldoOrcamental,Saldo orçamental,FALSE,FALSE,literal,xsd:decimal,,,,Opcional; Medida; pelo menos uma por observação
+,,g7:semVinculoPermanente,Trabalhadores sem vínculo permanente,FALSE,FALSE,literal,xsd:integer,,,,Opcional; Medida; pelo menos uma por observação
+,,g7:taxasMultasOutros,"Taxas, multas e outros impostos",FALSE,FALSE,literal,xsd:decimal,,,,Opcional; Medida; pelo menos uma por observação
+,,g7:tecnicosSuperiores,Técnicos superiores,FALSE,FALSE,literal,xsd:integer,,,,Opcional; Medida; pelo menos uma por observação
+,,g7:trabalhadores,Total de trabalhadores municipais,FALSE,FALSE,literal,xsd:integer,,,,Opcional; Medida; pelo menos uma por observação
+,,g7:trabalhadoresInclEleitos,"Total de recursos humanos, incluindo representantes eleitos",FALSE,FALSE,literal,xsd:integer,,,,Opcional; Medida; pelo menos uma por observação
+,,g7:transferenciasCapital,Transferências e outras despesas de capital,FALSE,FALSE,literal,xsd:decimal,,,,Opcional; Medida; pelo menos uma por observação
+,,g7:transferenciasCorrentes,Transferências correntes,FALSE,FALSE,literal,xsd:decimal,,,,Opcional; Medida; pelo menos uma por observação
+,,g7:transferenciasOE,Transferências do Orçamento do Estado,FALSE,FALSE,literal,xsd:decimal,,,,Opcional; Medida; pelo menos uma por observação
+,,g7:vendaBensServicos,Venda de bens e serviços,FALSE,FALSE,literal,xsd:decimal,,,,Opcional; Medida; pelo menos uma por observação
+,,g7:vinculoPermanente,Trabalhadores com vínculo permanente,FALSE,FALSE,literal,xsd:integer,,,,Opcional; Medida; pelo menos uma por observação
+Conceito,"Conceito (skos:Concept: município, distrito ou região, período)",skos:prefLabel,Nome,TRUE,FALSE,literal,rdf:langString,pt,languageTag,,Um por conceito; homónimos desambiguados
+,,skos:notation,Código,TRUE,FALSE,literal,xsd:string,,,,Nos municípios: código INE com quatro dígitos (ver Municipio)
+,,skos:inScheme,Esquema,TRUE,TRUE,IRI,,,,,
+,,skos:altLabel,Nome alternativo,FALSE,TRUE,literal,rdf:langString,pt,languageTag,,Opcional; Nome simples dos homónimos
+,,skos:exactMatch,Correspondência,FALSE,TRUE,IRI,,http://www.wikidata.org/entity/,IRIstem,,Opcional; Item da Wikidata nos distritos e regiões autónomas
+Municipio,Município (skos:Concept usado em sdmx-dimension:refArea),skos:notation,Código INE,TRUE,FALSE,literal,xsd:string,^[0-9]{4}$,pattern,,"Quatro dígitos, como texto; herda as regras do Conceito"
+,,skos:broader,Distrito ou região,TRUE,FALSE,IRI,,,,Conceito,Distrito ou região autónoma; exatamente um
+,,skos:exactMatch,Correspondência,FALSE,TRUE,IRI,,^http://www.wikidata.org/entity/Q[0-9]+$,pattern,,Recomendada; Item da Wikidata
+PeriodoObservacao,Período de observação (skos:Concept usado em g7:periodo),skos:definition,Definição,FALSE,FALSE,literal,rdf:langString,pt,languageTag,,Recomendada; Define o período e se o valor é acumulado

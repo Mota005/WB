@@ -93,7 +93,9 @@ g7sh:ConjuntoDados a sh:NodeShape ; sh:targetClass dcat:Dataset ;
                   sh:qualifiedValueShape [ sh:languageIn ( "pt" ) ] ; sh:qualifiedMinCount 3 ;
                   sh:message "Recomendadas pelo menos três palavras-chave em @pt."@pt ] ;
     sh:property [ sh:path dcat:landingPage ; sh:severity sh:Warning ; sh:minCount 1 ; sh:nodeKind sh:IRI ] ;
-    sh:property [ sh:path dct:identifier ; sh:severity sh:Warning ; sh:minCount 1 ] .
+    sh:property [ sh:path dct:identifier ; sh:severity sh:Warning ; sh:minCount 1 ] ;
+    sh:property [ sh:path dcat:contactPoint ; sh:severity sh:Warning ; sh:minCount 1 ; sh:class vcard:Organization ] ;
+    sh:property [ sh:path dct:rightsHolder ; sh:maxCount 1 ; sh:class foaf:Organization ] .
 
 # Regras adicionais do conjunto de dados derivado (também qb:DataSet)
 g7sh:ConjuntoDadosDerivado a sh:NodeShape ; sh:targetClass qb:DataSet ;
@@ -105,7 +107,6 @@ g7sh:ConjuntoDadosDerivado a sh:NodeShape ; sh:targetClass qb:DataSet ;
     sh:property [ sh:path dct:conformsTo ; sh:minCount 1 ; sh:class qb:DataStructureDefinition ] ;
     sh:property [ sh:path qb:structure ; sh:minCount 1 ; sh:maxCount 1 ; sh:class qb:DataStructureDefinition ] ;
     sh:property [ sh:path adms:versionNotes ; sh:severity sh:Warning ; sh:minCount 1 ] ;
-    sh:property [ sh:path dcat:contactPoint ; sh:severity sh:Warning ; sh:minCount 1 ; sh:class vcard:Organization ] ;
     # Data Cube IC-12: uma só observação por conjunto de dados, município e período (o período inclui o ano).
     sh:sparql [ sh:prefixes <https://w3id.org/ws-megsi-g7/shapes> ;
         sh:message "Observações duplicadas para o mesmo município e período: {?area} {?periodo}"@pt ;
@@ -135,7 +136,9 @@ g7sh:Distribuicao a sh:NodeShape ; sh:targetClass dcat:Distribution ;
     sh:property [ sh:path adms:status ; sh:maxCount 1 ;
                   sh:pattern "^http://publications.europa.eu/resource/authority/distribution-status/" ] ;
     sh:property [ sh:path dcat:byteSize ; sh:maxCount 1 ; sh:datatype xsd:nonNegativeInteger ] ;
-    sh:property [ sh:path dct:issued ; sh:maxCount 1 ; sh:datatype xsd:date ] .
+    sh:property [ sh:path dct:issued ; sh:maxCount 1 ; sh:datatype xsd:date ] ;
+    sh:property [ sh:path <http://spdx.org/rdf/terms#checksum> ; sh:maxCount 1 ;
+                  sh:class <http://spdx.org/rdf/terms#Checksum> ] .
 
 # ---------- Agente ----------
 g7sh:Agente a sh:NodeShape ; sh:targetClass foaf:Organization ;
@@ -168,7 +171,8 @@ g7sh:Conceito a sh:NodeShape ; sh:targetClass skos:Concept ;
     sh:property [ sh:path skos:prefLabel ; sh:minCount 1 ; sh:maxCount 1 ; sh:languageIn ( "pt" ) ;
                   sh:message "skos:prefLabel em @pt, um por conceito."@pt ] ;
     sh:property [ sh:path skos:notation ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ] ;
-    sh:property [ sh:path skos:inScheme ; sh:minCount 1 ; sh:class skos:ConceptScheme ] .
+    sh:property [ sh:path skos:inScheme ; sh:minCount 1 ; sh:class skos:ConceptScheme ] ;
+    sh:property [ sh:path skos:altLabel ; sh:languageIn ( "pt" ) ] .
 
 # Municípios = conceitos usados como área de referência das observações
 g7sh:Municipio a sh:NodeShape ; sh:targetObjectsOf sdmx-dimension:refArea ;
